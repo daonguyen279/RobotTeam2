@@ -17,6 +17,7 @@ ${submenu_menu_item}        xpath=//ul[@id="menu"]//a[@class="no-dropdown menu-a
 
 # ---------- top right menu ----------
 ${icn_user}                 xpath=//a/span[@class="icon-user"]
+${lbl_editprofile}          xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Edit Account"]
 ${lbl_logout}               xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]
 ${lbl_visit_site}           xpath=//a[@class="brand visible-desktop visible-tablet"]
 
@@ -30,3 +31,8 @@ Select Main Menu
 Select Sidebar Menu
     [Arguments]      ${arg_page}
     Click Element    ${arg_page}
+
+Logout
+    Click Element                    ${icn_user}
+    Wait Until Element Is Visible    ${lbl_logout}
+    Click Element                    ${lbl_logout}
