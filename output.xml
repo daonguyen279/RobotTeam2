@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190418 09:43:57.016" rpa="false">
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190418 16:24:24.114" rpa="false">
 <suite id="s1" name="RobotTeam2" source="C:\xampp\htdocs\RobotTeam2">
 <suite id="s1-s1" name="RobotFrameworkProject" source="C:\xampp\htdocs\RobotTeam2\RobotFrameworkProject">
 <suite id="s1-s1-s1" name="Tests" source="C:\xampp\htdocs\RobotTeam2\RobotFrameworkProject\Tests">
 <suite id="s1-s1-s1-s1" name="AdminCategoryTest" source="C:\xampp\htdocs\RobotTeam2\RobotFrameworkProject\Tests\AdminCategoryTest.robot">
-<test id="s1-s1-s1-s1-t1" name="Valid update admin profile">
+<test id="s1-s1-s1-s1-t1" name="TC05 - Verify that admin can add a new category">
 <kw name="Setup" library="Setup" type="setup">
 <kw name="Normalize Path" library="OperatingSystem">
 <doc>Normalizes the given path.</doc>
@@ -15,15 +15,15 @@
 <assign>
 <var>${PATH}</var>
 </assign>
-<msg timestamp="20190418 09:43:57.235" level="INFO">${PATH} = path</msg>
-<status status="PASS" starttime="20190418 09:43:57.234" endtime="20190418 09:43:57.235"></status>
+<msg timestamp="20190418 16:24:24.332" level="INFO">${PATH} = path</msg>
+<status status="PASS" starttime="20190418 16:24:24.331" endtime="20190418 16:24:24.332"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${PATH}</arg>
 </arguments>
-<status status="PASS" starttime="20190418 09:43:57.235" endtime="20190418 09:43:57.236"></status>
+<status status="PASS" starttime="20190418 16:24:24.332" endtime="20190418 16:24:24.332"></status>
 </kw>
 <kw name="Append To Environment Variable" library="OperatingSystem">
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
@@ -31,8 +31,8 @@
 <arg>${PATH}</arg>
 <arg>${PATH}</arg>
 </arguments>
-<msg timestamp="20190418 09:43:57.236" level="INFO">Environment variable 'path' set to value 'C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;Downloads\Webdriver;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Users\InternDN19.01.08\Downloads\Python\JavaSetup8u201.exe\bin;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\;C:\Users\InternDN19.01.08\AppData\Local\Microsoft\WindowsApps;C:\Users\InternDN19.01.08\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.08\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.08\Downloads\Python\eclipse;;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pywin32_system32;path'.</msg>
-<status status="PASS" starttime="20190418 09:43:57.236" endtime="20190418 09:43:57.237"></status>
+<msg timestamp="20190418 16:24:24.333" level="INFO">Environment variable 'path' set to value 'C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;Downloads\Webdriver;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Users\InternDN19.01.08\Downloads\Python\JavaSetup8u201.exe\bin;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\;C:\Users\InternDN19.01.08\AppData\Local\Microsoft\WindowsApps;C:\Users\InternDN19.01.08\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.08\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.08\Downloads\Python\eclipse;;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pywin32_system32;path'.</msg>
+<status status="PASS" starttime="20190418 16:24:24.333" endtime="20190418 16:24:24.333"></status>
 </kw>
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -40,14 +40,14 @@
 <arg>${ROOT}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20190418 09:43:57.237" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla/administrator'.</msg>
-<status status="PASS" starttime="20190418 09:43:57.237" endtime="20190418 09:43:59.795"></status>
+<msg timestamp="20190418 16:24:24.334" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla/administrator'.</msg>
+<status status="PASS" starttime="20190418 16:24:24.334" endtime="20190418 16:24:27.018"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20190418 09:43:59.796" endtime="20190418 09:44:00.917"></status>
+<status status="PASS" starttime="20190418 16:24:27.019" endtime="20190418 16:24:28.148"></status>
 </kw>
-<status status="PASS" starttime="20190418 09:43:57.233" endtime="20190418 09:44:00.918"></status>
+<status status="PASS" starttime="20190418 16:24:24.331" endtime="20190418 16:24:28.149"></status>
 </kw>
 <kw name="Login To Joomla" library="AdminLoginPage">
 <arguments>
@@ -59,7 +59,7 @@
 <arguments>
 <arg>Login to Joomla</arg>
 </arguments>
-<status status="PASS" starttime="20190418 09:44:00.921" endtime="20190418 09:44:00.922"></status>
+<status status="PASS" starttime="20190418 16:24:28.150" endtime="20190418 16:24:28.150"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -67,8 +67,8 @@
 <arg>${txt_username}</arg>
 <arg>${arg_username}</arg>
 </arguments>
-<msg timestamp="20190418 09:44:00.925" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
-<status status="PASS" starttime="20190418 09:44:00.923" endtime="20190418 09:44:01.022"></status>
+<msg timestamp="20190418 16:24:28.151" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190418 16:24:28.151" endtime="20190418 16:24:28.239"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -76,63 +76,137 @@
 <arg>${txt_password}</arg>
 <arg>${arg_password}</arg>
 </arguments>
-<msg timestamp="20190418 09:44:01.025" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
-<status status="PASS" starttime="20190418 09:44:01.022" endtime="20190418 09:44:01.106"></status>
+<msg timestamp="20190418 16:24:28.240" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190418 16:24:28.239" endtime="20190418 16:24:28.326"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
 <arg>${btn_login}</arg>
 </arguments>
-<status status="PASS" starttime="20190418 09:44:01.107" endtime="20190418 09:44:01.119"></status>
+<status status="PASS" starttime="20190418 16:24:28.326" endtime="20190418 16:24:28.338"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_login}</arg>
 </arguments>
-<msg timestamp="20190418 09:44:01.120" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
-<status status="PASS" starttime="20190418 09:44:01.119" endtime="20190418 09:44:01.831"></status>
+<msg timestamp="20190418 16:24:28.339" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190418 16:24:28.339" endtime="20190418 16:24:29.283"></status>
 </kw>
-<status status="PASS" starttime="20190418 09:44:00.919" endtime="20190418 09:44:01.831"></status>
+<status status="PASS" starttime="20190418 16:24:28.150" endtime="20190418 16:24:29.283"></status>
 </kw>
 <kw name="Add New Category" library="AdminCategoryPage">
 <arguments>
 <arg>${arg_title_categories}</arg>
 <arg>${arg_cont_categories}</arg>
 </arguments>
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks button identified by ``locator``.</doc>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Login to Joomla</arg>
+</arguments>
+<status status="PASS" starttime="20190418 16:24:29.285" endtime="20190418 16:24:29.285"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${lbl_categories}</arg>
 </arguments>
-<msg timestamp="20190418 09:44:01.833" level="INFO">Clicking button 'xpath=//div[@class="span3"]//a[span[contains(text(), "Categories")]]'.</msg>
+<msg timestamp="20190418 16:24:29.286" level="INFO">Clicking element 'xpath=//div[@class="span3"]//a[span[contains(text(), "Categories")]]'.</msg>
+<status status="PASS" starttime="20190418 16:24:29.285" endtime="20190418 16:24:29.945"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${lbl_new_categories}</arg>
+</arguments>
+<msg timestamp="20190418 16:24:29.947" level="INFO">Clicking element 'xpath=//div[@class="btn-wrapper"]//button//span[@class="icon-new icon-white"]'.</msg>
+<status status="PASS" starttime="20190418 16:24:29.946" endtime="20190418 16:24:31.794"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_title_categories}</arg>
+<arg>${arg_title_categories}</arg>
+</arguments>
+<msg timestamp="20190418 16:24:31.796" level="INFO">Typing text 'This is the first tittle, which have added for 2 minutesfggfd' into text field 'xpath=//div[@class="control-group"]//div[@class="controls"]//input[@id="jform_title"]'.</msg>
+<status status="PASS" starttime="20190418 16:24:31.794" endtime="20190418 16:24:32.365"></status>
+</kw>
+<kw name="Select Frame" library="Selenium2Library">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>${txt_cont_categories}</arg>
+</arguments>
+<msg timestamp="20190418 16:24:32.367" level="INFO">Selecting frame 'xpath=//iframe[contains(@id,'jform_description_ifr')]'.</msg>
+<status status="PASS" starttime="20190418 16:24:32.365" endtime="20190418 16:24:32.394"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${id}</arg>
+<arg>${arg_cont_categories}</arg>
+</arguments>
+<msg timestamp="20190418 16:24:32.395" level="INFO">Typing text '16 years ago Seth Green decided to take his love of action figures and combine it with one of his major passions: stop-motion animation. The idea for Cartoon Network's late-night animated series "Robot Chicken" was born and the animation world suddenly changed.' into text field 'id=tinymce'.</msg>
+<status status="PASS" starttime="20190418 16:24:32.394" endtime="20190418 16:24:33.019"></status>
+</kw>
+<kw name="Unselect Frame" library="Selenium2Library">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20190418 16:24:33.019" endtime="20190418 16:24:33.021"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_save_close_categories}</arg>
+</arguments>
+<msg timestamp="20190418 16:24:33.022" level="INFO">Clicking button 'xpath=//div[@class="btn-toolbar"]//div[@class="btn-wrapper"]//button[@class="btn btn-small button-save"]'.</msg>
+<status status="PASS" starttime="20190418 16:24:33.022" endtime="20190418 16:24:35.720"></status>
+</kw>
+<status status="PASS" starttime="20190418 16:24:29.284" endtime="20190418 16:24:35.720"></status>
+</kw>
+<kw name="Check message successfully" library="AdminCategoryPage">
+<kw name="Element Text Should Be" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${hed_headermessage}</arg>
+<arg>Message</arg>
+</arguments>
+<msg timestamp="20190418 16:24:35.722" level="INFO">Verifying element 'xpath=//h4[@class="alert-heading"]' contains exact text 'Message'.</msg>
+<status status="PASS" starttime="20190418 16:24:35.721" endtime="20190418 16:24:35.751"></status>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${lbl_message}</arg>
+<arg>Item saved.</arg>
+</arguments>
+<msg timestamp="20190418 16:24:35.752" level="INFO">Verifying element 'xpath=//div[@class="alert-message"]' contains exact text 'Item saved.'.</msg>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190418 09:44:02.183" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20190418 09:44:01.860" endtime="20190418 09:44:02.184"></status>
+<msg timestamp="20190418 16:24:36.081" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-26.png"&gt;&lt;img src="selenium-screenshot-26.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190418 16:24:35.775" endtime="20190418 16:24:36.081"></status>
 </kw>
-<msg timestamp="20190418 09:44:02.186" level="FAIL">Button with locator 'xpath=//div[@class="span3"]//a[span[contains(text(), "Categories")]]' not found.</msg>
-<status status="FAIL" starttime="20190418 09:44:01.833" endtime="20190418 09:44:02.186"></status>
+<msg timestamp="20190418 16:24:36.083" level="FAIL">The text of element 'xpath=//div[@class="alert-message"]' should have been 'Item saved.' but it was 'Category saved.'.</msg>
+<status status="FAIL" starttime="20190418 16:24:35.752" endtime="20190418 16:24:36.083"></status>
 </kw>
-<status status="FAIL" starttime="20190418 09:44:01.832" endtime="20190418 09:44:02.187"></status>
+<status status="FAIL" starttime="20190418 16:24:35.720" endtime="20190418 16:24:36.083"></status>
 </kw>
 <kw name="Teardown" library="Setup" type="teardown">
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20190418 09:44:02.187" endtime="20190418 09:44:04.292"></status>
+<status status="PASS" starttime="20190418 16:24:36.084" endtime="20190418 16:24:38.207"></status>
 </kw>
-<status status="PASS" starttime="20190418 09:44:02.187" endtime="20190418 09:44:04.293"></status>
+<status status="PASS" starttime="20190418 16:24:36.084" endtime="20190418 16:24:38.208"></status>
 </kw>
-<status status="FAIL" starttime="20190418 09:43:57.233" endtime="20190418 09:44:04.293" critical="yes">Button with locator 'xpath=//div[@class="span3"]//a[span[contains(text(), "Categories")]]' not found.</status>
+<status status="FAIL" starttime="20190418 16:24:24.330" endtime="20190418 16:24:38.208" critical="yes">The text of element 'xpath=//div[@class="alert-message"]' should have been 'Item saved.' but it was 'Category saved.'.</status>
 </test>
-<status status="FAIL" starttime="20190418 09:43:57.073" endtime="20190418 09:44:04.295"></status>
+<status status="FAIL" starttime="20190418 16:24:24.166" endtime="20190418 16:24:38.209"></status>
 </suite>
-<status status="FAIL" starttime="20190418 09:43:57.071" endtime="20190418 09:44:04.297"></status>
+<status status="FAIL" starttime="20190418 16:24:24.164" endtime="20190418 16:24:38.212"></status>
 </suite>
-<status status="FAIL" starttime="20190418 09:43:57.069" endtime="20190418 09:44:04.299"></status>
+<status status="FAIL" starttime="20190418 16:24:24.162" endtime="20190418 16:24:38.213"></status>
 </suite>
-<status status="FAIL" starttime="20190418 09:43:57.045" endtime="20190418 09:44:04.300"></status>
+<status status="FAIL" starttime="20190418 16:24:24.142" endtime="20190418 16:24:38.215"></status>
 </suite>
 <statistics>
 <total>
@@ -149,8 +223,5 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20190418 09:43:57.077" level="ERROR">Error in file 'C:\xampp\htdocs\RobotTeam2\RobotFrameworkProject\Resources\Setup.robot': Setting variable '&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD' failed: Invalid variable name '&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD'.</msg>
-<msg timestamp="20190418 09:43:57.077" level="ERROR">Error in file 'C:\xampp\htdocs\RobotTeam2\RobotFrameworkProject\Resources\Setup.robot': Setting variable '&gt;&gt;&gt;&gt;&gt;&gt;&gt; 4344d3138b4ed3ebd742101e3d82316ca2845e67' failed: Invalid variable name '&gt;&gt;&gt;&gt;&gt;&gt;&gt; 4344d3138b4ed3ebd742101e3d82316ca2845e67'.</msg>
-<msg timestamp="20190418 09:43:57.230" level="ERROR">Error in file 'C:\xampp\htdocs\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminCategoryPage.robot': Resource file '..\..\AdminHomePage.robot' does not exist.</msg>
 </errors>
 </robot>
