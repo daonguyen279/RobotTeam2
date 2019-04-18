@@ -3,8 +3,8 @@ Resource	../Resources/Setup.robot
 Resource    ../Pages/Admin/AdminLoginPage.robot
 Resource    ../Pages/Admin/AdminProfilePage.robot
 Resource    ../Pages/Admin/AdminHomePage.robot
-Test setup	    Setup
-Test teardown	Teardown
+Suite setup	    Setup
+Suite teardown	Teardown
 
 *** Variables ***
 ${USERNAME}	    hihi
