@@ -15,9 +15,9 @@ Resource    ../../AdminHomePage.robot
 
 *** Keywords ***
 Add New Category
-    [Arguments]                         ${arg_title_categories}       ${arg_cont_categories}
-    Click Button                        ${lbl_categories}
-    Click Button                        ${lbl_new_categories}
-    Input Text    	                    ${title_categories}       ${arg_title_categories}
-    Input Text                          ${cont_categories}       ${arg_cont_categories}
-    Click Button                        ${btn_save_close_categories}  
+    [Arguments]	    ${arg_title_categories}       ${arg_cont_categories}
+    Select Sidebar Menu    	${lbl_categories}
+    Click Button	${lbl_new_categories}
+    Input Text	    ${title_categories}           ${arg_title_categories}
+    Input Text  	${cont_categories}            ${arg_cont_categories}
+    Click Button	${btn_save_close_categories}  
