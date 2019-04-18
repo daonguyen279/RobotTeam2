@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190418 15:31:02.182" rpa="false">
+<suite id="s1" name="RobotTeam2" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2">
+<suite id="s1-s1" name="RobotFrameworkProject" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject">
+<suite id="s1-s1-s1" name="Tests" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests">
+<suite id="s1-s1-s1-s1" name="AdminArticleTest" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\AdminArticleTest.robot">
+<test id="s1-s1-s1-s1-t1" name="Add New Article">
+<kw name="Setup" library="Setup" type="setup">
+<kw name="Normalize Path" library="OperatingSystem">
+<doc>Normalizes the given path.</doc>
+<arguments>
+<arg>path</arg>
+<arg>/RobotTeam2/RobotFrameworkProject/Resources/chromedriver.exe</arg>
+</arguments>
+<assign>
+<var>${PATH}</var>
+</assign>
+<msg timestamp="20190418 15:31:02.507" level="INFO">${PATH} = path</msg>
+<status status="PASS" starttime="20190418 15:31:02.506" endtime="20190418 15:31:02.508"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${PATH}</arg>
+</arguments>
+<status status="PASS" starttime="20190418 15:31:02.508" endtime="20190418 15:31:02.508"></status>
+</kw>
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<arguments>
+<arg>${PATH}</arg>
+<arg>${PATH}</arg>
+</arguments>
+<msg timestamp="20190418 15:31:02.509" level="INFO">Environment variable 'path' set to value 'C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python27\;C:\Python27\Scripts;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Git\cmd;C:\Program Files\webdrivers;;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Users\InternDN19.01.02\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\InternDN19.01.02\AppData\Local\Programs\Python\Python37-32\;C:\Users\InternDN19.01.02\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\InternDN19.01.02\AppData\Local\Programs\Python\Python37\;C:\Users\InternDN19.01.02\AppData\Local\Microsoft\WindowsApps;;C:\Users\InternDN19.01.02\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.02\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.02\Desktop\eclipse-java-oxygen-1a-win32-x86_64\eclipse;;path'.</msg>
+<status status="PASS" starttime="20190418 15:31:02.509" endtime="20190418 15:31:02.510"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${ROOT}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190418 15:31:02.510" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla/administrator/'.</msg>
+<status status="PASS" starttime="20190418 15:31:02.510" endtime="20190418 15:31:05.376"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190418 15:31:05.377" endtime="20190418 15:31:06.504"></status>
+</kw>
+<status status="PASS" starttime="20190418 15:31:02.506" endtime="20190418 15:31:06.505"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>8</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${ARTICLE_ALIAS}</var>
+</assign>
+<msg timestamp="20190418 15:31:06.507" level="INFO">${ARTICLE_ALIAS} = lbmocTWv</msg>
+<status status="PASS" starttime="20190418 15:31:06.506" endtime="20190418 15:31:06.507"></status>
+</kw>
+<kw name="Add New Article" library="AdminArticlePage">
+<arguments>
+<arg>${ARTICLE_TITLE}</arg>
+<arg>${ARTICLE_ALIAS}</arg>
+<arg>${ARTICLE_CONTENT}</arg>
+</arguments>
+<kw name="Login To Joomla" library="AdminLoginPage">
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Login to Joomla</arg>
+</arguments>
+<status status="PASS" starttime="20190418 15:31:06.510" endtime="20190418 15:31:06.510"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_username}</arg>
+<arg>${arg_username}</arg>
+</arguments>
+<msg timestamp="20190418 15:31:06.511" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190418 15:31:06.511" endtime="20190418 15:31:06.671"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_password}</arg>
+<arg>${arg_password}</arg>
+</arguments>
+<msg timestamp="20190418 15:31:06.673" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190418 15:31:06.672" endtime="20190418 15:31:06.806"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${btn_login}</arg>
+</arguments>
+<status status="PASS" starttime="20190418 15:31:06.806" endtime="20190418 15:31:06.825"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_login}</arg>
+</arguments>
+<msg timestamp="20190418 15:31:06.826" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190418 15:31:06.825" endtime="20190418 15:31:07.874"></status>
+</kw>
+<status status="PASS" starttime="20190418 15:31:06.509" endtime="20190418 15:31:07.875"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${lbl_new_article}</arg>
+</arguments>
+<msg timestamp="20190418 15:31:07.877" level="INFO">Clicking element 'xpath=//div[@class="span3"]//a[span[contains(text(), "New Article")]]'.</msg>
+<status status="PASS" starttime="20190418 15:31:07.875" endtime="20190418 15:31:09.740"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_article_title}</arg>
+<arg>${arg_article_title}</arg>
+</arguments>
+<msg timestamp="20190418 15:31:09.742" level="INFO">Typing text 'Glimpses of the Mystery That Is the Muelle Investigation' into text field 'xpath=//div[@class="controls"]/input[@id="jform_title"]'.</msg>
+<status status="PASS" starttime="20190418 15:31:09.741" endtime="20190418 15:31:11.427"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_article_alias}</arg>
+<arg>${arg_article_alias}</arg>
+</arguments>
+<msg timestamp="20190418 15:31:11.429" level="INFO">Typing text 'lbmocTWv' into text field 'xpath=//div[@class="controls"]/input[@id="jform_alias"]'.</msg>
+<status status="PASS" starttime="20190418 15:31:11.428" endtime="20190418 15:31:11.735"></status>
+</kw>
+<kw name="Select Frame" library="Selenium2Library">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>${txt_article_frame}</arg>
+</arguments>
+<msg timestamp="20190418 15:31:11.737" level="INFO">Selecting frame 'xpath=//iframe[contains(@id,'jform_articletext_ifr')]'.</msg>
+<status status="PASS" starttime="20190418 15:31:11.736" endtime="20190418 15:31:11.787"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_article_addcontent}</arg>
+<arg>${arg_article_content}</arg>
+</arguments>
+<msg timestamp="20190418 15:31:11.788" level="INFO">Typing text 'IT BEGAN WITH A TRICKLE — curious developments that mostly raised more questions. There was evidence of election hacking — but could it really have been directed by the Kremlin? Certain Americans on Facebook, pitching for Donald J. Trump and stirring up anger, turned out to be impostors — but who had concocted them? One Trump campaign aide after another surfaced in sketchy reports of meetings with mysterious Russians — but did the encounters add up to anything significant?Then there was the candidate’s famously twitchy Twitter finger, scathing toward so many public figures but oddly respectful of the Russian president. Was that a signal of dark secrets, or just of a soft spot for a strongman? And so, in 2016, began the F.B.I.’s epic investigation — and the attempt by journalists to track it. On Thursday, barring a natural disaster or alien attack, the public should get its first real look at the report of Robert S. Mueller III, the special counsel.' into text field 'xpath=//body[@id="tinymce"]'.</msg>
+<status status="PASS" starttime="20190418 15:31:11.788" endtime="20190418 15:31:15.756"></status>
+</kw>
+<kw name="Unselect Frame" library="Selenium2Library">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20190418 15:31:15.756" endtime="20190418 15:31:15.759"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_article_save}</arg>
+</arguments>
+<msg timestamp="20190418 15:31:15.760" level="INFO">Clicking button 'xpath=//button[@class="btn btn-small button-save"]'.</msg>
+<status status="PASS" starttime="20190418 15:31:15.760" endtime="20190418 15:31:17.651"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${lnk_article_check_title}</arg>
+</arguments>
+<status status="PASS" starttime="20190418 15:31:17.652" endtime="20190418 15:31:17.689"></status>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${lnk_article_check_title}</arg>
+<arg>${ARTICLE_TITLE}</arg>
+</arguments>
+<msg timestamp="20190418 15:31:17.690" level="INFO">Verifying element 'xpath=//table[@id="articleList"]/tbody/tr[1]/td[4]/div/a' contains exact text 'Glimpses of the Mystery That Is the Muelle Investigation'.</msg>
+<status status="PASS" starttime="20190418 15:31:17.689" endtime="20190418 15:31:17.717"></status>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${txt_article_message}</arg>
+<arg>${ARTICLE_CHECK_MESSAGE}</arg>
+</arguments>
+<msg timestamp="20190418 15:31:17.718" level="INFO">Verifying element 'xpath=//div[@class="alert-message"]' contains exact text 'Article saved.'.</msg>
+<status status="PASS" starttime="20190418 15:31:17.718" endtime="20190418 15:31:17.747"></status>
+</kw>
+<status status="PASS" starttime="20190418 15:31:06.508" endtime="20190418 15:31:17.748"></status>
+</kw>
+<kw name="Teardown" library="Setup" type="teardown">
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20190418 15:31:17.749" endtime="20190418 15:31:19.901"></status>
+</kw>
+<status status="PASS" starttime="20190418 15:31:17.748" endtime="20190418 15:31:19.902"></status>
+</kw>
+<status status="PASS" starttime="20190418 15:31:02.505" endtime="20190418 15:31:19.903" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20190418 15:31:02.263" endtime="20190418 15:31:19.905"></status>
+</suite>
+<status status="PASS" starttime="20190418 15:31:02.260" endtime="20190418 15:31:19.911"></status>
+</suite>
+<status status="PASS" starttime="20190418 15:31:02.257" endtime="20190418 15:31:19.915"></status>
+</suite>
+<status status="PASS" starttime="20190418 15:31:02.222" endtime="20190418 15:31:19.920"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="RobotTeam2">RobotTeam2</stat>
+<stat pass="1" fail="0" id="s1-s1" name="RobotFrameworkProject">RobotTeam2.RobotFrameworkProject</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="Tests">RobotTeam2.RobotFrameworkProject.Tests</stat>
+<stat pass="1" fail="0" id="s1-s1-s1-s1" name="AdminArticleTest">RobotTeam2.RobotFrameworkProject.Tests.AdminArticleTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
