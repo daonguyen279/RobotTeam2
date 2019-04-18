@@ -1,5 +1,5 @@
 *** Settings ***
-Resource	../../Pages/AdminHomePage.robot
+Resource	../../Pages/Admin/AdminHomePage.robot
 
 
 *** Variables ***
@@ -11,7 +11,6 @@ ${btn_savebutton}             xpath=//div[@id="toolbar-save"]/button
 
 *** Keywords ***
 Go to admin profile page
-	
 	Click element                    ${icn_user}
 	Wait Until Element Is Visible    ${lbl_editprofile}
     Click Element                    ${lbl_editprofile}
