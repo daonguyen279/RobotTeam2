@@ -1,5 +1,5 @@
 *** Settings ***
-Resource	../../Pages/AdminHomePage.robot
+Resource	../../Pages/Admin/AdminHomePage.robot
 
 
 *** Variables ***
