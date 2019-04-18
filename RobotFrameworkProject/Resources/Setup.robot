@@ -12,7 +12,7 @@ Library    String
 
 *** Keywords ***
 Setup    
-    ${PATH}=                          Normalize Path    path	     ../Resources/chromedriver.exe
+    ${PATH}=                          Normalize Path    path	     /RobotTeam2/RobotFrameworkProject/Resources/chromedriver.exe
     Log To Console                    ${PATH}   
     Append To Environment Variable    ${PATH}           ${PATH}
     Open browser                      ${ROOT}           ${BROWSER}
