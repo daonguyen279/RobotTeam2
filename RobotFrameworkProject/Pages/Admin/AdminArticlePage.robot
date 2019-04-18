@@ -17,8 +17,7 @@ ${txt_article_message}        xpath=//div[@class="alert-message"]
 *** Keywords ***
 Add New Article
     [Arguments]                      ${arg_article_title}         ${arg_article_alias}        ${arg_article_content}
-    Login to Joomla                  ${USERNAME}                  ${PASSWORD}
-    Click Element                    ${lbl_new_article} 
+    Select Sidebar Menu              ${lbl_new_article} 
     Input Text                       ${txt_article_title}         ${arg_article_title}
     Input Text                       ${txt_article_alias}         ${arg_article_alias}
     Select Frame                     ${txt_article_frame} 
@@ -27,4 +26,16 @@ Add New Article
     Click Button                     ${btn_article_save}
     Wait Until Element Is Visible    ${lnk_article_check_title}
     Element Text Should Be           ${lnk_article_check_title}    ${ARTICLE_TITLE}
+    Element Text Should Be           ${txt_article_message}        ${ARTICLE_CHECK_MESSAGE}
+    
+    
+Edit Article Information
+    [Arguments]                      ${arg_edit_article_title}    
+    Login to Joomla                  ${USERNAME}                  ${PASSWORD}
+    Select Sidebar Menu              ${lbl_articles}
+    Click Element                    ${lnk_article_check_title}
+    Input Text                       ${txt_article_title}         ${arg_edit_article_title} 
+    Click Button                     ${btn_article_save}
+    Wait Until Element Is Visible    ${lnk_article_check_title}   
+    Element Text Should Be           ${lnk_article_check_title}    ${ARTICLE_EDIT_TITLE} 
     Element Text Should Be           ${txt_article_message}        ${ARTICLE_CHECK_MESSAGE}         
