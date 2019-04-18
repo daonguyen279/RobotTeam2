@@ -1,6 +1,6 @@
 *** Settings ***
 Resource	../Resources/Setup.robot
-Resource    ../Pages/Admin/AdminProfilePage.robot
+# Resource    ../Pages/Admin/AdminProfilePage.robot
 Resource    ../Pages/Admin/AdminLoginPage.robot
 Test setup	    Setup
 Test teardown	Teardown
