@@ -1,6 +1,9 @@
 *** Variables ***
-${BROWSER}    Chrome
-${ROOT}       http://192.168.189.72/joomla/administrator 
+${BROWSER}        Chrome
+${ROOT}           http://192.168.189.72/joomla/administrator
+${CLIENT_ROOT}    http://192.168.189.72/joomla/
+${USERNAME}       admin
+${PASSWORD}       123456789
 
 
 *** Settings ***
