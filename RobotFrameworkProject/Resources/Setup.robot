@@ -1,7 +1,8 @@
 *** Variables ***
 ${BROWSER}    Chrome
 ${ROOT}       http://192.168.189.72/joomla/administrator/ 
-
+${USERNAME}   admin
+${PASSWORD}   123456789
 
 *** Settings ***
 Library    Selenium2Library
