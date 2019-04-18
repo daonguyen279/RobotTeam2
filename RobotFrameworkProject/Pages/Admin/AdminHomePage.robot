@@ -20,3 +20,9 @@ ${icn_user}                 xpath=//a/span[@class="icon-user"]
 ${lbl_logout}               xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]
 ${lbl_visit_site}           xpath=//a[@class="brand visible-desktop visible-tablet"]
 ${lbl_editprofile}          xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Edit Account"]
+
+*** Keywords ***
+Logout
+    Click Element                    ${icn_user}
+    Wait Until Element Is Visible    ${lbl_logout}
+    Click Element                    ${lbl_logout}
