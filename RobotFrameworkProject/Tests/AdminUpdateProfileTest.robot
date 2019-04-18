@@ -3,14 +3,12 @@ Resource	../Resources/Setup.robot
 Resource    ../Pages/Admin/AdminLoginPage.robot
 Resource    ../Pages/Admin/AdminProfilePage.robot
 Resource    ../Pages/Admin/AdminHomePage.robot
-Test setup	    Setup
-Test teardown	Teardown
+Suite setup	    Setup
+# Suite teardown	Teardown
 
 *** Variables ***
-${USERNAME}	    hihi
-${PASSWORD}     1234567890
 ${UPDATENAME}         dao nguyen
-${UPDATEPASSWORD}     123456789
+${UPDATEPASSWORD}     1234567890
 
 *** Test Cases ***
 Valid Update Admin Profile
