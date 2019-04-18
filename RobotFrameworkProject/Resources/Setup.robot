@@ -1,6 +1,6 @@
 *** Variables ***
 ${BROWSER}    Chrome
-${ROOT}       http://192.168.190.167/joomla/administrator 
+${ROOT}       http://192.168.189.72/joomla/administrator 
 
 
 *** Settings ***
@@ -12,7 +12,7 @@ Library    String
 
 *** Keywords ***
 Setup    
-    ${PATH}=                          Normalize Path    path	     ../Resources/chromedriver.exe
+    ${PATH}=                          Normalize Path    path	     chromedriver.exe
     Log To Console                    ${PATH}   
     Append To Environment Variable    ${PATH}           ${PATH}
     Open browser                      ${ROOT}           ${BROWSER}
