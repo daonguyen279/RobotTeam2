@@ -9,7 +9,7 @@ ${lbl_client_logout_button}     xpath=//form[@id="login-form"]/div[@class="logou
 
 
 *** Keywords ***
-Login To Client Site
+Login Client Site
     [Arguments]        ${arg_client_username}          ${arg_client_password}
     Input Text         ${txt_client_login_username}    ${arg_client_username}
     Input Text         ${txt_client_login_password}    ${arg_client_password}

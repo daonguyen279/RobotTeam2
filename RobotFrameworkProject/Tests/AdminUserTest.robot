@@ -14,21 +14,21 @@ ${EDITPASSWORD}    123123123
 
 *** Test Cases ***
 Add New Valid Account
-    Login To Joomla                       ${USERNAME}               ${PASSWORD}
+    Login Admin Site                       ${USERNAME}               ${PASSWORD}
     Select Sidebar Menu                   ${lbl_users}
     ${NEWUSERNAME}=                       Generate Random String    10    [LETTERS]
     Set Suite Variable                    ${NEWUSERNAME}
     Add New User Account                  ${NEWUSERNAME}            ${NEWUSERNAME}    ${NEWPASSWORD}    ${NEWUSERNAME}@gmail.com
     Check Add New User Successfully
     Go To                                 ${CLIENT_ROOT}
-    Login To Client Site                  ${NEWUSERNAME}            ${NEWPASSWORD}
+    Login Client Site                  ${NEWUSERNAME}            ${NEWPASSWORD}
     Check Login To Client Successfully    ${NEWUSERNAME}
     Logout Client Site
     Go To                                 ${ROOT}
     Logout Admin Site
     
 Edit Account Information
-    Login To Joomla                       ${USERNAME}               ${PASSWORD}
+    Login Admin Site                       ${USERNAME}               ${PASSWORD}
     Select Sidebar Menu                   ${lbl_users}
     Mouse Over                            xpath=//table[@id="userList"]//tr[td[contains(text(), "${NEWUSERNAME}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Name")]]/preceding-sibling::th)+1]/div[@class="name break-word"]/a
     Click Element                         xpath=//table[@id="userList"]//tr[td[contains(text(), "${NEWUSERNAME}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Name")]]/preceding-sibling::th)+1]/div[@class="name break-word"]/a
@@ -36,7 +36,7 @@ Edit Account Information
     Edit User Account Information         ${EDITUSERNAME}           ${EDITUSERNAME}    ${EDITPASSWORD}    ${EDITUSERNAME}@gmail.com
     Check Edit Account Successfully
     Go To                                 ${CLIENT_ROOT}
-    Login To Client Site                  ${EDITUSERNAME}           ${EDITPASSWORD}
+    Login Client Site                  ${EDITUSERNAME}           ${EDITPASSWORD}
     Check Login To Client Successfully    ${EDITUSERNAME}
     Logout Client Site
     Go To                                 ${ROOT}
