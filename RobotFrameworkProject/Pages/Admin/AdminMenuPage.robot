@@ -1,3 +1,6 @@
+*** Settings ***
+Resource    ../../Pages/Admin/AdminHomePage.robot
+
 *** Variables ***
 ${btn_listmenu}            xpath=//ul[@id="submenu"]/li[@class="active"]/a[contains(text(),"Menus")]
 ${btn_addnewmenu}          xpath=//div[@id="toolbar-new"]/button
@@ -32,6 +35,25 @@ Fill Out And Submit Menu Information
 	Input Text       ${txt_descriptionmenu}           ${arg_menudescription}}                                         
 	Click Element    ${btn_saveandclosemenu}
 	
+Check Add New Menu Successfully
+    [Arguments]                  ${arg_menuitemtitle}
+    Element Text Should Be    ${hed_headermessage}     Message 
+    Element Text Should Be    ${lbl_message}           Menu saved
+    Page Should Contain Element  xpath= //table[@id="menuList"]//a[contains(text(),"${arg_menuitemtitle}")]
+
+Delete Menu
+    [Arguments]      ${arg_menutodelete}
+    Click Element    xpath=//table[@id="menuList"]//tr[td/a[contains(text(),"${arg_menutodelete}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input
+    Click Element    ${btn_deletemenu}	
+    Handle Alert     ACCEPT
+    
+Check Delete Menu Successfully
+    [Arguments]                  ${arg_menuitemtitle}
+    Element Text Should Be    ${hed_headermessage}     Message 
+    Element Text Should Be    ${lbl_message}           Menu type deleted.
+    Page Should Not Contain Element  xpath= //table[@id="menuList"]//a[contains(text(),"${arg_menuitemtitle}")]
+    
+    
 Go To Menu Item Page 
     Click Element   ${btn_listmenuitem}
        
