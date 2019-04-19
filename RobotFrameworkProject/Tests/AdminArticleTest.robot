@@ -21,6 +21,10 @@ Add New A Aticle
 
 
 Edit Article Information
-    Login to Joomla                  ${USERNAME}                  ${PASSWORD}
+    Login to Joomla            ${USERNAME}                  ${PASSWORD}
     Edit Article Information   ${ARTICLE_EDIT_TITLE} 
+     Logout
     
+Delete Article Information
+     Login to Joomla            ${USERNAME}                  ${PASSWORD}
+     Delete Article Information
