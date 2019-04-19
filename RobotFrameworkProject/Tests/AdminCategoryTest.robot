@@ -16,19 +16,21 @@ ${txt_expected_message1}           category trashed.
 
 
 *** Test Cases ***
-${c}=    Set Variable   ${number}${txt_expected_message1}
-TC05 - Verify that admin can add a new category
-    Login To Joomla                 ${USERNAME}                 ${PASSWORD}
-    Add New Category                ${arg_title_categories}     ${arg_cont_categories}
-    Check message successfully      ${lbl_message}     ${txt_expected_message} 
+# TC05 - Verify that admin can add a new category
+    # Login Admin Site                 ${USERNAME}                 ${PASSWORD}
+    # Add New Category                ${arg_title_categories}     ${arg_cont_categories}
+    # Check message successfully      ${lbl_message}     ${txt_expected_message} 
     
-TC06 - Verify that admin can edit category information
-    Login To Joomla    ${USERNAME}    ${PASSWORD}
-    Edit Category Information        ${arg_title_categories_edit}     ${arg_cont_categories_edit}
+# TC06 - Verify that admin can edit category information
+    # Login Admin Site    ${USERNAME}    ${PASSWORD}
+    # Edit Category Information        ${arg_title_categories_edit}     ${arg_cont_categories_edit}
     
 TC07 - Verify that admin can delete a category  
-    Login To Joomla    ${USERNAME}    ${PASSWORD}
+    # ${c}= ${number}${txt_expected_message1}
+    Login Admin Site    ${USERNAME}    ${PASSWORD}
     Delete a category
-    Check message successfully      ${lbl_message}     ${c}
-TC08 - Verify that admin can unpublish a category
-    Login To Joomla    ${USERNAME}    ${PASSWORD}
+    Check message successfully      ${lbl_message}        ${count}
+    
+# TC08 - Verify that admin can unpublish a category
+    # Login Admin Site    ${USERNAME}    ${PASSWORD}
+    # Unpublish a category

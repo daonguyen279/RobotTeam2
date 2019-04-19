@@ -8,12 +8,13 @@ ${btn_save_categories}                xpath=//div[@class="btn-toolbar"]//div[@cl
 ${btn_save_close_categories}          xpath=//div[@class="btn-toolbar"]//div[@class="btn-wrapper"]//button[@class="btn btn-small button-save"]
 ${id}                                 id=tinymce  
 ${lbl_title_categories}               xpath=//table[@id="categoryList"]/tbody[@class="ui-sortable"]/tr[last()]/td//a[@class="hasTooltip"]      
-${select_box_categories}              xpath=//table[@id="categoryList"]/tbody[@class="ui-sortable"]/tr[last()]/td//input
+${select_box_categories}              xpath=//table[@id="categoryList"]/tbody[@class="ui-sortable"]/tr[last()]/td//input[@name="cid[]"]
 ${btn_trash_categories}               xpath=//button[@class="btn btn-small button-trash"]
 ${hed_headermessage}                  xpath=//h4[@class="alert-heading"]
 ${lbl_message}                        xpath=//div[@class="alert-message"]
 ${btn_unpublish_categories}           xpath=//button[@class="btn btn-small button-unpublish"]
-${number}                             count(//span[@class="icon-unpublish"])
+${number}                             xpath=//span[@class="icon-unpublish"]     
+
 
 *** Settings ***
 Resource	../../Resources/Setup.robot
@@ -44,11 +45,17 @@ Edit Category Information
     Click Button	        ${btn_save_close_categories} 
     
 Delete a category 
+    # ${count}                Get Element Count    ${number}
+    # Set Suite Variable      ${count}
     Log To Console          Login to Joomla
     Click Element    	    ${lbl_categories}
+    ${count1}    Get Element Count      ${lbl_title_categories}    
     Click Element           ${select_box_categories}
     Click Element           ${btn_trash_categories}
-    
+    ${count2}    Get Element Count      ${lbl_title_categories}  
+    ${count3}               ${count1} - 1
+    Should Be Equal    ${count2}  ${count3}
+
 Unpublish a category
     Log To Console          Login to Joomla
     Click Element    	    ${lbl_categories}

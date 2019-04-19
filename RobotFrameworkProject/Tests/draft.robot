@@ -10,18 +10,19 @@ ${id}                                 id=tinymce
 ${lbl_title_categories}               xpath=//a[@class="hasTooltip"]      
 ${number}                             count(//span[@class="icon-unpublish"])
 
-*** Test Cases ***
-# For-Loop-In-Range
-    # ${Count}=    Get matching xpath count    //a[@class="hasTooltip"] 
+*** Settings ***
+Library   OperatingSystem    
+Resource	../Resources/Setup.robot
+Resource    ../Pages/Admin/AdminCategoryPage.robot
+Resource    ../Pages/Admin/AdminLoginPage.robot
+Test setup	    Setup
+Test teardown	Teardown
 
-test1
-    # Find Index    ${lbl_title_categories}    
-    Log    Num value is ${number}
-*** Keywords ***
-Find Index
-   [Arguments]    ${element}    @{items}
-   ${index} =    Set Variable    ${0}
-   :FOR    ${item}    IN    @{items}
-   \    Return From Keyword If    '${item}' == '${element}'    ${index}
-   \    ${index} =    Set Variable    ${index + 1}
-   Return From Keyword    ${-1}    # Also [Return] would work here.
+
+*** Test Cases ***
+TC
+    # ${count}    Get Element Count      ${lbl_title_categories}    
+    Login Admin Site    ${USERNAME}    ${PASSWORD}
+    Delete a category
+    # Check message successfully      ${lbl_message}        ${count}
+    # Should Be Equal As Integers    ${count}    ${4}  
