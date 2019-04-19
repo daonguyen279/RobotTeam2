@@ -34,7 +34,7 @@ Select Sidebar Menu
     [Arguments]      ${arg_page}
     Click Element    ${arg_page}
 
-Logout
+Logout Admin Site
     Click Element                    ${icn_user}
     Wait Until Element Is Visible    ${lbl_logout}
     Click Element                    ${lbl_logout}
