@@ -5,7 +5,7 @@ ${btn_login}         xpath=//div[@class="btn-group"]/button[@class="btn btn-prim
 
 
 *** Keywords ***
-Login To Joomla
+Login Admin Site
     [Arguments]                         ${arg_username}       ${arg_password}
     Log To Console                      Login to Joomla    
     Input Text    	                    ${txt_username}       ${arg_username}
