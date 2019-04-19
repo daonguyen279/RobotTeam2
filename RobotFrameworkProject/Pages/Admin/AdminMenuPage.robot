@@ -43,7 +43,7 @@ Fill Out And Submit Menu Item Information
     [Arguments]                  ${arg_menuitemtitle}	      ${arg_menuitemtype}	  ${arg_submenuitemtype}    ${arg_menuparent}    
     Input Text                   ${txt_menuitemtitle}         ${arg_menuitemtitle}
     Click Element 	             ${btn_selectmenuitemtype}
-	Click Element                xpath=//div[@class="accordion-heading"]//a[contains(text(),"${arg_menuitemtype}")]
+	Click Element                xpath=//div[@id="collapseTypes"]//div[@class="accordion-heading"]//a[contains(text(),"${arg_menuitemtype}")]
 	Click Element                xpath=//div[@class="accordion-heading"]//a[contains(text(),"${arg_submenuitemtype}")]    
 	Select From List By Label    ${sel_selectmenuparent}      ${arg_menuparent}                                   
 	Click Element                ${btn_saveandclosemenu}      
