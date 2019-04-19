@@ -25,6 +25,7 @@ Edit Article Information
     Edit Article Information   ${ARTICLE_EDIT_TITLE} 
     Logout Admin Site
     
+    
 Delete Article Information
      Login Admin Site            ${USERNAME}                  ${PASSWORD}
      Delete Article Information
