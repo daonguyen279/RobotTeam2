@@ -8,19 +8,20 @@ ${btn_save_categories}                xpath=//div[@class="btn-toolbar"]//div[@cl
 ${btn_save_close_categories}          xpath=//div[@class="btn-toolbar"]//div[@class="btn-wrapper"]//button[@class="btn btn-small button-save"]
 ${id}                                 id=tinymce  
 ${lbl_title_categories}               xpath=//a[@class="hasTooltip"]      
-
+${number}                             count(//span[@class="icon-unpublish"])
 
 *** Test Cases ***
 # For-Loop-In-Range
     # ${Count}=    Get matching xpath count    //a[@class="hasTooltip"] 
 
 test1
-    ${List1}    Create List    1    2    3    4
-    Select Topic    ${List1}
-
+    # Find Index    ${lbl_title_categories}    
+    Log    Num value is ${number}
 *** Keywords ***
-Select Topic
-    [Arguments]    @{input}
-    ${cnt}=    Get length    @{input}
-    Log     ${cnt}*
-    
+Find Index
+   [Arguments]    ${element}    @{items}
+   ${index} =    Set Variable    ${0}
+   :FOR    ${item}    IN    @{items}
+   \    Return From Keyword If    '${item}' == '${element}'    ${index}
+   \    ${index} =    Set Variable    ${index + 1}
+   Return From Keyword    ${-1}    # Also [Return] would work here.
