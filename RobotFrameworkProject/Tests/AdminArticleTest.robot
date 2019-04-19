@@ -15,12 +15,18 @@ ${ARTICLE_EDIT_TITLE}       Glimpses of the Mystery
 *** Test Cases ***
 Add New A Aticle
     ${ARTICLE_ALIAS} =  Generate Random String    12    [LETTERS]
-    Login to Joomla    ${USERNAME}         ${PASSWORD}
+    Login Admin Site    ${USERNAME}         ${PASSWORD}
     Add New Article    ${ARTICLE_TITLE}    ${ARTICLE_ALIAS}    ${ARTICLE_CONTENT}
-    Logout
+    Logout Admin Site
 
 
 Edit Article Information
-    Login to Joomla                  ${USERNAME}                  ${PASSWORD}
+    Login Admin Site            ${USERNAME}                  ${PASSWORD}
     Edit Article Information   ${ARTICLE_EDIT_TITLE} 
+    Logout Admin Site
     
+    
+Delete Article Information
+     Login Admin Site            ${USERNAME}                  ${PASSWORD}
+     Delete Article Information
+     Logout Admin Site
