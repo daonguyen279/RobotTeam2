@@ -23,12 +23,18 @@ Add Menu Successfully
     Set Suite Variable                     ${MENUTITLE} 
     Logout Admin Site 
  
-Delete Menu Successfully
-    Login Admin Site 	        ${USERNAME}      ${PASSWORD}
-    Select Sidebar Menu         ${lbl_menus}
-    Delete Menu                 ${MENUTITLE} 
+Delete A Menu Successfully
+    Login Admin Site 	              ${USERNAME}      ${PASSWORD}
+    Select Sidebar Menu               ${lbl_menus}
+    Delete Menu                       ${MENUTITLE} 
     Check Delete Menu Successfully    ${MENUTITLE}
     Logout Admin Site 
+
+Delete All Menu Accept Main Menu
+    Login Admin Site 	              ${USERNAME}      ${PASSWORD}
+    Select Sidebar Menu               ${lbl_menus}   
+    ${count}     Get Element Count    ${lbl_listmenuitem}
+    Delete all menu  ${count}
     	
 # Add Menu Item Successfully
     # Login Admin Site 	        ${USERNAME}      ${PASSWORD}
