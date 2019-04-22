@@ -10,8 +10,9 @@ ${id}                                 id=tinymce
 ${lbl_title_categories}               xpath=//a[@class="hasTooltip"]      
 ${number}                             count(//span[@class="icon-unpublish"])
 
+
 *** Settings ***
-Library   OperatingSystem    
+Library       OperatingSystem    
 Resource	../Resources/Setup.robot
 Resource    ../Pages/Admin/AdminCategoryPage.robot
 Resource    ../Pages/Admin/AdminLoginPage.robot

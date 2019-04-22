@@ -6,5 +6,3 @@
 Check message successfully
     [Arguments]          ${arg_expected}
     Should be equal      ${txt_message}     ${arg_expected}
-    
-    
