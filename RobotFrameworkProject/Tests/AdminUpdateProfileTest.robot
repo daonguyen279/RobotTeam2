@@ -17,12 +17,10 @@ Valid Update Admin Profile
     Login Admin Site                            ${USERNAME1}      ${PASSWORD1}
     Go To Admin Profile Page  
     ${RANEMIAL}=    Generate Random String    4                [LETTERS]   
-    Fill Out And Submit Update Information    ${UPDATENAME}    ${UPDATEPASSWORD}    ${UPDATEPASSWORD}   ${RANEMIAL}@gmail.com             
-    Check Message Successfully Display
-# ---------- check login with update account successfully ----------           
-    Logout Admin Site   
-    Login Admin Site                           ${USERNAME1}       ${UPDATEPASSWORD}  
-# ----------reset account infformation ---------- 
+    Fill Out And Submit Update Information    ${UPDATENAME}    ${UPDATEPASSWORD}    ${UPDATEPASSWORD}   ${RANEMIAL}@sharklasers.com              
+    Check Message Successfully Display          
+    Logout    
+    Login To Joomla                           ${USERNAME1}       ${UPDATEPASSWORD}  
     Go To Admin Profile Page 
     Fill Out And Submit Update Information    ${UPDATENAME}     ${PASSWORD1}         ${PASSWORD1}          ${RANEMIAL}@gmail.com            
     
