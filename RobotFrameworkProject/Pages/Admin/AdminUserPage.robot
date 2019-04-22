@@ -54,7 +54,7 @@ Check Information Displayed Correctly
     Element Text Should Be       xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "${arg_check_email}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Name")]]/preceding-sibling::th)+1]/div[@class="name break-word"]/a    ${arg_check_name}
     Element Text Should Be       xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "${arg_check_email}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Username")]]/preceding-sibling::th)+1]    ${arg_check_name}
     Element Text Should Be       xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "${arg_check_email}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Email")]]/preceding-sibling::th)+1]    ${arg_check_email}
-    ${SELECTED_USER_ID}            Get Text    xpath=//table[@id="userList"]//tr[td[contains(text(), "${arg_check_email}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "ID")]]/preceding-sibling::th)+1]
+    ${SELECTED_USER_ID}          Get Text    xpath=//table[@id="userList"]//tr[td[contains(text(), "${arg_check_email}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "ID")]]/preceding-sibling::th)+1]
     Set Suite Variable           ${SELECTED_USER_ID}
 
 Check Relogin Successfully After Modified
@@ -77,7 +77,7 @@ Delete Selected User
     Handle Alert
     
 Check Delete User Successfully
-    Element Should Be Visible    ${lbl_new_message_successful}
+    Element Should Be Visible          ${lbl_new_message_successful}
     Page Should Not Contain Element    xpath=//table[@id="userList"]//tr[td[@class="hidden-phone" and contains(text(), "${SELECTED_USER_ID}")]]
     Logout Admin Site
 

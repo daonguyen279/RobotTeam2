@@ -19,7 +19,7 @@ Add New Valid User Account
     ${NEW_USERNAME}=                             Generate Random String         10    [LETTERS]
     ${NEW_EMAIL}    Set Variable                 ${NEW_USERNAME}${TAIL_EMAIL}
     Set Suite Variable                           ${NEW_EMAIL}
-    Fill Out And Submit Information              ${NEW_USERNAME}                ${NEW_PASSWORD}     ${NEW_EMAIL}
+    Fill Out And Submit Information              ${NEW_USERNAME}                ${NEW_PASSWORD}    ${NEW_EMAIL}
     Check Information Displayed Correctly        ${NEW_EMAIL}                   ${NEW_USERNAME}
     Check Relogin Successfully After Modified    ${NEW_USERNAME}                ${NEW_PASSWORD}
     Clean Up For Add And Edit User
