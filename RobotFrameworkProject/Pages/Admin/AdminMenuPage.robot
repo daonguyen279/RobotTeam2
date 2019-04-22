@@ -17,8 +17,6 @@ ${txt_menuitem_title}                 xpath=//form[@id="item-form"]//input[@id="
 ${btn_select_menuitem_type}           xpath=//div[@class="controls"]//button[@class="btn btn-primary"]
 ${btn_delete_menu}                    xpath=//div[@id="toolbar-delete"]/button
 ${btn_trash_itemmenu}                 xpath=//div[@id="toolbar-trash"]/button
-# ${lbl_itemmenutype}                 xpath=//div[@class="accordion-heading"]//a[contains(text(),"Articles")]
-# ${lbl_submenuitemtype}              xpath=//div[@class="accordion-inner"]//a[contains(text(),"Archived Articles")]
 ${sel_select_menuparent}              xpath=//div[@id="jform_menutype_chzn"]
 ${lbl_list_menu}                      xpath=//table[@id="menuList"]//tr[@class="row0" and "row1"]
 ${delete_menu_element}                xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
@@ -52,9 +50,7 @@ Check Add New Menu Successfully
 Select ID Ascending
     Click Element    xpath=//div[@id="list_fullordering_chzn"]/a
     Click Element    xpath=//div[@id="list_fullordering_chzn"]/div/ul/li[contains(text(),"ID ascending")] 
-    # Select From List By Label            ${sel_listtypeofarrange}  ID ascending  
-    # Wait Until Element Is Visible   ${opt_idacsending} 
-    # Click Element                   ${opt_idacsending} 
+    
 Delete Menu
     [Arguments]      ${arg_menu_to_delete}
     Click Element    xpath=//table[@id="menuList"]//tr[td/a[contains(text(),"${arg_menu_to_delete}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input
@@ -79,13 +75,11 @@ Fill Out And Submit Menu Item Information
     Select Frame                     xpath=//div[@id="menuTypeModal"]//iframe              
 	Click Element                    xpath=//div[@id="collapseTypes"]//div[@class="accordion-heading"]//a[contains(text(),"${arg_menuitem_type}")]
     Wait Until Element Is Visible    xpath=//div[@id="collapseTypes"]//div[@class="accordion-body in collapse"]//a[contains(text(),"${arg_submenuitem_type}")]
-	# Select From List By Label      xpath=//*[@id="collapse0"]/div/ul       Archived Articles
 	Click Element                    xpath=//div[@id="collapseTypes"]//div[@class="accordion-body in collapse"]//a[contains(text(),"${arg_submenuitem_type}")]  
     Unselect Frame  
     Click Element                    xpath=//div[@id="jform_menutype_chzn"]/a/div/b
     Wait Until Element Is Visible    xpath=//div[@id="jform_menutype_chzn"]/div/ul/li[contains(text(),"${arg_menu_parent}")]
-    Click Element                    xpath=//div[@id="jform_menutype_chzn"]/div/ul/li[contains(text(),"${arg_menu_parent}")]
-	# Select From List By Label      ${sel_selectmenuparent}      ${arg_menuparent}                                   
+    Click Element                    xpath=//div[@id="jform_menutype_chzn"]/div/ul/li[contains(text(),"${arg_menu_parent}")]                                  
 	Click Element                    ${btn_save_and_close_menu}      
 	
 Delete Menu Item
