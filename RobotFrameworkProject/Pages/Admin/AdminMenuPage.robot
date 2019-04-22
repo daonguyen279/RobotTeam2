@@ -1,6 +1,7 @@
 *** Settings ***
 Resource    ../../Pages/Admin/AdminHomePage.robot
 
+
 *** Variables ***
 ${btn_list_menu}                    xpath=//ul[@id="submenu"]/li[@class="active"]/a[contains(text(),"Menus")]
 ${btn_add_newmenu}                  xpath=//div[@id="toolbar-new"]/button
@@ -19,15 +20,17 @@ ${btn_delete_menu}                  xpath=//div[@id="toolbar-delete"]/button
 ${btn_trash_itemmenu}               xpath=//div[@id="toolbar-trash"]/button
 # ${lbl_itemmenutype}               xpath=//div[@class="accordion-heading"]//a[contains(text(),"Articles")]
 # ${lbl_submenuitemtype}            xpath=//div[@class="accordion-inner"]//a[contains(text(),"Archived Articles")]
-${sel_select_menuparent}            xpath=//div[@id="jform_menutype_chzn"]
-${lbl_list_menu}                    xpath=//table[@id="menuList"]//tr[@class="row0" and "row1"]
-${delete_menu_element}              xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
-${sel_list_type_of_arrange}         xpath=//select[@id="list_fullordering"]
-${btn_select_list_type_of_arrange}  xpath=//div[@id="list_fullordering_chzn"]/a
-${opt_id_acsending}                 xpath=//select[@id="list_fullordering"]/option[contains(text(),"ID ascending")]
+${sel_select_menuparent}              xpath=//div[@id="jform_menutype_chzn"]
+${lbl_list_menu}                      xpath=//table[@id="menuList"]//tr[@class="row0" and "row1"]
+${delete_menu_element}                xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
+${sel_list_type_of_arrange}           xpath=//select[@id="list_fullordering"]
+${btn_select_list_type_of_arrange}    xpath=//div[@id="list_fullordering_chzn"]/a
+${opt_id_acsending}                   xpath=//select[@id="list_fullordering"]/option[contains(text(),"ID ascending")]
+
+
 *** Keywords ***
 Go To Menu Page
-    Click Element                    ${btn_list_menu} 
+    Click Element    ${btn_list_menu} 
     
 Go To Add New Menu Page
     Click Element                    ${btn_list_menu} 
@@ -100,7 +103,6 @@ Check Add Menu Item Successfully
 Check Delete Menu Item Successfully
     [Arguments]                      ${arg_menuitem_title}
     Page Should Not Contain Element  xpath= //table[@id="menuList"]//a[contains(text(),"${arg_menuitem_title}")]
-    
 
 Delete All Menu 
     [Arguments]                      ${arg_cellCount}
@@ -112,4 +114,3 @@ Delete All Menu
         Click Element                ${btn_delete_menu} 
         Handle Alert                 ACCEPT  
     END    
-    

@@ -13,7 +13,7 @@ ${ARTICLE_EDIT_TITLE}       Glimpses of the Mystery
 
 
 *** Test Cases ***
-Add A New Aticle
+TC01 - Add A New Aticle
     ${ARTICLE_ALIAS} =  Generate Random String    12    [LETTERS]
     Login Admin Site                     ${USERNAME}         ${PASSWORD}
     Go To Add New Article Page      
