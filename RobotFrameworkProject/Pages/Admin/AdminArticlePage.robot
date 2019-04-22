@@ -48,20 +48,20 @@ Edit Article
 Check Edit Article Sucessfully
     Element Text Should Be    ${lnk_article_check_title}    ${ARTICLE_EDIT_TITLE}
 
-Unpublish Selected Article
+Unpublish Article
     Click Element    ${cbb_article_checkbox}
     Click Element    ${btn_article_unpublish} 
    
 Check Unpublish Article Successfully
     Element Should Be Visible    ${lnk_aricle_icon_unpublish}
         
-Delete Selected Article 
-    ${count}     Get Element Count    ${tab_count_id}
-    Click Element                     ${cbb_article_checkbox}
-    Click Button                      ${btn_article_trash} 
-    ${count2}    Get Element Count    ${tab_count_id}
-    ${count3}    Evaluate             ${count} - 1 
-    Should Be Equal                   ${count2}    ${count3}
+Delete Article 
+    ${count}           Get Element Count    ${tab_count_id}
+    Click Element                           ${cbb_article_checkbox}    
+    Click Button                            ${btn_article_trash} 
+    ${count2}          Get Element Count    ${tab_count_id}
+    ${count3}          Evaluate             ${count} - 1 
+    Should Be Equal                         ${count2}                  ${count3}
     
 Check Delete Article Successfully 
     [Arguments]                ${arg_check_alias}   
