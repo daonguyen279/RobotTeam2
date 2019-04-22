@@ -37,7 +37,7 @@ Add Menu Item Successfully
      
 Delete Menu Item Sucessfully 
     Login Admin Site                             ${USERNAME}          ${PASSWORD}
-    Select Sidebar Menu                         ${lbl_menus}
+    Select Sidebar Menu                          ${lbl_menus}
     Go To Menu Item Page
     Delete Menu Item                             ${MENUITEMTITLE} 
     Check Message                                1 menu item trashed.
@@ -52,12 +52,13 @@ Delete A Menu Successfully
     Check Delete Menu Successfully               ${MENUTITLE}
 
 
-# Delete All Menu
-    # Login Admin Site 	                        ${USERNAME}           ${PASSWORD}
-    # Select Sidebar Menu                         ${lbl_menus} 
-    # Select ID Ascending  
-    # ${count}     Get Element Count              ${lbl_listmenuitem}  
-    # Delete All Menu                             ${count}
+Delete All Menu
+    Login Admin Site 	                        ${USERNAME}           ${PASSWORD}
+    Select Sidebar Menu                         ${lbl_menus} 
+    Go To Menu Page
+    Select ID Ascending  
+    ${count}     Get Element Count              ${lbl_list_menu}  
+    Delete All Menu                             ${count}
     	
 
  

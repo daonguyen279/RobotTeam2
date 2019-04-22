@@ -20,7 +20,7 @@ ${btn_trash_itemmenu}               xpath=//div[@id="toolbar-trash"]/button
 # ${lbl_itemmenutype}               xpath=//div[@class="accordion-heading"]//a[contains(text(),"Articles")]
 # ${lbl_submenuitemtype}            xpath=//div[@class="accordion-inner"]//a[contains(text(),"Archived Articles")]
 ${sel_select_menuparent}            xpath=//div[@id="jform_menutype_chzn"]
-${lbl_list_menuitem}                xpath=//table[@id="menuList"]//tr[@class="row0" and "row1"]
+${lbl_list_menu}                    xpath=//table[@id="menuList"]//tr[@class="row0" and "row1"]
 ${delete_menu_element}              xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
 ${sel_list_type_of_arrange}         xpath=//select[@id="list_fullordering"]
 ${btn_select_list_type_of_arrange}  xpath=//div[@id="list_fullordering_chzn"]/a
@@ -65,17 +65,6 @@ Check Delete Menu Successfully
     [Arguments]                      ${arg_menu_title}
     Page Should Not Contain Element  xpath= //table[@id="menuList"]//a[contains(text(),"${arg_menu_title}")]
 
-Delete All Menu 
-    [Arguments]                      ${arg_cellCount}
-    FOR    ${index}    IN RANGE    0    ${arg_cellCount}
-        # ${IsElementVisible}=  Run Keyword And Return Status    Element Should Be Visible   ${delete_menuelement}
-        # # ${delete_menuelement}=    Get Matching Xpath Count     xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
-        # Run Keyword If     ${IsElementVisible}    Click Element    &{delete_menuelement}
-        Click Element                xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
-        Click Element                ${btn_delete_menu} 
-        Handle Alert                 ACCEPT  
-    END    
-    
 Go To Menu Item Page 
     Click Element                    ${btn_list_menuitem}
        
@@ -112,4 +101,16 @@ Check Add Menu Item Successfully
 Check Delete Menu Item Successfully
     [Arguments]                      ${arg_menuitem_title}
     Page Should Not Contain Element  xpath= //table[@id="menuList"]//a[contains(text(),"${arg_menuitem_title}")]
+    
+
+Delete All Menu 
+    [Arguments]                      ${arg_cellCount}
+    FOR    ${index}    IN RANGE    0    ${arg_cellCount}
+        ${IsElementVisible}=  Run Keyword And Return Status    Element Should Be Visible   xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
+        # # ${delete_menuelement}=    Get Matching Xpath Count     xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
+        Run Keyword If     ${IsElementVisible}    Click Element    xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
+        # Click Element                xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
+        Click Element                ${btn_delete_menu} 
+        Handle Alert                 ACCEPT  
+    END    
     
