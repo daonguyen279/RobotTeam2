@@ -87,7 +87,6 @@ Fill Out And Submit Menu Item Information
     Click Element                    xpath=//div[@id="jform_menutype_chzn"]/div/ul/li[contains(text(),"${arg_menu_parent}")]
 	# Select From List By Label      ${sel_selectmenuparent}      ${arg_menuparent}                                   
 	Click Element                    ${btn_save_and_close_menu}      
-
 	
 Delete Menu Item
     [Arguments]                      ${arg_menuitem_title}
@@ -105,11 +104,11 @@ Check Delete Menu Item Successfully
 
 Delete All Menu 
     [Arguments]                      ${arg_cellCount}
-    FOR    ${index}    IN RANGE    0    ${arg_cellCount}
-        ${IsElementVisible}=  Run Keyword And Return Status    Element Should Be Visible   xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
-        # # ${delete_menuelement}=    Get Matching Xpath Count     xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
-        Run Keyword If     ${IsElementVisible}    Click Element    xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
-        # Click Element                xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
+    FOR    ${index}  IN RANGE   0    ${arg_cellCount}
+           ${IsElementVisible}=      Run Keyword And Return Status    Element Should Be Visible   xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
+        # ${delete_menuelement}=     Get Matching Xpath Count     xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
+        Run Keyword If               ${IsElementVisible}    Click Element    xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
+        # Click Element              xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
         Click Element                ${btn_delete_menu} 
         Handle Alert                 ACCEPT  
     END    

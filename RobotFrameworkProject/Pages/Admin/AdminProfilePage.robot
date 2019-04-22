@@ -24,7 +24,7 @@ Fill Out And Submit Update Information
 	
 Check Message Successfully Display
     Element Text Should Be    ${hed_headermessage}     Message 
-    Element Text Should Be   ${lbl_message}           Item saved. 
+    Element Text Should Be    ${lbl_message}            Item saved. 
 
 
     
