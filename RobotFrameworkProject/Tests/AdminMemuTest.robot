@@ -4,7 +4,7 @@ Resource    ../Pages/Admin/AdminLoginPage.robot
 Resource    ../Pages/Admin/AdminMenuPage.robot
 Resource    ../Pages/Admin/AdminHomePage.robot
 Suite setup	    Setup
-# Suite teardown	Teardown
+Suite teardown	Teardown
 
 *** Variables ***
 ${MENUDESCRIPTION}    tesst menu in joomla
@@ -50,7 +50,7 @@ Delete A Menu Successfully
     Delete Menu                                  ${MENUTITLE} 
     Check Message                                Menu type deleted.
     Check Delete Menu Successfully               ${MENUTITLE}
-
+    Logout Admin Site
 
 Delete All Menu
     Login Admin Site 	                        ${USERNAME}           ${PASSWORD}
