@@ -16,7 +16,7 @@ ${btn_saveandclosemenu}         xpath=//div[@id="toolbar-save"]/button
 ${txt_menuitemtitle}            xpath=//form[@id="item-form"]//input[@id="jform_title"]
 ${btn_selectmenuitemtype}       xpath=//div[@class="controls"]//button[@class="btn btn-primary"]
 ${btn_deletemenu}               xpath=//div[@id="toolbar-delete"]/button
-&{btn_trashitemmenu}            xpath=//div[@id="toolbar-trash"]/button
+${btn_trashitemmenu}            xpath=//div[@id="toolbar-trash"]/button
 # ${lbl_itemmenutype}           xpath=//div[@class="accordion-heading"]//a[contains(text(),"Articles")]
 # ${lbl_submenuitemtype}        xpath=//div[@class="accordion-inner"]//a[contains(text(),"Archived Articles")]
 ${sel_selectmenuparent}         xpath=//div[@id="jform_menutype_chzn"]
@@ -27,42 +27,43 @@ ${btn_selectlisttypeofarrange}  xpath=//div[@id="list_fullordering_chzn"]/a
 ${opt_idacsending}              xpath=//select[@id="list_fullordering"]/option[contains(text(),"ID ascending")]
 *** Keywords ***
 Go To Menu Page
-    Click Element    ${btn_listmenu} 
+    Click Element                    ${btn_listmenu} 
     
 Go To Add New Menu Page
-    Click Element    ${btn_listmenu} 
-	Click Element    ${btn_addnewmenu} 
+    Click Element                    ${btn_listmenu} 
+	Click Element                    ${btn_addnewmenu} 
 
 Fill Out And Submit Menu Information
-	[Arguments]      ${arg_menutitle}	               ${arg_menutype}            ${arg_menudescription}  
-	Input Text       ${txt_titlemenu}                 ${arg_menutitle}	
-	Input Text       ${txt_typemenu}                  ${arg_menutype}
-	Input Text       ${txt_descriptionmenu}           ${arg_menudescription}}                                         
-	Click Element    ${btn_saveandclosemenu}
+	[Arguments]                      ${arg_menutitle}	         ${arg_menutype}            ${arg_menudescription}  
+	Input Text                       ${txt_titlemenu}            ${arg_menutitle}	
+	Input Text                       ${txt_typemenu}             ${arg_menutype}
+	Input Text                       ${txt_descriptionmenu}      ${arg_menudescription}}                                         
+	Click Element                    ${btn_saveandclosemenu}
 	
+Check Message 
+    [Arguments]                      ${arg_expectedmessage}
+    Element Text Should Be           ${hed_headermessage}         Message 
+    Element Text Should Be           ${lbl_message}               ${arg_expectedmessage}
+     
 Check Add New Menu Successfully
-    [Arguments]                    ${arg_menuitemtitle}
-    Element Text Should Be         ${hed_headermessage}     Message 
-    Element Text Should Be         ${lbl_message}           Menu saved
-    Page Should Contain Element    xpath= //table[@id="menuList"]//a[contains(text(),"${arg_menuitemtitle}")]
+    [Arguments]                      ${arg_menutitle}
+    Page Should Contain Element      xpath= //table[@id="menuList"]//a[contains(text(),"${arg_menutitle}")]
 
 Select ID Ascending
-    Click Element       xpath=//div[@id="list_fullordering_chzn"]/a
-    Click Element       xpath=//div[@id="list_fullordering_chzn"]/div/ul/li[contains(text(),"ID ascending")] 
+    Click Element                    xpath=//div[@id="list_fullordering_chzn"]/a
+    Click Element                    xpath=//div[@id="list_fullordering_chzn"]/div/ul/li[contains(text(),"ID ascending")] 
     # Select From List By Label            ${sel_listtypeofarrange}  ID ascending  
     # Wait Until Element Is Visible   ${opt_idacsending} 
     # Click Element                   ${opt_idacsending} 
 Delete Menu
-    [Arguments]      ${arg_menutodelete}
-    Click Element    xpath=//table[@id="menuList"]//tr[td/a[contains(text(),"${arg_menutodelete}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input
-    Click Element    ${btn_deletemenu}	
-    Handle Alert     ACCEPT
+    [Arguments]                      ${arg_menutodelete}
+    Click Element                    xpath=//table[@id="menuList"]//tr[td/a[contains(text(),"${arg_menutodelete}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input
+    Click Element                    ${btn_deletemenu}	
+    Handle Alert                     ACCEPT
     
 Check Delete Menu Successfully
-    [Arguments]                      ${arg_menuitemtitle}
-    Element Text Should Be           ${hed_headermessage}     Message 
-    Element Text Should Be           ${lbl_message}           Menu type deleted.
-    Page Should Not Contain Element  xpath= //table[@id="menuList"]//a[contains(text(),"${arg_menuitemtitle}")]
+    [Arguments]                      ${arg_menutitle}
+    Page Should Not Contain Element  xpath= //table[@id="menuList"]//a[contains(text(),"${arg_menutitle}")]
 
 Delete All Menu 
     [Arguments]                      ${arg_cellCount}
@@ -70,32 +71,45 @@ Delete All Menu
         # ${IsElementVisible}=  Run Keyword And Return Status    Element Should Be Visible   ${delete_menuelement}
         # # ${delete_menuelement}=    Get Matching Xpath Count     xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
         # Run Keyword If     ${IsElementVisible}    Click Element    &{delete_menuelement}
-        Click Element    xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
-        Click Element    ${btn_deletemenu} 
-        Handle Alert     ACCEPT  
+        Click Element                xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
+        Click Element                ${btn_deletemenu} 
+        Handle Alert                 ACCEPT  
     END    
     
 Go To Menu Item Page 
-    Click Element   ${btn_listmenuitem}
+    Click Element                    ${btn_listmenuitem}
        
 Go To Add New Menu Item Page
-    Click Element   ${btn_listmenuitem}
-    Click Element   ${btn_addnewmenu}  
+    Click Element                    ${btn_listmenuitem}
+    Click Element                    ${btn_addnewmenu}  
  
 Fill Out And Submit Menu Item Information
-    [Arguments]                  ${arg_menuitemtitle}	      ${arg_menuitemtype}	  ${arg_submenuitemtype}    ${arg_menuparent}    
-    Input Text                   ${txt_menuitemtitle}         ${arg_menuitemtitle}
-    Click Element 	             ${btn_selectmenuitemtype}
-    Select Frame                 xpath=//div[@id="menuTypeModal"]//iframe              
-	Click Element                xpath=//div[@id="collapseTypes"]//div[@class="accordion-heading"]//a[contains(text(),"${arg_menuitemtype}")]
-	Click Element                xpath=//div[@id="collapseTypes"]//div[@class="accordion-body in collapse"]//a[contains(text(),"${arg_submenuitemtype}")]  
-    Unselect Frame   
-	Select From List By Label    ${sel_selectmenuparent}      ${arg_menuparent}                                   
-	Click Element                ${btn_saveandclosemenu}      
-	Click Element                ${btn_saveandclosemenu}
+    [Arguments]                      ${arg_menuitemtitle}	      ${arg_menuitemtype}	  ${arg_submenuitemtype}    ${arg_menuparent}    
+    Input Text                       ${txt_menuitemtitle}         ${arg_menuitemtitle}
+    Click Element 	                 ${btn_selectmenuitemtype}
+    Select Frame                     xpath=//div[@id="menuTypeModal"]//iframe              
+	Click Element                    xpath=//div[@id="collapseTypes"]//div[@class="accordion-heading"]//a[contains(text(),"${arg_menuitemtype}")]
+    Wait Until Element Is Visible    xpath=//div[@id="collapseTypes"]//div[@class="accordion-body in collapse"]//a[contains(text(),"${arg_submenuitemtype}")]
+	# Select From List By Label      xpath=//*[@id="collapse0"]/div/ul       Archived Articles
+	Click Element                    xpath=//div[@id="collapseTypes"]//div[@class="accordion-body in collapse"]//a[contains(text(),"${arg_submenuitemtype}")]  
+    Unselect Frame  
+    Click Element                    xpath=//div[@id="jform_menutype_chzn"]/a/div/b
+    Wait Until Element Is Visible    xpath=//div[@id="jform_menutype_chzn"]/div/ul/li[contains(text(),"${arg_menuparent}")]
+    Click Element                    xpath=//div[@id="jform_menutype_chzn"]/div/ul/li[contains(text(),"${arg_menuparent}")]
+	# Select From List By Label      ${sel_selectmenuparent}      ${arg_menuparent}                                   
+	Click Element                    ${btn_saveandclosemenu}      
+
 	
 Delete Menu Item
-    [Arguments]                  ${arg_menuitemtitle}
-    Click Element                ${arg_menuitemtitle}
-    Click Element                &{btn_trashitemmenu}
+    [Arguments]                      ${arg_menuitemtitle}
+    Click Element                    xpath=//table[@id="itemList"]//tr[td/a[contains(text(),"${arg_menuitemtitle}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input
+    Click Element                    ${btn_trashitemmenu}
+
+Check Add Menu Item Successfully
+    [Arguments]                      ${arg_menuitemtitle}
+    Page Should Contain Element      xpath=//table[@id="itemList"]//a[contains(text(),"${arg_menuitemtitle}")]
+        
+Check Delete Menu Item Successfully
+    [Arguments]                      ${arg_menuitemtitle}
+    Page Should Not Contain Element  xpath= //table[@id="menuList"]//a[contains(text(),"${arg_menuitemtitle}")]
     
