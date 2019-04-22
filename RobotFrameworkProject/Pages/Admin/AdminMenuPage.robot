@@ -37,11 +37,6 @@ Fill Out And Submit Menu Information
 	Input Text       ${txt_typ_emenu}              ${arg_menu_type}
 	Input Text       ${txt_description_menu}       ${arg_menu_description}}                                             
 	Click Element    ${btn_save_and_close_menu}    
-	
-Check Message 
-    [Arguments]               ${arg_expected_message}    
-    Element Text Should Be    ${hed_header_message}      Message 
-    Element Text Should Be    ${lbl_message}             ${arg_expected_message}
      
 Check Add New Menu Successfully
     [Arguments]                    ${arg_menu_title}
