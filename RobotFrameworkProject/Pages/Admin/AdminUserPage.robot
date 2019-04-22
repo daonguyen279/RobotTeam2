@@ -40,20 +40,20 @@ Go To Edit User Account Page
     Click Element          xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "${arg_account}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Name")]]/preceding-sibling::th)+1]/div[@class="name break-word"]/a
 
 Fill Out And Submit Information
-	[Arguments]     ${arg_new_name}               ${arg_new_password}    ${arg_new_email}
-	Input Text      ${txt_new_name}               ${arg_new_name}
-	Input Text      ${txt_new_username}           ${arg_new_name}
-	Input Text      ${txt_new_password}           ${arg_new_password}
+	[Arguments]     ${arg_new_name}                ${arg_new_password}    ${arg_new_email}
+	Input Text      ${txt_new_name}                ${arg_new_name}
+	Input Text      ${txt_new_username}            ${arg_new_name}
+	Input Text      ${txt_new_password}            ${arg_new_password}
 	Input Text      ${txt_new_confirm_password}    ${arg_new_password}
-	Input Text      ${txt_new_email}              ${arg_new_email}
+	Input Text      ${txt_new_email}               ${arg_new_email}
 	Click Button    ${btn_new_save_and_close}
 
 Check Information Displayed Correctly
     [Arguments]                  ${arg_check_email}    ${arg_check_name}
     Element Should Be Visible    ${lbl_new_message_successful}
     Element Text Should Be       xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "${arg_check_email}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Name")]]/preceding-sibling::th)+1]/div[@class="name break-word"]/a    ${arg_check_name}
-    Element Text Should Be       xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "${arg_check_email}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Username")]]/preceding-sibling::th)+1]    ${arg_check_name}
-    Element Text Should Be       xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "${arg_check_email}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Email")]]/preceding-sibling::th)+1]    ${arg_check_email}
+    Element Text Should Be       xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "${arg_check_email}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Username")]]/preceding-sibling::th)+1]                                ${arg_check_name}
+    Element Text Should Be       xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "${arg_check_email}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Email")]]/preceding-sibling::th)+1]                                   ${arg_check_email}
     ${SELECTED_USER_ID}          Get Text    xpath=//table[@id="userList"]//tr[td[contains(text(), "${arg_check_email}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "ID")]]/preceding-sibling::th)+1]
     Set Suite Variable           ${SELECTED_USER_ID}
 
@@ -80,6 +80,3 @@ Check Delete User Successfully
     Element Should Be Visible          ${lbl_new_message_successful}
     Page Should Not Contain Element    xpath=//table[@id="userList"]//tr[td[@class="hidden-phone" and contains(text(), "${SELECTED_USER_ID}")]]
     Logout Admin Site
-
-
-

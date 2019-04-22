@@ -13,7 +13,7 @@ ${ARTICLE_EDIT_TITLE}       Glimpses of the Mystery
 
 
 *** Test Cases ***
-Add New A Aticle
+TC01 - Add A New Aticle
     ${ARTICLE_ALIAS} =  Generate Random String    12    [LETTERS]
     Login Admin Site                     ${USERNAME}         ${PASSWORD}
     Go To Add New Article Page      
@@ -23,31 +23,31 @@ Add New A Aticle
 
 Edit Article Information
     ${ARTICLE_ALIAS} =  Generate Random String    12    [LETTERS]
-    Login Admin Site                  ${USERNAME}         ${PASSWORD}
+    Login Admin Site                  ${USERNAME}              ${PASSWORD}
     Go To Add New Article Page      
-    Add New Article                   ${ARTICLE_TITLE}    ${ARTICLE_ALIAS}    ${ARTICLE_CONTENT}
+    Add New Article                   ${ARTICLE_TITLE}         ${ARTICLE_ALIAS}    ${ARTICLE_CONTENT}
     Go To Edit Article Page
-    Edit Article                      ${ARTICLE_EDIT_TITLE}
+    Edit Article                      ${ARTICLE_EDIT_TITLE}    
     Check Edit Article Sucessfully        
-    Delete Selected Article
+    Delete Article
     Logout Admin Site
     
-Unpublish Article Information
+Unpublish An Article
     ${ARTICLE_ALIAS} =  Generate Random String    12    [LETTERS]
     Login Admin Site                        ${USERNAME}         ${PASSWORD}
     Go To Add New Article Page      
     Add New Article                         ${ARTICLE_TITLE}    ${ARTICLE_ALIAS}    ${ARTICLE_CONTENT}
-    Unpublish Selected Article
+    Unpublish Article
     Check Unpublish Article Successfully    
-    Delete Selected Article
+    Delete Article
     Logout Admin Site 
       
-Delete Article Information
+Delete An Article
     ${ARTICLE_ALIAS} =  Generate Random String    12    [LETTERS]
     Login Admin Site                     ${USERNAME}         ${PASSWORD}
     Go To Add New Article Page      
     Add New Article                      ${ARTICLE_TITLE}    ${ARTICLE_ALIAS}    ${ARTICLE_CONTENT}
-    Delete Selected Article      
+    Delete Article      
     Check Delete Article Successfully    ${ARTICLE_ALIAS} 
     Logout Admin Site 
 
