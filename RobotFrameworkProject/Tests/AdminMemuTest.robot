@@ -13,52 +13,52 @@ ${SUBMENUITEMTYPE}    Archived Articles
 
 *** Test Cases ***
 Add Menu Successfully
-    Login Admin Site 	                         ${USERNAME}         ${PASSWORD}
-    Select Sidebar Menu                          ${lbl_menus}  
+    Login Admin Site 	                      ${USERNAME}     ${PASSWORD}
+    Select Sidebar Menu                       ${lbl_menus}  
     Go To Add New Menu Page       
-    ${MENUTITLE}=   Generate Random String       4                   [LETTERS]      
-    ${MENUTYPE}=    Generate Random String       4                   [LETTERS] 
-    Fill Out And Submit Menu Information         ${MENUTITLE}        ${MENUTYPE}       ${MENUDESCRIPTION}
-    Check Message                                Menu saved
-    Check Add New Menu Successfully              ${MENUTITLE}
-    Set Suite Variable                           ${MENUTITLE} 
+    ${MENUTITLE}=   Generate Random String    4               [LETTERS]      
+    ${MENUTYPE}=    Generate Random String    4               [LETTERS] 
+    Fill Out And Submit Menu Information      ${MENUTITLE}    ${MENUTYPE}    ${MENUDESCRIPTION}
+    Check Message                             Menu saved
+    Check Add New Menu Successfully           ${MENUTITLE}
+    Set Suite Variable                        ${MENUTITLE} 
     Logout Admin Site 
     
 Add Menu Item Successfully
-    Login Admin Site 	                         ${USERNAME}         ${PASSWORD}
-    Select Sidebar Menu                          ${lbl_menus} 
+    Login Admin Site 	                         ${USERNAME}     ${PASSWORD}
+    Select Sidebar Menu                          ${lbl_menus}     
     Go To Add New Menu Item Page
-    ${MENUITEMTITLE}=   Generate Random String   4                   [LETTERS]
-    Fill Out And Submit Menu Item Information    ${MENUITEMTITLE}    ${MENUITEMTYPE}    ${SUBMENUITEMTYPE}    ${MENUTITLE}
-    Check Message                                Menu item saved. 
-    Set Suite Variable                           ${MENUITEMTITLE} 
-    Check Add Menu Item Successfully             ${MENUITEMTITLE}
+    ${MENUITEMTITLE}=   Generate Random String    4                   [LETTERS]
+    Fill Out And Submit Menu Item Information     ${MENUITEMTITLE}    ${MENUITEMTYPE}    ${SUBMENUITEMTYPE}    ${MENUTITLE}
+    Check Message                                 Menu item saved. 
+    Set Suite Variable                            ${MENUITEMTITLE} 
+    Check Add Menu Item Successfully              ${MENUITEMTITLE}
     Logout Admin Site
      
 Delete Menu Item Sucessfully 
-    Login Admin Site                             ${USERNAME}          ${PASSWORD}
-    Select Sidebar Menu                          ${lbl_menus}
+    Login Admin Site                       ${USERNAME}    ${PASSWORD}
+    Select Sidebar Menu                    ${lbl_menus}
     Go To Menu Item Page
-    Delete Menu Item                             ${MENUITEMTITLE} 
-    Check Message                                1 menu item trashed.
-    Check Delete Menu Item Successfully          ${MENUITEMTITLE}  
+    Delete Menu Item                       ${MENUITEMTITLE} 
+    Check Message                          1 menu item trashed.
+    Check Delete Menu Item Successfully    ${MENUITEMTITLE}  
     Logout Admin Site
     
 Delete A Menu Successfully
-    Login Admin Site 	                         ${USERNAME}          ${PASSWORD}
-    Select Sidebar Menu                          ${lbl_menus}
-    Delete Menu                                  ${MENUTITLE} 
-    Check Message                                Menu type deleted.
-    Check Delete Menu Successfully               ${MENUTITLE}
+    Login Admin Site 	              ${USERNAME}    ${PASSWORD}
+    Select Sidebar Menu               ${lbl_menus}
+    Delete Menu                       ${MENUTITLE} 
+    Check Message                     Menu type deleted.
+    Check Delete Menu Successfully    ${MENUTITLE}
     Logout Admin Site
 
 Delete All Menu
-    Login Admin Site 	                        ${USERNAME}           ${PASSWORD}
-    Select Sidebar Menu                         ${lbl_menus} 
+    Login Admin Site 	              ${USERNAME}    ${PASSWORD}
+    Select Sidebar Menu               ${lbl_menus} 
     Go To Menu Page
     Select ID Ascending  
-    ${count}     Get Element Count              ${lbl_list_menu}  
-    Delete All Menu                             ${count}
+    ${count}     Get Element Count    ${lbl_list_menu}  
+    Delete All Menu                   ${count}
     	
 
  

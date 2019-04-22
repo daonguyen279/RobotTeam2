@@ -39,4 +39,9 @@ Logout Admin Site
     Click Element                    ${icn_user}
     Wait Until Element Is Visible    ${lbl_logout}
     Click Element                    ${lbl_logout}
+
+Check Message 
+    [Arguments]                      ${arg_expected_message}
+    Element Text Should Be           ${hed_header_message}         Message 
+    Element Text Should Be           ${lbl_message}               ${arg_expected_message}
     
