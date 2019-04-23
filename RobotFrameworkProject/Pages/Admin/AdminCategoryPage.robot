@@ -1,14 +1,15 @@
+*** Settings ***
+Resource    AdminHomePage.robot
+
+
 *** Variables ***
-# ---------- categories ----------
-${lbl_categories}                     xpath=//div[@class="span3"]//a[span[contains(text(), "Categories")]]
-${lbl_categories_con}                 xpath=//li[@class="active"]//a
 ${lbl_new_categories}                 xpath=//div[@class="btn-wrapper"]//button//span[@class="icon-new icon-white"]
 ${txt_title_categories}               xpath=//div[@class="control-group"]//div[@class="controls"]//input[@id="jform_title"]
 ${txt_cont_categories}                xpath=//iframe[contains(@id,'jform_description_ifr')]
 ${btn_save_categories}                xpath=//div[@class="btn-toolbar"]//div[@class="btn-wrapper"]//button[@class="btn btn-small button-apply btn-success"]
 ${btn_save_close_categories}          xpath=//div[@class="btn-toolbar"]//div[@class="btn-wrapper"]//button[@class="btn btn-small button-save"]
 ${id}                                 id=tinymce  
-${lbl_tittle_categories_count}        xpath=//table[@id="categoryList"]/tbody[@class="ui-sortable"]/tr/td//a[@class="hasTooltip"]
+${lbl_tittle_categories_count}    xpath=//table[@id="categoryList"]/tbody[@class="ui-sortable"]/tr/td//a[@class="hasTooltip"]
 ${lbl_title_categories}               xpath=//table[@id="categoryList"]/tbody[@class="ui-sortable"]/tr[last()]/td//a[@class="hasTooltip"]      
 ${select_box_categories}              xpath=//table[@id="categoryList"]/tbody[@class="ui-sortable"]/tr[last()]/td//input[@name="cid[]"]
 ${btn_trash_categories}               xpath=//button[@class="btn btn-small button-trash"]
@@ -17,11 +18,6 @@ ${lbl_message}                        class="alert-message
 ${btn_unpublish_categories}           xpath=//button[@class="btn btn-small button-unpublish"]
 ${number}                             xpath=//span[@class="icon-unpublish"]  
 ${txt_message}                        xpath=//div[@class="alert-message"]   
-
-
-*** Settings ***
-Resource	../../Resources/Setup.robot
-Resource    AdminHomePage.robot
 
 
 *** Keywords ***

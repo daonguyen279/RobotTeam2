@@ -4,7 +4,6 @@ Resource    ../Pages/Admin/AdminCategoryPage.robot
 Resource    ../Pages/Admin/AdminLoginPage.robot
 Test setup	    Setup
 Test teardown	Teardown
-Library   OperatingSystem    
 
 
 *** Variables ***
