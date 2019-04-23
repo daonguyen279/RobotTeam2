@@ -1,8 +1,8 @@
 *** Settings ***
-Resource	      ../Resources/Setup.robot
+Resource          ../Resources/Setup.robot
 Resource          ../Pages/Admin/AdminCategoryPage.robot
 Resource          ../Pages/Admin/AdminLoginPage.robot
-Suite setup	      Setup
+Suite setup       Setup
 Suite teardown    Teardown
 
 

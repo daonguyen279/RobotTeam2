@@ -12,7 +12,7 @@ ${btn_update_save}                xpath=//div[@id="toolbar-save"]/button
 Go To Admin Profile Page
 	Click element                    ${icn_user}
 	Wait Until Element Is Visible    ${lbl_edit_profile}
-    Click Element                    ${lbl_edit_profile}
+	Click Element                    ${lbl_edit_profile}
 
 Fill Out And Submit Update Information
 	[Arguments]   ${arg_update_name}	            ${arg_update_password}            ${arg_update_confirm_password}    ${arg_update_email} 

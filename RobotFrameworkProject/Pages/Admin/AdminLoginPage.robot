@@ -8,6 +8,6 @@ ${btn_login}       xpath=//div[@class="btn-group"]/button[@class="btn btn-primar
 Login Admin Site
     [Arguments]       ${arg_username}    ${arg_password}
     Log To Console    Login to Joomla    
-    Input Text    	  ${txt_username}    ${arg_username}
+    Input Text        ${txt_username}    ${arg_username}
     Input Text        ${txt_password}    ${arg_password}
     Click Button      ${btn_login}

@@ -20,11 +20,11 @@ ${cbb_menuitems_arrange}        xpath=//div[@id="list_fullordering_chzn"]/a
 ${opt_menuitems_idacsending}    xpath=//div[@id="list_fullordering_chzn"]/div/ul/li[contains(text(),"ID ascending")]
 *** Keywords ***
 Go To Menu Page
-    Click Element    ${btn_menus_list} 
-    
+    Click Element    ${btn_menus_list}
+
 Go To Add New Menu Page
     Click Element    ${btn_menus_list} 
-	Click Element    ${btn_menus_add} 
+    Click Element    ${btn_menus_add} 
 
 Fill Out And Submit Menu Information
 	[Arguments]      ${arg_menu_title}           ${arg_menu_type}           ${arg_menu_description}  
@@ -32,7 +32,7 @@ Fill Out And Submit Menu Information
 	Input Text       ${txt_menus_type}           ${arg_menu_type}
 	Input Text       ${txt_menus_description}    ${arg_menu_description}                                                    
 	Click Element    ${btn_menus_save_close}    
-     
+
 Check Add New Menu Successfully
     [Arguments]                    ${arg_menu_title}
     Page Should Contain Element    xpath= //table[@id="menuList"]//a[contains(text(),"${arg_menu_title}")]
@@ -64,7 +64,7 @@ Fill Out And Submit Menu Item Information
     Click Element 	                 ${btn_menuitems_type}
     Select Frame                     xpath=//div[@id="menuTypeModal"]//iframe              
 	Click Element                    xpath=//div[@id="collapseTypes"]//div[@class="accordion-heading"]//a[contains(text(),"${arg_menuitem_type}")]
-    Wait Until Element Is Visible    xpath=//div[@id="collapseTypes"]//div[@class="accordion-body in collapse"]//a[contains(text(),"${arg_submenuitem_type}")]
+	Wait Until Element Is Visible    xpath=//div[@id="collapseTypes"]//div[@class="accordion-body in collapse"]//a[contains(text(),"${arg_submenuitem_type}")]
 	Click Element                    xpath=//div[@id="collapseTypes"]//div[@class="accordion-body in collapse"]//a[contains(text(),"${arg_submenuitem_type}")]  
     Unselect Frame  
     Click Element                    xpath=//div[@id="jform_menutype_chzn"]/a/div/b
