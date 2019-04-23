@@ -22,7 +22,7 @@ ${lbl_userinformation}      xpath=//ul[@class="nav nav-user pull-right nav-hover
 ${lbl_editprofile}          xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Edit Account"]
 ${lbl_logout}               xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]
 ${lbl_visit_site}           xpath=//a[@class="brand visible-desktop visible-tablet"]
-${hed_headermessage}        xpath=//h4[@class="alert-heading"]
+${hed_header_message}       xpath=//h4[@class="alert-heading"]
 ${lbl_message}              xpath=//div[@class="alert alert-success"]/div[@class="alert-message"]
 
 *** Keywords ***
@@ -39,4 +39,9 @@ Logout Admin Site
     Click Element                    ${icn_user}
     Wait Until Element Is Visible    ${lbl_logout}
     Click Element                    ${lbl_logout}
+
+Check Message 
+    [Arguments]               ${arg_expected_message}
+    Element Text Should Be    ${hed_header_message}      Message
+    Element Text Should Be    ${lbl_message}             ${arg_expected_message}
     
