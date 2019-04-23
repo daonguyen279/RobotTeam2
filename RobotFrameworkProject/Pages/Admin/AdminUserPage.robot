@@ -79,3 +79,4 @@ Check Delete User Successfully
     Element Should Be Visible          ${lbl_users_successful_message}
     Page Should Not Contain Element    xpath=//table[@id="userList"]//tr[td[@class="hidden-phone" and contains(text(), "${SELECTED_USER_ID}")]]
     Logout Admin Site
+    
