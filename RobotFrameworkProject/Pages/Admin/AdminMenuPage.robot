@@ -59,8 +59,8 @@ Go To Add New Menu Item Page
     Click Element	${btn_menus_add}  
  
 Fill Out And Submit Menu Item Information
-    [Arguments]                      ${arg_menuitem_title}	      ${arg_menuitem_type}	  ${arg_submenuitem_type}    ${arg_menu_parent}    
-    Input Text                       ${txt_menuitems_title}        ${arg_menuitem_title}
+    [Arguments]                      ${arg_menuitem_title}	   ${arg_menuitem_type}	   ${arg_submenuitem_type}    ${arg_menu_parent}    
+    Input Text                       ${txt_menuitems_title}    ${arg_menuitem_title}    
     Click Element 	                 ${btn_menuitems_type}
     Select Frame                     xpath=//div[@id="menuTypeModal"]//iframe              
 	Click Element                    xpath=//div[@id="collapseTypes"]//div[@class="accordion-heading"]//a[contains(text(),"${arg_menuitem_type}")]
@@ -95,4 +95,3 @@ Delete All Menu
         Click Element                ${btn_menus_delete} 
         Handle Alert                 ACCEPT  
     END    
-    

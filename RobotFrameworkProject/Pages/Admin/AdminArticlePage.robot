@@ -15,7 +15,7 @@ ${cbb_articles_checkbox}          xpath=//table[@id="articleList"]//tr[td/input[
 ${btn_articles_trash}             xpath=//div[@id="toolbar-trash"]/button
 ${tab_articles_count_total}       xpath=//table[@id="articleList"]//tr[td/input[@onclick="Joomla.isChecked(this.checked);"]]
 ${btn_articles_unpublish}         xpath=//div[@id="toolbar-unpublish"]/button
-${lnk_articles_icon_unpublish}     xpath=//table[@id="articleList"]/tbody/tr[1]/td[3]/div/a[1]
+${lnk_articles_icon_unpublish}    xpath=//table[@id="articleList"]/tbody/tr[1]/td[3]/div/a[1]
 
 
 *** Keywords ***

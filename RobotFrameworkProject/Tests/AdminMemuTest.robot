@@ -12,7 +12,7 @@ ${MENUITEM_TYPE}        Articles
 ${SUB_MENUITEM_TYPE}    Archived Articles 
 
 *** Test Cases ***
-TC-014: Add A New Menu Successfully
+TC14 - Add A New Menu Successfully
     Login Admin Site 	                       ${USERNAME}      ${PASSWORD}
     Select Sidebar Menu                        ${lbl_menus}  
     Go To Add New Menu Page       
@@ -24,7 +24,7 @@ TC-014: Add A New Menu Successfully
     Set Suite Variable                         ${MENU_TITLE} 
     Logout Admin Site 
     
-TC-015: Add A Menu Item Successfully
+TC15 - Add A Menu Item Successfully
     Login Admin Site 	                           ${USERNAME}          ${PASSWORD}
     Select Sidebar Menu                            ${lbl_menus}     
     Go To Add New Menu Item Page
@@ -35,20 +35,20 @@ TC-015: Add A Menu Item Successfully
     Check Add Menu Item Successfully               ${MENUITEM_TITLE}
     Logout Admin Site
      
-TC-017: Delete A Menu Item Sucessfully 
+TC17 - Delete A Menu Item Sucessfully 
     Login Admin Site                       ${USERNAME}             ${PASSWORD}
     Select Sidebar Menu                    ${lbl_menus}
     Go To Menu Item Page
     Delete Menu Item                       ${MENUITEM_TITLE} 
-    Check Message                          1 menu item trashed.    
+    Check Message                          1 menu item trashed.        
     Check Delete Menu Item Successfully    ${MENUITEM_TITLE}  
     Logout Admin Site
     
-TC-016: Delete A Menu Successfully
+TC16 - Delete A Menu Successfully
     Login Admin Site 	              ${USERNAME}           ${PASSWORD}
     Select Sidebar Menu               ${lbl_menus}
     Delete Menu                       ${MENU_TITLE} 
-    Check Message                     Menu type deleted.    
+    Check Message                     Menu type deleted.        
     Check Delete Menu Successfully    ${MENU_TITLE}
     Logout Admin Site
 
@@ -59,7 +59,3 @@ Delete All Menu
     Select ID Ascending  
     ${count}     Get Element Count    ${lbl_menus_list}  
     Delete All Menu                   ${count}
-    	
-
- 
-    

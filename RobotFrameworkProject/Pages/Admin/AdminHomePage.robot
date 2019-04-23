@@ -18,12 +18,13 @@ ${submenu_menu_item}        xpath=//ul[@id="menu"]//a[@class="no-dropdown menu-a
 
 # ---------- top right menu ----------
 ${icn_user}                 xpath=//a/span[@class="icon-user"]
-${lbl_user_information}      xpath=//ul[@class="nav nav-user pull-right nav-hover"]//strong
-${lbl_edit_profile}          xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Edit Account"]
+${lbl_user_information}     xpath=//ul[@class="nav nav-user pull-right nav-hover"]//strong
+${lbl_edit_profile}         xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Edit Account"]
 ${lbl_logout}               xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]
 ${lbl_visit_site}           xpath=//a[@class="brand visible-desktop visible-tablet"]
 ${hed_header_message}       xpath=//h4[@class="alert-heading"]
 ${lbl_message}              xpath=//div[@class="alert alert-success"]/div[@class="alert-message"]
+
 
 *** Keywords ***
 Select Main Menu
