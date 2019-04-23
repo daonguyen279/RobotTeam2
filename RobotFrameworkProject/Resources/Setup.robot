@@ -1,8 +1,9 @@
 *** Variables ***
-${BROWSER}    Chrome
-${ROOT}       http://192.168.189.72/joomla/administrator/ 
-${USERNAME}   admin
-${PASSWORD}   123456789
+${BROWSER}        Chrome
+${ROOT}           http://192.168.189.72/joomla/administrator/
+${CLIENT_ROOT}    http://192.168.189.72/joomla/
+${USERNAME}       admin
+${PASSWORD}       123456789
 
 
 *** Settings ***
@@ -10,7 +11,7 @@ Library    Selenium2Library
 Library    OperatingSystem
 Library    PageObjectLibrary
 Library    String
-Library   XML
+Library    XML
    
 
 *** Keywords ***
