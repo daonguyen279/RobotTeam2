@@ -16,7 +16,7 @@ ${TAIL_EMAIL}       @gmail.com
 TC09 - Add New Valid User Account
     Login Admin Site                              ${USERNAME}                     ${PASSWORD}
     Go To Add New User Page
-    ${NEW_USERNAME}=    Generate Random String    10    [LETTERS]
+    ${NEW_USERNAME}=    Generate Random String    10                              [LETTERS]
     ${NEW_EMAIL}    Set Variable                  ${NEW_USERNAME}${TAIL_EMAIL}
     Set Suite Variable                            ${NEW_EMAIL}
     Fill Out And Submit Information               ${NEW_USERNAME}                 ${NEW_PASSWORD}    ${NEW_EMAIL}
@@ -27,7 +27,7 @@ TC09 - Add New Valid User Account
 TC10 - Edit User Account Valid Information
     Login Admin Site                               ${USERNAME}                      ${PASSWORD}
     Go To Edit User Account Page                   ${NEWEMAIL}
-    ${EDIT_USERNAME}=    Generate Random String    10    [LETTERS]
+    ${EDIT_USERNAME}=    Generate Random String    10                               [LETTERS]
     ${EDIT_EMAIL}    Set Variable                  ${EDIT_USERNAME}${TAIL_EMAIL}
     Set Suite Variable                             ${EDIT_EMAIL}
     Fill Out And Submit Information                ${EDIT_USERNAME}                 ${EDIT_PASSWORD}    ${EDIT_EMAIL}

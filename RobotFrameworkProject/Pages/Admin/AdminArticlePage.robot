@@ -15,7 +15,7 @@ ${cbb_articles_checkbox}          xpath=//table[@id="articleList"]//tr[td/input[
 ${btn_articles_trash}             xpath=//div[@id="toolbar-trash"]/button
 ${tab_articles_count_total}       xpath=//table[@id="articleList"]//tr[td/input[@onclick="Joomla.isChecked(this.checked);"]]
 ${btn_articles_unpublish}         xpath=//div[@id="toolbar-unpublish"]/button
-${lnk_aricles_icon_unpublish}     xpath=//table[@id="articleList"]/tbody/tr[1]/td[3]/div/a[1]
+${lnk_articles_icon_unpublish}    xpath=//table[@id="articleList"]/tbody/tr[1]/td[3]/div/a[1]
 
 
 *** Keywords ***
@@ -23,14 +23,14 @@ Go To Add New Article Page
     Select Sidebar Menu    ${lbl_new_article} 
      
 Add New Article
-    [Arguments]       ${arg_article_title}              ${arg_article_alias}      ${arg_article_content}
-    Input Text        ${txt_articles_title}             ${arg_article_title}
-    Input Text        ${txt_articles_alias}             ${arg_article_alias}
-    Select Frame      ${ifr_articles_frame} 
-    Input Text        ${txt_articles_addcontent}        ${arg_article_content}            
-    Unselect Frame        
-    Click Button      ${btn_articles_save_and_close}        
-       
+    [Arguments]       ${arg_article_title}             ${arg_article_alias}      ${arg_article_content}
+    Input Text        ${txt_article_title}             ${arg_article_title}
+    Input Text        ${txt_article_alias}             ${arg_article_alias}
+    Select Frame      ${ifr_article_frame} 
+    Input Text        ${txt_article_addcontent}        ${arg_article_content}    
+    Unselect Frame    
+    Click Button      ${btn_article_save_and_close}    
+
 Check Add New Article Sucessfully
     Wait Until Element Is Visible    ${lnk_articles_check_title}
     Element Text Should Be           ${lnk_articles_check_title}    ${ARTICLE_TITLE}
@@ -52,7 +52,7 @@ Unpublish Article
     Click Element    ${btn_articles_unpublish} 
    
 Check Unpublish Article Successfully
-    Element Should Be Visible    ${lnk_aricles_icon_unpublish}
+    Element Should Be Visible    ${lnk_articles_icon_unpublish}
              
 Delete Article 
     ${count_total_articles}          Get Element Count           ${tab_articles_count_total}

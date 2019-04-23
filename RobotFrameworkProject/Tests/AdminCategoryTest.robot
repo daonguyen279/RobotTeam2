@@ -1,36 +1,59 @@
 *** Settings ***
-Resource	../Resources/Setup.robot
-Resource    ../Pages/Admin/AdminCategoryPage.robot
-Resource    ../Pages/Admin/AdminLoginPage.robot
-Test setup	    Setup
-Test teardown	Teardown
+Resource	      ../Resources/Setup.robot
+Resource          ../Pages/Admin/AdminCategoryPage.robot
+Resource          ../Pages/Admin/AdminLoginPage.robot
+Suite setup	      Setup
+Suite teardown    Teardown
 
 
 *** Variables ***
-${arg_title_categories}          the saff tet Teyuyefr ad dfa dsfav e added for 2 mv inutesfggfd
-${arg_cont_categories}           ret e1ejki6 yasecars ago Seth Green decided to take his love of action figures and combine it with one of his major passions: stop-motion animation. The idea for Cartoon Network's late-night animated series "Robot Chicken" was born and the animation world suddenly changed.
-${arg_title_categories_edit}     ree tyeig  jikac]hyuThidasrs is thie second tittle, which have added for 2 minutes
-${arg_cont_categories_edit}      ree iyet16 asyears ago Seth Green decided to take his love of action figures and combine it with one of his major passions: stop-motion animation. The idea for Cartoon Network's late-night animated series "Robot Chicken" was born and the animation world suddenly changed.
-${txt_expected_message}          1 category saved.
-${txt_expected_message1}         1 category trashed.
-
+${CATEGORY_TITLE}                    Robot Framework is operating system and application independent
+${CATEGORY_CONTENT}                  Many years ago Seth Green decided to take his love of action figures and combine it with one of his major passions: stop-motion animation. The idea for Cartoon Network's late-night animated series "Robot Chicken" was born and the animation world suddenly changed.
+${CATEGORY_EDIT_TITLE}               Robot Framework is operating system and application independent
+${CATEGORY_EDIT_CONTENT}             Long time ago Seth Green decided to take his love of action figures and combine it with one of his major passions: stop-motion animation. The idea for Cartoon Network's late-night animated series "Robot Chicken" was born and the animation world suddenly changed.
+${TXT_ADD_MESSAGE_EXPECTED}          Category saved.
+${TXT_EIT_MESSAGE_EXPECTED}          1 category trashed.
+${TXT_MESSAGE}                       xpath=//div[@class="alert-message"]
+${TXT_EDIT_MESSAGE_EXPECTED}         1 category trashed.
+${TXT_UNPUBLISH_MESSAGE_EXPECTED}    1 category unpublished.
+  
 
 *** Test Cases ***
-TC05 - Verify that admin can add a new category
-    Login Admin Site                ${USERNAME}                 ${PASSWORD}
-    Add New Category                ${arg_title_categories}     ${arg_cont_categories}
-    Check message successfully      ${lbl_message}              ${txt_expected_message} 
-    
-TC06 - Verify that admin can edit category information
-    Login Admin Site    ${USERNAME}    ${PASSWORD}
-    Edit Category Information        ${arg_title_categories_edit}     ${arg_cont_categories_edit}
-    
-TC07 - Verify that admin can delete a category
-    Login Admin Site                   ${USERNAME}    ${PASSWORD}
-    Add New Category                   ${arg_title_categories}     ${arg_cont_categories}
-    Delete a category
-    Check message successfully         ${txt_message}    ${txt_expected_message1}
-    
-TC08 - Verify that admin can unpublish a category
-    Login Admin Site    ${USERNAME}    ${PASSWORD}
-    Unpublish a category
+TC05 - Verify That Admin Can Add A New Category
+    ${CATEGORY_ALIAS} =  Generate Random String         12                             [LETTERS]
+    Login Admin Site              ${USERNAME}           ${PASSWORD}
+    Go To Add New Category Page
+    Add New Category              ${CATEGORY_TITLE}     ${CATEGORY_CONTENT}            ${CATEGORY_ALIAS}    
+    Check Message Successfully    ${TXT_MESSAGE}        ${TXT_ADD_MESSAGE_EXPECTED} 
+    Logout Admin Site
+
+TC06 - Verify That Admin Can Edit Category Information
+    ${CATEGORY_EDIT_CONTENT} =    Generate Random String    12                              [LETTERS]
+    ${CATEGORY_EDIT_TITLE} =      Generate Random String    12                              [LETTERS]
+    Login Admin Site              ${USERNAME}               ${PASSWORD}
+    Go To Edit Category Page
+    Edit Category Information     ${CATEGORY_EDIT_TITLE}    ${CATEGORY_EDIT_CONTENT}
+    Check Message Successfully    ${TXT_MESSAGE}            ${TXT_ADD_MESSAGE_EXPECTED}
+    Delete A Category
+    Check Message Successfully    ${TXT_MESSAGE}            ${TXT_EDIT_MESSAGE_EXPECTED}
+    Logout Admin Site
+
+TC07 - Verify That Admin Can Delete A New Category
+    ${CATEGORY_ALIAS} =    Generate Random String       12                              [LETTERS]
+    Login Admin Site               ${USERNAME}          ${PASSWORD}
+    Go To Add New Category Page    
+    Add New Category               ${CATEGORY_TITLE}    ${CATEGORY_CONTENT}             ${CATEGORY_ALIAS}
+    Check Message Successfully     ${TXT_MESSAGE}       ${TXT_ADD_MESSAGE_EXPECTED}     
+    Delete A Category
+    Check Message Successfully     ${TXT_MESSAGE}       ${TXT_EDIT_MESSAGE_EXPECTED}     
+    Logout Admin Site
+
+TC08 - Verify That Admin Can Unpublish A Category
+    ${CATEGORY_ALIAS} =    Generate Random String       12                                   [LETTERS]
+    Login Admin Site               ${USERNAME}          ${PASSWORD}
+    Go To Add New Category Page    
+    Add New Category               ${CATEGORY_TITLE}    ${CATEGORY_CONTENT}                  ${CATEGORY_ALIAS}
+    Check Message Successfully     ${TXT_MESSAGE}       ${TXT_ADD_MESSAGE_EXPECTED} 
+    Unpublish A Category
+    Check Message Successfully     ${TXT_MESSAGE}       ${TXT_UNPUBLISH_MESSAGE_EXPECTED}     
+    Logout Admin Site
