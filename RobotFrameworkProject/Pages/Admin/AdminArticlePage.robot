@@ -30,7 +30,7 @@ Add New Article
     Input Text        ${txt_article_addcontent}        ${arg_article_content}    
     Unselect Frame    
     Click Button      ${btn_article_save_and_close}    
-       
+
 Check Add New Article Sucessfully
     Wait Until Element Is Visible    ${lnk_article_check_title}
     Element Text Should Be           ${lnk_article_check_title}    ${ARTICLE_TITLE}
@@ -50,18 +50,18 @@ Check Edit Article Sucessfully
 Unpublish Article
     Click Element    ${cbb_article_checkbox}
     Click Element    ${btn_article_unpublish} 
-   
+
 Check Unpublish Article Successfully
     Element Should Be Visible    ${lnk_aricle_icon_unpublish}
-        
+
 Delete Article 
     ${count}           Get Element Count    ${tab_count_id}
-    Click Element                           ${cbb_article_checkbox}    
+    Click Element                           ${cbb_article_checkbox}                
     Click Button                            ${btn_article_trash} 
     ${count2}          Get Element Count    ${tab_count_id}
     ${count3}          Evaluate             ${count} - 1 
     Should Be Equal                         ${count2}                  ${count3}
-    
+
 Check Delete Article Successfully 
     [Arguments]                ${arg_check_alias}   
     Page Should Not Contain    ${arg_check_alias} 
