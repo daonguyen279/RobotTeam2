@@ -57,7 +57,7 @@ Delete All Menu
     Select Sidebar Menu               ${lbl_menus} 
     Go To Menu Page
     Select ID Ascending  
-    ${count}     Get Element Count    ${lbl_list_menu}  
+    ${count}     Get Element Count    ${lbl_menus_list}  
     Delete All Menu                   ${count}
     	
 

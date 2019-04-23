@@ -2,54 +2,49 @@
 Resource    ../../Pages/Admin/AdminHomePage.robot
 
 *** Variables ***
-${btn_list_menu}                      xpath=//ul[@id="submenu"]/li[@class="active"]/a[contains(text(),"Menus")]
-${btn_add_newmenu}                    xpath=//div[@id="toolbar-new"]/button
-${btn_list_menuitem}                  xpath=//ul[@id="submenu"]//a[contains(text(),"Menu Items")]
-${btn_edit_menu}                      xpath=//div[@id="toolbar-edit"]/button
-${btn_delete_menu}                    xpath=//div[@id="toolbar-delete"]/button
-${txt_title_menu}                     xpath=//form[@id="item-form"]//input[@id="jform_title"]
-${txt_type_menu}                      xpath=//div[@class="form-horizontal"]//input[@id="jform_menutype"]
-${txt_description_menu}               xpath=//div[@class="form-horizontal"]//input[@id="jform_menudescription"]
-${lbl_site}                           xpath=//fieldset[@id="jform_client_id"]/label[contains(text(),"Site")]
-${lbl_administrator}                  xpath=//fieldset[@id="jform_client_id"]/label[contains(text(),"Administrator")]
-${btn_save_and_close_menu}            xpath=//div[@id="toolbar-save"]/button
-${txt_menuitem_title}                 xpath=//form[@id="item-form"]//input[@id="jform_title"]
-${btn_select_menuitem_type}           xpath=//div[@class="controls"]//button[@class="btn btn-primary"]
-${btn_delete_menu}                    xpath=//div[@id="toolbar-delete"]/button
-${btn_trash_itemmenu}                 xpath=//div[@id="toolbar-trash"]/button
-${sel_select_menuparent}              xpath=//div[@id="jform_menutype_chzn"]
-${lbl_list_menu}                      xpath=//table[@id="menuList"]//tr[@class="row0" and "row1"]
-${delete_menu_element}                xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
-${sel_list_type_of_arrange}           xpath=//select[@id="list_fullordering"]
-${btn_select_list_type_of_arrange}    xpath=//div[@id="list_fullordering_chzn"]/a
-${opt_id_acsending}                   xpath=//select[@id="list_fullordering"]/option[contains(text(),"ID ascending")]
+${btn_menus_list}               xpath=//ul[@id="submenu"]/li[@class="active"]/a[contains(text(),"Menus")]
+${btn_menus_add}                xpath=//div[@id="toolbar-new"]/button
+${btn_menuitems_list}           xpath=//ul[@id="submenu"]//a[contains(text(),"Menu Items")]
+${btn_menus_edit}               xpath=//div[@id="toolbar-edit"]/button
+${btn_menus_delete}             xpath=//div[@id="toolbar-delete"]/button
+${txt_menus_title}              xpath=//form[@id="item-form"]//input[@id="jform_title"]
+${txt_menus_type}               xpath=//div[@class="form-horizontal"]//input[@id="jform_menutype"]
+${txt_menus_description}        xpath=//div[@class="form-horizontal"]//input[@id="jform_menudescription"]
+${btn_menus_save_close}         xpath=//div[@id="toolbar-save"]/button
+${txt_menuitems_title}          xpath=//form[@id="item-form"]//input[@id="jform_title"]
+${btn_menuitems_type}           xpath=//div[@class="controls"]//button[@class="btn btn-primary"]
+${btn_menuitems_trash}          xpath=//div[@id="toolbar-trash"]/button
+${cbb_menuitems_menuparent}     xpath=//div[@id="jform_menutype_chzn"]
+${lbl_menus_list}               xpath=//table[@id="menuList"]//tr[@class="row0" and "row1"]
+${cbb_menuitems_arrange}        xpath=//div[@id="list_fullordering_chzn"]/a
+${opt_menuitems_idacsending}    xpath=//div[@id="list_fullordering_chzn"]/div/ul/li[contains(text(),"ID ascending")]
 *** Keywords ***
 Go To Menu Page
-    Click Element    ${btn_list_menu} 
+    Click Element    ${btn_menus_list} 
     
 Go To Add New Menu Page
-    Click Element    ${btn_list_menu} 
-	Click Element    ${btn_add_newmenu} 
+    Click Element    ${btn_menus_list} 
+	Click Element    ${btn_menus_add} 
 
 Fill Out And Submit Menu Information
-	[Arguments]      ${arg_menu_title}             ${arg_menu_type}            ${arg_menu_description}  
-	Input Text       ${txt_title_menu}             ${arg_menu_title}	
-	Input Text       ${txt_typ_emenu}              ${arg_menu_type}
-	Input Text       ${txt_description_menu}       ${arg_menu_description}}                                             
-	Click Element    ${btn_save_and_close_menu}    
+	[Arguments]      ${arg_menu_title}           ${arg_menu_type}            ${arg_menu_description}  
+	Input Text       ${txt_menus_title}          ${arg_menu_title}	
+	Input Text       ${txt_menus_type}           ${arg_menu_type}
+	Input Text       ${txt_menus_description}    ${arg_menu_description}}                                             
+	Click Element    ${btn_menus_save_close}    
      
 Check Add New Menu Successfully
     [Arguments]                    ${arg_menu_title}
     Page Should Contain Element    xpath= //table[@id="menuList"]//a[contains(text(),"${arg_menu_title}")]
 
 Select ID Ascending
-    Click Element    xpath=//div[@id="list_fullordering_chzn"]/a
-    Click Element    xpath=//div[@id="list_fullordering_chzn"]/div/ul/li[contains(text(),"ID ascending")] 
+    Click Element    ${cbb_menuitems_arrange}
+    Click Element    ${opt_menuitems_idacsending} 
     
 Delete Menu
     [Arguments]      ${arg_menu_to_delete}
     Click Element    xpath=//table[@id="menuList"]//tr[td/a[contains(text(),"${arg_menu_to_delete}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input
-    Click Element    ${btn_delete_menu}	
+    Click Element    ${btn_menus_delete}	
     Handle Alert     ACCEPT
     
 Check Delete Menu Successfully
@@ -57,16 +52,16 @@ Check Delete Menu Successfully
     Page Should Not Contain Element    xpath= //table[@id="menuList"]//a[contains(text(),"${arg_menu_title}")]
 
 Go To Menu Item Page 
-    Click Element	${btn_list_menuitem}
+    Click Element	${btn_menuitems_list}
        
 Go To Add New Menu Item Page
-    Click Element	${btn_list_menuitem}
-    Click Element	${btn_add_newmenu}  
+    Click Element	${btn_menuitems_list}
+    Click Element	${btn_menus_add}  
  
 Fill Out And Submit Menu Item Information
     [Arguments]                      ${arg_menuitem_title}	      ${arg_menuitem_type}	  ${arg_submenuitem_type}    ${arg_menu_parent}    
-    Input Text                       ${txt_menuitem_title}        ${arg_menuitem_title}
-    Click Element 	                 ${btn_select_menuitem_type}
+    Input Text                       ${txt_menuitems_title}        ${arg_menuitem_title}
+    Click Element 	                 ${btn_menuitems_type}
     Select Frame                     xpath=//div[@id="menuTypeModal"]//iframe              
 	Click Element                    xpath=//div[@id="collapseTypes"]//div[@class="accordion-heading"]//a[contains(text(),"${arg_menuitem_type}")]
     Wait Until Element Is Visible    xpath=//div[@id="collapseTypes"]//div[@class="accordion-body in collapse"]//a[contains(text(),"${arg_submenuitem_type}")]
@@ -75,12 +70,12 @@ Fill Out And Submit Menu Item Information
     Click Element                    xpath=//div[@id="jform_menutype_chzn"]/a/div/b
     Wait Until Element Is Visible    xpath=//div[@id="jform_menutype_chzn"]/div/ul/li[contains(text(),"${arg_menu_parent}")]
     Click Element                    xpath=//div[@id="jform_menutype_chzn"]/div/ul/li[contains(text(),"${arg_menu_parent}")]                                  
-	Click Element                    ${btn_save_and_close_menu}      
+	Click Element                    ${btn_menus_save_close}      
 	
 Delete Menu Item
     [Arguments]      ${arg_menuitem_title}
     Click Element    xpath=//table[@id="itemList"]//tr[td/a[contains(text(),"${arg_menuitem_title}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input
-    Click Element    ${btn_trashitemmenu}
+    Click Element    ${btn_menuitems_trash}
 
 Check Add Menu Item Successfully
     [Arguments]                    ${arg_menuitem_title}
@@ -98,7 +93,7 @@ Delete All Menu
         # ${delete_menuelement}=     Get Matching Xpath Count     xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
         Run Keyword If               ${IsElementVisible}    Click Element    xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
         # Click Element                xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
-        Click Element                ${btn_delete_menu} 
+        Click Element                ${btn_menus_delete} 
         Handle Alert                 ACCEPT  
     END    
     
