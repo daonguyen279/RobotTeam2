@@ -9,7 +9,7 @@ ${btn_menus_edit}               xpath=//div[@id="toolbar-edit"]/button
 ${btn_menus_delete}             xpath=//div[@id="toolbar-delete"]/button
 ${txt_menus_title}              xpath=//form[@id="item-form"]//input[@id="jform_title"]
 ${txt_menus_type}               xpath=//div[@class="form-horizontal"]//input[@id="jform_menutype"]
-${txt_menus_description}        xpath=//div[@class="form-horizontal"]//input[@id="jform_menudescription"]
+${txt_menus_description}        xpath=//div[@class="form-horizontal"]//input[@id="jform_MENU_DESCRIPTION"]
 ${btn_menus_save_close}         xpath=//div[@id="toolbar-save"]/button
 ${txt_menuitems_title}          xpath=//form[@id="item-form"]//input[@id="jform_title"]
 ${btn_menuitems_type}           xpath=//div[@class="controls"]//button[@class="btn btn-primary"]
@@ -27,10 +27,10 @@ Go To Add New Menu Page
 	Click Element    ${btn_menus_add} 
 
 Fill Out And Submit Menu Information
-	[Arguments]      ${arg_menu_title}           ${arg_menu_type}            ${arg_menu_description}  
+	[Arguments]      ${arg_menu_title}           ${arg_menu_type}           ${arg_menu_description}  
 	Input Text       ${txt_menus_title}          ${arg_menu_title}	
 	Input Text       ${txt_menus_type}           ${arg_menu_type}
-	Input Text       ${txt_menus_description}    ${arg_menu_description}}                                             
+	Input Text       ${txt_menus_description}    ${arg_menu_description}                                                    
 	Click Element    ${btn_menus_save_close}    
      
 Check Add New Menu Successfully
@@ -85,7 +85,6 @@ Check Delete Menu Item Successfully
     [Arguments]                        ${arg_menuitem_title}
     Page Should Not Contain Element    xpath= //table[@id="menuList"]//a[contains(text(),"${arg_menuitem_title}")]
     
-
 Delete All Menu 
     [Arguments]                      ${arg_cellcount}
     FOR    ${index}  IN RANGE   0    ${arg_cellcount}
