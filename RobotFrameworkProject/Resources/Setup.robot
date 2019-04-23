@@ -10,7 +10,8 @@ Library    Selenium2Library
 Library    OperatingSystem
 Library    PageObjectLibrary
 Library    String
-Library   XML
+Library    XML
+Library    ExcellentLibrary
    
 
 *** Keywords ***
