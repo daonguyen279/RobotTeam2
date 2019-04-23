@@ -15,7 +15,7 @@ ${UPDATEPASSWORD}    1234567890
 
 
 *** Test Cases ***
-Valid Update Admin Profile
+TC-013: Update Admin Profile Successfully
     Login Admin Site                          ${USERNAME1}     ${PASSWORD1}
     Go To Admin Profile Page  
     ${RANEMIAL}=    Generate Random String    4                [LETTERS]   

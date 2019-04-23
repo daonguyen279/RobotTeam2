@@ -12,7 +12,7 @@ ${MENUITEMTYPE}       Articles
 ${SUBMENUITEMTYPE}    Archived Articles 
 
 *** Test Cases ***
-Add Menu Successfully
+TC-014: Add A New Menu Successfully
     Login Admin Site 	                      ${USERNAME}     ${PASSWORD}
     Select Sidebar Menu                       ${lbl_menus}  
     Go To Add New Menu Page       
@@ -24,7 +24,7 @@ Add Menu Successfully
     Set Suite Variable                        ${MENUTITLE} 
     Logout Admin Site 
     
-Add Menu Item Successfully
+TC-015: Add A Menu Item Successfully
     Login Admin Site 	                         ${USERNAME}     ${PASSWORD}
     Select Sidebar Menu                          ${lbl_menus}     
     Go To Add New Menu Item Page
@@ -35,7 +35,7 @@ Add Menu Item Successfully
     Check Add Menu Item Successfully              ${MENUITEMTITLE}
     Logout Admin Site
      
-Delete Menu Item Sucessfully 
+TC-017: Delete A Menu Item Sucessfully 
     Login Admin Site                       ${USERNAME}    ${PASSWORD}
     Select Sidebar Menu                    ${lbl_menus}
     Go To Menu Item Page
@@ -44,7 +44,7 @@ Delete Menu Item Sucessfully
     Check Delete Menu Item Successfully    ${MENUITEMTITLE}  
     Logout Admin Site
     
-Delete A Menu Successfully
+TC-016: Delete A Menu Successfully
     Login Admin Site 	              ${USERNAME}    ${PASSWORD}
     Select Sidebar Menu               ${lbl_menus}
     Delete Menu                       ${MENUTITLE} 
