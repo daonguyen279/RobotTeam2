@@ -23,12 +23,12 @@ Go To Add New Category Page
     Select Sidebar Menu    ${lbl_categories}  
     
 Add New Category
-    [Arguments]	      ${arg_title_categories}          ${arg_cont_categories}    ${arg_alias}
+    [Arguments]	      ${arg_title_categories}            ${arg_cont_categories}    ${arg_alias}
     Click Element	  ${lbl_new_categories}
-    Input Text	      ${txt_title_categories}          ${arg_title_categories}   
-    Input Text        ${txt_title_alias_categories}    ${arg_alias} 
+    Input Text	      ${txt_title_categories}            ${arg_title_categories}   
+    Input Text        ${txt_title_alias_categories}      ${arg_alias} 
     Select Frame  	  ${txt_cont_categories} 
-    Input Text        ${id}                            ${arg_cont_categories}  
+    Input Text        ${id_txtbox_content_categories}    ${arg_cont_categories}  
     Unselect Frame
     Click Button	  ${btn_save_close_categories}
     
@@ -37,10 +37,10 @@ Go To Edit Category Page
     Click Element          ${lbl_title_categories}
 
 Edit Category Information
-    [Arguments]	      ${arg_title_categories_edit}    ${arg_cont_categories_edit}   
-    Input Text	      ${txt_title_categories}         ${arg_title_categories_edit}
+    [Arguments]	      ${arg_title_categories_edit}       ${arg_cont_categories_edit}   
+    Input Text	      ${txt_title_categories}            ${arg_title_categories_edit}
     Select Frame  	  ${txt_cont_categories} 
-    Input Text        ${id}                           ${arg_cont_categories_edit}  
+    Input Text        ${id_txtbox_content_categories}    ${arg_cont_categories_edit}  
     Unselect Frame          
     Click Button      ${btn_save_close_categories} 
     
