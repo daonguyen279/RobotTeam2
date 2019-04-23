@@ -23,14 +23,14 @@ Go To Add New Article Page
     Select Sidebar Menu    ${lbl_new_article} 
      
 Add New Article
-    [Arguments]       ${arg_article_title}              ${arg_article_alias}      ${arg_article_content}
-    Input Text        ${txt_articles_title}             ${arg_article_title}
-    Input Text        ${txt_articles_alias}             ${arg_article_alias}
-    Select Frame      ${ifr_articles_frame} 
-    Input Text        ${txt_articles_addcontent}        ${arg_article_content}            
-    Unselect Frame        
-    Click Button      ${btn_articles_save_and_close}        
-       
+    [Arguments]       ${arg_article_title}             ${arg_article_alias}      ${arg_article_content}
+    Input Text        ${txt_article_title}             ${arg_article_title}
+    Input Text        ${txt_article_alias}             ${arg_article_alias}
+    Select Frame      ${ifr_article_frame} 
+    Input Text        ${txt_article_addcontent}        ${arg_article_content}    
+    Unselect Frame    
+    Click Button      ${btn_article_save_and_close}    
+
 Check Add New Article Sucessfully
     Wait Until Element Is Visible    ${lnk_articles_check_title}
     Element Text Should Be           ${lnk_articles_check_title}    ${ARTICLE_TITLE}
