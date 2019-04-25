@@ -20,40 +20,40 @@ ${TXT_UNPUBLISH_MESSAGE_EXPECTED}    1 category unpublished.
 
 *** Test Cases ***
 TC05 - Verify That Admin Can Add A New Category
-    ${CATEGORY_ALIAS} =  Generate Random String         12                             [LETTERS]
-    Login Admin Site              ${USERNAME}           ${PASSWORD}
+    ${CATEGORY_ALIAS}=    Generate Random String    12                   [LETTERS]
+    Login Admin Site                                ${USERNAME}          ${PASSWORD}
     Go To Add New Category Page
-    Add New Category              ${CATEGORY_TITLE}     ${CATEGORY_CONTENT}            ${CATEGORY_ALIAS}    
-    Check Message Successfully    ${TXT_MESSAGE}        ${TXT_ADD_MESSAGE_EXPECTED} 
+    Add New Category                                ${CATEGORY_TITLE}    ${CATEGORY_CONTENT}            ${CATEGORY_ALIAS}    
+    Check Message Successfully                      ${TXT_MESSAGE}       ${TXT_ADD_MESSAGE_EXPECTED} 
     Logout Admin Site
 
 TC06 - Verify That Admin Can Edit Category Information
-    ${CATEGORY_EDIT_CONTENT} =    Generate Random String    12                              [LETTERS]
-    ${CATEGORY_EDIT_TITLE} =      Generate Random String    12                              [LETTERS]
-    Login Admin Site              ${USERNAME}               ${PASSWORD}
+    ${CATEGORY_EDIT_CONTENT}=    Generate Random String    12                        [LETTERS]
+    ${CATEGORY_EDIT_TITLE}=      Generate Random String    12                        [LETTERS]
+    Login Admin Site                                       ${USERNAME}               ${PASSWORD}
     Go To Edit Category Page
-    Edit Category Information     ${CATEGORY_EDIT_TITLE}    ${CATEGORY_EDIT_CONTENT}
-    Check Message Successfully    ${TXT_MESSAGE}            ${TXT_ADD_MESSAGE_EXPECTED}
+    Edit Category Information                              ${CATEGORY_EDIT_TITLE}    ${CATEGORY_EDIT_CONTENT}
+    Check Message Successfully                             ${TXT_MESSAGE}            ${TXT_ADD_MESSAGE_EXPECTED}
     Delete A Category
-    Check Message Successfully    ${TXT_MESSAGE}            ${TXT_EDIT_MESSAGE_EXPECTED}
+    Check Message Successfully                             ${TXT_MESSAGE}            ${TXT_EDIT_MESSAGE_EXPECTED}
     Logout Admin Site
 
 TC07 - Verify That Admin Can Delete A New Category
-    ${CATEGORY_ALIAS} =    Generate Random String       12                              [LETTERS]
-    Login Admin Site               ${USERNAME}          ${PASSWORD}
+    ${CATEGORY_ALIAS}=    Generate Random String    12                   [LETTERS]
+    Login Admin Site                                ${USERNAME}          ${PASSWORD}
     Go To Add New Category Page    
-    Add New Category               ${CATEGORY_TITLE}    ${CATEGORY_CONTENT}             ${CATEGORY_ALIAS}
-    Check Message Successfully     ${TXT_MESSAGE}       ${TXT_ADD_MESSAGE_EXPECTED}     
+    Add New Category                                ${CATEGORY_TITLE}    ${CATEGORY_CONTENT}             ${CATEGORY_ALIAS}
+    Check Message Successfully                      ${TXT_MESSAGE}       ${TXT_ADD_MESSAGE_EXPECTED}     
     Delete A Category
-    Check Message Successfully     ${TXT_MESSAGE}       ${TXT_EDIT_MESSAGE_EXPECTED}     
+    Check Message Successfully                      ${TXT_MESSAGE}       ${TXT_EDIT_MESSAGE_EXPECTED}     
     Logout Admin Site
 
 TC08 - Verify That Admin Can Unpublish A Category
-    ${CATEGORY_ALIAS} =    Generate Random String       12                                   [LETTERS]
-    Login Admin Site               ${USERNAME}          ${PASSWORD}
+    ${CATEGORY_ALIAS}=    Generate Random String    12                   [LETTERS]
+    Login Admin Site                                ${USERNAME}          ${PASSWORD}
     Go To Add New Category Page    
-    Add New Category               ${CATEGORY_TITLE}    ${CATEGORY_CONTENT}                  ${CATEGORY_ALIAS}
-    Check Message Successfully     ${TXT_MESSAGE}       ${TXT_ADD_MESSAGE_EXPECTED} 
+    Add New Category                                ${CATEGORY_TITLE}    ${CATEGORY_CONTENT}                  ${CATEGORY_ALIAS}
+    Check Message Successfully                      ${TXT_MESSAGE}       ${TXT_ADD_MESSAGE_EXPECTED} 
     Unpublish A Category
-    Check Message Successfully     ${TXT_MESSAGE}       ${TXT_UNPUBLISH_MESSAGE_EXPECTED}     
+    Check Message Successfully                      ${TXT_MESSAGE}       ${TXT_UNPUBLISH_MESSAGE_EXPECTED}     
     Logout Admin Site
