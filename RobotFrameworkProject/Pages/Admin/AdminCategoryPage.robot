@@ -23,12 +23,12 @@ Go To Add New Category Page
     Select Sidebar Menu    ${lbl_categories}
     
 Add New Category
-    [Arguments]	      ${arg_categories_title}            ${arg_categories_cont}    ${arg_alias}
+    [Arguments]	      ${arg_categories_title}          ${arg_categories_cont}     ${arg_alias}
     Click Element     ${lbl_categories_new}
-    Input Text	      ${txt_categories_title}            ${arg_categories_title}   
-    Input Text        ${txt_categories_title_alias}      ${arg_alias} 
+    Input Text	      ${txt_categories_title}          ${arg_categories_title}
+    Input Text        ${txt_categories_title_alias}    ${arg_alias} 
     Select Frame      ${txt_categories_cont} 
-    Input Text        ${txt_categories_content}    ${arg_categories_cont}  
+    Input Text        ${txt_categories_content}        ${arg_categories_cont}  
     Unselect Frame
     Click Button      ${btn_categories_save_close}
     
@@ -40,8 +40,8 @@ Edit Category Information
     [Arguments]	      ${arg_categories_title_edit}       ${arg_categories_cont_edit}   
     Input Text	      ${txt_categories_title}            ${arg_categories_title_edit}
     Select Frame      ${txt_categories_cont} 
-    Input Text        ${txt_categories_content}    ${arg_categories_cont_edit}  
-    Unselect Frame          
+    Input Text        ${txt_categories_content}          ${arg_categories_cont_edit}  
+    Unselect Frame
     Click Button      ${btn_categories_save_close} 
     
 Delete A Category 
@@ -53,5 +53,5 @@ Delete A Category
     Should Be Equal                     ${count_choosen_categories_post}    ${countt_categories_lef_post}
 
 Unpublish A Category
-    Click Element     ${chb_categories}
-    Click Element     ${btn_categories_unpublish}
+    Click Element    ${chb_categories}
+    Click Element    ${btn_categories_unpublish}
