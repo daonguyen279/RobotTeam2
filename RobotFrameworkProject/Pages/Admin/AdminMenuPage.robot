@@ -9,7 +9,7 @@ ${btn_menus_edit}               xpath=//div[@id="toolbar-edit"]/button
 ${btn_menus_delete}             xpath=//div[@id="toolbar-delete"]/button
 ${txt_menus_title}              xpath=//form[@id="item-form"]//input[@id="jform_title"]
 ${txt_menus_type}               xpath=//div[@class="form-horizontal"]//input[@id="jform_menutype"]
-${txt_menus_description}        xpath=//div[@class="form-horizontal"]//input[@id="jform_MENU_DESCRIPTION"]
+${txt_menus_description}        xpath=//div[@class="form-horizontal"]//input[@id="jform_menudescription"]
 ${btn_menus_save_close}         xpath=//div[@id="toolbar-save"]/button
 ${txt_menuitems_title}          xpath=//form[@id="item-form"]//input[@id="jform_title"]
 ${btn_menuitems_type}           xpath=//div[@class="controls"]//button[@class="btn btn-primary"]
@@ -27,11 +27,11 @@ Go To Add New Menu Page
     Click Element    ${btn_menus_add} 
 
 Fill Out And Submit Menu Information
-	[Arguments]      ${arg_menu_title}           ${arg_menu_type}           ${arg_menu_description}  
-	Input Text       ${txt_menus_title}          ${arg_menu_title}	
-	Input Text       ${txt_menus_type}           ${arg_menu_type}
-	Input Text       ${txt_menus_description}    ${arg_menu_description}                                                    
-	Click Element    ${btn_menus_save_close}    
+    [Arguments]      ${arg_menu_title}           ${arg_menu_type}           ${arg_menu_description}  
+    Input Text       ${txt_menus_title}          ${arg_menu_title}	
+    Input Text       ${txt_menus_type}           ${arg_menu_type}
+    Input Text       ${txt_menus_description}    ${arg_menu_description}                                                    
+    Click Element    ${btn_menus_save_close}    
 
 Check Add New Menu Successfully
     [Arguments]                    ${arg_menu_title}
@@ -63,14 +63,14 @@ Fill Out And Submit Menu Item Information
     Input Text                       ${txt_menuitems_title}    ${arg_menuitem_title}    
     Click Element 	                 ${btn_menuitems_type}
     Select Frame                     xpath=//div[@id="menuTypeModal"]//iframe              
-	Click Element                    xpath=//div[@id="collapseTypes"]//div[@class="accordion-heading"]//a[contains(text(),"${arg_menuitem_type}")]
-	Wait Until Element Is Visible    xpath=//div[@id="collapseTypes"]//div[@class="accordion-body in collapse"]//a[contains(text(),"${arg_submenuitem_type}")]
-	Click Element                    xpath=//div[@id="collapseTypes"]//div[@class="accordion-body in collapse"]//a[contains(text(),"${arg_submenuitem_type}")]  
+    Click Element                    xpath=//div[@id="collapseTypes"]//div[@class="accordion-heading"]//a[contains(text(),"${arg_menuitem_type}")]
+    Wait Until Element Is Visible    xpath=//div[@id="collapseTypes"]//div[@class="accordion-body in collapse"]//a[contains(text(),"${arg_submenuitem_type}")]
+    Click Element                    xpath=//div[@id="collapseTypes"]//div[@class="accordion-body in collapse"]//a[contains(text(),"${arg_submenuitem_type}")]  
     Unselect Frame  
     Click Element                    xpath=//div[@id="jform_menutype_chzn"]/a/div/b
     Wait Until Element Is Visible    xpath=//div[@id="jform_menutype_chzn"]/div/ul/li[contains(text(),"${arg_menu_parent}")]
     Click Element                    xpath=//div[@id="jform_menutype_chzn"]/div/ul/li[contains(text(),"${arg_menu_parent}")]                                  
-	Click Element                    ${btn_menus_save_close}      
+    Click Element                    ${btn_menus_save_close}      
 	
 Delete Menu Item
     [Arguments]      ${arg_menuitem_title}

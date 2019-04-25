@@ -1,5 +1,4 @@
 *** Variables ***
-# ********** Login form **********
 ${txt_client_login_username}    id=modlgn-username
 ${txt_client_login_password}    id=modlgn-passwd
 ${chb_client_login_checkout}    id=modlgn-remember
@@ -18,7 +17,7 @@ Login Client Site
     
 Check Login To Client Successfully
     [Arguments]                  ${arg_client_greeting}
-    Element Should Contain       ${lbl_client_grreeting}        ${arg_client_greeting},
+    Element Should Contain       ${lbl_client_grreeting}        ${arg_client_greeting}
     Element Should Be Visible    ${lbl_client_logout_button}
     
 Logout Client Site
