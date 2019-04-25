@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190423 14:00:13.171" rpa="false">
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190425 09:32:06.775" rpa="false">
 <suite id="s1" name="RobotTeam2" source="C:\xampp\htdocs\RobotTeam2">
 <suite id="s1-s1" name="RobotFrameworkProject" source="C:\xampp\htdocs\RobotTeam2\RobotFrameworkProject">
 <suite id="s1-s1-s1" name="Tests" source="C:\xampp\htdocs\RobotTeam2\RobotFrameworkProject\Tests">
@@ -14,15 +14,15 @@
 <assign>
 <var>${PATH}</var>
 </assign>
-<msg timestamp="20190423 14:00:13.422" level="INFO">${PATH} = path</msg>
-<status status="PASS" starttime="20190423 14:00:13.422" endtime="20190423 14:00:13.422"></status>
+<msg timestamp="20190425 09:32:07.007" level="INFO">${PATH} = path</msg>
+<status status="PASS" starttime="20190425 09:32:07.007" endtime="20190425 09:32:07.007"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${PATH}</arg>
 </arguments>
-<status status="PASS" starttime="20190423 14:00:13.423" endtime="20190423 14:00:13.423"></status>
+<status status="PASS" starttime="20190425 09:32:07.007" endtime="20190425 09:32:07.007"></status>
 </kw>
 <kw name="Append To Environment Variable" library="OperatingSystem">
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
@@ -30,8 +30,8 @@
 <arg>${PATH}</arg>
 <arg>${PATH}</arg>
 </arguments>
-<msg timestamp="20190423 14:00:13.424" level="INFO">Environment variable 'path' set to value 'C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;Downloads\Webdriver;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Users\InternDN19.01.08\Downloads\Python\JavaSetup8u201.exe\bin;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\;C:\Users\InternDN19.01.08\AppData\Local\Microsoft\WindowsApps;C:\Users\InternDN19.01.08\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.08\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.08\Downloads\Python\eclipse;;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pywin32_system32;path'.</msg>
-<status status="PASS" starttime="20190423 14:00:13.424" endtime="20190423 14:00:13.424"></status>
+<msg timestamp="20190425 09:32:07.007" level="INFO">Environment variable 'path' set to value 'C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;Downloads\Webdriver;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\InternDN19.01.08\Downloads\Python\JavaSetup8u201.exe\bin;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\;C:\Users\InternDN19.01.08\AppData\Local\Microsoft\WindowsApps;C:\Users\InternDN19.01.08\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.08\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.08\AppData\Roaming\npm;C:\Users\InternDN19.01.08\Downloads\Python\eclipse;;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pywin32_system32;path'.</msg>
+<status status="PASS" starttime="20190425 09:32:07.007" endtime="20190425 09:32:07.007"></status>
 </kw>
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -39,964 +39,76 @@
 <arg>${ROOT}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20190423 14:00:13.425" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla/administrator/'.</msg>
-<status status="PASS" starttime="20190423 14:00:13.425" endtime="20190423 14:00:16.526"></status>
+<msg timestamp="20190425 09:32:07.007" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla/administrator/'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190425 09:32:10.600" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20190425 09:32:10.600" endtime="20190425 09:32:10.600"></status>
 </kw>
-<kw name="Maximize Browser Window" library="Selenium2Library">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20190423 14:00:16.526" endtime="20190423 14:00:17.645"></status>
+<msg timestamp="20190425 09:32:10.600" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome version must be between 70 and 73
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" starttime="20190425 09:32:07.007" endtime="20190425 09:32:10.600"></status>
 </kw>
-<status status="PASS" starttime="20190423 14:00:13.421" endtime="20190423 14:00:17.645"></status>
+<status status="FAIL" starttime="20190425 09:32:07.007" endtime="20190425 09:32:10.600"></status>
 </kw>
 <test id="s1-s1-s1-s1-t1" name="TC05 - Verify That Admin Can Add A New Category">
-<kw name="Generate Random String" library="String">
-<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<arguments>
-<arg>12</arg>
-<arg>[LETTERS]</arg>
-</arguments>
-<assign>
-<var>${CATEGORY_ALIAS}</var>
-</assign>
-<msg timestamp="20190423 14:00:17.646" level="INFO">${CATEGORY_ALIAS} = amFkTTghsjDt</msg>
-<status status="PASS" starttime="20190423 14:00:17.646" endtime="20190423 14:00:17.647"></status>
-</kw>
-<kw name="Login Admin Site" library="AdminLoginPage">
-<arguments>
-<arg>${USERNAME}</arg>
-<arg>${PASSWORD}</arg>
-</arguments>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>Login to Joomla</arg>
-</arguments>
-<status status="PASS" starttime="20190423 14:00:17.647" endtime="20190423 14:00:17.648"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${txt_username}</arg>
-<arg>${arg_username}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:17.648" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
-<status status="PASS" starttime="20190423 14:00:17.648" endtime="20190423 14:00:17.741"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${txt_password}</arg>
-<arg>${arg_password}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:17.742" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
-<status status="PASS" starttime="20190423 14:00:17.742" endtime="20190423 14:00:17.825"></status>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>${btn_login}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:17.826" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:17.826" endtime="20190423 14:00:18.761"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:17.647" endtime="20190423 14:00:18.762"></status>
-</kw>
-<kw name="Go To Add New Category Page" library="AdminCategoryPage">
-<kw name="Select Sidebar Menu" library="AdminHomePage">
-<arguments>
-<arg>${lbl_categories}</arg>
-</arguments>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${arg_page}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:18.764" level="INFO">Clicking element 'xpath=//div[@class="span3"]//a[span[contains(text(), "Categories")]]'.</msg>
-<status status="PASS" starttime="20190423 14:00:18.763" endtime="20190423 14:00:19.456"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:18.763" endtime="20190423 14:00:19.456"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:18.762" endtime="20190423 14:00:19.457"></status>
-</kw>
-<kw name="Add New Category" library="AdminCategoryPage">
-<arguments>
-<arg>${CATEGORY_TITLE}</arg>
-<arg>${CATEGORY_CONTENT}</arg>
-<arg>${CATEGORY_ALIAS}</arg>
-</arguments>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${lbl_categories_new}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:19.458" level="INFO">Clicking element 'xpath=//div[@class="btn-wrapper"]//button//span[@class="icon-new icon-white"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:19.457" endtime="20190423 14:00:20.804"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${txt_categories_title}</arg>
-<arg>${arg_categories_title}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:20.805" level="INFO">Typing text 'Robot Framework is operating system and application independent' into text field 'xpath=//div[@class="control-group"]//div[@class="controls"]//input[@id="jform_title"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:20.805" endtime="20190423 14:00:21.337"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${txt_categories_title_alias}</arg>
-<arg>${arg_alias}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:21.337" level="INFO">Typing text 'amFkTTghsjDt' into text field 'id=jform_alias'.</msg>
-<status status="PASS" starttime="20190423 14:00:21.337" endtime="20190423 14:00:21.479"></status>
-</kw>
-<kw name="Select Frame" library="Selenium2Library">
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<arguments>
-<arg>${txt_categories_cont}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:21.480" level="INFO">Selecting frame 'xpath=//iframe[contains(@id,'jform_description_ifr')]'.</msg>
-<status status="PASS" starttime="20190423 14:00:21.480" endtime="20190423 14:00:21.508"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${id_categories_txtbox_content}</arg>
-<arg>${arg_categories_cont}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:21.509" level="INFO">Typing text 'Many years ago Seth Green decided to take his love of action figures and combine it with one of his major passions: stop-motion animation. The idea for Cartoon Network's late-night animated series "Robot Chicken" was born and the animation world suddenly changed.' into text field 'id=tinymce'.</msg>
-<status status="PASS" starttime="20190423 14:00:21.508" endtime="20190423 14:00:22.156"></status>
-</kw>
-<kw name="Unselect Frame" library="Selenium2Library">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="PASS" starttime="20190423 14:00:22.157" endtime="20190423 14:00:22.159"></status>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>${btn_categories_save_close}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:22.160" level="INFO">Clicking button 'xpath=//div[@class="btn-toolbar"]//div[@class="btn-wrapper"]//button[@class="btn btn-small button-save"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:22.159" endtime="20190423 14:00:24.176"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:19.457" endtime="20190423 14:00:24.177"></status>
-</kw>
-<kw name="Check Message Successfully" library="AdminCategoryPage">
-<arguments>
-<arg>${TXT_MESSAGE}</arg>
-<arg>${TXT_ADD_MESSAGE_EXPECTED}</arg>
-</arguments>
-<kw name="Element Text Should Be" library="Selenium2Library">
-<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
-<arguments>
-<arg>${arg_locator}</arg>
-<arg>${arg_expected}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:24.178" level="WARN">Keyword 'Element Text Should Be' found both from a custom test library 'Selenium2Library' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Selenium2Library.Element Text Should Be' or 'XML.Element Text Should Be'.</msg>
-<msg timestamp="20190423 14:00:24.180" level="INFO">Verifying element 'xpath=//div[@class="alert-message"]' contains exact text 'Category saved.'.</msg>
-<status status="PASS" starttime="20190423 14:00:24.178" endtime="20190423 14:00:24.208"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:24.177" endtime="20190423 14:00:24.208"></status>
-</kw>
-<kw name="Logout Admin Site" library="AdminHomePage">
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${icn_user}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:24.209" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:24.209" endtime="20190423 14:00:24.261"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>${lbl_logout}</arg>
-</arguments>
-<status status="PASS" starttime="20190423 14:00:24.261" endtime="20190423 14:00:24.289"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${lbl_logout}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:24.290" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:24.289" endtime="20190423 14:00:25.581"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:24.208" endtime="20190423 14:00:25.581"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:17.645" endtime="20190423 14:00:25.581" critical="yes"></status>
+<status status="FAIL" starttime="20190425 09:32:10.600" endtime="20190425 09:32:10.608" critical="yes">Parent suite setup failed:
+SessionNotCreatedException: Message: session not created: Chrome version must be between 70 and 73
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</status>
 </test>
 <test id="s1-s1-s1-s1-t2" name="TC06 - Verify That Admin Can Edit Category Information">
-<kw name="Generate Random String" library="String">
-<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<arguments>
-<arg>12</arg>
-<arg>[LETTERS]</arg>
-</arguments>
-<assign>
-<var>${CATEGORY_EDIT_CONTENT}</var>
-</assign>
-<msg timestamp="20190423 14:00:25.585" level="INFO">${CATEGORY_EDIT_CONTENT} = zuxSTYMBLKyt</msg>
-<status status="PASS" starttime="20190423 14:00:25.584" endtime="20190423 14:00:25.585"></status>
-</kw>
-<kw name="Generate Random String" library="String">
-<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<arguments>
-<arg>12</arg>
-<arg>[LETTERS]</arg>
-</arguments>
-<assign>
-<var>${CATEGORY_EDIT_TITLE}</var>
-</assign>
-<msg timestamp="20190423 14:00:25.586" level="INFO">${CATEGORY_EDIT_TITLE} = LIIhhkqHMYRn</msg>
-<status status="PASS" starttime="20190423 14:00:25.586" endtime="20190423 14:00:25.586"></status>
-</kw>
-<kw name="Login Admin Site" library="AdminLoginPage">
-<arguments>
-<arg>${USERNAME}</arg>
-<arg>${PASSWORD}</arg>
-</arguments>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>Login to Joomla</arg>
-</arguments>
-<status status="PASS" starttime="20190423 14:00:25.587" endtime="20190423 14:00:25.588"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${txt_username}</arg>
-<arg>${arg_username}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:25.589" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
-<status status="PASS" starttime="20190423 14:00:25.588" endtime="20190423 14:00:25.659"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${txt_password}</arg>
-<arg>${arg_password}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:25.660" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
-<status status="PASS" starttime="20190423 14:00:25.659" endtime="20190423 14:00:25.729"></status>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>${btn_login}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:25.730" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:25.730" endtime="20190423 14:00:26.804"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:25.587" endtime="20190423 14:00:26.805"></status>
-</kw>
-<kw name="Go To Edit Category Page" library="AdminCategoryPage">
-<kw name="Select Sidebar Menu" library="AdminHomePage">
-<arguments>
-<arg>${lbl_categories}</arg>
-</arguments>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${arg_page}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:26.807" level="INFO">Clicking element 'xpath=//div[@class="span3"]//a[span[contains(text(), "Categories")]]'.</msg>
-<status status="PASS" starttime="20190423 14:00:26.806" endtime="20190423 14:00:27.486"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:26.806" endtime="20190423 14:00:27.487"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${lbl_categories_title}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:27.488" level="INFO">Clicking element 'xpath=//table[@id="categoryList"]/tbody[@class="ui-sortable"]/tr[last()]/td//a[@class="hasTooltip"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:27.487" endtime="20190423 14:00:28.478"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:26.805" endtime="20190423 14:00:28.479"></status>
-</kw>
-<kw name="Edit Category Information" library="AdminCategoryPage">
-<arguments>
-<arg>${CATEGORY_EDIT_TITLE}</arg>
-<arg>${CATEGORY_EDIT_CONTENT}</arg>
-</arguments>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${txt_categories_title}</arg>
-<arg>${arg_categories_title_edit}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:28.480" level="INFO">Typing text 'LIIhhkqHMYRn' into text field 'xpath=//div[@class="control-group"]//div[@class="controls"]//input[@id="jform_title"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:28.479" endtime="20190423 14:00:28.670"></status>
-</kw>
-<kw name="Select Frame" library="Selenium2Library">
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<arguments>
-<arg>${txt_categories_cont}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:28.672" level="INFO">Selecting frame 'xpath=//iframe[contains(@id,'jform_description_ifr')]'.</msg>
-<status status="PASS" starttime="20190423 14:00:28.671" endtime="20190423 14:00:28.696"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${id_categories_txtbox_content}</arg>
-<arg>${arg_categories_cont_edit}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:28.697" level="INFO">Typing text 'zuxSTYMBLKyt' into text field 'id=tinymce'.</msg>
-<status status="PASS" starttime="20190423 14:00:28.697" endtime="20190423 14:00:28.807"></status>
-</kw>
-<kw name="Unselect Frame" library="Selenium2Library">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="PASS" starttime="20190423 14:00:28.807" endtime="20190423 14:00:28.809"></status>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>${btn_categories_save_close}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:28.810" level="INFO">Clicking button 'xpath=//div[@class="btn-toolbar"]//div[@class="btn-wrapper"]//button[@class="btn btn-small button-save"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:28.809" endtime="20190423 14:00:30.857"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:28.479" endtime="20190423 14:00:30.858"></status>
-</kw>
-<kw name="Check Message Successfully" library="AdminCategoryPage">
-<arguments>
-<arg>${TXT_MESSAGE}</arg>
-<arg>${TXT_ADD_MESSAGE_EXPECTED}</arg>
-</arguments>
-<kw name="Element Text Should Be" library="Selenium2Library">
-<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
-<arguments>
-<arg>${arg_locator}</arg>
-<arg>${arg_expected}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:30.859" level="WARN">Keyword 'Element Text Should Be' found both from a custom test library 'Selenium2Library' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Selenium2Library.Element Text Should Be' or 'XML.Element Text Should Be'.</msg>
-<msg timestamp="20190423 14:00:30.860" level="INFO">Verifying element 'xpath=//div[@class="alert-message"]' contains exact text 'Category saved.'.</msg>
-<status status="PASS" starttime="20190423 14:00:30.859" endtime="20190423 14:00:30.888"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:30.858" endtime="20190423 14:00:30.888"></status>
-</kw>
-<kw name="Delete A Category" library="AdminCategoryPage">
-<kw name="Get Element Count" library="Selenium2Library">
-<doc>Returns number of elements matching ``locator``.</doc>
-<arguments>
-<arg>${lbl_categories_tittle_count}</arg>
-</arguments>
-<assign>
-<var>${count_categories_post}</var>
-</assign>
-<msg timestamp="20190423 14:00:30.889" level="WARN">Keyword 'Get Element Count' found both from a custom test library 'Selenium2Library' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Selenium2Library.Get Element Count' or 'XML.Get Element Count'.</msg>
-<msg timestamp="20190423 14:00:30.901" level="INFO">${count_categories_post} = 7</msg>
-<status status="PASS" starttime="20190423 14:00:30.889" endtime="20190423 14:00:30.901"></status>
-</kw>
-<kw name="Select Checkbox" library="Selenium2Library">
-<doc>Selects checkbox identified by ``locator``.</doc>
-<arguments>
-<arg>${select_categories_box}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:30.901" level="INFO">Selecting checkbox 'xpath=//table[@id="categoryList"]/tbody[@class="ui-sortable"]/tr[last()]/td//input[@name="cid[]"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:30.901" endtime="20190423 14:00:30.967"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${btn_categories_trash}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:30.968" level="INFO">Clicking element 'xpath=//button[@class="btn btn-small button-trash"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:30.968" endtime="20190423 14:00:32.171"></status>
-</kw>
-<kw name="Get Element Count" library="Selenium2Library">
-<doc>Returns number of elements matching ``locator``.</doc>
-<arguments>
-<arg>${lbl_categories_tittle_count}</arg>
-</arguments>
-<assign>
-<var>${count_choosen_categories_post}</var>
-</assign>
-<msg timestamp="20190423 14:00:32.171" level="WARN">Keyword 'Get Element Count' found both from a custom test library 'Selenium2Library' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Selenium2Library.Get Element Count' or 'XML.Get Element Count'.</msg>
-<msg timestamp="20190423 14:00:32.183" level="INFO">${count_choosen_categories_post} = 6</msg>
-<status status="PASS" starttime="20190423 14:00:32.171" endtime="20190423 14:00:32.183"></status>
-</kw>
-<kw name="Evaluate" library="BuiltIn">
-<doc>Evaluates the given expression in Python and returns the results.</doc>
-<arguments>
-<arg>${count_categories_post} - 1</arg>
-</arguments>
-<assign>
-<var>${count_left_categories_post}</var>
-</assign>
-<msg timestamp="20190423 14:00:32.184" level="INFO">${count_left_categories_post} = 6</msg>
-<status status="PASS" starttime="20190423 14:00:32.183" endtime="20190423 14:00:32.184"></status>
-</kw>
-<kw name="Should Be Equal" library="BuiltIn">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${count_choosen_categories_post}</arg>
-<arg>${count_left_categories_post}</arg>
-</arguments>
-<status status="PASS" starttime="20190423 14:00:32.184" endtime="20190423 14:00:32.185"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:30.889" endtime="20190423 14:00:32.185"></status>
-</kw>
-<kw name="Check Message Successfully" library="AdminCategoryPage">
-<arguments>
-<arg>${TXT_MESSAGE}</arg>
-<arg>${TXT_EDIT_MESSAGE_EXPECTED}</arg>
-</arguments>
-<kw name="Element Text Should Be" library="Selenium2Library">
-<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
-<arguments>
-<arg>${arg_locator}</arg>
-<arg>${arg_expected}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:32.186" level="WARN">Keyword 'Element Text Should Be' found both from a custom test library 'Selenium2Library' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Selenium2Library.Element Text Should Be' or 'XML.Element Text Should Be'.</msg>
-<msg timestamp="20190423 14:00:32.186" level="INFO">Verifying element 'xpath=//div[@class="alert-message"]' contains exact text '1 category trashed.'.</msg>
-<status status="PASS" starttime="20190423 14:00:32.186" endtime="20190423 14:00:32.211"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:32.185" endtime="20190423 14:00:32.211"></status>
-</kw>
-<kw name="Logout Admin Site" library="AdminHomePage">
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${icn_user}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:32.212" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:32.212" endtime="20190423 14:00:32.256"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>${lbl_logout}</arg>
-</arguments>
-<status status="PASS" starttime="20190423 14:00:32.257" endtime="20190423 14:00:32.276"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${lbl_logout}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:32.276" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:32.276" endtime="20190423 14:00:32.850"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:32.211" endtime="20190423 14:00:32.851"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:25.582" endtime="20190423 14:00:32.851" critical="yes"></status>
+<status status="FAIL" starttime="20190425 09:32:10.608" endtime="20190425 09:32:10.609" critical="yes">Parent suite setup failed:
+SessionNotCreatedException: Message: session not created: Chrome version must be between 70 and 73
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</status>
 </test>
 <test id="s1-s1-s1-s1-t3" name="TC07 - Verify That Admin Can Delete A New Category">
-<kw name="Generate Random String" library="String">
-<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<arguments>
-<arg>12</arg>
-<arg>[LETTERS]</arg>
-</arguments>
-<assign>
-<var>${CATEGORY_ALIAS}</var>
-</assign>
-<msg timestamp="20190423 14:00:32.853" level="INFO">${CATEGORY_ALIAS} = wucvxpCiVZjw</msg>
-<status status="PASS" starttime="20190423 14:00:32.853" endtime="20190423 14:00:32.853"></status>
-</kw>
-<kw name="Login Admin Site" library="AdminLoginPage">
-<arguments>
-<arg>${USERNAME}</arg>
-<arg>${PASSWORD}</arg>
-</arguments>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>Login to Joomla</arg>
-</arguments>
-<status status="PASS" starttime="20190423 14:00:32.854" endtime="20190423 14:00:32.855"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${txt_username}</arg>
-<arg>${arg_username}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:32.856" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
-<status status="PASS" starttime="20190423 14:00:32.855" endtime="20190423 14:00:32.926"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${txt_password}</arg>
-<arg>${arg_password}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:32.927" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
-<status status="PASS" starttime="20190423 14:00:32.927" endtime="20190423 14:00:32.999"></status>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>${btn_login}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:33.000" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:33.000" endtime="20190423 14:00:33.984"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:32.854" endtime="20190423 14:00:33.984"></status>
-</kw>
-<kw name="Go To Add New Category Page" library="AdminCategoryPage">
-<kw name="Select Sidebar Menu" library="AdminHomePage">
-<arguments>
-<arg>${lbl_categories}</arg>
-</arguments>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${arg_page}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:33.986" level="INFO">Clicking element 'xpath=//div[@class="span3"]//a[span[contains(text(), "Categories")]]'.</msg>
-<status status="PASS" starttime="20190423 14:00:33.985" endtime="20190423 14:00:34.359"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:33.985" endtime="20190423 14:00:34.359"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:33.984" endtime="20190423 14:00:34.360"></status>
-</kw>
-<kw name="Add New Category" library="AdminCategoryPage">
-<arguments>
-<arg>${CATEGORY_TITLE}</arg>
-<arg>${CATEGORY_CONTENT}</arg>
-<arg>${CATEGORY_ALIAS}</arg>
-</arguments>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${lbl_categories_new}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:34.361" level="INFO">Clicking element 'xpath=//div[@class="btn-wrapper"]//button//span[@class="icon-new icon-white"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:34.361" endtime="20190423 14:00:36.354"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${txt_categories_title}</arg>
-<arg>${arg_categories_title}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:36.356" level="INFO">Typing text 'Robot Framework is operating system and application independent' into text field 'xpath=//div[@class="control-group"]//div[@class="controls"]//input[@id="jform_title"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:36.355" endtime="20190423 14:00:36.948"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${txt_categories_title_alias}</arg>
-<arg>${arg_alias}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:36.949" level="INFO">Typing text 'wucvxpCiVZjw' into text field 'id=jform_alias'.</msg>
-<status status="PASS" starttime="20190423 14:00:36.949" endtime="20190423 14:00:37.088"></status>
-</kw>
-<kw name="Select Frame" library="Selenium2Library">
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<arguments>
-<arg>${txt_categories_cont}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:37.089" level="INFO">Selecting frame 'xpath=//iframe[contains(@id,'jform_description_ifr')]'.</msg>
-<status status="PASS" starttime="20190423 14:00:37.089" endtime="20190423 14:00:37.117"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${id_categories_txtbox_content}</arg>
-<arg>${arg_categories_cont}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:37.118" level="INFO">Typing text 'Many years ago Seth Green decided to take his love of action figures and combine it with one of his major passions: stop-motion animation. The idea for Cartoon Network's late-night animated series "Robot Chicken" was born and the animation world suddenly changed.' into text field 'id=tinymce'.</msg>
-<status status="PASS" starttime="20190423 14:00:37.117" endtime="20190423 14:00:37.734"></status>
-</kw>
-<kw name="Unselect Frame" library="Selenium2Library">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="PASS" starttime="20190423 14:00:37.734" endtime="20190423 14:00:37.737"></status>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>${btn_categories_save_close}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:37.737" level="INFO">Clicking button 'xpath=//div[@class="btn-toolbar"]//div[@class="btn-wrapper"]//button[@class="btn btn-small button-save"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:37.737" endtime="20190423 14:00:40.285"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:34.360" endtime="20190423 14:00:40.286"></status>
-</kw>
-<kw name="Check Message Successfully" library="AdminCategoryPage">
-<arguments>
-<arg>${TXT_MESSAGE}</arg>
-<arg>${TXT_ADD_MESSAGE_EXPECTED}</arg>
-</arguments>
-<kw name="Element Text Should Be" library="Selenium2Library">
-<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
-<arguments>
-<arg>${arg_locator}</arg>
-<arg>${arg_expected}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:40.287" level="WARN">Keyword 'Element Text Should Be' found both from a custom test library 'Selenium2Library' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Selenium2Library.Element Text Should Be' or 'XML.Element Text Should Be'.</msg>
-<msg timestamp="20190423 14:00:40.288" level="INFO">Verifying element 'xpath=//div[@class="alert-message"]' contains exact text 'Category saved.'.</msg>
-<status status="PASS" starttime="20190423 14:00:40.287" endtime="20190423 14:00:40.317"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:40.286" endtime="20190423 14:00:40.317"></status>
-</kw>
-<kw name="Delete A Category" library="AdminCategoryPage">
-<kw name="Get Element Count" library="Selenium2Library">
-<doc>Returns number of elements matching ``locator``.</doc>
-<arguments>
-<arg>${lbl_categories_tittle_count}</arg>
-</arguments>
-<assign>
-<var>${count_categories_post}</var>
-</assign>
-<msg timestamp="20190423 14:00:40.318" level="WARN">Keyword 'Get Element Count' found both from a custom test library 'Selenium2Library' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Selenium2Library.Get Element Count' or 'XML.Get Element Count'.</msg>
-<msg timestamp="20190423 14:00:40.329" level="INFO">${count_categories_post} = 7</msg>
-<status status="PASS" starttime="20190423 14:00:40.318" endtime="20190423 14:00:40.329"></status>
-</kw>
-<kw name="Select Checkbox" library="Selenium2Library">
-<doc>Selects checkbox identified by ``locator``.</doc>
-<arguments>
-<arg>${select_categories_box}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:40.330" level="INFO">Selecting checkbox 'xpath=//table[@id="categoryList"]/tbody[@class="ui-sortable"]/tr[last()]/td//input[@name="cid[]"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:40.330" endtime="20190423 14:00:40.393"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${btn_categories_trash}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:40.395" level="INFO">Clicking element 'xpath=//button[@class="btn btn-small button-trash"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:40.394" endtime="20190423 14:00:41.204"></status>
-</kw>
-<kw name="Get Element Count" library="Selenium2Library">
-<doc>Returns number of elements matching ``locator``.</doc>
-<arguments>
-<arg>${lbl_categories_tittle_count}</arg>
-</arguments>
-<assign>
-<var>${count_choosen_categories_post}</var>
-</assign>
-<msg timestamp="20190423 14:00:41.204" level="WARN">Keyword 'Get Element Count' found both from a custom test library 'Selenium2Library' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Selenium2Library.Get Element Count' or 'XML.Get Element Count'.</msg>
-<msg timestamp="20190423 14:00:41.217" level="INFO">${count_choosen_categories_post} = 6</msg>
-<status status="PASS" starttime="20190423 14:00:41.204" endtime="20190423 14:00:41.217"></status>
-</kw>
-<kw name="Evaluate" library="BuiltIn">
-<doc>Evaluates the given expression in Python and returns the results.</doc>
-<arguments>
-<arg>${count_categories_post} - 1</arg>
-</arguments>
-<assign>
-<var>${count_left_categories_post}</var>
-</assign>
-<msg timestamp="20190423 14:00:41.218" level="INFO">${count_left_categories_post} = 6</msg>
-<status status="PASS" starttime="20190423 14:00:41.217" endtime="20190423 14:00:41.218"></status>
-</kw>
-<kw name="Should Be Equal" library="BuiltIn">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${count_choosen_categories_post}</arg>
-<arg>${count_left_categories_post}</arg>
-</arguments>
-<status status="PASS" starttime="20190423 14:00:41.218" endtime="20190423 14:00:41.218"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:40.317" endtime="20190423 14:00:41.219"></status>
-</kw>
-<kw name="Check Message Successfully" library="AdminCategoryPage">
-<arguments>
-<arg>${TXT_MESSAGE}</arg>
-<arg>${TXT_EDIT_MESSAGE_EXPECTED}</arg>
-</arguments>
-<kw name="Element Text Should Be" library="Selenium2Library">
-<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
-<arguments>
-<arg>${arg_locator}</arg>
-<arg>${arg_expected}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:41.219" level="WARN">Keyword 'Element Text Should Be' found both from a custom test library 'Selenium2Library' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Selenium2Library.Element Text Should Be' or 'XML.Element Text Should Be'.</msg>
-<msg timestamp="20190423 14:00:41.220" level="INFO">Verifying element 'xpath=//div[@class="alert-message"]' contains exact text '1 category trashed.'.</msg>
-<status status="PASS" starttime="20190423 14:00:41.219" endtime="20190423 14:00:41.240"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:41.219" endtime="20190423 14:00:41.241"></status>
-</kw>
-<kw name="Logout Admin Site" library="AdminHomePage">
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${icn_user}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:41.242" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:41.241" endtime="20190423 14:00:41.293"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>${lbl_logout}</arg>
-</arguments>
-<status status="PASS" starttime="20190423 14:00:41.294" endtime="20190423 14:00:41.318"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${lbl_logout}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:41.319" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:41.318" endtime="20190423 14:00:41.833"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:41.241" endtime="20190423 14:00:41.834"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:32.852" endtime="20190423 14:00:41.834" critical="yes"></status>
+<status status="FAIL" starttime="20190425 09:32:10.609" endtime="20190425 09:32:10.610" critical="yes">Parent suite setup failed:
+SessionNotCreatedException: Message: session not created: Chrome version must be between 70 and 73
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</status>
 </test>
 <test id="s1-s1-s1-s1-t4" name="TC08 - Verify That Admin Can Unpublish A Category">
-<kw name="Generate Random String" library="String">
-<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<arguments>
-<arg>12</arg>
-<arg>[LETTERS]</arg>
-</arguments>
-<assign>
-<var>${CATEGORY_ALIAS}</var>
-</assign>
-<msg timestamp="20190423 14:00:41.837" level="INFO">${CATEGORY_ALIAS} = MziQBZwEpClY</msg>
-<status status="PASS" starttime="20190423 14:00:41.836" endtime="20190423 14:00:41.837"></status>
-</kw>
-<kw name="Login Admin Site" library="AdminLoginPage">
-<arguments>
-<arg>${USERNAME}</arg>
-<arg>${PASSWORD}</arg>
-</arguments>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>Login to Joomla</arg>
-</arguments>
-<status status="PASS" starttime="20190423 14:00:41.838" endtime="20190423 14:00:41.839"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${txt_username}</arg>
-<arg>${arg_username}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:41.840" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
-<status status="PASS" starttime="20190423 14:00:41.839" endtime="20190423 14:00:41.913"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${txt_password}</arg>
-<arg>${arg_password}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:41.914" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
-<status status="PASS" starttime="20190423 14:00:41.913" endtime="20190423 14:00:41.983"></status>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>${btn_login}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:41.984" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:41.984" endtime="20190423 14:00:42.925"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:41.838" endtime="20190423 14:00:42.926"></status>
-</kw>
-<kw name="Go To Add New Category Page" library="AdminCategoryPage">
-<kw name="Select Sidebar Menu" library="AdminHomePage">
-<arguments>
-<arg>${lbl_categories}</arg>
-</arguments>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${arg_page}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:42.929" level="INFO">Clicking element 'xpath=//div[@class="span3"]//a[span[contains(text(), "Categories")]]'.</msg>
-<status status="PASS" starttime="20190423 14:00:42.928" endtime="20190423 14:00:43.406"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:42.927" endtime="20190423 14:00:43.406"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:42.926" endtime="20190423 14:00:43.407"></status>
-</kw>
-<kw name="Add New Category" library="AdminCategoryPage">
-<arguments>
-<arg>${CATEGORY_TITLE}</arg>
-<arg>${CATEGORY_CONTENT}</arg>
-<arg>${CATEGORY_ALIAS}</arg>
-</arguments>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${lbl_categories_new}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:43.408" level="INFO">Clicking element 'xpath=//div[@class="btn-wrapper"]//button//span[@class="icon-new icon-white"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:43.408" endtime="20190423 14:00:44.287"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${txt_categories_title}</arg>
-<arg>${arg_categories_title}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:44.288" level="INFO">Typing text 'Robot Framework is operating system and application independent' into text field 'xpath=//div[@class="control-group"]//div[@class="controls"]//input[@id="jform_title"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:44.288" endtime="20190423 14:00:44.852"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${txt_categories_title_alias}</arg>
-<arg>${arg_alias}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:44.853" level="INFO">Typing text 'MziQBZwEpClY' into text field 'id=jform_alias'.</msg>
-<status status="PASS" starttime="20190423 14:00:44.852" endtime="20190423 14:00:45.005"></status>
-</kw>
-<kw name="Select Frame" library="Selenium2Library">
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<arguments>
-<arg>${txt_categories_cont}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:45.006" level="INFO">Selecting frame 'xpath=//iframe[contains(@id,'jform_description_ifr')]'.</msg>
-<status status="PASS" starttime="20190423 14:00:45.005" endtime="20190423 14:00:45.033"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${id_categories_txtbox_content}</arg>
-<arg>${arg_categories_cont}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:45.034" level="INFO">Typing text 'Many years ago Seth Green decided to take his love of action figures and combine it with one of his major passions: stop-motion animation. The idea for Cartoon Network's late-night animated series "Robot Chicken" was born and the animation world suddenly changed.' into text field 'id=tinymce'.</msg>
-<status status="PASS" starttime="20190423 14:00:45.033" endtime="20190423 14:00:45.652"></status>
-</kw>
-<kw name="Unselect Frame" library="Selenium2Library">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="PASS" starttime="20190423 14:00:45.653" endtime="20190423 14:00:45.655"></status>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>${btn_categories_save_close}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:45.655" level="INFO">Clicking button 'xpath=//div[@class="btn-toolbar"]//div[@class="btn-wrapper"]//button[@class="btn btn-small button-save"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:45.655" endtime="20190423 14:00:49.263"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:43.407" endtime="20190423 14:00:49.264"></status>
-</kw>
-<kw name="Check Message Successfully" library="AdminCategoryPage">
-<arguments>
-<arg>${TXT_MESSAGE}</arg>
-<arg>${TXT_ADD_MESSAGE_EXPECTED}</arg>
-</arguments>
-<kw name="Element Text Should Be" library="Selenium2Library">
-<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
-<arguments>
-<arg>${arg_locator}</arg>
-<arg>${arg_expected}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:49.265" level="WARN">Keyword 'Element Text Should Be' found both from a custom test library 'Selenium2Library' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Selenium2Library.Element Text Should Be' or 'XML.Element Text Should Be'.</msg>
-<msg timestamp="20190423 14:00:49.265" level="INFO">Verifying element 'xpath=//div[@class="alert-message"]' contains exact text 'Category saved.'.</msg>
-<status status="PASS" starttime="20190423 14:00:49.265" endtime="20190423 14:00:49.287"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:49.264" endtime="20190423 14:00:49.288"></status>
-</kw>
-<kw name="Unpublish A Category" library="AdminCategoryPage">
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${select_categories_box}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:49.289" level="INFO">Clicking element 'xpath=//table[@id="categoryList"]/tbody[@class="ui-sortable"]/tr[last()]/td//input[@name="cid[]"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:49.289" endtime="20190423 14:00:49.331"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${btn_categories_unpublish}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:49.332" level="INFO">Clicking element 'xpath=//button[@class="btn btn-small button-unpublish"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:49.331" endtime="20190423 14:00:50.096"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:49.288" endtime="20190423 14:00:50.097"></status>
-</kw>
-<kw name="Check Message Successfully" library="AdminCategoryPage">
-<arguments>
-<arg>${TXT_MESSAGE}</arg>
-<arg>${TXT_UNPUBLISH_MESSAGE_EXPECTED}</arg>
-</arguments>
-<kw name="Element Text Should Be" library="Selenium2Library">
-<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
-<arguments>
-<arg>${arg_locator}</arg>
-<arg>${arg_expected}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:50.098" level="WARN">Keyword 'Element Text Should Be' found both from a custom test library 'Selenium2Library' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Selenium2Library.Element Text Should Be' or 'XML.Element Text Should Be'.</msg>
-<msg timestamp="20190423 14:00:50.099" level="INFO">Verifying element 'xpath=//div[@class="alert-message"]' contains exact text '1 category unpublished.'.</msg>
-<status status="PASS" starttime="20190423 14:00:50.098" endtime="20190423 14:00:50.121"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:50.097" endtime="20190423 14:00:50.121"></status>
-</kw>
-<kw name="Logout Admin Site" library="AdminHomePage">
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${icn_user}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:50.122" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:50.121" endtime="20190423 14:00:50.167"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>${lbl_logout}</arg>
-</arguments>
-<status status="PASS" starttime="20190423 14:00:50.168" endtime="20190423 14:00:50.187"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${lbl_logout}</arg>
-</arguments>
-<msg timestamp="20190423 14:00:50.188" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]'.</msg>
-<status status="PASS" starttime="20190423 14:00:50.188" endtime="20190423 14:00:50.791"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:50.121" endtime="20190423 14:00:50.792"></status>
-</kw>
-<status status="PASS" starttime="20190423 14:00:41.835" endtime="20190423 14:00:50.792" critical="yes"></status>
+<status status="FAIL" starttime="20190425 09:32:10.610" endtime="20190425 09:32:10.610" critical="yes">Parent suite setup failed:
+SessionNotCreatedException: Message: session not created: Chrome version must be between 70 and 73
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</status>
 </test>
 <kw name="Teardown" library="Setup" type="teardown">
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20190423 14:00:50.795" endtime="20190423 14:00:52.916"></status>
+<status status="PASS" starttime="20190425 09:32:10.610" endtime="20190425 09:32:10.610"></status>
 </kw>
-<status status="PASS" starttime="20190423 14:00:50.794" endtime="20190423 14:00:52.918"></status>
+<status status="PASS" starttime="20190425 09:32:10.610" endtime="20190425 09:32:10.610"></status>
 </kw>
-<status status="PASS" starttime="20190423 14:00:13.234" endtime="20190423 14:00:52.918"></status>
+<status status="FAIL" starttime="20190425 09:32:06.822" endtime="20190425 09:32:10.610">Suite setup failed:
+SessionNotCreatedException: Message: session not created: Chrome version must be between 70 and 73
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</status>
 </suite>
-<status status="PASS" starttime="20190423 14:00:13.232" endtime="20190423 14:00:52.932"></status>
+<status status="FAIL" starttime="20190425 09:32:06.822" endtime="20190425 09:32:10.610"></status>
 </suite>
-<status status="PASS" starttime="20190423 14:00:13.230" endtime="20190423 14:00:52.938"></status>
+<status status="FAIL" starttime="20190425 09:32:06.822" endtime="20190425 09:32:10.610"></status>
 </suite>
-<status status="PASS" starttime="20190423 14:00:13.209" endtime="20190423 14:00:52.943"></status>
+<status status="FAIL" starttime="20190425 09:32:06.806" endtime="20190425 09:32:10.610"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="4" fail="0">Critical Tests</stat>
-<stat pass="4" fail="0">All Tests</stat>
+<stat pass="0" fail="4">Critical Tests</stat>
+<stat pass="0" fail="4">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="4" fail="0" id="s1" name="RobotTeam2">RobotTeam2</stat>
-<stat pass="4" fail="0" id="s1-s1" name="RobotFrameworkProject">RobotTeam2.RobotFrameworkProject</stat>
-<stat pass="4" fail="0" id="s1-s1-s1" name="Tests">RobotTeam2.RobotFrameworkProject.Tests</stat>
-<stat pass="4" fail="0" id="s1-s1-s1-s1" name="AdminCategoryTest">RobotTeam2.RobotFrameworkProject.Tests.AdminCategoryTest</stat>
+<stat pass="0" fail="4" id="s1" name="RobotTeam2">RobotTeam2</stat>
+<stat pass="0" fail="4" id="s1-s1" name="RobotFrameworkProject">RobotTeam2.RobotFrameworkProject</stat>
+<stat pass="0" fail="4" id="s1-s1-s1" name="Tests">RobotTeam2.RobotFrameworkProject.Tests</stat>
+<stat pass="0" fail="4" id="s1-s1-s1-s1" name="AdminCategoryTest">RobotTeam2.RobotFrameworkProject.Tests.AdminCategoryTest</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20190423 14:00:13.414" level="ERROR">Error in file 'C:\xampp\htdocs\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminCategoryPage.robot': Setting variable 'btn_categories_add_new' failed: Invalid variable name 'btn_categories_add_new'.</msg>
-<msg timestamp="20190423 14:00:24.178" level="WARN">Keyword 'Element Text Should Be' found both from a custom test library 'Selenium2Library' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Selenium2Library.Element Text Should Be' or 'XML.Element Text Should Be'.</msg>
-<msg timestamp="20190423 14:00:30.859" level="WARN">Keyword 'Element Text Should Be' found both from a custom test library 'Selenium2Library' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Selenium2Library.Element Text Should Be' or 'XML.Element Text Should Be'.</msg>
-<msg timestamp="20190423 14:00:30.889" level="WARN">Keyword 'Get Element Count' found both from a custom test library 'Selenium2Library' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Selenium2Library.Get Element Count' or 'XML.Get Element Count'.</msg>
-<msg timestamp="20190423 14:00:32.171" level="WARN">Keyword 'Get Element Count' found both from a custom test library 'Selenium2Library' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Selenium2Library.Get Element Count' or 'XML.Get Element Count'.</msg>
-<msg timestamp="20190423 14:00:32.186" level="WARN">Keyword 'Element Text Should Be' found both from a custom test library 'Selenium2Library' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Selenium2Library.Element Text Should Be' or 'XML.Element Text Should Be'.</msg>
-<msg timestamp="20190423 14:00:40.287" level="WARN">Keyword 'Element Text Should Be' found both from a custom test library 'Selenium2Library' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Selenium2Library.Element Text Should Be' or 'XML.Element Text Should Be'.</msg>
-<msg timestamp="20190423 14:00:40.318" level="WARN">Keyword 'Get Element Count' found both from a custom test library 'Selenium2Library' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Selenium2Library.Get Element Count' or 'XML.Get Element Count'.</msg>
-<msg timestamp="20190423 14:00:41.204" level="WARN">Keyword 'Get Element Count' found both from a custom test library 'Selenium2Library' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Selenium2Library.Get Element Count' or 'XML.Get Element Count'.</msg>
-<msg timestamp="20190423 14:00:41.219" level="WARN">Keyword 'Element Text Should Be' found both from a custom test library 'Selenium2Library' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Selenium2Library.Element Text Should Be' or 'XML.Element Text Should Be'.</msg>
-<msg timestamp="20190423 14:00:49.265" level="WARN">Keyword 'Element Text Should Be' found both from a custom test library 'Selenium2Library' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Selenium2Library.Element Text Should Be' or 'XML.Element Text Should Be'.</msg>
-<msg timestamp="20190423 14:00:50.098" level="WARN">Keyword 'Element Text Should Be' found both from a custom test library 'Selenium2Library' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Selenium2Library.Element Text Should Be' or 'XML.Element Text Should Be'.</msg>
+<msg timestamp="20190425 09:32:06.991" level="ERROR">Error in file 'C:\xampp\htdocs\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminCategoryPage.robot': Setting variable 'btn_categories_add_new' failed: Invalid variable name 'btn_categories_add_new'.</msg>
 </errors>
 </robot>
