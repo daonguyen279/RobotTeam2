@@ -55,7 +55,3 @@ Delete A Category
 Unpublish A Category
     Click Element     ${chb_categories}
     Click Element     ${btn_categories_unpublish}
-
-Check Message Successfully
-    [Arguments]               ${arg_locator}    ${arg_expected}
-    Element Text Should Be    ${arg_locator}    ${arg_expected}

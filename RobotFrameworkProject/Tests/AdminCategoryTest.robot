@@ -13,7 +13,6 @@ ${CATEGORY_EDIT_TITLE}               Robot Framework is operating system and app
 ${CATEGORY_EDIT_CONTENT}             Long time ago Seth Green decided to take his love of action figures and combine it with one of his major passions: stop-motion animation. The idea for Cartoon Network's late-night animated series "Robot Chicken" was born and the animation world suddenly changed.
 ${TXT_ADD_MESSAGE_EXPECTED}          Category saved.
 ${TXT_EIT_MESSAGE_EXPECTED}          1 category trashed.
-${TXT_MESSAGE}                       xpath=//div[@class="alert-message"]
 ${TXT_EDIT_MESSAGE_EXPECTED}         1 category trashed.
 ${TXT_UNPUBLISH_MESSAGE_EXPECTED}    1 category unpublished.
   
@@ -24,7 +23,7 @@ TC05 - Verify That Admin Can Add A New Category
     Login Admin Site                                ${USERNAME}          ${PASSWORD}
     Go To Add New Category Page
     Add New Category                                ${CATEGORY_TITLE}    ${CATEGORY_CONTENT}            ${CATEGORY_ALIAS}    
-    Check Message Successfully                      ${TXT_MESSAGE}       ${TXT_ADD_MESSAGE_EXPECTED} 
+    Check Message                                   ${TXT_ADD_MESSAGE_EXPECTED} 
     Logout Admin Site
 
 TC06 - Verify That Admin Can Edit Category Information
@@ -33,9 +32,9 @@ TC06 - Verify That Admin Can Edit Category Information
     Login Admin Site                                       ${USERNAME}               ${PASSWORD}
     Go To Edit Category Page
     Edit Category Information                              ${CATEGORY_EDIT_TITLE}    ${CATEGORY_EDIT_CONTENT}
-    Check Message Successfully                             ${TXT_MESSAGE}            ${TXT_ADD_MESSAGE_EXPECTED}
+    Check Message                                          ${TXT_ADD_MESSAGE_EXPECTED}
     Delete A Category
-    Check Message Successfully                             ${TXT_MESSAGE}            ${TXT_EDIT_MESSAGE_EXPECTED}
+    Check Message                                          ${TXT_EDIT_MESSAGE_EXPECTED}
     Logout Admin Site
 
 TC07 - Verify That Admin Can Delete A New Category
@@ -43,9 +42,9 @@ TC07 - Verify That Admin Can Delete A New Category
     Login Admin Site                                ${USERNAME}          ${PASSWORD}
     Go To Add New Category Page    
     Add New Category                                ${CATEGORY_TITLE}    ${CATEGORY_CONTENT}             ${CATEGORY_ALIAS}
-    Check Message Successfully                      ${TXT_MESSAGE}       ${TXT_ADD_MESSAGE_EXPECTED}     
+    Check Message                                   ${TXT_ADD_MESSAGE_EXPECTED}     
     Delete A Category
-    Check Message Successfully                      ${TXT_MESSAGE}       ${TXT_EDIT_MESSAGE_EXPECTED}     
+    Check Message                                   ${TXT_EDIT_MESSAGE_EXPECTED}     
     Logout Admin Site
 
 TC08 - Verify That Admin Can Unpublish A Category
@@ -53,7 +52,7 @@ TC08 - Verify That Admin Can Unpublish A Category
     Login Admin Site                                ${USERNAME}          ${PASSWORD}
     Go To Add New Category Page    
     Add New Category                                ${CATEGORY_TITLE}    ${CATEGORY_CONTENT}                  ${CATEGORY_ALIAS}
-    Check Message Successfully                      ${TXT_MESSAGE}       ${TXT_ADD_MESSAGE_EXPECTED} 
+    Check Message                                   ${TXT_ADD_MESSAGE_EXPECTED} 
     Unpublish A Category
-    Check Message Successfully                      ${TXT_MESSAGE}       ${TXT_UNPUBLISH_MESSAGE_EXPECTED}     
+    Check Message                                   ${TXT_UNPUBLISH_MESSAGE_EXPECTED}     
     Logout Admin Site
