@@ -47,7 +47,7 @@ TC03 - Unpublish An Article
     Logout Admin Site 
       
 TC04 - Delete An Article
-    ${ARTICLE_ALIAS}=    Generate Random String    12                 [LETTERS]
+    ${ARTICLE_ALIAS}=    Generate Random String    12                  [LETTERS]
     ${ARTICLE_TITLE}=    Generate Random String    30                  [LETTERS]
     Login Admin Site                               ${USERNAME}         ${PASSWORD}
     Go To Add New Article Page      
