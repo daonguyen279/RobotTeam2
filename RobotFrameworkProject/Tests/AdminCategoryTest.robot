@@ -33,7 +33,7 @@ TC06 - Verify That Admin Can Edit Category Information
     ${CATEGORY_ALIAS}=           Generate Random String    12                              [LETTERS]
     Login Admin Site                                       ${USERNAME}                     ${PASSWORD}
     Go To Add New Category Page
-    Add New Category                                       ${CATEGORY_TITLE}              ${CATEGORY_CONTENT}    ${CATEGORY_ALIAS}
+    Add New Category                                       ${CATEGORY_TITLE}               ${CATEGORY_CONTENT}    ${CATEGORY_ALIAS}
     Go To Edit Category Page
     Edit Category Information                              ${CATEGORY_EDIT_TITLE}          ${CATEGORY_EDIT_CONTENT}
     Check Message                                          ${TXT_ADD_MESSAGE_EXPECTED}
