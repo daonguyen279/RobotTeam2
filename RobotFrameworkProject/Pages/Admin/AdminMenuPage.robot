@@ -2,7 +2,7 @@
 Resource    ../../Pages/Admin/AdminHomePage.robot
 
 *** Variables ***
-${btn_menus_list}               xpath=//ul[@id="submenu"]/li[@class="active"]/a[contains(text(),"Menus")]
+${btn_menus_list}               xpath=//ul[@id="submenu"]/li/a[contains(text(),"Menus")]
 ${btn_menus_add}                xpath=//div[@id="toolbar-new"]/button
 ${btn_menuitems_list}           xpath=//ul[@id="submenu"]//a[contains(text(),"Menu Items")]
 ${btn_menus_edit}               xpath=//div[@id="toolbar-edit"]/button
@@ -75,7 +75,7 @@ Fill Out And Submit Menu Item Information
 	
 Delete Menu Item
     [Arguments]      ${arg_menuitem_title}
-    Click Element    xpath=//table[@id="itemList"]//tr[td/a[contains(text(),"${arg_menuitem_title}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input
+    Click Element    xpath=//table[@id="itemList"]//tr[td/a[contains(text(),"${arg_menuitem_title}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+2]/input
     Click Element    ${btn_menuitems_trash}
 
 Check Add Menu Item Successfully
