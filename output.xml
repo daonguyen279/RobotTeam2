@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190425 09:32:06.775" rpa="false">
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190425 14:03:06.286" rpa="false">
 <suite id="s1" name="RobotTeam2" source="C:\xampp\htdocs\RobotTeam2">
 <suite id="s1-s1" name="RobotFrameworkProject" source="C:\xampp\htdocs\RobotTeam2\RobotFrameworkProject">
 <suite id="s1-s1-s1" name="Tests" source="C:\xampp\htdocs\RobotTeam2\RobotFrameworkProject\Tests">
 <suite id="s1-s1-s1-s1" name="AdminCategoryTest" source="C:\xampp\htdocs\RobotTeam2\RobotFrameworkProject\Tests\AdminCategoryTest.robot">
+<test id="s1-s1-s1-s1-t1" name="TC05 - Verify That Admin Can Add A New Category">
 <kw name="Setup" library="Setup" type="setup">
 <kw name="Normalize Path" library="OperatingSystem">
 <doc>Normalizes the given path.</doc>
@@ -14,15 +15,15 @@
 <assign>
 <var>${PATH}</var>
 </assign>
-<msg timestamp="20190425 09:32:07.007" level="INFO">${PATH} = path</msg>
-<status status="PASS" starttime="20190425 09:32:07.007" endtime="20190425 09:32:07.007"></status>
+<msg timestamp="20190425 14:03:06.509" level="INFO">${PATH} = path</msg>
+<status status="PASS" starttime="20190425 14:03:06.509" endtime="20190425 14:03:06.510"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${PATH}</arg>
 </arguments>
-<status status="PASS" starttime="20190425 09:32:07.007" endtime="20190425 09:32:07.007"></status>
+<status status="PASS" starttime="20190425 14:03:06.510" endtime="20190425 14:03:06.510"></status>
 </kw>
 <kw name="Append To Environment Variable" library="OperatingSystem">
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
@@ -30,8 +31,8 @@
 <arg>${PATH}</arg>
 <arg>${PATH}</arg>
 </arguments>
-<msg timestamp="20190425 09:32:07.007" level="INFO">Environment variable 'path' set to value 'C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;Downloads\Webdriver;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\InternDN19.01.08\Downloads\Python\JavaSetup8u201.exe\bin;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\;C:\Users\InternDN19.01.08\AppData\Local\Microsoft\WindowsApps;C:\Users\InternDN19.01.08\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.08\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.08\AppData\Roaming\npm;C:\Users\InternDN19.01.08\Downloads\Python\eclipse;;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pywin32_system32;path'.</msg>
-<status status="PASS" starttime="20190425 09:32:07.007" endtime="20190425 09:32:07.007"></status>
+<msg timestamp="20190425 14:03:06.511" level="INFO">Environment variable 'path' set to value 'C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;Downloads\Webdriver;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\InternDN19.01.08\Downloads\Python\JavaSetup8u201.exe\bin;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\;C:\Users\InternDN19.01.08\AppData\Local\Microsoft\WindowsApps;C:\Users\InternDN19.01.08\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.08\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.08\AppData\Roaming\npm;C:\Users\InternDN19.01.08\Downloads\Python\eclipse;;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pywin32_system32;path'.</msg>
+<status status="PASS" starttime="20190425 14:03:06.510" endtime="20190425 14:03:06.511"></status>
 </kw>
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -39,39 +40,182 @@
 <arg>${ROOT}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20190425 09:32:07.007" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla/administrator/'.</msg>
+<msg timestamp="20190425 14:03:06.512" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla/administrator/'.</msg>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190425 09:32:10.600" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" starttime="20190425 09:32:10.600" endtime="20190425 09:32:10.600"></status>
+<msg timestamp="20190425 14:03:09.669" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20190425 14:03:09.668" endtime="20190425 14:03:09.669"></status>
 </kw>
-<msg timestamp="20190425 09:32:10.600" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome version must be between 70 and 73
+<msg timestamp="20190425 14:03:09.672" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome version must be between 70 and 73
   (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
 </msg>
-<status status="FAIL" starttime="20190425 09:32:07.007" endtime="20190425 09:32:10.600"></status>
+<status status="FAIL" starttime="20190425 14:03:06.512" endtime="20190425 14:03:09.672"></status>
 </kw>
-<status status="FAIL" starttime="20190425 09:32:07.007" endtime="20190425 09:32:10.600"></status>
+<status status="FAIL" starttime="20190425 14:03:06.508" endtime="20190425 14:03:09.673"></status>
 </kw>
-<test id="s1-s1-s1-s1-t1" name="TC05 - Verify That Admin Can Add A New Category">
-<status status="FAIL" starttime="20190425 09:32:10.600" endtime="20190425 09:32:10.608" critical="yes">Parent suite setup failed:
+<status status="FAIL" starttime="20190425 14:03:06.508" endtime="20190425 14:03:09.673" critical="yes">Setup failed:
 SessionNotCreatedException: Message: session not created: Chrome version must be between 70 and 73
   (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
 </status>
 </test>
 <test id="s1-s1-s1-s1-t2" name="TC06 - Verify That Admin Can Edit Category Information">
-<status status="FAIL" starttime="20190425 09:32:10.608" endtime="20190425 09:32:10.609" critical="yes">Parent suite setup failed:
+<kw name="Setup" library="Setup" type="setup">
+<kw name="Normalize Path" library="OperatingSystem">
+<doc>Normalizes the given path.</doc>
+<arguments>
+<arg>path</arg>
+<arg>/RobotTeam2/RobotFrameworkProject/Resources/chromedriver.exe</arg>
+</arguments>
+<assign>
+<var>${PATH}</var>
+</assign>
+<msg timestamp="20190425 14:03:09.675" level="INFO">${PATH} = path</msg>
+<status status="PASS" starttime="20190425 14:03:09.675" endtime="20190425 14:03:09.675"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${PATH}</arg>
+</arguments>
+<status status="PASS" starttime="20190425 14:03:09.675" endtime="20190425 14:03:09.676"></status>
+</kw>
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<arguments>
+<arg>${PATH}</arg>
+<arg>${PATH}</arg>
+</arguments>
+<msg timestamp="20190425 14:03:09.676" level="INFO">Environment variable 'path' set to value 'C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;Downloads\Webdriver;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\InternDN19.01.08\Downloads\Python\JavaSetup8u201.exe\bin;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\;C:\Users\InternDN19.01.08\AppData\Local\Microsoft\WindowsApps;C:\Users\InternDN19.01.08\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.08\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.08\AppData\Roaming\npm;C:\Users\InternDN19.01.08\Downloads\Python\eclipse;;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pywin32_system32;path;path'.</msg>
+<status status="PASS" starttime="20190425 14:03:09.676" endtime="20190425 14:03:09.676"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${ROOT}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190425 14:03:09.677" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla/administrator/'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190425 14:03:12.988" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20190425 14:03:12.986" endtime="20190425 14:03:12.988"></status>
+</kw>
+<msg timestamp="20190425 14:03:12.993" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome version must be between 70 and 73
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" starttime="20190425 14:03:09.677" endtime="20190425 14:03:12.994"></status>
+</kw>
+<status status="FAIL" starttime="20190425 14:03:09.674" endtime="20190425 14:03:12.995"></status>
+</kw>
+<status status="FAIL" starttime="20190425 14:03:09.674" endtime="20190425 14:03:12.996" critical="yes">Setup failed:
 SessionNotCreatedException: Message: session not created: Chrome version must be between 70 and 73
   (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
 </status>
 </test>
 <test id="s1-s1-s1-s1-t3" name="TC07 - Verify That Admin Can Delete A New Category">
-<status status="FAIL" starttime="20190425 09:32:10.609" endtime="20190425 09:32:10.610" critical="yes">Parent suite setup failed:
+<kw name="Setup" library="Setup" type="setup">
+<kw name="Normalize Path" library="OperatingSystem">
+<doc>Normalizes the given path.</doc>
+<arguments>
+<arg>path</arg>
+<arg>/RobotTeam2/RobotFrameworkProject/Resources/chromedriver.exe</arg>
+</arguments>
+<assign>
+<var>${PATH}</var>
+</assign>
+<msg timestamp="20190425 14:03:13.003" level="INFO">${PATH} = path</msg>
+<status status="PASS" starttime="20190425 14:03:13.002" endtime="20190425 14:03:13.004"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${PATH}</arg>
+</arguments>
+<status status="PASS" starttime="20190425 14:03:13.004" endtime="20190425 14:03:13.005"></status>
+</kw>
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<arguments>
+<arg>${PATH}</arg>
+<arg>${PATH}</arg>
+</arguments>
+<msg timestamp="20190425 14:03:13.008" level="INFO">Environment variable 'path' set to value 'C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;Downloads\Webdriver;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\InternDN19.01.08\Downloads\Python\JavaSetup8u201.exe\bin;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\;C:\Users\InternDN19.01.08\AppData\Local\Microsoft\WindowsApps;C:\Users\InternDN19.01.08\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.08\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.08\AppData\Roaming\npm;C:\Users\InternDN19.01.08\Downloads\Python\eclipse;;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pywin32_system32;path;path;path'.</msg>
+<status status="PASS" starttime="20190425 14:03:13.006" endtime="20190425 14:03:13.008"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${ROOT}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190425 14:03:13.010" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla/administrator/'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190425 14:03:16.170" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20190425 14:03:16.169" endtime="20190425 14:03:16.170"></status>
+</kw>
+<msg timestamp="20190425 14:03:16.172" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome version must be between 70 and 73
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" starttime="20190425 14:03:13.009" endtime="20190425 14:03:16.172"></status>
+</kw>
+<status status="FAIL" starttime="20190425 14:03:13.001" endtime="20190425 14:03:16.172"></status>
+</kw>
+<status status="FAIL" starttime="20190425 14:03:12.999" endtime="20190425 14:03:16.173" critical="yes">Setup failed:
 SessionNotCreatedException: Message: session not created: Chrome version must be between 70 and 73
   (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
 </status>
 </test>
 <test id="s1-s1-s1-s1-t4" name="TC08 - Verify That Admin Can Unpublish A Category">
-<status status="FAIL" starttime="20190425 09:32:10.610" endtime="20190425 09:32:10.610" critical="yes">Parent suite setup failed:
+<kw name="Setup" library="Setup" type="setup">
+<kw name="Normalize Path" library="OperatingSystem">
+<doc>Normalizes the given path.</doc>
+<arguments>
+<arg>path</arg>
+<arg>/RobotTeam2/RobotFrameworkProject/Resources/chromedriver.exe</arg>
+</arguments>
+<assign>
+<var>${PATH}</var>
+</assign>
+<msg timestamp="20190425 14:03:16.175" level="INFO">${PATH} = path</msg>
+<status status="PASS" starttime="20190425 14:03:16.175" endtime="20190425 14:03:16.175"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${PATH}</arg>
+</arguments>
+<status status="PASS" starttime="20190425 14:03:16.176" endtime="20190425 14:03:16.176"></status>
+</kw>
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<arguments>
+<arg>${PATH}</arg>
+<arg>${PATH}</arg>
+</arguments>
+<msg timestamp="20190425 14:03:16.177" level="INFO">Environment variable 'path' set to value 'C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;Downloads\Webdriver;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\InternDN19.01.08\Downloads\Python\JavaSetup8u201.exe\bin;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\;C:\Users\InternDN19.01.08\AppData\Local\Microsoft\WindowsApps;C:\Users\InternDN19.01.08\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.08\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.08\AppData\Roaming\npm;C:\Users\InternDN19.01.08\Downloads\Python\eclipse;;C:\Users\InternDN19.01.08\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pywin32_system32;path;path;path;path'.</msg>
+<status status="PASS" starttime="20190425 14:03:16.177" endtime="20190425 14:03:16.178"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${ROOT}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190425 14:03:16.179" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla/administrator/'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190425 14:03:19.535" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20190425 14:03:19.534" endtime="20190425 14:03:19.535"></status>
+</kw>
+<msg timestamp="20190425 14:03:19.536" level="FAIL">SessionNotCreatedException: Message: session not created: Chrome version must be between 70 and 73
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" starttime="20190425 14:03:16.178" endtime="20190425 14:03:19.536"></status>
+</kw>
+<status status="FAIL" starttime="20190425 14:03:16.174" endtime="20190425 14:03:19.537"></status>
+</kw>
+<status status="FAIL" starttime="20190425 14:03:16.174" endtime="20190425 14:03:19.537" critical="yes">Setup failed:
 SessionNotCreatedException: Message: session not created: Chrome version must be between 70 and 73
   (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
 </status>
@@ -79,20 +223,17 @@ SessionNotCreatedException: Message: session not created: Chrome version must be
 <kw name="Teardown" library="Setup" type="teardown">
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20190425 09:32:10.610" endtime="20190425 09:32:10.610"></status>
+<status status="PASS" starttime="20190425 14:03:19.539" endtime="20190425 14:03:19.539"></status>
 </kw>
-<status status="PASS" starttime="20190425 09:32:10.610" endtime="20190425 09:32:10.610"></status>
+<status status="PASS" starttime="20190425 14:03:19.538" endtime="20190425 14:03:19.539"></status>
 </kw>
-<status status="FAIL" starttime="20190425 09:32:06.822" endtime="20190425 09:32:10.610">Suite setup failed:
-SessionNotCreatedException: Message: session not created: Chrome version must be between 70 and 73
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
-</status>
+<status status="FAIL" starttime="20190425 14:03:06.340" endtime="20190425 14:03:19.539"></status>
 </suite>
-<status status="FAIL" starttime="20190425 09:32:06.822" endtime="20190425 09:32:10.610"></status>
+<status status="FAIL" starttime="20190425 14:03:06.338" endtime="20190425 14:03:19.543"></status>
 </suite>
-<status status="FAIL" starttime="20190425 09:32:06.822" endtime="20190425 09:32:10.610"></status>
+<status status="FAIL" starttime="20190425 14:03:06.336" endtime="20190425 14:03:19.547"></status>
 </suite>
-<status status="FAIL" starttime="20190425 09:32:06.806" endtime="20190425 09:32:10.610"></status>
+<status status="FAIL" starttime="20190425 14:03:06.315" endtime="20190425 14:03:19.550"></status>
 </suite>
 <statistics>
 <total>
@@ -109,6 +250,5 @@ SessionNotCreatedException: Message: session not created: Chrome version must be
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20190425 09:32:06.991" level="ERROR">Error in file 'C:\xampp\htdocs\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminCategoryPage.robot': Setting variable 'btn_categories_add_new' failed: Invalid variable name 'btn_categories_add_new'.</msg>
 </errors>
 </robot>

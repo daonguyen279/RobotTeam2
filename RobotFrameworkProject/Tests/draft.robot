@@ -12,10 +12,10 @@ ${number}                             count(//span[@class="icon-unpublish"])
 
 
 *** Settings ***
-Library       OperatingSystem    
-Resource	../Resources/Setup.robot
-Resource    ../Pages/Admin/AdminCategoryPage.robot
-Resource    ../Pages/Admin/AdminLoginPage.robot
+Library         OperatingSystem    
+Resource	    ../Resources/Setup.robot
+Resource        ../Pages/Admin/AdminCategoryPage.robot
+Resource        ../Pages/Admin/AdminLoginPage.robot
 Test setup	    Setup
 Test teardown	Teardown
 
