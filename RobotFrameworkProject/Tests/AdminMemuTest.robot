@@ -12,6 +12,7 @@ ${MENUITEMTYPE}       Articles
 ${SUBMENUITEMTYPE}    Archived Articles 
 
 *** Test Cases ***
+
 TC-014: Add A New Menu Successfully
     Login Admin Site 	                      ${USERNAME}     ${PASSWORD}
     Select Sidebar Menu                       ${lbl_menus}  
