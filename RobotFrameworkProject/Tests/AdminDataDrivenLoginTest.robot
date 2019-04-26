@@ -13,8 +13,6 @@ ${INVALID_PASSWORD}                zxcvbnm
 ${HEADER_TEXT}                     Warning
 ${ERROR_MESSAGE}                   Username and password do not match or you do not have an account yet.
 ${ERROR_EMPTY_PASSWORD_MESSAGE}    Empty password not allowed.
-${lbl_warning_header}              xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/h4[@class="alert-heading"]
-${lbl_warning_message}             xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/div[@class="alert-message"]
 
 
 *** Test Cases ***                      USERNAME               PASSWORD               MESSAGE

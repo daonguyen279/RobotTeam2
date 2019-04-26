@@ -17,6 +17,7 @@ ${btn_categories_trash}            xpath=//button[@class="btn btn-small button-t
 ${lbl_message}                     class=alert-message
 ${btn_categories_unpublish}        xpath=//button[@class="btn btn-small button-unpublish"]
 
+
 *** Keywords ***
 Go To Add New Category Page
     Select Sidebar Menu    ${lbl_categories}  
@@ -54,7 +55,3 @@ Delete A Category
 Unpublish A Category
     Click Element     ${select_categories_box}
     Click Element     ${btn_categories_unpublish}
-
-Check Message Successfully
-    [Arguments]               ${arg_locator}    ${arg_expected}
-    Element Text Should Be    ${arg_locator}    ${arg_expected}

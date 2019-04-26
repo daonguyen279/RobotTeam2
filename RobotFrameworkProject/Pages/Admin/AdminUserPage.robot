@@ -38,13 +38,13 @@ Go To Edit User Account Page
     Click Element          xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "${arg_account}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Name")]]/preceding-sibling::th)+1]/div[@class="name break-word"]/a
 
 Fill Out And Submit Information
-	[Arguments]     ${arg_users_name}                ${arg_users_password}    ${arg_users_email}
-	Input Text      ${txt_users_name}                ${arg_users_name}
-	Input Text      ${txt_users_username}            ${arg_users_name}
-	Input Text      ${txt_users_password}            ${arg_users_password}
-	Input Text      ${txt_users_confirm_password}    ${arg_users_password}
-	Input Text      ${txt_users_email}               ${arg_users_email}
-	Click Button    ${btn_users_save_and_close}
+    [Arguments]     ${arg_users_name}                ${arg_users_password}    ${arg_users_email}
+    Input Text      ${txt_users_name}                ${arg_users_name}
+    Input Text      ${txt_users_username}            ${arg_users_name}
+    Input Text      ${txt_users_password}            ${arg_users_password}
+    Input Text      ${txt_users_confirm_password}    ${arg_users_password}
+    Input Text      ${txt_users_email}               ${arg_users_email}
+    Click Button    ${btn_users_save_and_close}
 
 Check Information Displayed Correctly
     [Arguments]                         ${arg_check_email}                 ${arg_check_name}
@@ -78,4 +78,3 @@ Check Delete User Successfully
     Element Should Be Visible          ${lbl_users_successful_message}
     Page Should Not Contain Element    xpath=//table[@id="userList"]//tr[td[@class="hidden-phone" and contains(text(), "${SELECTED_USER_ID}")]]
     Logout Admin Site
-    
