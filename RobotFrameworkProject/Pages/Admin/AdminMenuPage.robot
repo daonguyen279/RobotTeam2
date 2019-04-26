@@ -20,19 +20,20 @@ ${cbb_menuitems_arrange}        xpath=//div[@id="list_fullordering_chzn"]/a
 ${opt_menuitems_idacsending}    xpath=//div[@id="list_fullordering_chzn"]/div/ul/li[contains(text(),"ID ascending")]
 *** Keywords ***
 Go To Menu Page
-    Click Element    ${btn_menus_list} 
-    
+    Click Element    ${btn_menus_list}
+
 Go To Add New Menu Page
-    Click Element    ${btn_menus_list} 
-	Click Element    ${btn_menus_add} 
+    Select Sidebar Menu    ${lbl_menus}  
+    Click Element          ${btn_menus_list} 
+    Click Element          ${btn_menus_add} 
 
 Fill Out And Submit Menu Information
-	[Arguments]      ${arg_menu_title}           ${arg_menu_type}            ${arg_menu_description}  
-	Input Text       ${txt_menus_title}          ${arg_menu_title}	
-	Input Text       ${txt_menus_type}           ${arg_menu_type}
-	Input Text       ${txt_menus_description}    ${arg_menu_description}}                                             
-	Click Element    ${btn_menus_save_close}    
-     
+    [Arguments]      ${arg_menu_title}           ${arg_menu_type}           ${arg_menu_description}  
+    Input Text       ${txt_menus_title}          ${arg_menu_title}	
+    Input Text       ${txt_menus_type}           ${arg_menu_type}
+    Input Text       ${txt_menus_description}    ${arg_menu_description}                                                    
+    Click Element    ${btn_menus_save_close}    
+
 Check Add New Menu Successfully
     [Arguments]                    ${arg_menu_title}
     Page Should Contain Element    xpath= //table[@id="menuList"]//a[contains(text(),"${arg_menu_title}")]
@@ -51,26 +52,26 @@ Check Delete Menu Successfully
     [Arguments]                        ${arg_menu_title}
     Page Should Not Contain Element    xpath= //table[@id="menuList"]//a[contains(text(),"${arg_menu_title}")]
 
-Go To Menu Item Page 
+Go To Menu Item Page  
     Click Element	${btn_menuitems_list}
        
-Go To Add New Menu Item Page
-    Click Element	${btn_menuitems_list}
-    Click Element	${btn_menus_add}  
+Go To Add New Menu Item Page   
+    Click Element	       ${btn_menuitems_list}
+    Click Element	       ${btn_menus_add}  
  
 Fill Out And Submit Menu Item Information
-    [Arguments]                      ${arg_menuitem_title}	      ${arg_menuitem_type}	  ${arg_submenuitem_type}    ${arg_menu_parent}    
-    Input Text                       ${txt_menuitems_title}        ${arg_menuitem_title}
+    [Arguments]                      ${arg_menuitem_title}	   ${arg_menuitem_type}	   ${arg_submenuitem_type}    ${arg_menu_parent}    
+    Input Text                       ${txt_menuitems_title}    ${arg_menuitem_title}    
     Click Element 	                 ${btn_menuitems_type}
     Select Frame                     xpath=//div[@id="menuTypeModal"]//iframe              
-	Click Element                    xpath=//div[@id="collapseTypes"]//div[@class="accordion-heading"]//a[contains(text(),"${arg_menuitem_type}")]
+    Click Element                    xpath=//div[@id="collapseTypes"]//div[@class="accordion-heading"]//a[contains(text(),"${arg_menuitem_type}")]
     Wait Until Element Is Visible    xpath=//div[@id="collapseTypes"]//div[@class="accordion-body in collapse"]//a[contains(text(),"${arg_submenuitem_type}")]
-	Click Element                    xpath=//div[@id="collapseTypes"]//div[@class="accordion-body in collapse"]//a[contains(text(),"${arg_submenuitem_type}")]  
+    Click Element                    xpath=//div[@id="collapseTypes"]//div[@class="accordion-body in collapse"]//a[contains(text(),"${arg_submenuitem_type}")]  
     Unselect Frame  
     Click Element                    xpath=//div[@id="jform_menutype_chzn"]/a/div/b
     Wait Until Element Is Visible    xpath=//div[@id="jform_menutype_chzn"]/div/ul/li[contains(text(),"${arg_menu_parent}")]
     Click Element                    xpath=//div[@id="jform_menutype_chzn"]/div/ul/li[contains(text(),"${arg_menu_parent}")]                                  
-	Click Element                    ${btn_menus_save_close}      
+    Click Element                    ${btn_menus_save_close}      
 	
 Delete Menu Item
     [Arguments]      ${arg_menuitem_title}
@@ -85,7 +86,6 @@ Check Delete Menu Item Successfully
     [Arguments]                        ${arg_menuitem_title}
     Page Should Not Contain Element    xpath= //table[@id="menuList"]//a[contains(text(),"${arg_menuitem_title}")]
     
-
 Delete All Menu 
     [Arguments]                      ${arg_cellcount}
     FOR    ${index}  IN RANGE   0    ${arg_cellcount}
@@ -96,4 +96,3 @@ Delete All Menu
         Click Element                ${btn_menus_delete} 
         Handle Alert                 ACCEPT  
     END    
-    
