@@ -2,7 +2,7 @@
 Resource    ../../Pages/Admin/AdminHomePage.robot
 
 *** Variables ***
-${btn_menus_list}               xpath=//ul[@id="submenu"]/li[@class="active"]/a[contains(text(),"Menus")]
+${btn_menus_list}               xpath=//ul[@id="submenu"]/li/a[contains(text(),"Menus")]
 ${btn_menus_add}                xpath=//div[@id="toolbar-new"]/button
 ${btn_menuitems_list}           xpath=//ul[@id="submenu"]//a[contains(text(),"Menu Items")]
 ${btn_menus_edit}               xpath=//div[@id="toolbar-edit"]/button
@@ -23,8 +23,9 @@ Go To Menu Page
     Click Element    ${btn_menus_list}
 
 Go To Add New Menu Page
-    Click Element    ${btn_menus_list} 
-    Click Element    ${btn_menus_add} 
+    Select Sidebar Menu    ${lbl_menus}  
+    Click Element          ${btn_menus_list} 
+    Click Element          ${btn_menus_add} 
 
 Fill Out And Submit Menu Information
     [Arguments]      ${arg_menu_title}           ${arg_menu_type}           ${arg_menu_description}  
@@ -51,12 +52,12 @@ Check Delete Menu Successfully
     [Arguments]                        ${arg_menu_title}
     Page Should Not Contain Element    xpath= //table[@id="menuList"]//a[contains(text(),"${arg_menu_title}")]
 
-Go To Menu Item Page 
+Go To Menu Item Page  
     Click Element	${btn_menuitems_list}
        
-Go To Add New Menu Item Page
-    Click Element	${btn_menuitems_list}
-    Click Element	${btn_menus_add}  
+Go To Add New Menu Item Page   
+    Click Element	       ${btn_menuitems_list}
+    Click Element	       ${btn_menus_add}  
  
 Fill Out And Submit Menu Item Information
     [Arguments]                      ${arg_menuitem_title}	   ${arg_menuitem_type}	   ${arg_submenuitem_type}    ${arg_menu_parent}    
@@ -74,7 +75,7 @@ Fill Out And Submit Menu Item Information
 	
 Delete Menu Item
     [Arguments]      ${arg_menuitem_title}
-    Click Element    xpath=//table[@id="itemList"]//tr[td/a[contains(text(),"${arg_menuitem_title}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input
+    Click Element    xpath=//table[@id="itemList"]//tr[td/a[contains(text(),"${arg_menuitem_title}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+2]/input
     Click Element    ${btn_menuitems_trash}
 
 Check Add Menu Item Successfully
