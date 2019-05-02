@@ -22,15 +22,3 @@ TC20 - Empty Username And Password      ${EMPTY}               ${EMPTY}         
 TC21 - Invalid Username                 ${INVALID_USERNAME}    ${PASSWORD}            ${ERROR_MESSAGE}
 TC22 - Invalid Password                 ${USERNAME}            ${INVALID_PASSWORD}    ${ERROR_MESSAGE}
 TC23 - Invalid Username And Password    ${INVALID_USERNAME}    ${INVALID_PASSWORD}    ${ERROR_MESSAGE}
-    
-    
-*** Keywords ***
-Login With Invalid Credentials Should Fail
-    [Arguments]                 ${arg_invalid_username}    ${arg_invalid_password}    ${arg_error_message}
-    Login Admin Site            ${arg_invalid_username}    ${arg_invalid_password}
-    Login Should Have Failed    ${arg_error_message}
-
-Login Should Have Failed
-    [Arguments]               ${arg_message}
-    Element Text Should Be    ${lbl_warning_header}     ${HEADER_TEXT}
-    Element Text Should Be    ${lbl_warning_message}    ${arg_message}
