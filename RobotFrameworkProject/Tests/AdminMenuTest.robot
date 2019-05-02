@@ -4,7 +4,7 @@ Resource          ../Pages/Admin/AdminLoginPage.robot
 Resource          ../Pages/Admin/AdminMenuPage.robot
 Resource          ../Pages/Admin/AdminHomePage.robot
 Suite setup       Setup
-# Suite teardown    Teardown
+Suite teardown    Teardown
 
 *** Variables ***
 ${MENU_DESCRIPTION}     tesst menu in joomla
