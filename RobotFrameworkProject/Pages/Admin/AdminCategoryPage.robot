@@ -45,12 +45,8 @@ Edit Category Information
     Click Button      ${btn_categories_save_close} 
     
 Delete A Category 
-    ${count_categories_post}            Get Element Count                   ${lbl_categories_tittle_count}
     Select Checkbox                                                         ${select_categories_box}
     Click Element                                                           ${btn_categories_trash}
-    ${count_choosen_categories_post}    Get Element Count                   ${lbl_categories_tittle_count}
-    ${count_left_categories_post}       Evaluate                            ${count_categories_post} - 1
-    Should Be Equal                     ${count_choosen_categories_post}    ${count_left_categories_post}
 
 Unpublish A Category
     Click Element     ${select_categories_box}
