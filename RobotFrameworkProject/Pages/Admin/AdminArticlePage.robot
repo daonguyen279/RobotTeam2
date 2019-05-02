@@ -24,7 +24,7 @@ Add New Article
     Input Text        ${txt_articles_alias}             ${arg_article_alias}
     Select Frame      ${ifr_articles_frame} 
     Input Text        ${txt_articles_addcontent}        ${arg_article_content}        
-    Unselect Frame    
+    Unselect Frame        
     Click Button      ${btn_articles_save_and_close}        
 
 Check Add New Article Sucessfully
