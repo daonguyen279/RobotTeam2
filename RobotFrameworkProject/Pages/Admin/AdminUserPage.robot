@@ -32,7 +32,6 @@ Go To Add New User Page
 
 Go To Edit User Account Page
     [Arguments]            ${arg_account}
-    Select Sidebar Menu    ${lbl_users}
     Click Element          ${cbb_users_order}
     Click Element          ${opt_users_order}
     Click Element          xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "${arg_account}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Name")]]/preceding-sibling::th)+1]/div[@class="name break-word"]/a
@@ -52,8 +51,6 @@ Check Information Displayed Correctly
     Element Text Should Be              xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "${arg_check_email}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Name")]]/preceding-sibling::th)+1]/div[@class="name break-word"]/a    ${arg_check_name}
     Element Text Should Be              xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "${arg_check_email}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Username")]]/preceding-sibling::th)+1]                                ${arg_check_name}
     Element Text Should Be              xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "${arg_check_email}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Email")]]/preceding-sibling::th)+1]                                   ${arg_check_email}
-    ${SELECTED_USER_ID}=    Get Text    xpath=//table[@id="userList"]//tr[td[contains(text(), "${arg_check_email}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "ID")]]/preceding-sibling::th)+1]
-    Set Suite Variable                  ${SELECTED_USER_ID}
 
 Check Relogin Successfully After Modified
     [Arguments]                           ${arg_check_username}    ${arg_check_password}
@@ -62,8 +59,11 @@ Check Relogin Successfully After Modified
     Check Login To Client Successfully    ${arg_check_username}
 
 Clean Up For Add And Edit User
+    [Arguments]             ${arg_email}
     Logout Client Site
-    Go To                 ${ROOT}
+    Go To                   ${ROOT}
+    Select Sidebar Menu     ${lbl_users}
+    Delete Selected User    ${arg_email}
     Logout Admin Site
 
 Delete Selected User
@@ -75,6 +75,7 @@ Delete Selected User
     Handle Alert
     
 Check Delete User Successfully
+    [Arguments]                        ${arg_selected_user}
     Element Should Be Visible          ${lbl_users_successful_message}
-    Page Should Not Contain Element    xpath=//table[@id="userList"]//tr[td[@class="hidden-phone" and contains(text(), "${SELECTED_USER_ID}")]]
+    Page Should Not Contain Element    xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "${arg_selected_user}")]]
     Logout Admin Site
