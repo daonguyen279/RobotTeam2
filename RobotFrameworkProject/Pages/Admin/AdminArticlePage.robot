@@ -54,15 +54,11 @@ Unpublish Article
 Check Unpublish Article Successfully
     [Arguments]                  ${arg_select_title}
     Element Should Be Visible    xpath=//table[@id="articleList"]//tr[td//a[contains(text(),"${arg_select_title}")]]/td[count(//table[@id="articleList"]//tr/th[a[@data-name="Status"]]/preceding-sibling::th)+1]/div[@class="btn-group"]/a/span[@class="icon-unpublish"]
-             
+
 Delete Article 
-    [Arguments]                ${arg_select_title}
-    ${count_total_articles}    Get Element Count           ${tab_articles_count_total}
-    Click Element              xpath=//table[@id="articleList"]//tr[td//a[contains(text(),"${arg_select_title}")]]/td[count(//table[@id="articleList"]//tr/th[input]/preceding-sibling::th)+1]/input
-    Click Button               ${btn_articles_trash} 
-    ${count_after_delete}      Get Element Count           ${tab_articles_count_total}        
-    ${count_result}            Evaluate                    ${count_total_articles} - 1 
-    Should Be Equal            ${count_after_delete}       ${count_result}
+    [Arguments]      ${arg_select_title}
+    Click Element    xpath=//table[@id="articleList"]//tr[td//a[contains(text(),"${arg_select_title}")]]/td[count(//table[@id="articleList"]//tr/th[input]/preceding-sibling::th)+1]/input
+    Click Button     ${btn_articles_trash}
     
 Check Delete Article Successfully 
     [Arguments]                ${arg_check_alias}   
