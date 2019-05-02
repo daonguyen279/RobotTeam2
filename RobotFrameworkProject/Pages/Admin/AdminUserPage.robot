@@ -46,11 +46,11 @@ Fill Out And Submit Information
     Click Button    ${btn_users_save_and_close}
 
 Check Information Displayed Correctly
-    [Arguments]                         ${arg_check_email}                 ${arg_check_name}
-    Element Should Be Visible           ${lbl_users_successful_message}
-    Element Text Should Be              xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "${arg_check_email}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Name")]]/preceding-sibling::th)+1]/div[@class="name break-word"]/a    ${arg_check_name}
-    Element Text Should Be              xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "${arg_check_email}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Username")]]/preceding-sibling::th)+1]                                ${arg_check_name}
-    Element Text Should Be              xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "${arg_check_email}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Email")]]/preceding-sibling::th)+1]                                   ${arg_check_email}
+    [Arguments]                  ${arg_check_email}                 ${arg_check_name}
+    Element Should Be Visible    ${lbl_users_successful_message}
+    Element Text Should Be       xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "${arg_check_email}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Name")]]/preceding-sibling::th)+1]/div[@class="name break-word"]/a    ${arg_check_name}
+    Element Text Should Be       xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "${arg_check_email}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Username")]]/preceding-sibling::th)+1]                                ${arg_check_name}
+    Element Text Should Be       xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "${arg_check_email}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Email")]]/preceding-sibling::th)+1]                                   ${arg_check_email}
 
 Check Relogin Successfully After Modified
     [Arguments]                           ${arg_check_username}    ${arg_check_password}

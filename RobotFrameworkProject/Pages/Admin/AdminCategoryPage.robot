@@ -14,7 +14,6 @@ ${lbl_categories_tittle_count}     xpath=//table[@id="categoryList"]/tbody[@clas
 ${lbl_categories_title}            xpath=//table[@id="categoryList"]/tbody[@class="ui-sortable"]/tr[last()]/td//a[@class="hasTooltip"]      
 ${cbb_categories_box}              xpath=//table[@id="categoryList"]/tbody[@class="ui-sortable"]/tr[last()]/td//input[@name="cid[]"]
 ${btn_categories_trash}            xpath=//button[@class="btn btn-small button-trash"]
-${lbl_message}                     class=alert-message
 ${btn_categories_unpublish}        xpath=//button[@class="btn btn-small button-unpublish"]
 
 
@@ -33,7 +32,6 @@ Add New Category
     Click Button	  ${btn_categories_save_close}
     
 Go To Edit Category Page
-    Select Sidebar Menu    ${lbl_categories} 
     Click Element          ${lbl_categories_title}
 
 Edit Category Information
@@ -45,9 +43,9 @@ Edit Category Information
     Click Button      ${btn_categories_save_close} 
     
 Delete A Category 
-    Select Checkbox                                                         ${select_categories_box}
-    Click Element                                                           ${btn_categories_trash}
+    Select Checkbox    ${cbb_categories_box}
+    Click Element      ${btn_categories_trash}
 
 Unpublish A Category
-    Click Element     ${select_categories_box}
+    Click Element     ${cbb_categories_box}
     Click Element     ${btn_categories_unpublish}
