@@ -19,7 +19,7 @@ TC01 - Add A New Aticle
     Login Admin Site                               ${USERNAME}         ${PASSWORD}
     Go To Add New Article Page      
     Add New Article                                ${ARTICLE_TITLE}    ${ARTICLE_ALIAS}    ${ARTICLE_CONTENT}
-    Check Add New Article Sucessfully              ${ARTICLE_TITLEs}    ${ARTICLE_CHECK_MESSAGE}    
+    Check Add New Article Sucessfully              ${ARTICLE_TITLE}    ${ARTICLE_CHECK_MESSAGE}    
     Delete Article                                 ${ARTICLE_TITLE}
     Logout Admin Site
     
