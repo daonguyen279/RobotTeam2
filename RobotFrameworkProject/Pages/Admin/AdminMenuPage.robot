@@ -18,7 +18,7 @@ ${btn_menuitems_trash}          xpath=//div[@id="toolbar-trash"]/button
 ${lbl_menus_list}               xpath=//table[@id="menuList"]//tr[@class="row0" and "row1"]
 ${cbb_menuitems_arrange}        xpath=//div[@id="list_fullordering_chzn"]/a
 ${opt_menuitems_idacsending}    xpath=//div[@id="list_fullordering_chzn"]/div/ul/li[contains(text(),"ID ascending")]
-
+${slt_menus_list}               xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"]
 
 *** Keywords ***
 Go To Menu Page
@@ -91,8 +91,8 @@ Check Delete Menu Item Successfully
 Delete All Menu 
     [Arguments]                      ${arg_cellcount}
     FOR    ${index}  IN RANGE   0    ${arg_cellcount}
-           ${IsElementVisible}=      Run Keyword And Return Status    Element Should Be Visible   xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
-        Run Keyword If               ${IsElementVisible}              Click Element               xpath=//table[@id="menuList"]//tr[td/a]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input[@id="cb1"] 
+           ${IsElementVisible}=      Run Keyword And Return Status    Element Should Be Visible   ${slt_menus_list} 
+        Run Keyword If               ${IsElementVisible}              Click Element               ${slt_menus_list} 
         Click Element                ${btn_menus_delete} 
         Handle Alert                 ACCEPT  
     END    
