@@ -20,6 +20,6 @@ Setup
     Append To Environment Variable    ${PATH}           ${PATH}
     Open browser                      ${ROOT}           ${BROWSER}
     Maximize Browser Window
-
+    
 Teardown    
     Close all browsers
