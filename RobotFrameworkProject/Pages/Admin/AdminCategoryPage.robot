@@ -23,12 +23,12 @@ Go To Add New Category Page
     Select Sidebar Menu    ${lbl_categories}  
 
 Add New Category
-    [Arguments]       ${arg_categories_title}          ${arg_categories_cont}     ${arg_alias}
+    [Arguments]       ${arg_categories_title}          ${arg_categories_content}     ${arg_categories_alias}
     Click Element     ${lbl_categories_new}
     Input Text        ${txt_categories_title}          ${arg_categories_title}       
-    Input Text        ${txt_categories_title_alias}    ${arg_alias} 
+    Input Text        ${txt_categories_title_alias}    ${arg_categories_alias} 
     Select Frame      ${ifr_categories_content} 
-    Input Text        ${txt_categories_content}        ${arg_categories_cont}  
+    Input Text        ${txt_categories_content}        ${arg_categories_content}  
     Unselect Frame
     Click Button      ${btn_categories_save_close}
 
@@ -50,7 +50,7 @@ Edit Category Information
 
 Check Edit Category Sucessfully
     [Arguments]                       ${arg_categories_check_edit_title}
-    ${check_edit}    Format String    ${xph_categories_title}               ${arg_categories_check__edit_title}    
+    ${check_edit}    Format String    ${xph_categories_title}               ${arg_categories_check_edit_title}    
     Element should be visible         ${check_edit}
     
 Delete A Category

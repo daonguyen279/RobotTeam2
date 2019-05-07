@@ -36,7 +36,7 @@ TC06 - Verify That Admin Can Edit Category Information
     Go To Add New Category Page
     Add New Category                                       ${CATEGORY_TITLE}              ${CATEGORY_CONTENT}         ${CATEGORY_ALIAS} 
     Go To Edit Category Page
-    Edit Category Information                              ${CATEGORY_EDIT_TITLE}         ${CATEGORY_EDIT_CONTENT}
+    Edit Category Information                              ${CATEGORY_EDIT_TITLE}         ${CATEGORY_EDIT_CONTENT}    
     Check Message                                          ${TXT_ADD_MESSAGE_EXPECTED}     
     Check Edit Category Sucessfully                        ${CATEGORY_EDIT_TITLE}
     Delete A Category
