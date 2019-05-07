@@ -5,30 +5,23 @@ Resource    ../../Pages/Client/ClientHomePage.robot
 
 *** Variables ***
 ${btn_users_new}                 xpath=//button[@onclick="Joomla.submitbutton('user.add');"]
-${btn_users_edit}                xpath=//div[@id="toolbar-edit"]/button
-${btn_users_active}              xpath=//div[@id="toolbar-publish"]/button
-${btn_users_blobk}               xpath=//div[@id="toolbar-unpublish"]/button
-${btn_users_unblock}             xpath=//div[@id="toolbar-unblock"]/button
 ${btn_users_delete}              xpath=//div[@id="toolbar-delete"]/button
 ${txt_users_name}                xpath=//form[@id="user-form"]//input[@id="jform_name"]
 ${txt_users_username}            xpath=//form[@id="user-form"]//input[@id="jform_username"]
 ${txt_users_password}            xpath=//form[@id="user-form"]//input[@id="jform_password"]
-${txt_users_confirm_password}	 xpath=//form[@id="user-form"]//input[@id="jform_password2"]
+${txt_users_confirm_password}    xpath=//form[@id="user-form"]//input[@id="jform_password2"]
 ${txt_users_email}               xpath=//form[@id="user-form"]//input[@id="jform_email"]
-${btn_users_save}                xpath=//button[@onclick="Joomla.submitbutton('user.apply');"]
 ${btn_users_save_and_close}      xpath=//button[@onclick="Joomla.submitbutton('user.save');"]
-${btn_users_save_and_new}        xpath=//button[@onclick="Joomla.submitbutton('user.save2new');"]
-${btn_users_cancel_and_close}    xpath=//button[@onclick="Joomla.submitbutton('user.cancel');"]
 ${cbb_users_order}               xpath=//div[@id="list_fullordering_chzn"]/a[@class="chzn-single"]
 ${opt_users_order}               xpath=//div[@id="list_fullordering_chzn"]//ul[@class="chzn-results"]/li[text()="ID descending"]
 
 # xpath template
-${xph_users_lnk_user_name}        xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "{}")]]//div[@class="name break-word"]/a
-${xph_users_name}                 xpath=//table[@id="userList"]//a[contains(text(),"{}")]
-${xph_users_username}             xpath=//table[@id="userList"]//td[@class="break-word" and contains(text(),"{}")]
-${xph_users_email}                xpath=//table[@id="userList"]//td[@class="hidden-phone break-word hidden-tablet" and contains(text(),"{}")]
-${xph_users_chb_selected_user}    xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "{}")]]//input
-${xph_users_selected_user}        xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "{}")]]
+${xph_users_link_user_name}      xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "{}")]]//div[@class="name break-word"]/a
+${xph_users_name}                xpath=//table[@id="userList"]//a[contains(text(),"{}")]
+${xph_users_username}            xpath=//table[@id="userList"]//td[@class="break-word" and contains(text(),"{}")]
+${xph_users_email}               xpath=//table[@id="userList"]//td[@class="hidden-phone break-word hidden-tablet" and contains(text(),"{}")]
+${xph_users_checkbox}            xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "{}")]]//input
+${xph_users_selected_user}       xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "{}")]]
 
 
 *** Keywords ***
@@ -38,7 +31,7 @@ Go To Add User Page
 
 Go To Edit User Page
     [Arguments]                         ${arg_account}
-    ${seleted_user}    Format String    ${xph_users_lnk_user_name}    ${arg_account}
+    ${seleted_user}    Format String    ${xph_users_link_user_name}    ${arg_account}
     Click Element                       ${cbb_users_order}
     Click Element                       ${opt_users_order}
     Click Element                       ${seleted_user}
@@ -77,7 +70,7 @@ Clean Up After Test
 
 Delete Selected User
     [Arguments]                          ${arg_selected_user}
-    ${checkbox_user}    Format String    ${xph_users_chb_selected_user}    ${arg_selected_user}
+    ${checkbox_user}    Format String    ${xph_users_checkbox}    ${arg_selected_user}
     Click Element                        ${cbb_users_order}
     Click Element                        ${opt_users_order}
     Click Element                        ${checkbox_user}
