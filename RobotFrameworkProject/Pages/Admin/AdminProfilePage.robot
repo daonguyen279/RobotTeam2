@@ -20,6 +20,6 @@ Fill Out And Submit Update Information
     [Arguments]     ${arg_update_name}                ${arg_update_password}            ${arg_update_confirm_password}    ${arg_update_email}
     Input Text      ${txt_update_name}                ${arg_update_name}
     Input Text      ${txt_update_password}            ${arg_update_password}
-    Input Text      ${txt_update_confirm_password}    ${arg_update_confirm_password}
+    Input Text      ${txt_update_confirm_password}    ${arg_update_confirm_password}    
     Input Text      ${txt_update_email}               ${arg_update_email}
     Click Button    ${btn_update_save}
