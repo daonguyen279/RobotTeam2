@@ -45,7 +45,7 @@ TC03 - Unpublish An Article
     Unpublish Article                              ${ARTICLE_TITLE}  
     Check Unpublish Article Successfully           ${ARTICLE_TITLE}   
     Delete Article                                 ${ARTICLE_TITLE}
-    Logout Admin Site 
+    Logout Admin Site
       
 TC04 - Delete An Article
     ${ARTICLE_ALIAS}=    Generate Random String    12                  [LETTERS]
@@ -55,4 +55,4 @@ TC04 - Delete An Article
     Add New Article                                ${ARTICLE_TITLE}    ${ARTICLE_ALIAS}    ${ARTICLE_CONTENT}
     Delete Article                                 ${ARTICLE_TITLE} 
     Check Delete Article Successfully              ${ARTICLE_ALIAS}         
-    Logout Admin Site 
+    Logout Admin Site
