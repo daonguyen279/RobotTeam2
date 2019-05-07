@@ -34,7 +34,7 @@ Add New Category
 
 Check Add New Category Sucessfully
     [Arguments]                        ${arg_categories_check_title}                                                           
-    ${check_title}    Format String    ${xph_categories_title}        ${arg_categories_check_title}    
+    ${check_title}    Format String    ${xph_categories_title}          ${arg_categories_check_title}    
     Element should be visible          ${check_title}
 
 Go To Edit Category Page
@@ -50,7 +50,7 @@ Edit Category Information
 
 Check Edit Category Sucessfully
     [Arguments]                       ${arg_categories_check_edit_title}
-    ${check_edit}    Format String    ${xph_categories_title}             ${arg_categories_check__edit_title}    
+    ${check_edit}    Format String    ${xph_categories_title}               ${arg_categories_check__edit_title}    
     Element should be visible         ${check_edit}
     
 Delete A Category
@@ -67,5 +67,5 @@ Check Delete Category Successfully
 
 Check Unpublish Article Successfully
     [Arguments]                            ${arg_categories_check_title}        
-    ${check_unpublish}    Format String    ${xph_categories_title}        ${arg_categories_check_title}    
+    ${check_unpublish}    Format String    ${xph_categories_title}          ${arg_categories_check_title}    
     Element should be visible              ${check_unpublish}
