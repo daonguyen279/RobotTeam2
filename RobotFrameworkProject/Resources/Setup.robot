@@ -1,5 +1,5 @@
 *** Variables ***
-${BROWSER}        Chrome
+${BROWSER}        Firefox
 ${ROOT}           http://192.168.189.72/joomla/administrator/
 ${CLIENT_ROOT}    http://192.168.189.72/joomla/
 ${USERNAME}       admin
@@ -14,8 +14,10 @@ Library    String
 
 
 *** Keywords ***
-Setup    
-    ${PATH}=                          Normalize Path    path	     /RobotTeam2/RobotFrameworkProject/Resources/chromedriver.exe
+Setup
+    ${PATH}=                          Normalize Path    path	     /RobotTeam2/RobotFrameworkProject/Resources/geckodriver.exe
+    # ${PATH}=                          Normalize Path    path	     /RobotTeam2/RobotFrameworkProject/Resources/IEDriverServer.exe
+    # ${PATH}=                          Normalize Path    path       /RobotTeam2/RobotFrameworkProject/Resources/chromedriver.exe
     Log To Console                    ${PATH}   
     Append To Environment Variable    ${PATH}           ${PATH}
     Open browser                      ${ROOT}           ${BROWSER}
