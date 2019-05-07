@@ -44,7 +44,7 @@ TC07 - Verify That Admin Can Delete A New Category
     Go To Add New Category Page
     Add New Category                      ${CATEGORY_TITLE}               ${CATEGORY_CONTENT}    ${CATEGORY_ALIAS}
     Delete A Category
-    Check Message                         ${TXT_EDIT_MESSAGE_EXPECTED} 
+    Check Message                         ${TXT_EDIT_MESSAGE_EXPECTED}
     Check Delete Category Successfully    ${CATEGORY_ALIAS}
     Logout Admin Site
 
@@ -58,5 +58,3 @@ TC08 - Verify That Admin Can Unpublish A Category
     Check Message                           ${TXT_UNPUBLISH_MESSAGE_EXPECTED} 
     Check Unpublish Article Successfully    ${CATEGORY_TITLE}
     Logout Admin Site
-
-

@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../../Pages/Admin/AdminHomePage.robot
+Resource    AdminHomePage.robot
 
 
 *** Variables ***
@@ -19,7 +19,7 @@ ${xph_articles_unpublish}         xpath=//table[@id="articleList"]//tr[td//a[con
 
 *** Keywords ***
 Go To Add New Article Page
-    Select Sidebar Menu    ${lbl_new_article} 
+    Select Sidebar Menu    ${lbl_new_article}
      
 Add New Article
     [Arguments]       ${arg_article_title}              ${arg_article_alias}      ${arg_article_content}
@@ -28,7 +28,7 @@ Add New Article
     Select Frame      ${ifr_articles_frame} 
     Input Text        ${txt_articles_add_content}       ${arg_article_content}
     Unselect Frame        
-    Click Button      ${btn_articles_save_and_close}        
+    Click Button      ${btn_articles_save_and_close}   
 
 Check Add New Article Sucessfully
     [Arguments]                            ${arg_article_check_title}
