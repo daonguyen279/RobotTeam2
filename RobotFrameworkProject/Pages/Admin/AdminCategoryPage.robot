@@ -16,7 +16,6 @@ ${select_categories_box}           xpath=//table[@id="categoryList"]/tbody[@clas
 ${btn_categories_trash}            xpath=//button[@class="btn btn-small button-trash"]
 ${lbl_message}                     class=alert-message
 ${btn_categories_unpublish}        xpath=//button[@class="btn btn-small button-unpublish"]
-#xpath template
 ${xph_category_title}              xpath=//table[@id="categoryList"]//a[contains(text(),"{}")]
 
 
