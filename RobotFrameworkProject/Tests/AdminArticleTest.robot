@@ -1,4 +1,4 @@
-** Settings **
+* Settings *
 Resource          ../Resources/Setup.robot
 Resource          ../Pages/Admin/AdminArticlePage.robot
 Resource          ../Pages/Admin/AdminLoginPage.robot
@@ -6,20 +6,20 @@ Suite Setup       Setup
 Suite teardown    Teardown    
 
 
-** Variables **
+* Variables *
 ${ARTICLE_CONTENT}          IT BEGAN WITH A TRICKLE — curious developments that mostly raised more questions. There was evidence of election hacking — but could it really have been directed by the Kremlin? Certain Americans on Facebook, pitching for Donald J. Trump and stirring up anger, turned out to be impostors — but who had concocted them? 
 ${ARTICLE_CHECK_MESSAGE}    Article saved.
 ${ARTICLE_EDIT_TITLE}       Glimpses of the Mystery   
 
 
-** Test Cases **
+* Test Cases *
 TC01 - Add A New Aticle
     ${ARTICLE_ALIAS}=    Generate Random String    12                  [LETTERS]
     ${ARTICLE_TITLE}=    Generate Random String    30                  [LETTERS]     
     Login Admin Site                               ${USERNAME}         ${PASSWORD}
     Go To Add New Article Page      
     Add New Article                                ${ARTICLE_TITLE}    ${ARTICLE_ALIAS}    ${ARTICLE_CONTENT}
-    Check Add New Article Sucessfully              ${ARTICLE_TITLEs}    ${ARTICLE_CHECK_MESSAGE}    
+    Check Add New Article Sucessfully              ${ARTICLE_TITLE}    ${ARTICLE_CHECK_MESSAGE}    
     Delete Article                                 ${ARTICLE_TITLE}
     Logout Admin Site
     
