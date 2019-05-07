@@ -33,24 +33,24 @@ Add New Category
     Click Button      ${btn_categories_save_close}
 
 Check Add New Category Sucessfully
-    [Arguments]                      ${arg_category_check_title}                                                           
-    ${check_add}    Format String    ${xph_categories_title}          ${arg_category_check_title}    
-    Element should be visible        ${check_add}
+    [Arguments]                        ${arg_categories_check_title}                                                           
+    ${check_title}    Format String    ${xph_categories_title}        ${arg_categories_check_title}    
+    Element should be visible          ${check_title}
 
 Go To Edit Category Page
     Click Element    ${lbl_categories_title}
 
 Edit Category Information
-    [Arguments]	      ${arg_categories_title_edit}    ${arg_categories_cont_edit}   
+    [Arguments]	      ${arg_categories_title_edit}    ${arg_categories_content_edit}   
     Input Text	      ${txt_categories_title}         ${arg_categories_title_edit}
     Select Frame      ${ifr_categories_content} 
-    Input Text        ${txt_categories_content}       ${arg_categories_cont_edit}  
+    Input Text        ${txt_categories_content}       ${arg_categories_content_edit}  
     Unselect Frame
     Click Button      ${btn_categories_save_close}
 
 Check Edit Category Sucessfully
-    [Arguments]                       ${arg_category_check_edit_title}
-    ${check_edit}    Format String    ${xph_categories_title}               ${arg_category_check__edit_title}    
+    [Arguments]                       ${arg_categories_check_edit_title}
+    ${check_edit}    Format String    ${xph_categories_title}             ${arg_categories_check__edit_title}    
     Element should be visible         ${check_edit}
     
 Delete A Category
@@ -62,10 +62,10 @@ Unpublish A Category
     Click Element    ${btn_categories_unpublish}
 
 Check Delete Category Successfully
-    [Arguments]                ${arg_check_alias}   
-    Page Should Not Contain    ${arg_check_alias} 
+    [Arguments]                ${arg_categories_check_alias}   
+    Page Should Not Contain    ${arg_categories_check_alias} 
 
 Check Unpublish Article Successfully
-    [Arguments]                            ${arg_category_check_title}        
-    ${check_unpublish}    Format String    ${xph_categories_title}          ${arg_category_check_title}    
+    [Arguments]                            ${arg_categories_check_title}        
+    ${check_unpublish}    Format String    ${xph_categories_title}        ${arg_categories_check_title}    
     Element should be visible              ${check_unpublish}
