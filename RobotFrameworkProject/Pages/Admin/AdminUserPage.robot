@@ -23,12 +23,12 @@ ${cbb_users_order}               xpath=//div[@id="list_fullordering_chzn"]/a[@cl
 ${opt_users_order}               xpath=//div[@id="list_fullordering_chzn"]//ul[@class="chzn-results"]/li[text()="ID descending"]
 
 # xpath template
-${xph_link_user_name}            xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "{}")]]//div[@class="name break-word"]/a
-${xph_name}                      xpath=//table[@id="userList"]//a[contains(text(),"{}")]
-${xph_username}                  xpath=//table[@id="userList"]//td[@class="break-word" and contains(text(),"{}")]
-${xph_email}                     xpath=//table[@id="userList"]//td[@class="hidden-phone break-word hidden-tablet" and contains(text(),"{}")]
-${xph_checkbox_selected_user}    xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "{}")]]//input
-${xph_selected_user}             xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "{}")]]
+${xph_users_lnk_user_name}        xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "{}")]]//div[@class="name break-word"]/a
+${xph_users_name}                 xpath=//table[@id="userList"]//a[contains(text(),"{}")]
+${xph_users_username}             xpath=//table[@id="userList"]//td[@class="break-word" and contains(text(),"{}")]
+${xph_users_email}                xpath=//table[@id="userList"]//td[@class="hidden-phone break-word hidden-tablet" and contains(text(),"{}")]
+${xph_users_chb_selected_user}    xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "{}")]]//input
+${xph_users_selected_user}        xpath=//table[@id="userList"]//tr[td[@class="hidden-phone break-word hidden-tablet" and contains(text(), "{}")]]
 
 
 *** Keywords ***
@@ -38,9 +38,9 @@ Go To Add User Page
 
 Go To Edit User Page
     [Arguments]                         ${arg_account}
+    ${seleted_user}    Format String    ${xph_users_lnk_user_name}    ${arg_account}
     Click Element                       ${cbb_users_order}
     Click Element                       ${opt_users_order}
-    ${seleted_user}    Format String    ${xph_link_user_name}    ${arg_account}
     Click Element                       ${seleted_user}
 
 Fill Out And Submit Information
@@ -53,10 +53,10 @@ Fill Out And Submit Information
     Click Button    ${btn_users_save_and_close}
 
 Check Information Displayed Correctly
-    [Arguments]                           ${arg_check_email}    ${arg_check_name}
-    ${check_name}        Format String    ${xph_name}           ${arg_check_name}
-    ${check_username}    Format String    ${xph_username}       ${arg_check_name}
-    ${check_email}       Format String    ${xph_email}          ${arg_check_email}
+    [Arguments]                           ${arg_check_email}       ${arg_check_name}
+    ${check_name}        Format String    ${xph_users_name}        ${arg_check_name}
+    ${check_username}    Format String    ${xph_users_username}    ${arg_check_name}
+    ${check_email}       Format String    ${xph_users_email}       ${arg_check_email}
     Element Should Be Visible             ${check_name}
     Element Should Be Visible             ${check_username}
     Element Should Be Visible             ${check_email}
@@ -77,14 +77,14 @@ Clean Up After Test
 
 Delete Selected User
     [Arguments]                          ${arg_selected_user}
+    ${checkbox_user}    Format String    ${xph_users_chb_selected_user}    ${arg_selected_user}
     Click Element                        ${cbb_users_order}
     Click Element                        ${opt_users_order}
-    ${checkbox_user}    Format String    ${xph_checkbox_selected_user}    ${arg_selected_user}
     Click Element                        ${checkbox_user}
     Click Button                         ${btn_users_delete}
     Handle Alert
     
 Check Delete User Successfully
     [Arguments]                          ${arg_selected_user}
-    ${selected_user}    Format String    ${xph_selected_user}    ${arg_selected_user}
+    ${selected_user}    Format String    ${xph_users_selected_user}    ${arg_selected_user}
     Page Should Not Contain Element      ${selected_user}
