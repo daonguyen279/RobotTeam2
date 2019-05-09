@@ -19,12 +19,12 @@ ${MESSAGE_DELETE_MENU}        Menu type deleted.
 
 *** Test Cases ***
 TC14 - Add A New Menu Successfully
-    ${MENU_TITLE}=    Generate Random String    4                 [LETTERS]      
-    ${MENUTYPE}=      Generate Random String    4                 [LETTERS] 
-    Login Admin Site 	                        ${USERNAME}       ${PASSWORD} 
+    ${MENU_TITLE}=    Generate Random String    4                      [LETTERS]      
+    ${MENUTYPE}=      Generate Random String    4                      [LETTERS] 
+    Login Admin Site 	                        ${USERNAME}            ${PASSWORD} 
     Go To Add New Menu Page       
-    Fill Out And Submit Menu Information        ${MENU_TITLE}     ${MENUTYPE}    ${MENU_DESCRIPTION}
-    Check Message                               ${MESSAGE_NEW}    
+    Fill Out And Submit Menu Information        ${MENU_TITLE}          ${MENUTYPE}    ${MENU_DESCRIPTION}
+    Check Message                               ${MESSAGE_NEW_MENU}
     Check Add New Menu Successfully             ${MENU_TITLE}
     Delete Menu                                 ${MENU_TITLE} 
     Logout Admin Site 
