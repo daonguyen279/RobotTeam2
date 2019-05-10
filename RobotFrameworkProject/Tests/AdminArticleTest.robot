@@ -12,7 +12,7 @@ ${ARTICLE_CHECK_MESSAGE}    Article saved.
 ${ARTICLE_EDIT_TITLE}       Glimpses of the Mystery   
 
 
-*** Test Cases ***
+*** Test Cases *** 
 TC01 - Add A New Aticle
     ${ARTICLE_ALIAS}=    Generate Random String    12                          [LETTERS]
     ${ARTICLE_TITLE}=    Generate Random String    30                          [LETTERS]     
