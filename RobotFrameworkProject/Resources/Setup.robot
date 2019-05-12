@@ -11,6 +11,7 @@ Library    Selenium2Library
 Library    OperatingSystem
 Library    PageObjectLibrary
 Library    String
+Library    PercyClient.py
 
 
 *** Keywords ***
@@ -22,6 +23,7 @@ Setup
     Append To Environment Variable    ${PATH}           ${PATH}
     Open browser                      ${ROOT}           ${BROWSER}
     Maximize Browser Window
+    Percy Init                        
     
 Teardown    
     Close all browsers
