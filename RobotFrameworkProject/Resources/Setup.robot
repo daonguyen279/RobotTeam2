@@ -13,10 +13,12 @@ Library    Selenium2Library
 Library    OperatingSystem
 Library    PageObjectLibrary
 Library    String
+Library    PercyClient.py
 
 
 *** Keywords ***
 Setup    
+
     ${PATH_CHROME}=                   Normalize Path    path	     /RobotTeam2/RobotFrameworkProject/Resources/chromedriver.exe
     ${PATH_IE}=                       Normalize Path    path	     /RobotTeam2/RobotFrameworkProject/Resources/IEDriverServer.exe
     ${PATH_FF}=                       Normalize Path    path	     /RobotTeam2/RobotFrameworkProject/Resources/geckodriver.exe
@@ -24,7 +26,14 @@ Setup
     Log To Console                    ${PATH_CHROME} 
     Append To Environment Variable    ${PATH_CHROME}        ${PATH_CHROME}
     Open browser                      ${ROOT}           ${CHROME_BROWSER}
+    ${PATH}=                          Normalize Path    path	     /RobotTeam2/RobotFrameworkProject/Resources/chromedriver.exe
+    # ${PATH}=                          Normalize Path    path	     /RobotTeam2/RobotFrameworkProject/Resources/geckodriver.exe
+    # ${PATH}=                          Normalize Path    path	     /RobotTeam2/RobotFrameworkProject/Resources/IEDriverServer.exe
+    Log To Console                    ${PATH}   
+    Append To Environment Variable    ${PATH}           ${PATH}
+    Open browser                      ${ROOT}           ${BROWSER}
     Maximize Browser Window
+    Percy Init                        
     
 Teardown    
     Close all browsers

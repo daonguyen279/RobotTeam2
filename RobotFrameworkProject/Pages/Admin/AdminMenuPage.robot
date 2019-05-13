@@ -18,9 +18,8 @@ ${btn_menuitems_trash}          xpath=//div[@id="toolbar-trash"]/button
 ${lbl_menus_list}               xpath=//table[@id="menuList"]//tr[@class="row0" and "row1"]
 ${cbb_menuitems_arrange}        xpath=//div[@id="list_fullordering_chzn"]/a
 ${opt_menuitems_idacsending}    xpath=//div[@id="list_fullordering_chzn"]/div/ul/li[contains(text(),"ID ascending")]
-${frm_menus}                    xpath=//div[@id="menuTypeModal"]//iframe
+${ifr_menus}                    xpath=//div[@id="menuTypeModal"]//iframe
 ${cbx_menus_parent}             xpath=//div[@id="jform_menutype_chzn"]/a/div/b
-
 
 #xpath template
 ${xph_menus_title}              xpath= //table[@id="menuList"]//a[contains(text(),"{}")]
@@ -30,6 +29,7 @@ ${xph_submenuitems_type}        xpath=//div[@id="collapseTypes"]//div[@class="ac
 ${xph_menus_parent}             xpath=//div[@id="jform_menutype_chzn"]/div/ul/li[contains(text(),"{}")]
 ${xph_menuitems_checkbox}       xpath=//table[@id="itemList"]//tr[td/a[contains(text(),"{}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+2]/input
 ${xph_menuitems_title}          xpath=//table[@id="itemList"]//a[contains(text(),"{}")] 
+
 
 *** Keywords ***
 Go To Menu Page
@@ -44,7 +44,7 @@ Fill Out And Submit Menu Information
     [Arguments]      ${arg_menu_title}           ${arg_menu_type}           ${arg_menu_description}  
     Input Text       ${txt_menus_title}          ${arg_menu_title}	
     Input Text       ${txt_menus_type}           ${arg_menu_type}
-    Input Text       ${txt_menus_description}    ${arg_menu_description}                                                    
+    Input Text       ${txt_menus_description}    ${arg_menu_description}                                                        
     Click Element    ${btn_menus_save_close}    
 
 Check Add New Menu Successfully
@@ -70,7 +70,7 @@ Check Delete Menu Successfully
     Page Should Not Contain Element    ${menus_title}    
 
 Go To Menu Item Page  
-    Click Element	${btn_menuitems_list}
+    Click Element	 ${btn_menuitems_list}
        
 Go To Add New Menu Item Page   
     Click Element    ${btn_menuitems_list}
@@ -79,12 +79,16 @@ Go To Add New Menu Item Page
 Fill Out And Submit Menu Item Information
     [Arguments]                              ${arg_menuitem_title}	     ${arg_menuitem_type}	    ${arg_submenuitem_type}    ${arg_menu_parent}   
     ${menuitems_type}       Format String    ${xph_menuitems_type}       ${arg_menuitem_type} 
-    ${submenuitems_type}    Format String    ${xph_submenuitems_type}    ${arg_submenuitem_type}            
+    ${submenuitems_type}    Format String    ${xph_submenuitems_type}    ${arg_submenuitem_type}                
     ${menus_parent}         Format String    ${xph_menus_parent}         ${arg_menu_parent}    
     Input Text                               ${txt_menuitems_title}      ${arg_menuitem_title}    
     Click Element 	                         ${btn_menuitems_type}
+<<<<<<< HEAD
     Select Frame                             ${frm_menus}  
     Wait Until Element Is Visible            ${menuitems_type}
+=======
+    Select Frame                             ${ifr_menus}               
+>>>>>>> 48ef19e1c262caa056e9af1355dfe9aa68307d93
     Click Element                            ${menuitems_type}
     Wait Until Element Is Visible            ${submenuitems_type}       
     Click Element                            ${submenuitems_type}  
@@ -117,4 +121,4 @@ Delete All Menu
         Run Keyword If               ${IsElementVisible}              Click Element               ${slt_menus_list} 
         Click Element                ${btn_menus_delete} 
         Handle Alert                 ACCEPT  
-    END       
+    END  
