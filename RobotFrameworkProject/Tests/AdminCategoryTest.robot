@@ -18,6 +18,7 @@ ${TXT_UNPUBLISH_MESSAGE_EXPECTED}    1 category unpublished.
 
 *** Test Cases ***
 TC05 - Verify That Admin Can Add A New Category
+    [Tags]    1.0
     ${CATEGORY_ALIAS}=    Generate Random String    12                             [LETTERS]
     Login Admin Site                                ${USERNAME}                    ${PASSWORD}
     Go To Add New Category Page   

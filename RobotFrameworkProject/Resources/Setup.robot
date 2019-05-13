@@ -21,9 +21,9 @@ Setup
     ${PATH_IE}=                       Normalize Path    path	     /RobotTeam2/RobotFrameworkProject/Resources/IEDriverServer.exe
     ${PATH_FF}=                       Normalize Path    path	     /RobotTeam2/RobotFrameworkProject/Resources/geckodriver.exe
     
-    Log To Console                    ${PATH_IE} 
-    Append To Environment Variable    ${PATH_IE}        ${PATH_IE}
-    Open browser                      ${ROOT}           ${IE_BROWSER}
+    Log To Console                    ${PATH_CHROME} 
+    Append To Environment Variable    ${PATH_CHROME}        ${PATH_CHROME}
+    Open browser                      ${ROOT}           ${CHROME_BROWSER}
     Maximize Browser Window
     
 Teardown    
