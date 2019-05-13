@@ -1,4 +1,6 @@
 *** Settings ***
+Library           Demo
+Library           ExtendedRequestsLibrary
 Resource          ../Resources/Setup.robot
 Resource          ../Pages/Admin/AdminHomePage.robot
 Resource          ../Pages/Admin/AdminLoginPage.robot
@@ -22,6 +24,7 @@ TC09 - Add New Valid User Account
     Login Admin Site                              ${USERNAME}                     ${PASSWORD}
     Go To Add User Page
     Fill Out And Submit Information               ${NEW_USERNAME}                 ${NEW_PASSWORD}    ${NEW_EMAIL}
+    Split Text    ${NEW_USERNAME}
     Check Message                                 ${MESSAGE_NEW}
     Check Information Displayed Correctly         ${NEW_EMAIL}                    ${NEW_USERNAME}
     Check Relogin Successfully After Modified     ${NEW_USERNAME}                 ${NEW_PASSWORD}
