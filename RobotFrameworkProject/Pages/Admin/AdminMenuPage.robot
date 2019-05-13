@@ -83,12 +83,9 @@ Fill Out And Submit Menu Item Information
     ${menus_parent}         Format String    ${xph_menus_parent}         ${arg_menu_parent}    
     Input Text                               ${txt_menuitems_title}      ${arg_menuitem_title}    
     Click Element 	                         ${btn_menuitems_type}
-<<<<<<< HEAD
-    Select Frame                             ${frm_menus}  
+    Select Frame                             ${ifr_menus}  
     Wait Until Element Is Visible            ${menuitems_type}
-=======
     Select Frame                             ${ifr_menus}               
->>>>>>> 48ef19e1c262caa056e9af1355dfe9aa68307d93
     Click Element                            ${menuitems_type}
     Wait Until Element Is Visible            ${submenuitems_type}       
     Click Element                            ${submenuitems_type}  

@@ -1,5 +1,6 @@
 from robotlibcore import HybridCore, keyword
 from selenium import webdriver
+import os
 
 import percy
 
@@ -11,9 +12,8 @@ class Percy(HybridCore):
 
 
 class PercyClient(object):
-
-    @keyword('Percy Init')
-    def init(self):
+    
+    def __init__(self):
         # Build a ResourceLoader that knows how to collect assets for this application.
         root_static_dir = os.path.join(os.path.dirname(__file__), 'static')
         loader = percy.ResourceLoader(
@@ -29,5 +29,5 @@ class PercyClient(object):
 
     @keyword('Percy Snapshot')
     def snapshot(self, name):
-        self.percy_runner.snapshot(name)
+        self.percy_runner.snapshot(name=name)
         

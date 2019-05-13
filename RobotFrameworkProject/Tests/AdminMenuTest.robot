@@ -4,7 +4,7 @@ Resource          ../Pages/Admin/AdminLoginPage.robot
 Resource          ../Pages/Admin/AdminMenuPage.robot
 Resource          ../Pages/Admin/AdminHomePage.robot
 Suite setup       Setup
-Suite teardown    Teardown
+# Suite teardown    Teardown
 
 
 *** Variables ***
@@ -28,6 +28,7 @@ TC14 - Add A New Menu Successfully
     Check Add New Menu Successfully             ${MENU_TITLE}
     Delete Menu                                 ${MENU_TITLE} 
     Logout Admin Site 
+    Percy Snapshot                              add
     
 TC15 - Add A Menu Item Successfully
     ${MENU_TITLE}=        Generate Random String    4                          [LETTERS]      

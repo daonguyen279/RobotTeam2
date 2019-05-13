@@ -2,6 +2,7 @@
 ${CHROME_BROWSER}    Chrome
 ${IE_BROWSER}        ie
 ${FF_BROWSER}        ff
+${PERCY_TOKEN}       fc038fae1c1cb91c7c84c11dcc823d1fe8bbcdbb03fe6252fc1e48f64c7c7f4e
 ${ROOT}              http://192.168.189.72/joomla/administrator/
 ${CLIENT_ROOT}       http://192.168.189.72/joomla/
 ${USERNAME}          admin
@@ -25,15 +26,13 @@ Setup
     
     Log To Console                    ${PATH_CHROME} 
     Append To Environment Variable    ${PATH_CHROME}        ${PATH_CHROME}
+    Append To Environment Variable    ${PERCY_TOKEN}        ${PERCY_TOKEN}
     Open browser                      ${ROOT}           ${CHROME_BROWSER}
     ${PATH}=                          Normalize Path    path	     /RobotTeam2/RobotFrameworkProject/Resources/chromedriver.exe
     # ${PATH}=                          Normalize Path    path	     /RobotTeam2/RobotFrameworkProject/Resources/geckodriver.exe
     # ${PATH}=                          Normalize Path    path	     /RobotTeam2/RobotFrameworkProject/Resources/IEDriverServer.exe
-    Log To Console                    ${PATH}   
-    Append To Environment Variable    ${PATH}           ${PATH}
-    Open browser                      ${ROOT}           ${BROWSER}
     Maximize Browser Window
-    Percy Init                        
+    # Percy Init                        
     
 Teardown    
     Close all browsers
