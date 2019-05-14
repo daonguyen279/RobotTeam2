@@ -9,7 +9,7 @@ class PercyClient():
     def __init__(self):
         self.percy_runner = None
 
-    def Percy_Initialize_Build(self):
+    def Percy_Initialize_Build(self, access_token):
         driver = BuiltIn().get_library_instance('Selenium2Library')._current_browser()
         root_static_dir = os.path.join(os.path.dirname(__file__), 'static')
         loader = percy.ResourceLoader(
@@ -17,11 +17,12 @@ class PercyClient():
           base_url='/assets',
           webdriver=driver,
         )
-        self.percy_runner = percy.Runner(loader=loader)
+        config = percy.Config(access_token=access_token)
+        self.percy_runner = percy.Runner(loader=loader, config=config)
         self.percy_runner.initialize_build()
 
-    def Percy_Snapshot(self, name):
-        self.percy_runner.snapshot(name=name)
+    def Percy_Snapshot(self, name, widths=None):
+        self.percy_runner.snapshot(name=name, widths=widths)
 
     def Percy_Finalize_Build(self):
         self.percy_runner.finalize_build()

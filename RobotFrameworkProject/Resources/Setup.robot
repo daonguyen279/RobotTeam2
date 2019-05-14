@@ -19,10 +19,9 @@ Library    PercyClient.py
 *** Keywords ***
 Setup
     Append To Environment Variable    PATH                ${CURDIR}/Drivers
-    Append To Environment Variable    PERCY_TOKEN         ${PERCY_TOKEN}
     Open browser                      ${ROOT}             ${BROWSER}
     Maximize Browser Window
-    Percy Initialize Build
+    Percy Initialize Build            ${PERCY_TOKEN}
 
 Teardown
     Close all browsers
