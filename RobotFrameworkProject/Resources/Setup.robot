@@ -11,6 +11,9 @@ Library    Selenium2Library
 Library    OperatingSystem
 Library    PageObjectLibrary
 Library    String
+Library    pabot.PabotLib
+Library    hihi.py
+Library    ex3.py
 
 
 *** Keywords ***

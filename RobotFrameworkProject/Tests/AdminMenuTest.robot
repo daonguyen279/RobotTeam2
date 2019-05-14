@@ -19,6 +19,7 @@ ${MESSAGE_DELETE_MENU}        Menu type deleted.
 
 *** Test Cases ***
 TC14 - Add A New Menu Successfully
+    [Tags]  smoke
     ${MENU_TITLE}=    Generate Random String    4                 [LETTERS]      
     ${MENUTYPE}=      Generate Random String    4                 [LETTERS] 
     Login Admin Site 	                        ${USERNAME}       ${PASSWORD} 

@@ -1,0 +1,43 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.AdminMenuTest                                                          
+==============================================================================
+path
+TC14 - Add A New Menu Successfully                                    Login to Joomla
+| FAIL |
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+------------------------------------------------------------------------------
+TC15 - Add A Menu Item Successfully                                   Login to Joomla
+| FAIL |
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+------------------------------------------------------------------------------
+TC17 - Delete A Menu Item Sucessfully                                 Login to Joomla
+| FAIL |
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+------------------------------------------------------------------------------
+TC16 - Delete A Menu Successfully                                     Login to Joomla
+| FAIL |
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+------------------------------------------------------------------------------
+Suites.AdminMenuTest                                                  | FAIL |
+4 critical tests, 0 passed, 4 failed
+4 tests total, 0 passed, 4 failed
+==============================================================================
+Suites                                                                | FAIL |
+4 critical tests, 0 passed, 4 failed
+4 tests total, 0 passed, 4 failed
+==============================================================================
+Output:  C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\Reports\RunParallelTest\pabot_results\Suites.AdminMenuTest\output.xml

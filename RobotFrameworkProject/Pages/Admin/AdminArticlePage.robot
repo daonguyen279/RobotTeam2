@@ -10,7 +10,8 @@ ${txt_articles_add_content}       id=tinymce
 ${btn_articles_save_and_close}    xpath=//button[@class="btn btn-small button-save"]
 ${btn_articles_trash}             xpath=//div[@id="toolbar-trash"]/button
 ${btn_articles_unpublish}         xpath=//div[@id="toolbar-unpublish"]/button
-
+${tab_articles_count_total}       xpath=//table[@id="articleList"]//tr[td/input[@onclick="Joomla.isChecked(this.checked);"]]
+${tab_articles}                   xpath=//*[@id="articleList"]
 # xpath template
 ${xph_articles_check_title}       xpath=//table[@id="articleList"]//a[contains(text(),'{}')] 
 ${xph_articles_checkbox}          xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'{}')]]/td/input
@@ -64,6 +65,7 @@ Check Unpublish Article Successfully
     
 Delete Article
     [Arguments]                           ${arg_select_title}
+    
     ${delete_article}    Format String    ${xph_articles_checkbox}    ${arg_select_title}
     Click Element                         ${delete_article} 
     Click Button                          ${btn_articles_trash}

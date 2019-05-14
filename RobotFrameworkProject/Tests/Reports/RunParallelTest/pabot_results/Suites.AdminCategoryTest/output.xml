@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190514 11:00:53.546" rpa="false">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="AdminCategoryTest" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\AdminCategoryTest.robot">
+<kw name="Setup" library="Setup" type="setup">
+<kw name="Normalize Path" library="OperatingSystem">
+<doc>Normalizes the given path.</doc>
+<arguments>
+<arg>path</arg>
+<arg>/RobotTeam2/RobotFrameworkProject/Resources/chromedriver.exe</arg>
+</arguments>
+<assign>
+<var>${PATH}</var>
+</assign>
+<msg timestamp="20190514 11:00:54.031" level="INFO">${PATH} = path</msg>
+<status status="PASS" starttime="20190514 11:00:54.031" endtime="20190514 11:00:54.031"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${PATH}</arg>
+</arguments>
+<status status="PASS" starttime="20190514 11:00:54.031" endtime="20190514 11:00:54.031"></status>
+</kw>
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<arguments>
+<arg>${PATH}</arg>
+<arg>${PATH}</arg>
+</arguments>
+<msg timestamp="20190514 11:00:54.031" level="INFO">Environment variable 'path' set to value 'C:\Users\InternDN19.01.02\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\InternDN19.01.02\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\System32\cmd.exe;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Git\cmd;C:\Program Files\webdrivers;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs;C:\Program Files\Java\jdk-12\bin;C:\apache-maven-3.6.1\bin;%PYTHONPATH%\python-3.7.3.exe;C:\Windows\system32;%M2_HOME%\bin;C:\Users\InternDN19.01.02\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\InternDN19.01.02\AppData\Local\Programs\Python\Python37;C:\Users\InternDN19.01.02\AppData\Local\Microsoft\WindowsApps;C:\Users\InternDN19.01.02\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.02\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.02\AppData\Roaming\npm;C:\Program Files\Maven;C:\Program Files\nodejs;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;C:\users\interndn19.01.02\appdata\local\programs\python\python37\lib\site-packages\pywin32_system32;c:\users\interndn19.01.02\appdata\local\programs\python\python37\lib\site-packages\pywin32_system32;path'.</msg>
+<status status="PASS" starttime="20190514 11:00:54.031" endtime="20190514 11:00:54.031"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${ROOT}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190514 11:00:54.031" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla/administrator/'.</msg>
+<status status="PASS" starttime="20190514 11:00:54.031" endtime="20190514 11:00:58.412"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190514 11:00:58.413" endtime="20190514 11:00:59.532"></status>
+</kw>
+<status status="PASS" starttime="20190514 11:00:54.031" endtime="20190514 11:00:59.533"></status>
+</kw>
+<test id="s1-s1-t1" name="TC05 - Verify That Admin Can Add A New Category">
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>12</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${CATEGORY_ALIAS}</var>
+</assign>
+<msg timestamp="20190514 11:00:59.534" level="INFO">${CATEGORY_ALIAS} = NJDeLFsdPgaZ</msg>
+<status status="PASS" starttime="20190514 11:00:59.534" endtime="20190514 11:00:59.534"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>12</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${CATEGORY_TITLE}</var>
+</assign>
+<msg timestamp="20190514 11:00:59.535" level="INFO">${CATEGORY_TITLE} = qENSsAzDeRfi</msg>
+<status status="PASS" starttime="20190514 11:00:59.535" endtime="20190514 11:00:59.535"></status>
+</kw>
+<kw name="Login Admin Site" library="AdminLoginPage">
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Login to Joomla</arg>
+</arguments>
+<status status="PASS" starttime="20190514 11:00:59.536" endtime="20190514 11:00:59.537"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_username}</arg>
+<arg>${arg_username}</arg>
+</arguments>
+<msg timestamp="20190514 11:00:59.538" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190514 11:00:59.537" endtime="20190514 11:00:59.690"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_password}</arg>
+<arg>${arg_password}</arg>
+</arguments>
+<msg timestamp="20190514 11:00:59.691" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190514 11:00:59.690" endtime="20190514 11:00:59.803"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_login}</arg>
+</arguments>
+<msg timestamp="20190514 11:00:59.804" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190514 11:00:59.803" endtime="20190514 11:01:00.981"></status>
+</kw>
+<status status="PASS" starttime="20190514 11:00:59.536" endtime="20190514 11:01:00.981"></status>
+</kw>
+<kw name="Go To Add New Category Page" library="AdminCategoryPage">
+<kw name="Select Sidebar Menu" library="AdminHomePage">
+<arguments>
+<arg>${lbl_categories}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${arg_page}</arg>
+</arguments>
+<msg timestamp="20190514 11:01:00.983" level="INFO">Clicking element 'xpath=//div[@class="span3"]//a[span[contains(text(), "Categories")]]'.</msg>
+<status status="PASS" starttime="20190514 11:01:00.982" endtime="20190514 11:01:02.621"></status>
+</kw>
+<status status="PASS" starttime="20190514 11:01:00.982" endtime="20190514 11:01:02.621"></status>
+</kw>
+<status status="PASS" starttime="20190514 11:01:00.981" endtime="20190514 11:01:02.622"></status>
+</kw>
+<kw name="Add New Category" library="AdminCategoryPage">
+<arguments>
+<arg>${CATEGORY_TITLE}</arg>
+<arg>${CATEGORY_CONTENT}</arg>
+<arg>${CATEGORY_ALIAS}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${lbl_categories_new}</arg>
+</arguments>
+<msg timestamp="20190514 11:01:02.624" level="INFO">Clicking element 'xpath=//div[@class="btn-wrapper"]//button//span[@class="icon-new icon-white"]'.</msg>
+<status status="PASS" starttime="20190514 11:01:02.623" endtime="20190514 11:01:04.622"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_categories_title}</arg>
+<arg>${arg_categories_title}</arg>
+</arguments>
+<msg timestamp="20190514 11:01:04.624" level="INFO">Typing text 'qENSsAzDeRfi' into text field 'id=jform_title'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190514 11:01:04.634" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" starttime="20190514 11:01:04.627" endtime="20190514 11:01:04.635"></status>
+</kw>
+<msg timestamp="20190514 11:01:04.635" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20190514 11:01:04.639" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" starttime="20190514 11:01:04.623" endtime="20190514 11:01:04.639"></status>
+</kw>
+<status status="FAIL" starttime="20190514 11:01:02.622" endtime="20190514 11:01:04.640"></status>
+</kw>
+<status status="FAIL" starttime="20190514 11:00:59.533" endtime="20190514 11:01:04.640" critical="yes">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-s1-t2" name="TC06 - Verify That Admin Can Edit Category Information">
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>12</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${CATEGORY_EDIT_CONTENT}</var>
+</assign>
+<msg timestamp="20190514 11:01:04.729" level="INFO">${CATEGORY_EDIT_CONTENT} = JKMZqcnFyksb</msg>
+<status status="PASS" starttime="20190514 11:01:04.729" endtime="20190514 11:01:04.729"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>12</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${CATEGORY_EDIT_TITLE}</var>
+</assign>
+<msg timestamp="20190514 11:01:04.730" level="INFO">${CATEGORY_EDIT_TITLE} = UEkRYdgqDceh</msg>
+<status status="PASS" starttime="20190514 11:01:04.730" endtime="20190514 11:01:04.730"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>12</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${CATEGORY_ALIAS}</var>
+</assign>
+<msg timestamp="20190514 11:01:04.730" level="INFO">${CATEGORY_ALIAS} = SghvgtKcxOId</msg>
+<status status="PASS" starttime="20190514 11:01:04.730" endtime="20190514 11:01:04.730"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>12</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${CATEGORY_TITLE}</var>
+</assign>
+<msg timestamp="20190514 11:01:04.731" level="INFO">${CATEGORY_TITLE} = ElvxmTgnDRui</msg>
+<status status="PASS" starttime="20190514 11:01:04.730" endtime="20190514 11:01:04.731"></status>
+</kw>
+<kw name="Login Admin Site" library="AdminLoginPage">
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Login to Joomla</arg>
+</arguments>
+<status status="PASS" starttime="20190514 11:01:04.731" endtime="20190514 11:01:04.732"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_username}</arg>
+<arg>${arg_username}</arg>
+</arguments>
+<msg timestamp="20190514 11:01:04.732" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190514 11:01:04.740" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" starttime="20190514 11:01:04.734" endtime="20190514 11:01:04.740"></status>
+</kw>
+<msg timestamp="20190514 11:01:04.740" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20190514 11:01:04.777" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" starttime="20190514 11:01:04.732" endtime="20190514 11:01:04.777"></status>
+</kw>
+<status status="FAIL" starttime="20190514 11:01:04.731" endtime="20190514 11:01:04.777"></status>
+</kw>
+<status status="FAIL" starttime="20190514 11:01:04.728" endtime="20190514 11:01:04.777" critical="yes">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-s1-t3" name="TC07 - Verify That Admin Can Delete A New Category">
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>12</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${CATEGORY_ALIAS}</var>
+</assign>
+<msg timestamp="20190514 11:01:04.780" level="INFO">${CATEGORY_ALIAS} = kCKVGNwunvjY</msg>
+<status status="PASS" starttime="20190514 11:01:04.779" endtime="20190514 11:01:04.780"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>12</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${CATEGORY_TITLE}</var>
+</assign>
+<msg timestamp="20190514 11:01:04.780" level="INFO">${CATEGORY_TITLE} = MaRKmRgEZPqu</msg>
+<status status="PASS" starttime="20190514 11:01:04.780" endtime="20190514 11:01:04.780"></status>
+</kw>
+<kw name="Login Admin Site" library="AdminLoginPage">
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Login to Joomla</arg>
+</arguments>
+<status status="PASS" starttime="20190514 11:01:04.781" endtime="20190514 11:01:04.782"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_username}</arg>
+<arg>${arg_username}</arg>
+</arguments>
+<msg timestamp="20190514 11:01:04.809" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190514 11:01:04.816" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" starttime="20190514 11:01:04.811" endtime="20190514 11:01:04.816"></status>
+</kw>
+<msg timestamp="20190514 11:01:04.816" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20190514 11:01:04.819" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" starttime="20190514 11:01:04.808" endtime="20190514 11:01:04.819"></status>
+</kw>
+<status status="FAIL" starttime="20190514 11:01:04.781" endtime="20190514 11:01:04.820"></status>
+</kw>
+<status status="FAIL" starttime="20190514 11:01:04.778" endtime="20190514 11:01:04.820" critical="yes">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-s1-t4" name="TC08 - Verify That Admin Can Unpublish A Category">
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>12</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${CATEGORY_ALIAS}</var>
+</assign>
+<msg timestamp="20190514 11:01:04.822" level="INFO">${CATEGORY_ALIAS} = vCpAVdwxNQCi</msg>
+<status status="PASS" starttime="20190514 11:01:04.822" endtime="20190514 11:01:04.823"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>12</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${CATEGORY_TITLE}</var>
+</assign>
+<msg timestamp="20190514 11:01:04.823" level="INFO">${CATEGORY_TITLE} = EqPjMtflqBgS</msg>
+<status status="PASS" starttime="20190514 11:01:04.823" endtime="20190514 11:01:04.823"></status>
+</kw>
+<kw name="Login Admin Site" library="AdminLoginPage">
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Login to Joomla</arg>
+</arguments>
+<status status="PASS" starttime="20190514 11:01:04.824" endtime="20190514 11:01:04.825"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_username}</arg>
+<arg>${arg_username}</arg>
+</arguments>
+<msg timestamp="20190514 11:01:04.826" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190514 11:01:04.833" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" starttime="20190514 11:01:04.828" endtime="20190514 11:01:04.834"></status>
+</kw>
+<msg timestamp="20190514 11:01:04.834" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20190514 11:01:04.837" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" starttime="20190514 11:01:04.825" endtime="20190514 11:01:04.837"></status>
+</kw>
+<status status="FAIL" starttime="20190514 11:01:04.824" endtime="20190514 11:01:04.837"></status>
+</kw>
+<status status="FAIL" starttime="20190514 11:01:04.821" endtime="20190514 11:01:04.837" critical="yes">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<kw name="Teardown" library="Setup" type="teardown">
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20190514 11:01:04.839" endtime="20190514 11:01:07.015"></status>
+</kw>
+<status status="PASS" starttime="20190514 11:01:04.838" endtime="20190514 11:01:07.015"></status>
+</kw>
+<status status="FAIL" starttime="20190514 11:00:53.577" endtime="20190514 11:01:07.015"></status>
+</suite>
+<status status="FAIL" starttime="20190514 11:00:53.546" endtime="20190514 11:01:07.017"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4">Critical Tests</stat>
+<stat pass="0" fail="4">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="4" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="4" id="s1-s1" name="AdminCategoryTest">Suites.AdminCategoryTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190514 11:01:04.635" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20190514 11:01:04.740" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20190514 11:01:04.816" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20190514 11:01:04.834" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+</errors>
+</robot>
