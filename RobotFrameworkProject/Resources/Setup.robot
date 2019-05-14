@@ -7,14 +7,14 @@ ${ROOT}              http://192.168.189.72/joomla/administrator/
 ${CLIENT_ROOT}       http://192.168.189.72/joomla/
 ${USERNAME}          admin
 ${PASSWORD}          123456789
-${PERCY_TOKEN}       d8162921be37f9dc5c8a707a721a37e905953ddb71df15ba4c9e98415fbc0560
+${PERCY_TOKEN}       fc038fae1c1cb91c7c84c11dcc823d1fe8bbcdbb03fe6252fc1e48f64c7c7f4e
 
 *** Settings ***
 Library    Selenium2Library
 Library    OperatingSystem
 Library    PageObjectLibrary
 Library    String
-Library    RobotFrameworkPercy
+Library    PercyClient.py
 
 *** Keywords ***
 Setup
