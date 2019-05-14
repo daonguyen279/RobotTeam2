@@ -2,7 +2,7 @@
 ${CHROME_BROWSER}    Chrome
 ${IE_BROWSER}        ie
 ${FF_BROWSER}        ff
-${BROWSER}           ${FF_BROWSER}
+${BROWSER}           ${CHROME_BROWSER}
 ${ROOT}              http://192.168.189.72/joomla/administrator/
 ${CLIENT_ROOT}       http://192.168.189.72/joomla/
 ${USERNAME}          admin
@@ -20,7 +20,7 @@ Library    RobotFrameworkPercy
 Setup
     Append To Environment Variable    PATH                ${CURDIR}/Drivers
     Append To Environment Variable    PERCY_TOKEN         ${PERCY_TOKEN}
-    Open browser                      ${ROOT}        ${BROWSER}
+    Open browser                      ${ROOT}             ${BROWSER}
     Maximize Browser Window
     Percy Initialize Build
 
