@@ -26,7 +26,6 @@ Setup
     
     Log To Console                    ${PATH_CHROME} 
     Append To Environment Variable    ${PATH_CHROME}        ${PATH_CHROME}
-    Append To Environment Variable    ${PERCY_TOKEN}        ${PERCY_TOKEN}
     Open browser                      ${ROOT}           ${CHROME_BROWSER}
     ${PATH}=                          Normalize Path    path	     /RobotTeam2/RobotFrameworkProject/Resources/chromedriver.exe
     # ${PATH}=                          Normalize Path    path	     /RobotTeam2/RobotFrameworkProject/Resources/geckodriver.exe
