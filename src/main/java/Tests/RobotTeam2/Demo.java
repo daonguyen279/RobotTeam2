@@ -1,5 +1,7 @@
 package Tests.RobotTeam2;
 
+import java.io.IOException;
+
 import org.robotframework.javalib.annotation.ArgumentNames;
 import org.robotframework.javalib.annotation.RobotKeyword;
 import org.robotframework.javalib.annotation.RobotKeywords;
@@ -17,8 +19,12 @@ public class Demo {
      */
     public static final String ROBOT_LIBRARY_SCOPE = "GLOBAL";    
  
+    public static void main( String[] args ) throws IOException
+    {
+        System.out.println( "Hello World!" );
+    }
 
-    @RobotKeyword("Split Text")
+    @RobotKeyword("Split Text Example")
     @ArgumentNames({"message"})
     public void splitText(String inputText) {
     	System.out.println("Text " + inputText);

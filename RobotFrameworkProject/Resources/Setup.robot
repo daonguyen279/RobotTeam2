@@ -11,6 +11,8 @@ Library    Selenium2Library
 Library    OperatingSystem
 Library    PageObjectLibrary
 Library    String
+Library    StringKeyword.py
+# Library    src.main.java.Tests.RobotTeam2.Demo
 
 
 *** Keywords ***
