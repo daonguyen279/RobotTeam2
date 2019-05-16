@@ -1,10 +1,6 @@
-datasources:f9f93b5aab3152b0909d91a246e9c5e18470eae8
-commandlineoptions:afa6460cd9cffbfefd46c5f022eb504a3609b495
+datasources:4985efb5ff318e0e80a4f87dd97c746e12d193a4
+commandlineoptions:e17a272e9e7466be8195f176e62af3d23848a443
 suitesfrom:no-suites-from-option
-file:e80afc291ed897c90d75966ae424dcb7616cf4cd
+file:faa0b908516bf546dd4b552bb5331bc1ac1dddf9
 --suite Suites.AdminArticleTest
 --suite Suites.AdminCategoryTest
---suite Suites.AdminDataDrivenLoginTest
---suite Suites.AdminMenuTest
---suite Suites.AdminUpdateProfileTest
---suite Suites.AdminUserTest

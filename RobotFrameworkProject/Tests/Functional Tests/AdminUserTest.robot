@@ -17,6 +17,7 @@ ${MESSAGE_DELETE}    1 user deleted.
 
 *** Test Cases ***
 TC09 - Add New Valid User Account
+    [Tags]    Smoke Test
     ${NEW_USERNAME}=    Generate Random String    10                              [LETTERS]
     ${NEW_EMAIL}        Set Variable              ${NEW_USERNAME}${TAIL_EMAIL}
     Login Admin Site                              ${USERNAME}                     ${PASSWORD}
@@ -43,6 +44,7 @@ TC10 - Edit User Account Valid Information
     Clean Up After Test                            ${EDIT_EMAIL}
 
 TC11 - Delete User
+    [Tags]    Smoke Test
     ${NEW_USERNAME}=    Generate Random String    10                              [LETTERS]
     ${NEW_EMAIL}        Set Variable              ${NEW_USERNAME}${TAIL_EMAIL}
     Login Admin Site                              ${USERNAME}                     ${PASSWORD}

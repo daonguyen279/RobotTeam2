@@ -4,40 +4,24 @@ Suites
 Suites.AdminArticleTest                                                       
 ==============================================================================
 path
-Test1                                                                 Login to Joomla
-| FAIL |
-UnexpectedAlertPresentException: Alert Text: None
-Message: unexpected alert open: {Alert text : }
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+TC01 - Add New An Articles                                            Login to Joomla
+| PASS |
 ------------------------------------------------------------------------------
 TC02 - Edit Article Information                                       Login to Joomla
-| FAIL |
-UnexpectedAlertPresentException: Alert Text: None
-Message: unexpected alert open: {Alert text : }
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+| PASS |
 ------------------------------------------------------------------------------
 TC03 - Unpublish An Article                                           Login to Joomla
-| FAIL |
-UnexpectedAlertPresentException: Alert Text: None
-Message: unexpected alert open: {Alert text : }
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+| PASS |
 ------------------------------------------------------------------------------
 TC04 - Delete An Article                                              Login to Joomla
-| FAIL |
-UnexpectedAlertPresentException: Alert Text: None
-Message: unexpected alert open: {Alert text : }
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
+| PASS |
 ------------------------------------------------------------------------------
-Suites.AdminArticleTest                                               | FAIL |
-4 critical tests, 0 passed, 4 failed
-4 tests total, 0 passed, 4 failed
+Suites.AdminArticleTest                                               | PASS |
+4 critical tests, 4 passed, 0 failed
+4 tests total, 4 passed, 0 failed
 ==============================================================================
-Suites                                                                | FAIL |
-4 critical tests, 0 passed, 4 failed
-4 tests total, 0 passed, 4 failed
+Suites                                                                | PASS |
+4 critical tests, 4 passed, 0 failed
+4 tests total, 4 passed, 0 failed
 ==============================================================================
 Output:  C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\Reports\RunParallelTest\pabot_results\Suites.AdminArticleTest\output.xml

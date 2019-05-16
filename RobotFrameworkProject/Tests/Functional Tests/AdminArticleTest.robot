@@ -14,6 +14,7 @@ ${ARTICLE_EDIT_TITLE}       Glimpses of the Mystery
 
 *** Test Cases ***
 TC01 - Add New An Articles
+     [Tags]    Smoke Test
     ${ARTICLE_ALIAS}=    Generate Random String    12                          [LETTERS]
     ${ARTICLE_TITLE}=    Generate Random String    30                          [LETTERS]     
     Login Admin Site                               ${USERNAME}                 ${PASSWORD}
@@ -21,7 +22,6 @@ TC01 - Add New An Articles
     Add New Article                                ${ARTICLE_TITLE}            ${ARTICLE_ALIAS}    ${ARTICLE_CONTENT}
     Check Add New Article Sucessfully              ${ARTICLE_TITLE}
     ${slp_text}     My Slipt                       Hihi Hello*Dong*Nguyen      *
-   
     Check Message                                  ${ARTICLE_CHECK_MESSAGE}            
     Delete Article                                 ${ARTICLE_TITLE}
     Logout Admin Site
@@ -39,6 +39,7 @@ TC02 - Edit Article Information
     Logout Admin Site
     
 TC03 - Unpublish An Article
+     [Tags]    Smoke Test
     ${ARTICLE_ALIAS}=    Generate Random String    12                  [LETTERS]
     ${ARTICLE_TITLE}=    Generate Random String    30                  [LETTERS] 
     Login Admin Site                               ${USERNAME}         ${PASSWORD}
@@ -56,7 +57,6 @@ TC04 - Delete An Article
     Go To Add New Article Page      
     Add New Article                                ${ARTICLE_TITLE}    ${ARTICLE_ALIAS}    ${ARTICLE_CONTENT}
     ${cunt}         My Count                       ${tab_articles}     ${tab_articles_count_total}
-    ${dlfl}    Get Element Count                   ${tab_articles_count_total}
     Delete Article                                 ${ARTICLE_TITLE} 
     Check Delete Article Successfully              ${ARTICLE_ALIAS}         
     Logout Admin Site

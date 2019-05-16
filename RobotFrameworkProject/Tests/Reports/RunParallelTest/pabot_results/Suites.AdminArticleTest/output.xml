@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190514 11:00:53.514" rpa="false">
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190515 13:46:19.033" rpa="false">
 <suite id="s1" name="Suites">
 <suite id="s1-s1" name="AdminArticleTest" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\AdminArticleTest.robot">
 <kw name="Setup" library="Setup" type="setup">
@@ -12,15 +12,15 @@
 <assign>
 <var>${PATH}</var>
 </assign>
-<msg timestamp="20190514 11:00:54.016" level="INFO">${PATH} = path</msg>
-<status status="PASS" starttime="20190514 11:00:54.016" endtime="20190514 11:00:54.016"></status>
+<msg timestamp="20190515 13:46:19.545" level="INFO">${PATH} = path</msg>
+<status status="PASS" starttime="20190515 13:46:19.544" endtime="20190515 13:46:19.545"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${PATH}</arg>
 </arguments>
-<status status="PASS" starttime="20190514 11:00:54.016" endtime="20190514 11:00:54.016"></status>
+<status status="PASS" starttime="20190515 13:46:19.545" endtime="20190515 13:46:19.546"></status>
 </kw>
 <kw name="Append To Environment Variable" library="OperatingSystem">
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
@@ -28,8 +28,8 @@
 <arg>${PATH}</arg>
 <arg>${PATH}</arg>
 </arguments>
-<msg timestamp="20190514 11:00:54.016" level="INFO">Environment variable 'path' set to value 'C:\Users\InternDN19.01.02\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\InternDN19.01.02\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\System32\cmd.exe;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Git\cmd;C:\Program Files\webdrivers;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs;C:\Program Files\Java\jdk-12\bin;C:\apache-maven-3.6.1\bin;%PYTHONPATH%\python-3.7.3.exe;C:\Windows\system32;%M2_HOME%\bin;C:\Users\InternDN19.01.02\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\InternDN19.01.02\AppData\Local\Programs\Python\Python37;C:\Users\InternDN19.01.02\AppData\Local\Microsoft\WindowsApps;C:\Users\InternDN19.01.02\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.02\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.02\AppData\Roaming\npm;C:\Program Files\Maven;C:\Program Files\nodejs;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;C:\users\interndn19.01.02\appdata\local\programs\python\python37\lib\site-packages\pywin32_system32;c:\users\interndn19.01.02\appdata\local\programs\python\python37\lib\site-packages\pywin32_system32;path'.</msg>
-<status status="PASS" starttime="20190514 11:00:54.016" endtime="20190514 11:00:54.016"></status>
+<msg timestamp="20190515 13:46:19.546" level="INFO">Environment variable 'path' set to value 'C:\Users\InternDN19.01.02\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\InternDN19.01.02\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\System32\cmd.exe;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Git\cmd;C:\Program Files\webdrivers;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs;C:\Program Files\Java\jdk-12\bin;C:\apache-maven-3.6.1\bin;%PYTHONPATH%\python-3.7.3.exe;C:\Windows\system32;%M2_HOME%\bin;C:\Users\InternDN19.01.02\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\InternDN19.01.02\AppData\Local\Programs\Python\Python37;C:\Users\InternDN19.01.02\AppData\Local\Microsoft\WindowsApps;C:\Users\InternDN19.01.02\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.02\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.02\AppData\Roaming\npm;C:\Program Files\Maven;C:\Program Files\nodejs;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;C:\users\interndn19.01.02\appdata\local\programs\python\python37\lib\site-packages\pywin32_system32;c:\users\interndn19.01.02\appdata\local\programs\python\python37\lib\site-packages\pywin32_system32;path'.</msg>
+<status status="PASS" starttime="20190515 13:46:19.546" endtime="20190515 13:46:19.546"></status>
 </kw>
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -37,16 +37,16 @@
 <arg>${ROOT}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20190514 11:00:54.016" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla/administrator/'.</msg>
-<status status="PASS" starttime="20190514 11:00:54.016" endtime="20190514 11:00:58.119"></status>
+<msg timestamp="20190515 13:46:19.547" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla/administrator/'.</msg>
+<status status="PASS" starttime="20190515 13:46:19.547" endtime="20190515 13:46:23.884"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20190514 11:00:58.119" endtime="20190514 11:00:59.269"></status>
+<status status="PASS" starttime="20190515 13:46:23.884" endtime="20190515 13:46:25.010"></status>
 </kw>
-<status status="PASS" starttime="20190514 11:00:54.016" endtime="20190514 11:00:59.269"></status>
+<status status="PASS" starttime="20190515 13:46:19.544" endtime="20190515 13:46:25.010"></status>
 </kw>
-<test id="s1-s1-t1" name="Test1">
+<test id="s1-s1-t1" name="TC01 - Add New An Articles">
 <kw name="Generate Random String" library="String">
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
 <arguments>
@@ -56,8 +56,8 @@
 <assign>
 <var>${ARTICLE_ALIAS}</var>
 </assign>
-<msg timestamp="20190514 11:00:59.271" level="INFO">${ARTICLE_ALIAS} = MXLeqZpCEXyK</msg>
-<status status="PASS" starttime="20190514 11:00:59.270" endtime="20190514 11:00:59.271"></status>
+<msg timestamp="20190515 13:46:25.012" level="INFO">${ARTICLE_ALIAS} = ygDZdKHjGFaB</msg>
+<status status="PASS" starttime="20190515 13:46:25.011" endtime="20190515 13:46:25.012"></status>
 </kw>
 <kw name="Generate Random String" library="String">
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
@@ -68,8 +68,8 @@
 <assign>
 <var>${ARTICLE_TITLE}</var>
 </assign>
-<msg timestamp="20190514 11:00:59.272" level="INFO">${ARTICLE_TITLE} = gZUjeMUsSVWYHNuTJpjiyNsdwLYaYG</msg>
-<status status="PASS" starttime="20190514 11:00:59.271" endtime="20190514 11:00:59.272"></status>
+<msg timestamp="20190515 13:46:25.013" level="INFO">${ARTICLE_TITLE} = OhywGrfPJvROlwouqgwivMgZKIzYxv</msg>
+<status status="PASS" starttime="20190515 13:46:25.012" endtime="20190515 13:46:25.013"></status>
 </kw>
 <kw name="Login Admin Site" library="AdminLoginPage">
 <arguments>
@@ -81,7 +81,7 @@
 <arguments>
 <arg>Login to Joomla</arg>
 </arguments>
-<status status="PASS" starttime="20190514 11:00:59.273" endtime="20190514 11:00:59.273"></status>
+<status status="PASS" starttime="20190515 13:46:25.014" endtime="20190515 13:46:25.015"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -89,8 +89,8 @@
 <arg>${txt_username}</arg>
 <arg>${arg_username}</arg>
 </arguments>
-<msg timestamp="20190514 11:00:59.273" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
-<status status="PASS" starttime="20190514 11:00:59.273" endtime="20190514 11:00:59.394"></status>
+<msg timestamp="20190515 13:46:25.016" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190515 13:46:25.015" endtime="20190515 13:46:25.169"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -98,18 +98,18 @@
 <arg>${txt_password}</arg>
 <arg>${arg_password}</arg>
 </arguments>
-<msg timestamp="20190514 11:00:59.395" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
-<status status="PASS" starttime="20190514 11:00:59.395" endtime="20190514 11:00:59.543"></status>
+<msg timestamp="20190515 13:46:25.170" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190515 13:46:25.169" endtime="20190515 13:46:25.306"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_login}</arg>
 </arguments>
-<msg timestamp="20190514 11:00:59.543" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
-<status status="PASS" starttime="20190514 11:00:59.543" endtime="20190514 11:01:00.976"></status>
+<msg timestamp="20190515 13:46:25.306" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190515 13:46:25.306" endtime="20190515 13:46:26.641"></status>
 </kw>
-<status status="PASS" starttime="20190514 11:00:59.272" endtime="20190514 11:01:00.976"></status>
+<status status="PASS" starttime="20190515 13:46:25.013" endtime="20190515 13:46:26.641"></status>
 </kw>
 <kw name="Go To Add New Article Page" library="AdminArticlePage">
 <kw name="Select Sidebar Menu" library="AdminHomePage">
@@ -121,12 +121,12 @@
 <arguments>
 <arg>${arg_page}</arg>
 </arguments>
-<msg timestamp="20190514 11:01:00.978" level="INFO">Clicking element 'xpath=//div[@class="span3"]//a[span[contains(text(), "New Article")]]'.</msg>
-<status status="PASS" starttime="20190514 11:01:00.978" endtime="20190514 11:01:04.001"></status>
+<msg timestamp="20190515 13:46:26.643" level="INFO">Clicking element 'xpath=//div[@class="span3"]//a[span[contains(text(), "New Article")]]'.</msg>
+<status status="PASS" starttime="20190515 13:46:26.643" endtime="20190515 13:46:28.989"></status>
 </kw>
-<status status="PASS" starttime="20190514 11:01:00.977" endtime="20190514 11:01:04.002"></status>
+<status status="PASS" starttime="20190515 13:46:26.642" endtime="20190515 13:46:28.990"></status>
 </kw>
-<status status="PASS" starttime="20190514 11:01:00.977" endtime="20190514 11:01:04.002"></status>
+<status status="PASS" starttime="20190515 13:46:26.641" endtime="20190515 13:46:28.990"></status>
 </kw>
 <kw name="Add New Article" library="AdminArticlePage">
 <arguments>
@@ -140,8 +140,8 @@
 <arg>${txt_articles_title}</arg>
 <arg>${arg_article_title}</arg>
 </arguments>
-<msg timestamp="20190514 11:01:04.004" level="INFO">Typing text 'gZUjeMUsSVWYHNuTJpjiyNsdwLYaYG' into text field 'id=jform_title'.</msg>
-<status status="PASS" starttime="20190514 11:01:04.003" endtime="20190514 11:01:05.027"></status>
+<msg timestamp="20190515 13:46:28.991" level="INFO">Typing text 'OhywGrfPJvROlwouqgwivMgZKIzYxv' into text field 'id=jform_title'.</msg>
+<status status="PASS" starttime="20190515 13:46:28.991" endtime="20190515 13:46:30.412"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -149,16 +149,16 @@
 <arg>${txt_articles_alias}</arg>
 <arg>${arg_article_alias}</arg>
 </arguments>
-<msg timestamp="20190514 11:01:05.028" level="INFO">Typing text 'MXLeqZpCEXyK' into text field 'id=jform_alias'.</msg>
-<status status="PASS" starttime="20190514 11:01:05.028" endtime="20190514 11:01:05.394"></status>
+<msg timestamp="20190515 13:46:30.413" level="INFO">Typing text 'ygDZdKHjGFaB' into text field 'id=jform_alias'.</msg>
+<status status="PASS" starttime="20190515 13:46:30.413" endtime="20190515 13:46:31.055"></status>
 </kw>
 <kw name="Select Frame" library="Selenium2Library">
 <doc>Sets frame identified by ``locator`` as the current frame.</doc>
 <arguments>
 <arg>${ifr_articles_frame}</arg>
 </arguments>
-<msg timestamp="20190514 11:01:05.395" level="INFO">Selecting frame 'xpath=//iframe[contains(@id,'jform_articletext_ifr')]'.</msg>
-<status status="PASS" starttime="20190514 11:01:05.395" endtime="20190514 11:01:05.432"></status>
+<msg timestamp="20190515 13:46:31.056" level="INFO">Selecting frame 'xpath=//iframe[contains(@id,'jform_articletext_ifr')]'.</msg>
+<status status="PASS" starttime="20190515 13:46:31.055" endtime="20190515 13:46:31.124"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -166,39 +166,148 @@
 <arg>${txt_articles_add_content}</arg>
 <arg>${arg_article_content}</arg>
 </arguments>
-<msg timestamp="20190514 11:01:05.433" level="INFO">Typing text 'IT BEGAN WITH A TRICKLE — curious developments that mostly raised more questions. There was evidence of election hacking — but could it really have been directed by the Kremlin? Certain Americans on Facebook, pitching for Donald J. Trump and stirring up anger, turned out to be impostors — but who had concocted them?' into text field 'id=tinymce'.</msg>
-<status status="PASS" starttime="20190514 11:01:05.432" endtime="20190514 11:01:06.313"></status>
+<msg timestamp="20190515 13:46:31.125" level="INFO">Typing text 'IT BEGAN WITH A TRICKLE — curious developments that mostly raised more questions. There was evidence of election hacking — but could it really have been directed by the Kremlin? Certain Americans on Facebook, pitching for Donald J. Trump and stirring up anger, turned out to be impostors — but who had concocted them?' into text field 'id=tinymce'.</msg>
+<status status="PASS" starttime="20190515 13:46:31.124" endtime="20190515 13:46:33.568"></status>
 </kw>
 <kw name="Unselect Frame" library="Selenium2Library">
 <doc>Sets the main frame as the current frame.</doc>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190514 11:01:06.323" level="FAIL">UnexpectedAlertPresentException: Alert Text: None
-Message: unexpected alert open: {Alert text : }
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" starttime="20190514 11:01:06.316" endtime="20190514 11:01:06.324"></status>
+<status status="PASS" starttime="20190515 13:46:33.568" endtime="20190515 13:46:33.571"></status>
 </kw>
-<msg timestamp="20190514 11:01:06.324" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: UnexpectedAlertPresentException: Alert Text: None
-Message: unexpected alert open: {Alert text : }
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<msg timestamp="20190514 11:01:06.334" level="FAIL">UnexpectedAlertPresentException: Alert Text: None
-Message: unexpected alert open: {Alert text : }
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" starttime="20190514 11:01:06.313" endtime="20190514 11:01:06.334"></status>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_articles_save_and_close}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:33.572" level="INFO">Clicking button 'xpath=//button[@class="btn btn-small button-save"]'.</msg>
+<status status="PASS" starttime="20190515 13:46:33.572" endtime="20190515 13:46:35.302"></status>
 </kw>
-<status status="FAIL" starttime="20190514 11:01:04.002" endtime="20190514 11:01:06.334"></status>
+<status status="PASS" starttime="20190515 13:46:28.990" endtime="20190515 13:46:35.303"></status>
 </kw>
-<status status="FAIL" starttime="20190514 11:00:59.269" endtime="20190514 11:01:06.335" critical="yes">UnexpectedAlertPresentException: Alert Text: None
-Message: unexpected alert open: {Alert text : }
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
-</status>
+<kw name="Check Add New Article Sucessfully" library="AdminArticlePage">
+<arguments>
+<arg>${ARTICLE_TITLE}</arg>
+</arguments>
+<kw name="Format String" library="String">
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<arguments>
+<arg>${xph_articles_check_title}</arg>
+<arg>${arg_article_check_title}</arg>
+</arguments>
+<assign>
+<var>${check_title}</var>
+</assign>
+<msg timestamp="20190515 13:46:35.304" level="INFO">${check_title} = xpath=//table[@id="articleList"]//a[contains(text(),'OhywGrfPJvROlwouqgwivMgZKIzYxv')]</msg>
+<status status="PASS" starttime="20190515 13:46:35.304" endtime="20190515 13:46:35.305"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${check_title}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:35.354" level="INFO">Element 'xpath=//table[@id="articleList"]//a[contains(text(),'OhywGrfPJvROlwouqgwivMgZKIzYxv')]' is displayed.</msg>
+<status status="PASS" starttime="20190515 13:46:35.305" endtime="20190515 13:46:35.354"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:46:35.303" endtime="20190515 13:46:35.354"></status>
+</kw>
+<kw name="My Slipt" library="hihi">
+<arguments>
+<arg>Hihi Hello*Dong*Nguyen</arg>
+<arg>*</arg>
+</arguments>
+<assign>
+<var>${slp_text}</var>
+</assign>
+<msg timestamp="20190515 13:46:35.355" level="INFO">${slp_text} = ['Hihi Hello', 'Dong', 'Nguyen']</msg>
+<status status="PASS" starttime="20190515 13:46:35.355" endtime="20190515 13:46:35.355"></status>
+</kw>
+<kw name="Check Message" library="AdminHomePage">
+<arguments>
+<arg>${ARTICLE_CHECK_MESSAGE}</arg>
+</arguments>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${hed_header_message}</arg>
+<arg>Message</arg>
+</arguments>
+<msg timestamp="20190515 13:46:35.356" level="INFO">Verifying element 'xpath=//div[@class="alert alert-success"]/h4[@class="alert-heading"]' contains exact text 'Message'.</msg>
+<status status="PASS" starttime="20190515 13:46:35.356" endtime="20190515 13:46:35.396"></status>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${lbl_message}</arg>
+<arg>${arg_expected_message}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:35.397" level="INFO">Verifying element 'xpath=//div[@class="alert alert-success"]/div[@class="alert-message"]' contains exact text 'Article saved.'.</msg>
+<status status="PASS" starttime="20190515 13:46:35.396" endtime="20190515 13:46:35.435"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:46:35.355" endtime="20190515 13:46:35.435"></status>
+</kw>
+<kw name="Delete Article" library="AdminArticlePage">
+<arguments>
+<arg>${ARTICLE_TITLE}</arg>
+</arguments>
+<kw name="Format String" library="String">
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<arguments>
+<arg>${xph_articles_checkbox}</arg>
+<arg>${arg_select_title}</arg>
+</arguments>
+<assign>
+<var>${delete_article}</var>
+</assign>
+<msg timestamp="20190515 13:46:35.437" level="INFO">${delete_article} = xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'OhywGrfPJvROlwouqgwivMgZKIzYxv')]]/td/input</msg>
+<status status="PASS" starttime="20190515 13:46:35.436" endtime="20190515 13:46:35.437"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${delete_article}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:35.438" level="INFO">Clicking element 'xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'OhywGrfPJvROlwouqgwivMgZKIzYxv')]]/td/input'.</msg>
+<status status="PASS" starttime="20190515 13:46:35.437" endtime="20190515 13:46:35.579"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_articles_trash}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:35.580" level="INFO">Clicking button 'xpath=//div[@id="toolbar-trash"]/button'.</msg>
+<status status="PASS" starttime="20190515 13:46:35.580" endtime="20190515 13:46:36.703"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:46:35.436" endtime="20190515 13:46:36.703"></status>
+</kw>
+<kw name="Logout Admin Site" library="AdminHomePage">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${icn_user}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:36.705" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
+<status status="PASS" starttime="20190515 13:46:36.704" endtime="20190515 13:46:36.811"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${lbl_logout}</arg>
+</arguments>
+<status status="PASS" starttime="20190515 13:46:36.811" endtime="20190515 13:46:36.851"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${lbl_logout}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:36.852" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]'.</msg>
+<status status="PASS" starttime="20190515 13:46:36.852" endtime="20190515 13:46:37.832"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:46:36.703" endtime="20190515 13:46:37.833"></status>
+</kw>
+<tags>
+<tag>Smoke Test</tag>
+</tags>
+<status status="PASS" starttime="20190515 13:46:25.010" endtime="20190515 13:46:37.833" critical="yes"></status>
 </test>
 <test id="s1-s1-t2" name="TC02 - Edit Article Information">
 <kw name="Generate Random String" library="String">
@@ -210,8 +319,8 @@ Message: unexpected alert open: {Alert text : }
 <assign>
 <var>${ARTICLE_ALIAS}</var>
 </assign>
-<msg timestamp="20190514 11:01:06.338" level="INFO">${ARTICLE_ALIAS} = wxyobnzDiedp</msg>
-<status status="PASS" starttime="20190514 11:01:06.337" endtime="20190514 11:01:06.338"></status>
+<msg timestamp="20190515 13:46:37.836" level="INFO">${ARTICLE_ALIAS} = wZNSTZCBNZFh</msg>
+<status status="PASS" starttime="20190515 13:46:37.836" endtime="20190515 13:46:37.836"></status>
 </kw>
 <kw name="Generate Random String" library="String">
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
@@ -222,8 +331,8 @@ Message: unexpected alert open: {Alert text : }
 <assign>
 <var>${ARTICLE_TITLE}</var>
 </assign>
-<msg timestamp="20190514 11:01:06.339" level="INFO">${ARTICLE_TITLE} = dKBaQAqsvATzisdTSnDBkQJbNhOLfp</msg>
-<status status="PASS" starttime="20190514 11:01:06.338" endtime="20190514 11:01:06.339"></status>
+<msg timestamp="20190515 13:46:37.837" level="INFO">${ARTICLE_TITLE} = sdFJlcrFmKqCDTytiZgEmJpupbmSuj</msg>
+<status status="PASS" starttime="20190515 13:46:37.837" endtime="20190515 13:46:37.837"></status>
 </kw>
 <kw name="Login Admin Site" library="AdminLoginPage">
 <arguments>
@@ -235,7 +344,7 @@ Message: unexpected alert open: {Alert text : }
 <arguments>
 <arg>Login to Joomla</arg>
 </arguments>
-<status status="PASS" starttime="20190514 11:01:06.340" endtime="20190514 11:01:06.340"></status>
+<status status="PASS" starttime="20190515 13:46:37.838" endtime="20190515 13:46:37.839"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -243,35 +352,243 @@ Message: unexpected alert open: {Alert text : }
 <arg>${txt_username}</arg>
 <arg>${arg_username}</arg>
 </arguments>
-<msg timestamp="20190514 11:01:06.341" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190514 11:01:06.348" level="FAIL">UnexpectedAlertPresentException: Alert Text: None
-Message: unexpected alert open: {Alert text : }
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" starttime="20190514 11:01:06.343" endtime="20190514 11:01:06.348"></status>
+<msg timestamp="20190515 13:46:37.839" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190515 13:46:37.839" endtime="20190515 13:46:37.987"></status>
 </kw>
-<msg timestamp="20190514 11:01:06.348" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: UnexpectedAlertPresentException: Alert Text: None
-Message: unexpected alert open: {Alert text : }
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<msg timestamp="20190514 11:01:06.353" level="FAIL">UnexpectedAlertPresentException: Alert Text: None
-Message: unexpected alert open: {Alert text : }
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" starttime="20190514 11:01:06.340" endtime="20190514 11:01:06.353"></status>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_password}</arg>
+<arg>${arg_password}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:37.988" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190515 13:46:37.988" endtime="20190515 13:46:38.129"></status>
 </kw>
-<status status="FAIL" starttime="20190514 11:01:06.339" endtime="20190514 11:01:06.354"></status>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_login}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:38.130" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190515 13:46:38.129" endtime="20190515 13:46:39.351"></status>
 </kw>
-<status status="FAIL" starttime="20190514 11:01:06.336" endtime="20190514 11:01:06.354" critical="yes">UnexpectedAlertPresentException: Alert Text: None
-Message: unexpected alert open: {Alert text : }
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
-</status>
+<status status="PASS" starttime="20190515 13:46:37.837" endtime="20190515 13:46:39.351"></status>
+</kw>
+<kw name="Go To Add New Article Page" library="AdminArticlePage">
+<kw name="Select Sidebar Menu" library="AdminHomePage">
+<arguments>
+<arg>${lbl_new_article}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${arg_page}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:39.353" level="INFO">Clicking element 'xpath=//div[@class="span3"]//a[span[contains(text(), "New Article")]]'.</msg>
+<status status="PASS" starttime="20190515 13:46:39.353" endtime="20190515 13:46:41.330"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:46:39.352" endtime="20190515 13:46:41.330"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:46:39.351" endtime="20190515 13:46:41.330"></status>
+</kw>
+<kw name="Add New Article" library="AdminArticlePage">
+<arguments>
+<arg>${ARTICLE_TITLE}</arg>
+<arg>${ARTICLE_ALIAS}</arg>
+<arg>${ARTICLE_CONTENT}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_articles_title}</arg>
+<arg>${arg_article_title}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:41.332" level="INFO">Typing text 'sdFJlcrFmKqCDTytiZgEmJpupbmSuj' into text field 'id=jform_title'.</msg>
+<status status="PASS" starttime="20190515 13:46:41.332" endtime="20190515 13:46:42.368"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_articles_alias}</arg>
+<arg>${arg_article_alias}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:42.369" level="INFO">Typing text 'wZNSTZCBNZFh' into text field 'id=jform_alias'.</msg>
+<status status="PASS" starttime="20190515 13:46:42.368" endtime="20190515 13:46:42.860"></status>
+</kw>
+<kw name="Select Frame" library="Selenium2Library">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>${ifr_articles_frame}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:42.861" level="INFO">Selecting frame 'xpath=//iframe[contains(@id,'jform_articletext_ifr')]'.</msg>
+<status status="PASS" starttime="20190515 13:46:42.860" endtime="20190515 13:46:42.904"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_articles_add_content}</arg>
+<arg>${arg_article_content}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:42.905" level="INFO">Typing text 'IT BEGAN WITH A TRICKLE — curious developments that mostly raised more questions. There was evidence of election hacking — but could it really have been directed by the Kremlin? Certain Americans on Facebook, pitching for Donald J. Trump and stirring up anger, turned out to be impostors — but who had concocted them?' into text field 'id=tinymce'.</msg>
+<status status="PASS" starttime="20190515 13:46:42.905" endtime="20190515 13:46:45.073"></status>
+</kw>
+<kw name="Unselect Frame" library="Selenium2Library">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20190515 13:46:45.073" endtime="20190515 13:46:45.080"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_articles_save_and_close}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:45.081" level="INFO">Clicking button 'xpath=//button[@class="btn btn-small button-save"]'.</msg>
+<status status="PASS" starttime="20190515 13:46:45.080" endtime="20190515 13:46:48.066"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:46:41.331" endtime="20190515 13:46:48.066"></status>
+</kw>
+<kw name="Go To Edit Article Page" library="AdminArticlePage">
+<arguments>
+<arg>${ARTICLE_TITLE}</arg>
+</arguments>
+<kw name="Format String" library="String">
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<arguments>
+<arg>${xph_articles_check_title}</arg>
+<arg>${arg_article_select_title}</arg>
+</arguments>
+<assign>
+<var>${select_title}</var>
+</assign>
+<msg timestamp="20190515 13:46:48.068" level="INFO">${select_title} = xpath=//table[@id="articleList"]//a[contains(text(),'sdFJlcrFmKqCDTytiZgEmJpupbmSuj')]</msg>
+<status status="PASS" starttime="20190515 13:46:48.067" endtime="20190515 13:46:48.068"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${select_title}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:48.069" level="INFO">Clicking element 'xpath=//table[@id="articleList"]//a[contains(text(),'sdFJlcrFmKqCDTytiZgEmJpupbmSuj')]'.</msg>
+<status status="PASS" starttime="20190515 13:46:48.068" endtime="20190515 13:46:50.397"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:46:48.066" endtime="20190515 13:46:50.397"></status>
+</kw>
+<kw name="Edit Article" library="AdminArticlePage">
+<arguments>
+<arg>${ARTICLE_EDIT_TITLE}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_articles_title}</arg>
+<arg>${arg_article_edit_title}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:50.398" level="INFO">Typing text 'Glimpses of the Mystery' into text field 'id=jform_title'.</msg>
+<status status="PASS" starttime="20190515 13:46:50.398" endtime="20190515 13:46:51.282"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_articles_save_and_close}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:51.283" level="INFO">Clicking button 'xpath=//button[@class="btn btn-small button-save"]'.</msg>
+<status status="PASS" starttime="20190515 13:46:51.282" endtime="20190515 13:46:53.219"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:46:50.397" endtime="20190515 13:46:53.219"></status>
+</kw>
+<kw name="Check Edit Article Sucessfully" library="AdminArticlePage">
+<arguments>
+<arg>${ARTICLE_EDIT_TITLE}</arg>
+</arguments>
+<kw name="Format String" library="String">
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<arguments>
+<arg>${xph_articles_check_title}</arg>
+<arg>${arg_article_check_edit_title}</arg>
+</arguments>
+<assign>
+<var>${check_edit_title}</var>
+</assign>
+<msg timestamp="20190515 13:46:53.222" level="INFO">${check_edit_title} = xpath=//table[@id="articleList"]//a[contains(text(),'Glimpses of the Mystery')]</msg>
+<status status="PASS" starttime="20190515 13:46:53.221" endtime="20190515 13:46:53.222"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${check_edit_title}</arg>
+</arguments>
+<status status="PASS" starttime="20190515 13:46:53.222" endtime="20190515 13:46:53.262"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${check_edit_title}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:53.285" level="INFO">Element 'xpath=//table[@id="articleList"]//a[contains(text(),'Glimpses of the Mystery')]' is displayed.</msg>
+<status status="PASS" starttime="20190515 13:46:53.262" endtime="20190515 13:46:53.285"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:46:53.220" endtime="20190515 13:46:53.286"></status>
+</kw>
+<kw name="Delete Article" library="AdminArticlePage">
+<arguments>
+<arg>${ARTICLE_EDIT_TITLE}</arg>
+</arguments>
+<kw name="Format String" library="String">
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<arguments>
+<arg>${xph_articles_checkbox}</arg>
+<arg>${arg_select_title}</arg>
+</arguments>
+<assign>
+<var>${delete_article}</var>
+</assign>
+<msg timestamp="20190515 13:46:53.287" level="INFO">${delete_article} = xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'Glimpses of the Mystery')]]/td/input</msg>
+<status status="PASS" starttime="20190515 13:46:53.287" endtime="20190515 13:46:53.287"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${delete_article}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:53.288" level="INFO">Clicking element 'xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'Glimpses of the Mystery')]]/td/input'.</msg>
+<status status="PASS" starttime="20190515 13:46:53.288" endtime="20190515 13:46:53.364"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_articles_trash}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:53.365" level="INFO">Clicking button 'xpath=//div[@id="toolbar-trash"]/button'.</msg>
+<status status="PASS" starttime="20190515 13:46:53.365" endtime="20190515 13:46:54.976"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:46:53.286" endtime="20190515 13:46:54.976"></status>
+</kw>
+<kw name="Logout Admin Site" library="AdminHomePage">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${icn_user}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:54.978" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
+<status status="PASS" starttime="20190515 13:46:54.977" endtime="20190515 13:46:55.067"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${lbl_logout}</arg>
+</arguments>
+<status status="PASS" starttime="20190515 13:46:55.067" endtime="20190515 13:46:55.097"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${lbl_logout}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:55.098" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]'.</msg>
+<status status="PASS" starttime="20190515 13:46:55.097" endtime="20190515 13:46:55.947"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:46:54.977" endtime="20190515 13:46:55.947"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:46:37.834" endtime="20190515 13:46:55.947" critical="yes"></status>
 </test>
 <test id="s1-s1-t3" name="TC03 - Unpublish An Article">
 <kw name="Generate Random String" library="String">
@@ -283,8 +600,8 @@ Message: unexpected alert open: {Alert text : }
 <assign>
 <var>${ARTICLE_ALIAS}</var>
 </assign>
-<msg timestamp="20190514 11:01:06.356" level="INFO">${ARTICLE_ALIAS} = PHulHestCGcF</msg>
-<status status="PASS" starttime="20190514 11:01:06.355" endtime="20190514 11:01:06.356"></status>
+<msg timestamp="20190515 13:46:55.949" level="INFO">${ARTICLE_ALIAS} = VFXpMbCliccf</msg>
+<status status="PASS" starttime="20190515 13:46:55.949" endtime="20190515 13:46:55.949"></status>
 </kw>
 <kw name="Generate Random String" library="String">
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
@@ -295,8 +612,8 @@ Message: unexpected alert open: {Alert text : }
 <assign>
 <var>${ARTICLE_TITLE}</var>
 </assign>
-<msg timestamp="20190514 11:01:06.357" level="INFO">${ARTICLE_TITLE} = cjibArQWwyglkFsSABKLqmXkSLnQlG</msg>
-<status status="PASS" starttime="20190514 11:01:06.356" endtime="20190514 11:01:06.357"></status>
+<msg timestamp="20190515 13:46:55.950" level="INFO">${ARTICLE_TITLE} = cPcUSeOxzPDdSBILbaeQrPovYCZrOE</msg>
+<status status="PASS" starttime="20190515 13:46:55.950" endtime="20190515 13:46:55.950"></status>
 </kw>
 <kw name="Login Admin Site" library="AdminLoginPage">
 <arguments>
@@ -308,7 +625,7 @@ Message: unexpected alert open: {Alert text : }
 <arguments>
 <arg>Login to Joomla</arg>
 </arguments>
-<status status="PASS" starttime="20190514 11:01:06.358" endtime="20190514 11:01:06.358"></status>
+<status status="PASS" starttime="20190515 13:46:55.951" endtime="20190515 13:46:55.952"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -316,35 +633,224 @@ Message: unexpected alert open: {Alert text : }
 <arg>${txt_username}</arg>
 <arg>${arg_username}</arg>
 </arguments>
-<msg timestamp="20190514 11:01:06.359" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190514 11:01:06.365" level="FAIL">UnexpectedAlertPresentException: Alert Text: None
-Message: unexpected alert open: {Alert text : }
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" starttime="20190514 11:01:06.361" endtime="20190514 11:01:06.365"></status>
+<msg timestamp="20190515 13:46:55.952" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190515 13:46:55.952" endtime="20190515 13:46:56.063"></status>
 </kw>
-<msg timestamp="20190514 11:01:06.365" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: UnexpectedAlertPresentException: Alert Text: None
-Message: unexpected alert open: {Alert text : }
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<msg timestamp="20190514 11:01:06.366" level="FAIL">UnexpectedAlertPresentException: Alert Text: None
-Message: unexpected alert open: {Alert text : }
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" starttime="20190514 11:01:06.358" endtime="20190514 11:01:06.366"></status>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_password}</arg>
+<arg>${arg_password}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:56.064" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190515 13:46:56.063" endtime="20190515 13:46:56.183"></status>
 </kw>
-<status status="FAIL" starttime="20190514 11:01:06.357" endtime="20190514 11:01:06.367"></status>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_login}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:56.184" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190515 13:46:56.184" endtime="20190515 13:46:57.524"></status>
 </kw>
-<status status="FAIL" starttime="20190514 11:01:06.355" endtime="20190514 11:01:06.367" critical="yes">UnexpectedAlertPresentException: Alert Text: None
-Message: unexpected alert open: {Alert text : }
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
-</status>
+<status status="PASS" starttime="20190515 13:46:55.950" endtime="20190515 13:46:57.524"></status>
+</kw>
+<kw name="Go To Add New Article Page" library="AdminArticlePage">
+<kw name="Select Sidebar Menu" library="AdminHomePage">
+<arguments>
+<arg>${lbl_new_article}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${arg_page}</arg>
+</arguments>
+<msg timestamp="20190515 13:46:57.526" level="INFO">Clicking element 'xpath=//div[@class="span3"]//a[span[contains(text(), "New Article")]]'.</msg>
+<status status="PASS" starttime="20190515 13:46:57.525" endtime="20190515 13:47:00.310"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:46:57.525" endtime="20190515 13:47:00.311"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:46:57.524" endtime="20190515 13:47:00.311"></status>
+</kw>
+<kw name="Add New Article" library="AdminArticlePage">
+<arguments>
+<arg>${ARTICLE_TITLE}</arg>
+<arg>${ARTICLE_ALIAS}</arg>
+<arg>${ARTICLE_CONTENT}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_articles_title}</arg>
+<arg>${arg_article_title}</arg>
+</arguments>
+<msg timestamp="20190515 13:47:00.313" level="INFO">Typing text 'cPcUSeOxzPDdSBILbaeQrPovYCZrOE' into text field 'id=jform_title'.</msg>
+<status status="PASS" starttime="20190515 13:47:00.312" endtime="20190515 13:47:01.516"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_articles_alias}</arg>
+<arg>${arg_article_alias}</arg>
+</arguments>
+<msg timestamp="20190515 13:47:01.517" level="INFO">Typing text 'VFXpMbCliccf' into text field 'id=jform_alias'.</msg>
+<status status="PASS" starttime="20190515 13:47:01.516" endtime="20190515 13:47:02.058"></status>
+</kw>
+<kw name="Select Frame" library="Selenium2Library">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>${ifr_articles_frame}</arg>
+</arguments>
+<msg timestamp="20190515 13:47:02.059" level="INFO">Selecting frame 'xpath=//iframe[contains(@id,'jform_articletext_ifr')]'.</msg>
+<status status="PASS" starttime="20190515 13:47:02.059" endtime="20190515 13:47:02.110"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_articles_add_content}</arg>
+<arg>${arg_article_content}</arg>
+</arguments>
+<msg timestamp="20190515 13:47:02.110" level="INFO">Typing text 'IT BEGAN WITH A TRICKLE — curious developments that mostly raised more questions. There was evidence of election hacking — but could it really have been directed by the Kremlin? Certain Americans on Facebook, pitching for Donald J. Trump and stirring up anger, turned out to be impostors — but who had concocted them?' into text field 'id=tinymce'.</msg>
+<status status="PASS" starttime="20190515 13:47:02.110" endtime="20190515 13:47:03.627"></status>
+</kw>
+<kw name="Unselect Frame" library="Selenium2Library">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20190515 13:47:03.627" endtime="20190515 13:47:03.631"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_articles_save_and_close}</arg>
+</arguments>
+<msg timestamp="20190515 13:47:03.631" level="INFO">Clicking button 'xpath=//button[@class="btn btn-small button-save"]'.</msg>
+<status status="PASS" starttime="20190515 13:47:03.631" endtime="20190515 13:47:05.850"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:47:00.311" endtime="20190515 13:47:05.851"></status>
+</kw>
+<kw name="Unpublish Article" library="AdminArticlePage">
+<arguments>
+<arg>${ARTICLE_TITLE}</arg>
+</arguments>
+<kw name="Format String" library="String">
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<arguments>
+<arg>${xph_articles_checkbox}</arg>
+<arg>${arg_select_title}</arg>
+</arguments>
+<assign>
+<var>${select_unpublish}</var>
+</assign>
+<msg timestamp="20190515 13:47:05.852" level="INFO">${select_unpublish} = xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'cPcUSeOxzPDdSBILbaeQrPovYCZrOE')]]/td/input</msg>
+<status status="PASS" starttime="20190515 13:47:05.852" endtime="20190515 13:47:05.852"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${select_unpublish}</arg>
+</arguments>
+<msg timestamp="20190515 13:47:05.853" level="INFO">Clicking element 'xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'cPcUSeOxzPDdSBILbaeQrPovYCZrOE')]]/td/input'.</msg>
+<status status="PASS" starttime="20190515 13:47:05.852" endtime="20190515 13:47:05.957"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_articles_unpublish}</arg>
+</arguments>
+<msg timestamp="20190515 13:47:05.957" level="INFO">Clicking button 'xpath=//div[@id="toolbar-unpublish"]/button'.</msg>
+<status status="PASS" starttime="20190515 13:47:05.957" endtime="20190515 13:47:06.973"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:47:05.851" endtime="20190515 13:47:06.973"></status>
+</kw>
+<kw name="Check Unpublish Article Successfully" library="AdminArticlePage">
+<arguments>
+<arg>${ARTICLE_TITLE}</arg>
+</arguments>
+<kw name="Format String" library="String">
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<arguments>
+<arg>${xph_articles_icon_unpublish}</arg>
+<arg>${arg_select_title}</arg>
+</arguments>
+<assign>
+<var>${check_unpublish}</var>
+</assign>
+<msg timestamp="20190515 13:47:06.975" level="INFO">${check_unpublish} = xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'cPcUSeOxzPDdSBILbaeQrPovYCZrOE')]]/td/div[@class="btn-group"]/a/span[@class="icon-unpublish"]</msg>
+<status status="PASS" starttime="20190515 13:47:06.974" endtime="20190515 13:47:06.975"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${check_unpublish}</arg>
+</arguments>
+<msg timestamp="20190515 13:47:07.013" level="INFO">Element 'xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'cPcUSeOxzPDdSBILbaeQrPovYCZrOE')]]/td/div[@class="btn-group"]/a/span[@class="icon-unpublish"]' is displayed.</msg>
+<status status="PASS" starttime="20190515 13:47:06.975" endtime="20190515 13:47:07.013"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:47:06.974" endtime="20190515 13:47:07.013"></status>
+</kw>
+<kw name="Delete Article" library="AdminArticlePage">
+<arguments>
+<arg>${ARTICLE_TITLE}</arg>
+</arguments>
+<kw name="Format String" library="String">
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<arguments>
+<arg>${xph_articles_checkbox}</arg>
+<arg>${arg_select_title}</arg>
+</arguments>
+<assign>
+<var>${delete_article}</var>
+</assign>
+<msg timestamp="20190515 13:47:07.014" level="INFO">${delete_article} = xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'cPcUSeOxzPDdSBILbaeQrPovYCZrOE')]]/td/input</msg>
+<status status="PASS" starttime="20190515 13:47:07.014" endtime="20190515 13:47:07.014"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${delete_article}</arg>
+</arguments>
+<msg timestamp="20190515 13:47:07.015" level="INFO">Clicking element 'xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'cPcUSeOxzPDdSBILbaeQrPovYCZrOE')]]/td/input'.</msg>
+<status status="PASS" starttime="20190515 13:47:07.015" endtime="20190515 13:47:07.095"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_articles_trash}</arg>
+</arguments>
+<msg timestamp="20190515 13:47:07.095" level="INFO">Clicking button 'xpath=//div[@id="toolbar-trash"]/button'.</msg>
+<status status="PASS" starttime="20190515 13:47:07.095" endtime="20190515 13:47:08.157"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:47:07.013" endtime="20190515 13:47:08.157"></status>
+</kw>
+<kw name="Logout Admin Site" library="AdminHomePage">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${icn_user}</arg>
+</arguments>
+<msg timestamp="20190515 13:47:08.158" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
+<status status="PASS" starttime="20190515 13:47:08.158" endtime="20190515 13:47:08.229"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${lbl_logout}</arg>
+</arguments>
+<status status="PASS" starttime="20190515 13:47:08.230" endtime="20190515 13:47:08.259"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${lbl_logout}</arg>
+</arguments>
+<msg timestamp="20190515 13:47:08.260" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]'.</msg>
+<status status="PASS" starttime="20190515 13:47:08.259" endtime="20190515 13:47:09.359"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:47:08.157" endtime="20190515 13:47:09.359"></status>
+</kw>
+<tags>
+<tag>Smoke Test</tag>
+</tags>
+<status status="PASS" starttime="20190515 13:46:55.948" endtime="20190515 13:47:09.360" critical="yes"></status>
 </test>
 <test id="s1-s1-t4" name="TC04 - Delete An Article">
 <kw name="Generate Random String" library="String">
@@ -356,8 +862,8 @@ Message: unexpected alert open: {Alert text : }
 <assign>
 <var>${ARTICLE_ALIAS}</var>
 </assign>
-<msg timestamp="20190514 11:01:06.369" level="INFO">${ARTICLE_ALIAS} = QBpGBckTbHeQ</msg>
-<status status="PASS" starttime="20190514 11:01:06.368" endtime="20190514 11:01:06.369"></status>
+<msg timestamp="20190515 13:47:09.361" level="INFO">${ARTICLE_ALIAS} = gNrCHPPatHoe</msg>
+<status status="PASS" starttime="20190515 13:47:09.361" endtime="20190515 13:47:09.361"></status>
 </kw>
 <kw name="Generate Random String" library="String">
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
@@ -368,8 +874,8 @@ Message: unexpected alert open: {Alert text : }
 <assign>
 <var>${ARTICLE_TITLE}</var>
 </assign>
-<msg timestamp="20190514 11:01:06.369" level="INFO">${ARTICLE_TITLE} = NudXhKHYPuFRfjwtxwSMbfXLbUZmPq</msg>
-<status status="PASS" starttime="20190514 11:01:06.369" endtime="20190514 11:01:06.370"></status>
+<msg timestamp="20190515 13:47:09.362" level="INFO">${ARTICLE_TITLE} = rCTSmFRWjPvPEtsGloxVxFbNTOiYjj</msg>
+<status status="PASS" starttime="20190515 13:47:09.362" endtime="20190515 13:47:09.362"></status>
 </kw>
 <kw name="Login Admin Site" library="AdminLoginPage">
 <arguments>
@@ -381,7 +887,7 @@ Message: unexpected alert open: {Alert text : }
 <arguments>
 <arg>Login to Joomla</arg>
 </arguments>
-<status status="PASS" starttime="20190514 11:01:06.370" endtime="20190514 11:01:06.371"></status>
+<status status="PASS" starttime="20190515 13:47:09.363" endtime="20190515 13:47:09.363"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -389,79 +895,211 @@ Message: unexpected alert open: {Alert text : }
 <arg>${txt_username}</arg>
 <arg>${arg_username}</arg>
 </arguments>
-<msg timestamp="20190514 11:01:06.371" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190514 11:01:06.378" level="FAIL">UnexpectedAlertPresentException: Alert Text: None
-Message: unexpected alert open: {Alert text : }
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" starttime="20190514 11:01:06.373" endtime="20190514 11:01:06.378"></status>
+<msg timestamp="20190515 13:47:09.364" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190515 13:47:09.363" endtime="20190515 13:47:09.453"></status>
 </kw>
-<msg timestamp="20190514 11:01:06.378" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: UnexpectedAlertPresentException: Alert Text: None
-Message: unexpected alert open: {Alert text : }
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<msg timestamp="20190514 11:01:06.380" level="FAIL">UnexpectedAlertPresentException: Alert Text: None
-Message: unexpected alert open: {Alert text : }
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" starttime="20190514 11:01:06.371" endtime="20190514 11:01:06.380"></status>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_password}</arg>
+<arg>${arg_password}</arg>
+</arguments>
+<msg timestamp="20190515 13:47:09.454" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190515 13:47:09.454" endtime="20190515 13:47:09.587"></status>
 </kw>
-<status status="FAIL" starttime="20190514 11:01:06.370" endtime="20190514 11:01:06.381"></status>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_login}</arg>
+</arguments>
+<msg timestamp="20190515 13:47:09.588" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190515 13:47:09.587" endtime="20190515 13:47:10.907"></status>
 </kw>
-<status status="FAIL" starttime="20190514 11:01:06.367" endtime="20190514 11:01:06.381" critical="yes">UnexpectedAlertPresentException: Alert Text: None
-Message: unexpected alert open: {Alert text : }
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
-</status>
+<status status="PASS" starttime="20190515 13:47:09.362" endtime="20190515 13:47:10.907"></status>
+</kw>
+<kw name="Go To Add New Article Page" library="AdminArticlePage">
+<kw name="Select Sidebar Menu" library="AdminHomePage">
+<arguments>
+<arg>${lbl_new_article}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${arg_page}</arg>
+</arguments>
+<msg timestamp="20190515 13:47:10.908" level="INFO">Clicking element 'xpath=//div[@class="span3"]//a[span[contains(text(), "New Article")]]'.</msg>
+<status status="PASS" starttime="20190515 13:47:10.908" endtime="20190515 13:47:12.672"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:47:10.907" endtime="20190515 13:47:12.672"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:47:10.907" endtime="20190515 13:47:12.672"></status>
+</kw>
+<kw name="Add New Article" library="AdminArticlePage">
+<arguments>
+<arg>${ARTICLE_TITLE}</arg>
+<arg>${ARTICLE_ALIAS}</arg>
+<arg>${ARTICLE_CONTENT}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_articles_title}</arg>
+<arg>${arg_article_title}</arg>
+</arguments>
+<msg timestamp="20190515 13:47:12.674" level="INFO">Typing text 'rCTSmFRWjPvPEtsGloxVxFbNTOiYjj' into text field 'id=jform_title'.</msg>
+<status status="PASS" starttime="20190515 13:47:12.673" endtime="20190515 13:47:13.913"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_articles_alias}</arg>
+<arg>${arg_article_alias}</arg>
+</arguments>
+<msg timestamp="20190515 13:47:13.914" level="INFO">Typing text 'gNrCHPPatHoe' into text field 'id=jform_alias'.</msg>
+<status status="PASS" starttime="20190515 13:47:13.914" endtime="20190515 13:47:14.448"></status>
+</kw>
+<kw name="Select Frame" library="Selenium2Library">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>${ifr_articles_frame}</arg>
+</arguments>
+<msg timestamp="20190515 13:47:14.449" level="INFO">Selecting frame 'xpath=//iframe[contains(@id,'jform_articletext_ifr')]'.</msg>
+<status status="PASS" starttime="20190515 13:47:14.449" endtime="20190515 13:47:14.494"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_articles_add_content}</arg>
+<arg>${arg_article_content}</arg>
+</arguments>
+<msg timestamp="20190515 13:47:14.495" level="INFO">Typing text 'IT BEGAN WITH A TRICKLE — curious developments that mostly raised more questions. There was evidence of election hacking — but could it really have been directed by the Kremlin? Certain Americans on Facebook, pitching for Donald J. Trump and stirring up anger, turned out to be impostors — but who had concocted them?' into text field 'id=tinymce'.</msg>
+<status status="PASS" starttime="20190515 13:47:14.494" endtime="20190515 13:47:15.933"></status>
+</kw>
+<kw name="Unselect Frame" library="Selenium2Library">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20190515 13:47:15.933" endtime="20190515 13:47:15.936"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_articles_save_and_close}</arg>
+</arguments>
+<msg timestamp="20190515 13:47:15.937" level="INFO">Clicking button 'xpath=//button[@class="btn btn-small button-save"]'.</msg>
+<status status="PASS" starttime="20190515 13:47:15.937" endtime="20190515 13:47:18.241"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:47:12.672" endtime="20190515 13:47:18.242"></status>
+</kw>
+<kw name="My Count" library="ex3">
+<arguments>
+<arg>${tab_articles}</arg>
+<arg>${tab_articles_count_total}</arg>
+</arguments>
+<assign>
+<var>${cunt}</var>
+</assign>
+<msg timestamp="20190515 13:47:18.243" level="INFO">${cunt} = 0</msg>
+<status status="PASS" starttime="20190515 13:47:18.242" endtime="20190515 13:47:18.243"></status>
+</kw>
+<kw name="Delete Article" library="AdminArticlePage">
+<arguments>
+<arg>${ARTICLE_TITLE}</arg>
+</arguments>
+<kw name="Format String" library="String">
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<arguments>
+<arg>${xph_articles_checkbox}</arg>
+<arg>${arg_select_title}</arg>
+</arguments>
+<assign>
+<var>${delete_article}</var>
+</assign>
+<msg timestamp="20190515 13:47:18.245" level="INFO">${delete_article} = xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'rCTSmFRWjPvPEtsGloxVxFbNTOiYjj')]]/td/input</msg>
+<status status="PASS" starttime="20190515 13:47:18.244" endtime="20190515 13:47:18.245"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${delete_article}</arg>
+</arguments>
+<msg timestamp="20190515 13:47:18.246" level="INFO">Clicking element 'xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'rCTSmFRWjPvPEtsGloxVxFbNTOiYjj')]]/td/input'.</msg>
+<status status="PASS" starttime="20190515 13:47:18.246" endtime="20190515 13:47:18.324"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_articles_trash}</arg>
+</arguments>
+<msg timestamp="20190515 13:47:18.324" level="INFO">Clicking button 'xpath=//div[@id="toolbar-trash"]/button'.</msg>
+<status status="PASS" starttime="20190515 13:47:18.324" endtime="20190515 13:47:19.336"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:47:18.243" endtime="20190515 13:47:19.337"></status>
+</kw>
+<kw name="Check Delete Article Successfully" library="AdminArticlePage">
+<arguments>
+<arg>${ARTICLE_ALIAS}</arg>
+</arguments>
+<kw name="Page Should Not Contain" library="Selenium2Library">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>${arg_check_alias}</arg>
+</arguments>
+<msg timestamp="20190515 13:47:19.390" level="INFO">Current page does not contain text 'gNrCHPPatHoe'.</msg>
+<status status="PASS" starttime="20190515 13:47:19.338" endtime="20190515 13:47:19.391"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:47:19.337" endtime="20190515 13:47:19.391"></status>
+</kw>
+<kw name="Logout Admin Site" library="AdminHomePage">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${icn_user}</arg>
+</arguments>
+<msg timestamp="20190515 13:47:19.391" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
+<status status="PASS" starttime="20190515 13:47:19.391" endtime="20190515 13:47:19.457"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${lbl_logout}</arg>
+</arguments>
+<status status="PASS" starttime="20190515 13:47:19.457" endtime="20190515 13:47:19.481"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${lbl_logout}</arg>
+</arguments>
+<msg timestamp="20190515 13:47:19.481" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]'.</msg>
+<status status="PASS" starttime="20190515 13:47:19.481" endtime="20190515 13:47:20.319"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:47:19.391" endtime="20190515 13:47:20.319"></status>
+</kw>
+<status status="PASS" starttime="20190515 13:47:09.360" endtime="20190515 13:47:20.320" critical="yes"></status>
 </test>
 <kw name="Teardown" library="Setup" type="teardown">
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20190514 11:01:06.382" endtime="20190514 11:01:08.530"></status>
+<status status="PASS" starttime="20190515 13:47:20.322" endtime="20190515 13:47:22.481"></status>
 </kw>
-<status status="PASS" starttime="20190514 11:01:06.382" endtime="20190514 11:01:08.530"></status>
+<status status="PASS" starttime="20190515 13:47:20.321" endtime="20190515 13:47:22.481"></status>
 </kw>
-<status status="FAIL" starttime="20190514 11:00:53.546" endtime="20190514 11:01:08.530"></status>
+<status status="PASS" starttime="20190515 13:46:19.066" endtime="20190515 13:47:22.482"></status>
 </suite>
-<status status="FAIL" starttime="20190514 11:00:53.514" endtime="20190514 11:01:08.530"></status>
+<status status="PASS" starttime="20190515 13:46:19.035" endtime="20190515 13:47:22.488"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="4">Critical Tests</stat>
-<stat pass="0" fail="4">All Tests</stat>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="2" fail="0">Smoke Test</stat>
 </tag>
 <suite>
-<stat pass="0" fail="4" id="s1" name="Suites">Suites</stat>
-<stat pass="0" fail="4" id="s1-s1" name="AdminArticleTest">Suites.AdminArticleTest</stat>
+<stat pass="4" fail="0" id="s1" name="Suites">Suites</stat>
+<stat pass="4" fail="0" id="s1-s1" name="AdminArticleTest">Suites.AdminArticleTest</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20190514 11:01:06.324" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: UnexpectedAlertPresentException: Alert Text: None
-Message: unexpected alert open: {Alert text : }
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<msg timestamp="20190514 11:01:06.348" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: UnexpectedAlertPresentException: Alert Text: None
-Message: unexpected alert open: {Alert text : }
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<msg timestamp="20190514 11:01:06.365" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: UnexpectedAlertPresentException: Alert Text: None
-Message: unexpected alert open: {Alert text : }
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<msg timestamp="20190514 11:01:06.378" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: UnexpectedAlertPresentException: Alert Text: None
-Message: unexpected alert open: {Alert text : }
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)
-</msg>
 </errors>
 </robot>
