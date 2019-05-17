@@ -1,4 +1,11 @@
-datasources:da39a3ee5e6b4b0d3255bfef95601890afd80709
-commandlineoptions:f255bfc541c87bd48fd70dca9836480c0b936061
+datasources:3630633466a89c6ebd081735760e543812850d38
+commandlineoptions:5ea3922db11a42de3fa4c89e9d9f06972f891d9e
 suitesfrom:no-suites-from-option
-file:ec770acb55b6403d4ed7aa5710ea1a5d21a44c97
+file:28ced3ad4913c856b59162195ebc30084142a32d
+--suite FunctionalTests.AdminArticleTest
+--suite FunctionalTests.AdminCategoryTest
+--suite FunctionalTests.AdminDataDrivenLoginTest
+--suite FunctionalTests.AdminMenuTest
+--suite FunctionalTests.AdminUpdateProfileTest
+--suite FunctionalTests.AdminUserTest
+--suite FunctionalTests.ExampleKeywordTest
