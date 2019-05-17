@@ -11,13 +11,13 @@ class PercySetup():
 
     def Percy_Initialize_Build(self, access_token):
         driver = BuiltIn().get_library_instance('Selenium2Library')._current_browser()
-        root_static_dir = os.path.join(os.path.dirname(__file__), 'static')
+        root_static_dir = os.path.join(os.path.dirname(__file__), '../', 'htdocs/joomla')
         loader = percy.ResourceLoader(
           root_dir=root_static_dir,
-          base_url='joomla',
+#           base_url='/assets',
           webdriver=driver,
         )
-        config = percy.Config(access_token=access_token, default_widths=[1280, 375])
+        config = percy.Config(access_token=access_token)
         self.percy_runner = percy.Runner(loader=loader, config=config)
         self.percy_runner.initialize_build()
 
