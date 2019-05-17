@@ -1,0 +1,27 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.AdminUserTest                                                          
+==============================================================================
+path
+TC09 - Add New Valid User Account                                     Login to Joomla
+| FAIL |
+Element with locator 'xpath=//a/span[@class="icon-user"]' not found.
+------------------------------------------------------------------------------
+TC10 - Edit User Account Valid Information                            Login to Joomla
+| FAIL |
+Element with locator 'xpath=//div[@class="span3"]//a[span[contains(text(), "Users")]]' not found.
+------------------------------------------------------------------------------
+TC11 - Delete User                                                    Login to Joomla
+| FAIL |
+Element with locator 'id=mod-login-username' not found.
+------------------------------------------------------------------------------
+Suites.AdminUserTest                                                  | FAIL |
+3 critical tests, 0 passed, 3 failed
+3 tests total, 0 passed, 3 failed
+==============================================================================
+Suites                                                                | FAIL |
+3 critical tests, 0 passed, 3 failed
+3 tests total, 0 passed, 3 failed
+==============================================================================
+Output:  C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\Reports\RunParallelTest\pabot_results\Suites.AdminUserTest\output.xml

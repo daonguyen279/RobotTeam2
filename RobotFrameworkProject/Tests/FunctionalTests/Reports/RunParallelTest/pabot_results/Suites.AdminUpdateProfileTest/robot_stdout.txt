@@ -1,0 +1,19 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.AdminUpdateProfileTest                                                 
+==============================================================================
+path
+TC13 - Update Admin Profile Successfully                              Login to Joomla
+| FAIL |
+Element with locator 'xpath=//a/span[@class="icon-user"]' not found.
+------------------------------------------------------------------------------
+Suites.AdminUpdateProfileTest                                         | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\Reports\RunParallelTest\pabot_results\Suites.AdminUpdateProfileTest\output.xml

@@ -1,0 +1,19 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.ExampleKeywordTest                                                     
+==============================================================================
+Example Keyword                                                       | PASS |
+------------------------------------------------------------------------------
+Example Keyword With Java                                             | FAIL |
+No keyword with name 'Split Text Example' found.
+------------------------------------------------------------------------------
+Suites.ExampleKeywordTest                                             | FAIL |
+2 critical tests, 1 passed, 1 failed
+2 tests total, 1 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+2 critical tests, 1 passed, 1 failed
+2 tests total, 1 passed, 1 failed
+==============================================================================
+Output:  C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\Reports\RunParallelTest\pabot_results\Suites.ExampleKeywordTest\output.xml

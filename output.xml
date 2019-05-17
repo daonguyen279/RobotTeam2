@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190517 10:11:49.902" rpa="false">
+<suite id="s1" name="RobotTeam2" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2">
+<suite id="s1-s1" name="RobotFrameworkProject" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject">
+<suite id="s1-s1-s1" name="Tests" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests">
+<suite id="s1-s1-s1-s1" name="FunctionalTests" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests">
+<suite id="s1-s1-s1-s1-s1" name="ExampleKeywordTest" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\ExampleKeywordTest.robot">
+<test id="s1-s1-s1-s1-s1-t1" name="Example Keyword Slipt Text And Replace Text">
+<kw name="Split Text" library="StringKeyword">
+<arguments>
+<arg>${INPUT_STRING}</arg>
+<arg>${DELIMETER}</arg>
+</arguments>
+<assign>
+<var>${abc}</var>
+</assign>
+<msg timestamp="20190517 10:11:50.330" level="INFO">${abc} = ['my name is', 'dinh', 'thi', 'anh', 'thao']</msg>
+<status status="PASS" starttime="20190517 10:11:50.329" endtime="20190517 10:11:50.330"></status>
+</kw>
+<kw name="Replace Text" library="StringKeyword">
+<arguments>
+<arg>${INPUT_STRING}</arg>
+<arg>${DELIMETER}</arg>
+<arg>${DESTINATION_CHAR}</arg>
+</arguments>
+<assign>
+<var>${xyz}</var>
+</assign>
+<msg timestamp="20190517 10:11:50.331" level="INFO">${xyz} = my name is_dinh_thi_anh_thao</msg>
+<status status="PASS" starttime="20190517 10:11:50.330" endtime="20190517 10:11:50.331"></status>
+</kw>
+<status status="PASS" starttime="20190517 10:11:50.328" endtime="20190517 10:11:50.331" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s1-s1-t2" name="Example Keyword Greet Method">
+<kw name="Greet" library="StringKeyword">
+<arguments>
+<arg>${NAME}</arg>
+<arg>${MSG}</arg>
+</arguments>
+<assign>
+<var>${xyz}</var>
+</assign>
+<msg timestamp="20190517 10:11:50.333" level="INFO">Hello Dong, Good Afternoon</msg>
+<msg timestamp="20190517 10:11:50.333" level="INFO">${xyz} = None</msg>
+<status status="PASS" starttime="20190517 10:11:50.333" endtime="20190517 10:11:50.333"></status>
+</kw>
+<status status="PASS" starttime="20190517 10:11:50.332" endtime="20190517 10:11:50.334" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s1-s1-t3" name="Example Keyword Count Method">
+<kw name="Count Number" library="StringKeyword">
+<arguments>
+<arg>${STR1}</arg>
+<arg>${STR2}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20190517 10:11:50.337" level="INFO">${result} = 5</msg>
+<status status="PASS" starttime="20190517 10:11:50.335" endtime="20190517 10:11:50.337"></status>
+</kw>
+<status status="PASS" starttime="20190517 10:11:50.334" endtime="20190517 10:11:50.338" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20190517 10:11:50.007" endtime="20190517 10:11:50.338"></status>
+</suite>
+<status status="PASS" starttime="20190517 10:11:50.003" endtime="20190517 10:11:50.340"></status>
+</suite>
+<status status="PASS" starttime="20190517 10:11:50.000" endtime="20190517 10:11:50.342"></status>
+</suite>
+<status status="PASS" starttime="20190517 10:11:49.998" endtime="20190517 10:11:50.343"></status>
+</suite>
+<status status="PASS" starttime="20190517 10:11:49.966" endtime="20190517 10:11:50.345"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0">Critical Tests</stat>
+<stat pass="3" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" id="s1" name="RobotTeam2">RobotTeam2</stat>
+<stat pass="3" fail="0" id="s1-s1" name="RobotFrameworkProject">RobotTeam2.RobotFrameworkProject</stat>
+<stat pass="3" fail="0" id="s1-s1-s1" name="Tests">RobotTeam2.RobotFrameworkProject.Tests</stat>
+<stat pass="3" fail="0" id="s1-s1-s1-s1" name="FunctionalTests">RobotTeam2.RobotFrameworkProject.Tests.FunctionalTests</stat>
+<stat pass="3" fail="0" id="s1-s1-s1-s1-s1" name="ExampleKeywordTest">RobotTeam2.RobotFrameworkProject.Tests.FunctionalTests.ExampleKeywordTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190517 09:24:58.242" rpa="false">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="ExampleKeywordTest" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\ExampleKeywordTest.robot">
+<test id="s1-s1-t1" name="Example Keyword">
+<kw name="Split Text" library="StringKeyword">
+<arguments>
+<arg>${INPUT_STRING}</arg>
+<arg>${DELIMETER}</arg>
+</arguments>
+<assign>
+<var>${abc}</var>
+</assign>
+<msg timestamp="20190517 09:24:58.645" level="INFO">${abc} = ['my name is', 'dinh', 'thi', 'anh', 'thao']</msg>
+<status status="PASS" starttime="20190517 09:24:58.645" endtime="20190517 09:24:58.645"></status>
+</kw>
+<kw name="Replace Text" library="StringKeyword">
+<arguments>
+<arg>${INPUT_STRING}</arg>
+<arg>${DELIMETER}</arg>
+<arg>${DESTINATION_CHAR}</arg>
+</arguments>
+<assign>
+<var>${xyz}</var>
+</assign>
+<msg timestamp="20190517 09:24:58.646" level="INFO">${xyz} = my name is_dinh_thi_anh_thao</msg>
+<status status="PASS" starttime="20190517 09:24:58.645" endtime="20190517 09:24:58.646"></status>
+</kw>
+<status status="PASS" starttime="20190517 09:24:58.644" endtime="20190517 09:24:58.646" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="Example Keyword With Java">
+<kw name="Split Text Example">
+<arguments>
+<arg>${INPUT_STRING}</arg>
+</arguments>
+<assign>
+<var>${abc}=</var>
+</assign>
+<msg timestamp="20190517 09:24:58.657" level="FAIL">No keyword with name 'Split Text Example' found.</msg>
+<status status="FAIL" starttime="20190517 09:24:58.657" endtime="20190517 09:24:58.657"></status>
+</kw>
+<status status="FAIL" starttime="20190517 09:24:58.647" endtime="20190517 09:24:58.657" critical="yes">No keyword with name 'Split Text Example' found.</status>
+</test>
+<status status="FAIL" starttime="20190517 09:24:58.274" endtime="20190517 09:24:58.658"></status>
+</suite>
+<status status="FAIL" starttime="20190517 09:24:58.244" endtime="20190517 09:24:58.659"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1">Critical Tests</stat>
+<stat pass="1" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="1" id="s1-s1" name="ExampleKeywordTest">Suites.ExampleKeywordTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
