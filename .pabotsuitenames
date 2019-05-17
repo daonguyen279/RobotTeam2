@@ -1,4 +1,5 @@
-datasources:da39a3ee5e6b4b0d3255bfef95601890afd80709
-commandlineoptions:67c33b412b200ca7d6e2128df4d4860edd17806a
+datasources:094ac00cb99a6b1638e740dde3f75b482fe46541
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
 suitesfrom:no-suites-from-option
-file:2d8e168715c4572353a8b7a2390c0e52270a4201
+file:fc5e8ccecf381566e7e32777d8d8db9448d0c598
+--suite AdminArticleTest

@@ -1,0 +1,11 @@
+get_suite_names: output_file='.\pabot_results\suite_names.xml' does not exist
+[STDERR] from suite search:
+[ ERROR ] Parsing './my_robot_test' failed: Data source does not exist.
+
+Try --help for usage information.
+
+[STDERR] end
+WARN: No output files in ".\pabot_results"
+Output:  
+Total testing: 0.0 seconds
+Elapsed time:  0.2 seconds

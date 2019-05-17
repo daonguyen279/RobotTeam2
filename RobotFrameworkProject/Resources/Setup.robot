@@ -5,7 +5,7 @@ ${ROOT_2}         http://localhost/joomla/administrator/
 ${CLIENT_ROOT}    http://192.168.189.72/joomla/
 ${USERNAME}       admin
 ${PASSWORD}       123456789
-${PERCY_TOKEN}    863f351e4a075939b1e1e8e0e03aa78386336962c4d1405cd2a8469405c1f6ef
+${PERCY_TOKEN}    917995d3f030d3fb098175c47c2a8cb70b6407cf8785357bca2e72477f7c82b8
 
 *** Settings ***
 Library    Selenium2Library
