@@ -13,8 +13,13 @@ class StringKeyword:
         return outputString
     
     def greet(self,name,msg):
-        print("Hello",name + ', ' + msg)
+        result= "Hello " + name + ', ' + msg
+        return result
 
     def count_number(self, str1,str2):
         str3=str1.count(str2)
         return str3
+
+    def uppercase_string(self, a):      
+        output = a.upper()
+        return output;

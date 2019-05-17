@@ -17,7 +17,7 @@ TC01 - Add A New Aticle
     [Tags]               aticle
     ${ARTICLE_ALIAS}=    Generate Random String    12                          [LETTERS]
     ${ARTICLE_TITLE}=    Generate Random String    30                          [LETTERS]     
-    # Login Admin Site                               ${USERNAME}                 ${PASSWORD}
+    Login Admin Site                               ${USERNAME}                 ${PASSWORD}
     Go To Add New Article Page      
     Add New Article                                ${ARTICLE_TITLE}            ${ARTICLE_ALIAS}    ${ARTICLE_CONTENT}
     Check Add New Article Sucessfully              ${ARTICLE_TITLE}
