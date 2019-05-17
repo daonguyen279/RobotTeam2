@@ -30,10 +30,10 @@ TC05 - Verify That Admin Can Add A New Category
     Check Add New Category Sucessfully             ${CATEGORY_TITLE}
     Delete A Category
     :FOR    ${i}    IN RANGE    999999
-    \    Exit For Loop If    ${i} == 1
+    \    Exit For Loop If    ${i} == 0
     \    Delete A Category
     Logout Admin Site
-    My Keyword                                     Ta*thi*An                         *
+    Uppercase String                                     Ta*thi*An                         *
     
 
 TC06 - Verify That Admin Can Edit Category Information
