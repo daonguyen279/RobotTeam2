@@ -17,6 +17,7 @@ ${MESSAGE_DELETE}    1 user deleted.
 
 *** Test Cases ***
 TC09 - Add New Valid User Account
+    [Tags]              user
     ${NEW_USERNAME}=    Generate Random String    10                              [LETTERS]
     ${NEW_EMAIL}        Set Variable              ${NEW_USERNAME}${TAIL_EMAIL}
     Login Admin Site                              ${USERNAME}                     ${PASSWORD}
@@ -28,6 +29,7 @@ TC09 - Add New Valid User Account
     Clean Up After Test                           ${NEW_EMAIL}
     
 TC10 - Edit User Account Valid Information
+    [Tags]               user
     ${NEW_USERNAME}=     Generate Random String    10                               [LETTERS]
     ${NEW_EMAIL}         Set Variable              ${NEW_USERNAME}${TAIL_EMAIL}
     ${EDIT_USERNAME}=    Generate Random String    10                               [LETTERS]
@@ -43,6 +45,7 @@ TC10 - Edit User Account Valid Information
     Clean Up After Test                            ${EDIT_EMAIL}
 
 TC11 - Delete User
+    [Tags]              user
     ${NEW_USERNAME}=    Generate Random String    10                              [LETTERS]
     ${NEW_EMAIL}        Set Variable              ${NEW_USERNAME}${TAIL_EMAIL}
     Login Admin Site                              ${USERNAME}                     ${PASSWORD}
