@@ -13,38 +13,49 @@ ${CATEGORY_EDIT_CONTENT}             Long time ago Seth Green decided to take hi
 ${TXT_ADD_MESSAGE_EXPECTED}          Category saved.
 ${TXT_EDIT_MESSAGE_EXPECTED}         1 category trashed.
 ${TXT_UNPUBLISH_MESSAGE_EXPECTED}    1 category unpublished.
-  
+
 
 *** Test Cases ***
 TC05 - Verify That Admin Can Add A New Category
-    ${CATEGORY_ALIAS}=   Generate Random String    12                             [LETTERS]
-    ${CATEGORY_TITLE}=   Generate Random String    12                             [LETTERS]
+    [Tags]    Smoke Test
+    ${CATEGORY_ALIAS} =  Generate Random String    12                             [LETTERS]
+    ${CATEGORY_TITLE} =  Generate Random String    12                             [LETTERS]
     Login Admin Site                               ${USERNAME}                    ${PASSWORD}
     Go To Add New Category Page
-    Add New Category                               ${CATEGORY_TITLE}              ${CATEGORY_CONTENT}    ${CATEGORY_ALIAS}    
+    Add New Category                               ${CATEGORY_TITLE}              ${CATEGORY_CONTENT}    ${CATEGORY_ALIAS} 
+    :FOR    ${i}    IN RANGE    999999
+    \    Exit For Loop If    ${i} == 0
+    \    Add New Category                               ${CATEGORY_TITLE}              ${CATEGORY_CONTENT}    ${CATEGORY_ALIAS}   
     Check Message                                  ${TXT_ADD_MESSAGE_EXPECTED}     
     Check Add New Category Sucessfully             ${CATEGORY_TITLE}
     Delete A Category
+    :FOR    ${i}    IN RANGE    999999
+    \    Exit For Loop If    ${i} == 1
+    \    Delete A Category
     Logout Admin Site
+    My Keyword                                     Ta*thi*An                         *
+    
 
 TC06 - Verify That Admin Can Edit Category Information
-    ${CATEGORY_EDIT_CONTENT}=    Generate Random String    12                             [LETTERS]
-    ${CATEGORY_EDIT_TITLE}=      Generate Random String    12                             [LETTERS]
-    ${CATEGORY_ALIAS}=           Generate Random String    12                             [LETTERS]
-    ${CATEGORY_TITLE}=           Generate Random String    12                             [LETTERS]
-    Login Admin Site                                       ${USERNAME}                    ${PASSWORD}
+    [Tags]    Smoke Test
+    ${CATEGORY_EDIT_CONTENT} =  Generate Random String    12                             [LETTERS]
+    ${CATEGORY_EDIT_TITLE} =    Generate Random String    12                             [LETTERS]
+    ${CATEGORY_ALIAS} =         Generate Random String    12                             [LETTERS]
+    ${CATEGORY_TITLE} =         Generate Random String    12                             [LETTERS]
+    Login Admin Site                                      ${USERNAME}                    ${PASSWORD}
     Go To Add New Category Page
-    Add New Category                                       ${CATEGORY_TITLE}              ${CATEGORY_CONTENT}         ${CATEGORY_ALIAS} 
+    Add New Category                                      ${CATEGORY_TITLE}              ${CATEGORY_CONTENT}         ${CATEGORY_ALIAS} 
     Go To Edit Category Page
-    Edit Category Information                              ${CATEGORY_EDIT_TITLE}         ${CATEGORY_EDIT_CONTENT}    
-    Check Message                                          ${TXT_ADD_MESSAGE_EXPECTED}     
-    Check Edit Category Sucessfully                        ${CATEGORY_EDIT_TITLE}
+    Edit Category Information                             ${CATEGORY_EDIT_TITLE}         ${CATEGORY_EDIT_CONTENT}
+    Check Message                                         ${TXT_ADD_MESSAGE_EXPECTED}     
+    Check Edit Category Sucessfully                       ${CATEGORY_EDIT_TITLE}
     Delete A Category
     Logout Admin Site
 
 TC07 - Verify That Admin Can Delete A New Category
-    ${CATEGORY_ALIAS}=   Generate Random String    12                              [LETTERS]
-    ${CATEGORY_TITLE}=   Generate Random String    12                              [LETTERS]
+    [Tags]    Integration
+    ${CATEGORY_ALIAS} =  Generate Random String    12                              [LETTERS]
+    ${CATEGORY_TITLE} =  Generate Random String    12                              [LETTERS]
     Login Admin Site                               ${USERNAME}                     ${PASSWORD}
     Go To Add New Category Page
     Add New Category                               ${CATEGORY_TITLE}               ${CATEGORY_CONTENT}    ${CATEGORY_ALIAS}
@@ -54,8 +65,9 @@ TC07 - Verify That Admin Can Delete A New Category
     Logout Admin Site
 
 TC08 - Verify That Admin Can Unpublish A Category
-    ${CATEGORY_ALIAS}=    Generate Random String    12                                   [LETTERS]
-    ${CATEGORY_TITLE}=    Generate Random String    12                                   [LETTERS]
+    [Tags]    Integration
+    ${CATEGORY_ALIAS} =   Generate Random String    12                                   [LETTERS]
+    ${CATEGORY_TITLE} =   Generate Random String    12                                   [LETTERS]
     Login Admin Site                                ${USERNAME}                          ${PASSWORD}
     Go To Add New Category Page
     Add New Category                                ${CATEGORY_TITLE}                    ${CATEGORY_CONTENT}    ${CATEGORY_ALIAS}
@@ -64,3 +76,4 @@ TC08 - Verify That Admin Can Unpublish A Category
     Check Unpublish Article Successfully            ${CATEGORY_TITLE}
     Delete A Category
     Logout Admin Site
+    
