@@ -12,5 +12,9 @@ class StringKeyword:
         outputString=inputString.replace(originalChar, destinationChar)
         return outputString
     
-    def greet(name,msg):
+    def greet(self,name,msg):
         print("Hello",name + ', ' + msg)
+
+    def count_number(self, str1,str2):
+        str3=str1.count(str2)
+        return str3
