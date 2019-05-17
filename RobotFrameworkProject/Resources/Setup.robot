@@ -15,6 +15,7 @@ Library    OperatingSystem
 Library    PageObjectLibrary
 Library    String
 Library    PercyClient.py
+Library    Process
 
 *** Keywords ***
 Setup
@@ -24,5 +25,7 @@ Setup
     Percy Initialize Build            ${PERCY_TOKEN}
 
 Teardown
+    Run process      robot --listener allure_robotframework C:/robot/RobotTeam2/RobotFrameworkProject/Tests/VisualTests
+    Run process      allure serve C:/robot/RobotTeam2/output/allure
     Close all browsers
     Percy Finalize Build

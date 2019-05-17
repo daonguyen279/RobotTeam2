@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190514 16:25:03.585" rpa="false">
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190516 17:02:04.031" rpa="false">
 <suite id="s1" name="RobotTeam2" source="C:\robot\RobotTeam2">
 <suite id="s1-s1" name="RobotFrameworkProject" source="C:\robot\RobotTeam2\RobotFrameworkProject">
 <suite id="s1-s1-s1" name="Tests" source="C:\robot\RobotTeam2\RobotFrameworkProject\Tests">
-<suite id="s1-s1-s1-s1" name="Visual Tests" source="C:\robot\RobotTeam2\RobotFrameworkProject\Tests\Visual Tests">
-<suite id="s1-s1-s1-s1-s1" name="LoginVisualTest" source="C:\robot\RobotTeam2\RobotFrameworkProject\Tests\Visual Tests\LoginVisualTest.robot">
+<suite id="s1-s1-s1-s1" name="VisualTests" source="C:\robot\RobotTeam2\RobotFrameworkProject\Tests\VisualTests">
+<suite id="s1-s1-s1-s1-s1" name="LoginVisualTest" source="C:\robot\RobotTeam2\RobotFrameworkProject\Tests\VisualTests\LoginVisualTest.robot">
 <kw name="Setup" library="Setup" type="setup">
 <kw name="Append To Environment Variable" library="OperatingSystem">
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
@@ -12,17 +12,8 @@
 <arg>PATH</arg>
 <arg>C:\\robot\\RobotTeam2\\RobotFrameworkProject\\Resources/Drivers</arg>
 </arguments>
-<msg timestamp="20190514 16:25:03.827" level="INFO">Environment variable 'PATH' set to value 'C:/Program Files/Java/jre1.8.0_211/bin/server;C:/Program Files/Java/jre1.8.0_211/bin;C:/Program Files/Java/jre1.8.0_211/lib/amd64;C:\Python37\;C:\Python37\Scripts\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs\;C:\Users\InternDN19.01.03\Downloads\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin;C:\Users\InternDN19.01.03\Downloads\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin;C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\;C:\Users\InternDN19.01.03\AppData\Local\Microsoft\WindowsApps;C:\webdrivers;C:\Users\InternDN19.01.03\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.03\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.03\AppData\Roaming\npm;;C:\eclipse-java-oxygen-1a-win32-x86_64\eclipse;;C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\lib\site-packages\pywin32_system32;C:\robot\RobotTeam2\RobotFrameworkProject\Resources/Drivers'.</msg>
-<status status="PASS" starttime="20190514 16:25:03.827" endtime="20190514 16:25:03.827"></status>
-</kw>
-<kw name="Append To Environment Variable" library="OperatingSystem">
-<doc>Appends given ``values`` to environment variable ``name``.</doc>
-<arguments>
-<arg>PERCY_TOKEN</arg>
-<arg>${PERCY_TOKEN}</arg>
-</arguments>
-<msg timestamp="20190514 16:25:03.828" level="INFO">Environment variable 'PERCY_TOKEN' set to value 'fc038fae1c1cb91c7c84c11dcc823d1fe8bbcdbb03fe6252fc1e48f64c7c7f4e'.</msg>
-<status status="PASS" starttime="20190514 16:25:03.828" endtime="20190514 16:25:03.828"></status>
+<msg timestamp="20190516 17:02:04.275" level="INFO">Environment variable 'PATH' set to value 'C:/Program Files/Java/jre1.8.0_211/bin/server;C:/Program Files/Java/jre1.8.0_211/bin;C:/Program Files/Java/jre1.8.0_211/lib/amd64;C:\Python37\;C:\Python37\Scripts\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs\;C:\Users\InternDN19.01.03\Downloads\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin;C:\Users\InternDN19.01.03\Downloads\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin;C:\Users\InternDN19.01.03\Downloads\allure-2.4.1\bin;C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\;C:\Users\InternDN19.01.03\AppData\Local\Microsoft\WindowsApps;C:\webdrivers;C:\Users\InternDN19.01.03\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.03\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.03\AppData\Roaming\npm;;C:\eclipse-java-oxygen-1a-win32-x86_64\eclipse;;C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\lib\site-packages\pywin32_system32;C:\robot\RobotTeam2\RobotFrameworkProject\Resources/Drivers'.</msg>
+<status status="PASS" starttime="20190516 17:02:04.274" endtime="20190516 17:02:04.275"></status>
 </kw>
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -30,60 +21,92 @@
 <arg>${ROOT}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20190514 16:25:03.829" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla/administrator/'.</msg>
-<status status="PASS" starttime="20190514 16:25:03.828" endtime="20190514 16:25:07.478"></status>
+<msg timestamp="20190516 17:02:04.275" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla/administrator/'.</msg>
+<status status="PASS" starttime="20190516 17:02:04.275" endtime="20190516 17:02:07.474"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20190514 16:25:07.479" endtime="20190514 16:25:08.598"></status>
+<status status="PASS" starttime="20190516 17:02:07.475" endtime="20190516 17:02:08.595"></status>
 </kw>
 <kw name="Percy Initialize Build" library="PercyClient">
-<status status="PASS" starttime="20190514 16:25:08.599" endtime="20190514 16:25:09.305"></status>
+<arguments>
+<arg>${PERCY_TOKEN}</arg>
+</arguments>
+<status status="PASS" starttime="20190516 17:02:08.597" endtime="20190516 17:02:09.275"></status>
 </kw>
-<status status="PASS" starttime="20190514 16:25:03.826" endtime="20190514 16:25:09.306"></status>
+<status status="PASS" starttime="20190516 17:02:04.274" endtime="20190516 17:02:09.275"></status>
 </kw>
-<test id="s1-s1-s1-s1-s1-t1" name="TC01 - UI Of Login Page Display Correctly">
+<test id="s1-s1-s1-s1-s1-t1" name="TC01 - UI Of Login">
 <kw name="Percy Snapshot" library="PercyClient">
 <arguments>
 <arg>Login</arg>
 </arguments>
-<status status="PASS" starttime="20190514 16:25:09.308" endtime="20190514 16:25:11.196"></status>
+<status status="PASS" starttime="20190516 17:02:09.276" endtime="20190516 17:02:10.949"></status>
 </kw>
-<status status="PASS" starttime="20190514 16:25:09.307" endtime="20190514 16:25:11.197" critical="yes"></status>
+<status status="PASS" starttime="20190516 17:02:09.275" endtime="20190516 17:02:10.949" critical="yes"></status>
 </test>
 <kw name="Teardown" library="Setup" type="teardown">
+<kw name="Start Process" library="Process">
+<doc>Starts a new process on background.</doc>
+<arguments>
+<arg>robot --listener allure_robotframework C:/robot/RobotTeam2/RobotFrameworkProject/Tests/VisualTests</arg>
+</arguments>
+<msg timestamp="20190516 17:02:10.951" level="INFO">Starting process:
+"robot --listener allure_robotframework C:/robot/RobotTeam2/RobotFrameworkProject/Tests/VisualTests"</msg>
+<msg timestamp="20190516 17:02:10.953" level="FAIL">FileNotFoundError: [WinError 2] The system cannot find the file specified</msg>
+<status status="FAIL" starttime="20190516 17:02:10.951" endtime="20190516 17:02:10.953"></status>
+</kw>
+<kw name="Start Process" library="Process">
+<doc>Starts a new process on background.</doc>
+<arguments>
+<arg>allure serve C:/robot/RobotTeam2/output/allure</arg>
+</arguments>
+<msg timestamp="20190516 17:02:10.954" level="INFO">Starting process:
+"allure serve C:/robot/RobotTeam2/output/allure"</msg>
+<msg timestamp="20190516 17:02:10.955" level="FAIL">FileNotFoundError: [WinError 2] The system cannot find the file specified</msg>
+<status status="FAIL" starttime="20190516 17:02:10.954" endtime="20190516 17:02:10.955"></status>
+</kw>
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20190514 16:25:11.198" endtime="20190514 16:25:13.295"></status>
+<status status="PASS" starttime="20190516 17:02:10.955" endtime="20190516 17:02:13.059"></status>
 </kw>
 <kw name="Percy Finalize Build" library="PercyClient">
-<status status="PASS" starttime="20190514 16:25:13.295" endtime="20190514 16:25:13.722"></status>
+<status status="PASS" starttime="20190516 17:02:13.059" endtime="20190516 17:02:13.457"></status>
 </kw>
-<status status="PASS" starttime="20190514 16:25:11.198" endtime="20190514 16:25:13.722"></status>
+<status status="FAIL" starttime="20190516 17:02:10.950" endtime="20190516 17:02:13.457">Several failures occurred:
+
+1) FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+2) FileNotFoundError: [WinError 2] The system cannot find the file specified</status>
 </kw>
-<status status="PASS" starttime="20190514 16:25:03.642" endtime="20190514 16:25:13.723"></status>
+<status status="FAIL" starttime="20190516 17:02:04.090" endtime="20190516 17:02:13.458">Suite teardown failed:
+Several failures occurred:
+
+1) FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+2) FileNotFoundError: [WinError 2] The system cannot find the file specified</status>
 </suite>
-<status status="PASS" starttime="20190514 16:25:03.641" endtime="20190514 16:25:13.725"></status>
+<status status="FAIL" starttime="20190516 17:02:04.088" endtime="20190516 17:02:13.460"></status>
 </suite>
-<status status="PASS" starttime="20190514 16:25:03.639" endtime="20190514 16:25:13.726"></status>
+<status status="FAIL" starttime="20190516 17:02:04.086" endtime="20190516 17:02:13.461"></status>
 </suite>
-<status status="PASS" starttime="20190514 16:25:03.637" endtime="20190514 16:25:13.727"></status>
+<status status="FAIL" starttime="20190516 17:02:04.084" endtime="20190516 17:02:13.462"></status>
 </suite>
-<status status="PASS" starttime="20190514 16:25:03.610" endtime="20190514 16:25:13.728"></status>
+<status status="FAIL" starttime="20190516 17:02:04.063" endtime="20190516 17:02:13.463"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="RobotTeam2">RobotTeam2</stat>
-<stat pass="1" fail="0" id="s1-s1" name="RobotFrameworkProject">RobotTeam2.RobotFrameworkProject</stat>
-<stat pass="1" fail="0" id="s1-s1-s1" name="Tests">RobotTeam2.RobotFrameworkProject.Tests</stat>
-<stat pass="1" fail="0" id="s1-s1-s1-s1" name="Visual Tests">RobotTeam2.RobotFrameworkProject.Tests.Visual Tests</stat>
-<stat pass="1" fail="0" id="s1-s1-s1-s1-s1" name="LoginVisualTest">RobotTeam2.RobotFrameworkProject.Tests.Visual Tests.LoginVisualTest</stat>
+<stat pass="0" fail="1" id="s1" name="RobotTeam2">RobotTeam2</stat>
+<stat pass="0" fail="1" id="s1-s1" name="RobotFrameworkProject">RobotTeam2.RobotFrameworkProject</stat>
+<stat pass="0" fail="1" id="s1-s1-s1" name="Tests">RobotTeam2.RobotFrameworkProject.Tests</stat>
+<stat pass="0" fail="1" id="s1-s1-s1-s1" name="VisualTests">RobotTeam2.RobotFrameworkProject.Tests.VisualTests</stat>
+<stat pass="0" fail="1" id="s1-s1-s1-s1-s1" name="LoginVisualTest">RobotTeam2.RobotFrameworkProject.Tests.VisualTests.LoginVisualTest</stat>
 </suite>
 </statistics>
 <errors>
