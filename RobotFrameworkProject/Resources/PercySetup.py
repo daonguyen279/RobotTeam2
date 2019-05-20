@@ -11,10 +11,10 @@ class PercySetup():
 
     def Percy_Initialize_Build(self, access_token):
         driver = BuiltIn().get_library_instance('Selenium2Library')._current_browser()
-        root_static_dir = os.path.join(os.path.dirname(__file__), '../', 'joomla')
+        root_static_dir = os.path.join(os.path.dirname(__file__), '/Users/InternDN19.01.02/Desktop/joomla')
         loader = percy.ResourceLoader(
           root_dir=root_static_dir,
-          base_url='../joomla',
+          base_url='/joomla',
           webdriver=driver,
         )
         config = percy.Config(access_token=access_token)

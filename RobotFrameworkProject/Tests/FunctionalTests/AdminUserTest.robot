@@ -8,6 +8,8 @@ Suite teardown    Teardown
 
 
 *** Variables ***
+${USERNAME}          user
+${PASSWORD}          123456789
 ${NEW_PASSWORD}      123456789
 ${EDIT_PASSWORD}     123123123
 ${TAIL_EMAIL}        @gmail.com

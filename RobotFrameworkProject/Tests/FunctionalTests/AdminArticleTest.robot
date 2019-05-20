@@ -7,7 +7,9 @@ Suite teardown    Teardown
 
 
 *** Variables ***
-${ARTICLE_CONTENT}          IT BEGAN WITH A TRICKLE — curious developments that mostly raised more questions. There was evidence of election hacking — but could it really have been directed by the Kremlin? Certain Americans on Facebook, pitching for Donald J. Trump and stirring up anger, turned out to be impostors — but who had concocted them? 
+${USERNAME}                 article
+${PASSWORD}                 123456789
+${ARTICLE_CONTENT}          IT BEGAN WITH A TRICKLE — curious developments that mostly raised more questions. There was evidence of election hacking — but could it really have been directed by the Kremlin? Certain Americans on Facebook, pitching for Donald J.
 ${ARTICLE_CHECK_MESSAGE}    Article saved.
 ${ARTICLE_EDIT_TITLE}       Glimpses of the Mystery   
 

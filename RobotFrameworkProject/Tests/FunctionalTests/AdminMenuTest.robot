@@ -8,6 +8,8 @@ Suite teardown    Teardown
 
 
 *** Variables ***
+${USERNAME}                   menu
+${PASSWORD}                   123456789
 ${MENU_DESCRIPTION}           tesst menu in joomla
 ${MENUITEM_TYPE}              Articles
 ${SUB_MENUITEM_TYPE}          Archived Articles
