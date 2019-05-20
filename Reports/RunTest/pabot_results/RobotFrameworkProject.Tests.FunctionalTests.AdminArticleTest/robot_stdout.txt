@@ -1,0 +1,43 @@
+==============================================================================
+RobotFrameworkProject                                                         
+==============================================================================
+RobotFrameworkProject.Tests                                                   
+==============================================================================
+RobotFrameworkProject.Tests.FunctionalTests                                   
+==============================================================================
+RobotFrameworkProject.Tests.FunctionalTests.AdminArticleTest                  
+==============================================================================
+path
+TC01 - Add A New Aticle                                               Login to Joomla
+| FAIL |
+Element with locator 'xpath=//a/span[@class="icon-user"]' not found.
+------------------------------------------------------------------------------
+TC02 - Edit Article Information                                       Login to Joomla
+| FAIL |
+Element with locator 'xpath=//div[@class="span3"]//a[span[contains(text(), "New Article")]]' not found.
+------------------------------------------------------------------------------
+TC03 - Unpublish An Article                                           Login to Joomla
+| FAIL |
+Element with locator 'id=mod-login-username' not found.
+------------------------------------------------------------------------------
+TC04 - Delete An Article                                              Login to Joomla
+| FAIL |
+Element with locator 'id=mod-login-username' not found.
+------------------------------------------------------------------------------
+RobotFrameworkProject.Tests.FunctionalTests.AdminArticleTest          | FAIL |
+4 critical tests, 0 passed, 4 failed
+4 tests total, 0 passed, 4 failed
+==============================================================================
+RobotFrameworkProject.Tests.FunctionalTests                           | FAIL |
+4 critical tests, 0 passed, 4 failed
+4 tests total, 0 passed, 4 failed
+==============================================================================
+RobotFrameworkProject.Tests                                           | FAIL |
+4 critical tests, 0 passed, 4 failed
+4 tests total, 0 passed, 4 failed
+==============================================================================
+RobotFrameworkProject                                                 | FAIL |
+4 critical tests, 0 passed, 4 failed
+4 tests total, 0 passed, 4 failed
+==============================================================================
+Output:  C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\Reports\RunTest\pabot_results\RobotFrameworkProject.Tests.FunctionalTests.AdminArticleTest\output.xml

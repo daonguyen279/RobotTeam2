@@ -1,0 +1,45 @@
+==============================================================================
+RobotFrameworkProject                                                         
+==============================================================================
+RobotFrameworkProject.Tests                                                   
+==============================================================================
+RobotFrameworkProject.Tests.FunctionalTests                                   
+==============================================================================
+RobotFrameworkProject.Tests.FunctionalTests.AdminDataDrivenLoginTest          
+==============================================================================
+path
+TC18 - Empty Username                                                 Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC19 - Empty Password                                                 Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC20 - Empty Username And Password                                    Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC21 - Invalid Username                                               Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC22 - Invalid Password                                               Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC23 - Invalid Username And Password                                  Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+RobotFrameworkProject.Tests.FunctionalTests.AdminDataDrivenLoginTest  | PASS |
+6 critical tests, 6 passed, 0 failed
+6 tests total, 6 passed, 0 failed
+==============================================================================
+RobotFrameworkProject.Tests.FunctionalTests                           | PASS |
+6 critical tests, 6 passed, 0 failed
+6 tests total, 6 passed, 0 failed
+==============================================================================
+RobotFrameworkProject.Tests                                           | PASS |
+6 critical tests, 6 passed, 0 failed
+6 tests total, 6 passed, 0 failed
+==============================================================================
+RobotFrameworkProject                                                 | PASS |
+6 critical tests, 6 passed, 0 failed
+6 tests total, 6 passed, 0 failed
+==============================================================================
+Output:  C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\Reports\RunTest\pabot_results\RobotFrameworkProject.Tests.FunctionalTests.AdminDataDrivenLoginTest\output.xml

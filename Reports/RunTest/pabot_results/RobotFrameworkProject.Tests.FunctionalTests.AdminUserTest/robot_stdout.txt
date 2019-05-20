@@ -1,0 +1,39 @@
+==============================================================================
+RobotFrameworkProject                                                         
+==============================================================================
+RobotFrameworkProject.Tests                                                   
+==============================================================================
+RobotFrameworkProject.Tests.FunctionalTests                                   
+==============================================================================
+RobotFrameworkProject.Tests.FunctionalTests.AdminUserTest                     
+==============================================================================
+path
+TC09 - Add New Valid User Account                                     Login to Joomla
+| FAIL |
+Element with locator 'xpath=//div[@class="span3"]//a[span[contains(text(), "Users")]]' not found.
+------------------------------------------------------------------------------
+TC10 - Edit User Account Valid Information                            Login to Joomla
+| FAIL |
+Element with locator 'xpath=//div[@class="span3"]//a[span[contains(text(), "Users")]]' not found.
+------------------------------------------------------------------------------
+TC11 - Delete User                                                    Login to Joomla
+| FAIL |
+Element with locator 'xpath=//div[@id="list_fullordering_chzn"]/a[@class="chzn-single"]' not found.
+------------------------------------------------------------------------------
+RobotFrameworkProject.Tests.FunctionalTests.AdminUserTest             | FAIL |
+3 critical tests, 0 passed, 3 failed
+3 tests total, 0 passed, 3 failed
+==============================================================================
+RobotFrameworkProject.Tests.FunctionalTests                           | FAIL |
+3 critical tests, 0 passed, 3 failed
+3 tests total, 0 passed, 3 failed
+==============================================================================
+RobotFrameworkProject.Tests                                           | FAIL |
+3 critical tests, 0 passed, 3 failed
+3 tests total, 0 passed, 3 failed
+==============================================================================
+RobotFrameworkProject                                                 | FAIL |
+3 critical tests, 0 passed, 3 failed
+3 tests total, 0 passed, 3 failed
+==============================================================================
+Output:  C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\Reports\RunTest\pabot_results\RobotFrameworkProject.Tests.FunctionalTests.AdminUserTest\output.xml

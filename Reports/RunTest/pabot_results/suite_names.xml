@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190517 15:16:22.761" rpa="false">
+<suite id="s1" name="RobotFrameworkProject" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject">
+<suite id="s1-s1" name="Tests" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests">
+<suite id="s1-s1-s1" name="FunctionalTests" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests">
+<suite id="s1-s1-s1-s1" name="AdminArticleTest" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminArticleTest.robot">
+<kw name="Setup" library="Setup" type="setup">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:22.977" endtime="20190517 15:16:22.977"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:22.961" endtime="20190517 15:16:22.977"></status>
+</kw>
+<test id="s1-s1-s1-s1-t1" name="TC01 - Add A New Aticle">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:22.977" endtime="20190517 15:16:22.977"></status>
+</kw>
+<tags>
+<tag>aticle</tag>
+</tags>
+<status status="PASS" starttime="20190517 15:16:22.977" endtime="20190517 15:16:22.977" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s1-t2" name="TC02 - Edit Article Information">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:22.977" endtime="20190517 15:16:22.977"></status>
+</kw>
+<tags>
+<tag>aticle</tag>
+</tags>
+<status status="PASS" starttime="20190517 15:16:22.977" endtime="20190517 15:16:22.977" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s1-t3" name="TC03 - Unpublish An Article">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:22.977" endtime="20190517 15:16:22.977"></status>
+</kw>
+<tags>
+<tag>aticle</tag>
+</tags>
+<status status="PASS" starttime="20190517 15:16:22.977" endtime="20190517 15:16:22.977" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s1-t4" name="TC04 - Delete An Article">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:22.977" endtime="20190517 15:16:22.977"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:22.977" endtime="20190517 15:16:22.977" critical="yes"></status>
+</test>
+<kw name="Teardown" library="Setup" type="teardown">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:22.977" endtime="20190517 15:16:22.977"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:22.977" endtime="20190517 15:16:22.977"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:22.779" endtime="20190517 15:16:22.977"></status>
+</suite>
+<suite id="s1-s1-s1-s2" name="AdminCategoryTest" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminCategoryTest.robot">
+<kw name="Setup" library="Setup" type="setup">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:22.977" endtime="20190517 15:16:22.977"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:22.977" endtime="20190517 15:16:22.977"></status>
+</kw>
+<test id="s1-s1-s1-s2-t1" name="TC05 - Verify That Admin Can Add A New Category">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:22.977" endtime="20190517 15:16:22.977"></status>
+</kw>
+<tags>
+<tag>Smoke Test</tag>
+</tags>
+<status status="PASS" starttime="20190517 15:16:22.977" endtime="20190517 15:16:22.977" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s2-t2" name="TC06 - Verify That Admin Can Edit Category Information">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:22.977" endtime="20190517 15:16:22.977"></status>
+</kw>
+<tags>
+<tag>Smoke Test</tag>
+</tags>
+<status status="PASS" starttime="20190517 15:16:22.977" endtime="20190517 15:16:22.977" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s2-t3" name="TC07 - Verify That Admin Can Delete A New Category">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:22.977" endtime="20190517 15:16:22.992"></status>
+</kw>
+<tags>
+<tag>Integration</tag>
+</tags>
+<status status="PASS" starttime="20190517 15:16:22.977" endtime="20190517 15:16:22.992" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s2-t4" name="TC08 - Verify That Admin Can Unpublish A Category">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992"></status>
+</kw>
+<tags>
+<tag>Integration</tag>
+</tags>
+<status status="PASS" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992" critical="yes"></status>
+</test>
+<kw name="Teardown" library="Setup" type="teardown">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:22.977" endtime="20190517 15:16:22.992"></status>
+</suite>
+<suite id="s1-s1-s1-s3" name="AdminDataDrivenLoginTest" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminDataDrivenLoginTest.robot">
+<kw name="Setup" library="Setup" type="setup">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992"></status>
+</kw>
+<test id="s1-s1-s1-s3-t1" name="TC18 - Empty Username">
+<kw name="Login With Invalid Credentials Should Fail" library="AdminLoginPage">
+<arguments>
+<arg>${EMPTY}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${ERROR_MESSAGE}</arg>
+</arguments>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s3-t2" name="TC19 - Empty Password">
+<kw name="Login With Invalid Credentials Should Fail" library="AdminLoginPage">
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${EMPTY}</arg>
+<arg>${ERROR_EMPTY_PASSWORD_MESSAGE}</arg>
+</arguments>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s3-t3" name="TC20 - Empty Username And Password">
+<kw name="Login With Invalid Credentials Should Fail" library="AdminLoginPage">
+<arguments>
+<arg>${EMPTY}</arg>
+<arg>${EMPTY}</arg>
+<arg>${ERROR_EMPTY_PASSWORD_MESSAGE}</arg>
+</arguments>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s3-t4" name="TC21 - Invalid Username">
+<kw name="Login With Invalid Credentials Should Fail" library="AdminLoginPage">
+<arguments>
+<arg>${INVALID_USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${ERROR_MESSAGE}</arg>
+</arguments>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s3-t5" name="TC22 - Invalid Password">
+<kw name="Login With Invalid Credentials Should Fail" library="AdminLoginPage">
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${INVALID_PASSWORD}</arg>
+<arg>${ERROR_MESSAGE}</arg>
+</arguments>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s3-t6" name="TC23 - Invalid Username And Password">
+<kw name="Login With Invalid Credentials Should Fail" library="AdminLoginPage">
+<arguments>
+<arg>${INVALID_USERNAME}</arg>
+<arg>${INVALID_PASSWORD}</arg>
+<arg>${ERROR_MESSAGE}</arg>
+</arguments>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992" critical="yes"></status>
+</test>
+<kw name="Teardown" library="Setup" type="teardown">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:22.992" endtime="20190517 15:16:22.992"></status>
+</suite>
+<suite id="s1-s1-s1-s4" name="AdminMenuTest" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminMenuTest.robot">
+<kw name="Setup" library="Setup" type="setup">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:23.008" endtime="20190517 15:16:23.008"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:23.008" endtime="20190517 15:16:23.008"></status>
+</kw>
+<test id="s1-s1-s1-s4-t1" name="TC14 - Add A New Menu Successfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:23.008" endtime="20190517 15:16:23.008"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:23.008" endtime="20190517 15:16:23.008" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s4-t2" name="TC15 - Add A Menu Item Successfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:23.008" endtime="20190517 15:16:23.008"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:23.008" endtime="20190517 15:16:23.008" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s4-t3" name="TC17 - Delete A Menu Item Sucessfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:23.008" endtime="20190517 15:16:23.008"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:23.008" endtime="20190517 15:16:23.008" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s4-t4" name="TC16 - Delete A Menu Successfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:23.008" endtime="20190517 15:16:23.008"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:23.008" endtime="20190517 15:16:23.008" critical="yes"></status>
+</test>
+<kw name="Teardown" library="Setup" type="teardown">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:23.008" endtime="20190517 15:16:23.008"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:23.008" endtime="20190517 15:16:23.008"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:22.992" endtime="20190517 15:16:23.008"></status>
+</suite>
+<suite id="s1-s1-s1-s5" name="AdminUpdateProfileTest" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminUpdateProfileTest.robot">
+<kw name="Setup" library="Setup" type="setup">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:23.023" endtime="20190517 15:16:23.023"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:23.023" endtime="20190517 15:16:23.023"></status>
+</kw>
+<test id="s1-s1-s1-s5-t1" name="TC13 - Update Admin Profile Successfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:23.023" endtime="20190517 15:16:23.023"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:23.023" endtime="20190517 15:16:23.023" critical="yes"></status>
+</test>
+<kw name="Teardown" library="Setup" type="teardown">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:23.023" endtime="20190517 15:16:23.023"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:23.023" endtime="20190517 15:16:23.023"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:23.008" endtime="20190517 15:16:23.023"></status>
+</suite>
+<suite id="s1-s1-s1-s6" name="AdminUserTest" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminUserTest.robot">
+<kw name="Setup" library="Setup" type="setup">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:23.039" endtime="20190517 15:16:23.039"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:23.039" endtime="20190517 15:16:23.039"></status>
+</kw>
+<test id="s1-s1-s1-s6-t1" name="TC09 - Add New Valid User Account">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:23.039" endtime="20190517 15:16:23.046"></status>
+</kw>
+<tags>
+<tag>user</tag>
+</tags>
+<status status="PASS" starttime="20190517 15:16:23.039" endtime="20190517 15:16:23.046" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s6-t2" name="TC10 - Edit User Account Valid Information">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:23.046" endtime="20190517 15:16:23.046"></status>
+</kw>
+<tags>
+<tag>user</tag>
+</tags>
+<status status="PASS" starttime="20190517 15:16:23.046" endtime="20190517 15:16:23.046" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s6-t3" name="TC11 - Delete User">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:23.046" endtime="20190517 15:16:23.046"></status>
+</kw>
+<tags>
+<tag>user</tag>
+</tags>
+<status status="PASS" starttime="20190517 15:16:23.046" endtime="20190517 15:16:23.046" critical="yes"></status>
+</test>
+<kw name="Teardown" library="Setup" type="teardown">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:23.046" endtime="20190517 15:16:23.046"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:23.046" endtime="20190517 15:16:23.046"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:23.023" endtime="20190517 15:16:23.046"></status>
+</suite>
+<suite id="s1-s1-s1-s7" name="ExampleKeywordTest" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\ExampleKeywordTest.robot">
+<test id="s1-s1-s1-s7-t1" name="Keyword Slipt Text And Replace Text">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:23.046" endtime="20190517 15:16:23.046"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:23.046" endtime="20190517 15:16:23.046" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s7-t2" name="Keyword Greet Method">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:23.046" endtime="20190517 15:16:23.046"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:23.046" endtime="20190517 15:16:23.046" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s7-t3" name="Keyword Count Method">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:23.046" endtime="20190517 15:16:23.046"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:23.046" endtime="20190517 15:16:23.046" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s7-t4" name="Keyword UpperCase Method">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:23.046" endtime="20190517 15:16:23.046"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:23.046" endtime="20190517 15:16:23.046" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20190517 15:16:23.046" endtime="20190517 15:16:23.046"></status>
+</suite>
+<status status="PASS" starttime="20190517 15:16:22.779" endtime="20190517 15:16:23.046"></status>
+</suite>
+<suite id="s1-s1-s2" name="VisualTests" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\VisualTests">
+<suite id="s1-s1-s2-s1" name="DemoVisualTest" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\VisualTests\DemoVisualTest.robot">
+<kw name="Setup" library="SetupBuild2" type="setup">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:23.061" endtime="20190517 15:16:23.061"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:23.061" endtime="20190517 15:16:23.061"></status>
+</kw>
+<test id="s1-s1-s2-s1-t1" name="TC01 - UI Of Login Page Display Correctly">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:23.061" endtime="20190517 15:16:23.061"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:23.061" endtime="20190517 15:16:23.061" critical="yes"></status>
+</test>
+<kw name="Teardown" library="SetupBuild2" type="teardown">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190517 15:16:23.061" endtime="20190517 15:16:23.061"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:23.061" endtime="20190517 15:16:23.061"></status>
+</kw>
+<status status="PASS" starttime="20190517 15:16:23.046" endtime="20190517 15:16:23.061"></status>
+</suite>
+<status status="PASS" starttime="20190517 15:16:23.046" endtime="20190517 15:16:23.061"></status>
+</suite>
+<status status="PASS" starttime="20190517 15:16:22.763" endtime="20190517 15:16:23.061"></status>
+</suite>
+<status status="PASS" starttime="20190517 15:16:22.763" endtime="20190517 15:16:23.061"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="27" fail="0">Critical Tests</stat>
+<stat pass="27" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="3" fail="0">aticle</stat>
+<stat pass="2" fail="0">Integration</stat>
+<stat pass="2" fail="0">Smoke Test</stat>
+<stat pass="3" fail="0">user</stat>
+</tag>
+<suite>
+<stat pass="27" fail="0" id="s1" name="RobotFrameworkProject">RobotFrameworkProject</stat>
+<stat pass="27" fail="0" id="s1-s1" name="Tests">RobotFrameworkProject.Tests</stat>
+<stat pass="26" fail="0" id="s1-s1-s1" name="FunctionalTests">RobotFrameworkProject.Tests.FunctionalTests</stat>
+<stat pass="4" fail="0" id="s1-s1-s1-s1" name="AdminArticleTest">RobotFrameworkProject.Tests.FunctionalTests.AdminArticleTest</stat>
+<stat pass="4" fail="0" id="s1-s1-s1-s2" name="AdminCategoryTest">RobotFrameworkProject.Tests.FunctionalTests.AdminCategoryTest</stat>
+<stat pass="6" fail="0" id="s1-s1-s1-s3" name="AdminDataDrivenLoginTest">RobotFrameworkProject.Tests.FunctionalTests.AdminDataDrivenLoginTest</stat>
+<stat pass="4" fail="0" id="s1-s1-s1-s4" name="AdminMenuTest">RobotFrameworkProject.Tests.FunctionalTests.AdminMenuTest</stat>
+<stat pass="1" fail="0" id="s1-s1-s1-s5" name="AdminUpdateProfileTest">RobotFrameworkProject.Tests.FunctionalTests.AdminUpdateProfileTest</stat>
+<stat pass="3" fail="0" id="s1-s1-s1-s6" name="AdminUserTest">RobotFrameworkProject.Tests.FunctionalTests.AdminUserTest</stat>
+<stat pass="4" fail="0" id="s1-s1-s1-s7" name="ExampleKeywordTest">RobotFrameworkProject.Tests.FunctionalTests.ExampleKeywordTest</stat>
+<stat pass="1" fail="0" id="s1-s1-s2" name="VisualTests">RobotFrameworkProject.Tests.VisualTests</stat>
+<stat pass="1" fail="0" id="s1-s1-s2-s1" name="DemoVisualTest">RobotFrameworkProject.Tests.VisualTests.DemoVisualTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190517 15:16:22.723" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminArticlePage.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190517 15:16:22.723" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminCategoryPage.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190517 15:16:22.739" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminMenuPage.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190517 15:16:22.739" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminProfilePage.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190517 15:16:22.739" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminUserPage.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190517 15:16:22.745" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Resources\Setup.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190517 15:16:22.745" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Resources\SetupBuild2.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190517 15:16:22.745" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminArticleTest.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190517 15:16:22.745" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminCategoryTest.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190517 15:16:22.745" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminDataDrivenLoginTest.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190517 15:16:22.745" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminMenuTest.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190517 15:16:22.745" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminUpdateProfileTest.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190517 15:16:22.745" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminUserTest.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190517 15:16:22.745" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\ExampleKeywordTest.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190517 15:16:22.745" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\VisualTests\DemoVisualTest.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190517 15:16:22.779" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminArticleTest.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:22.779" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Resources\Setup.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190517 15:16:22.779" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Resources\Setup.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:22.961" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminArticlePage.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190517 15:16:22.961" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminArticlePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:22.961" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminArticlePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:22.961" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:22.961" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:22.961" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:22.961" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminLoginPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:22.977" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminCategoryTest.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:22.977" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Resources\Setup.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:22.977" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminCategoryPage.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190517 15:16:22.977" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminCategoryPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:22.977" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminCategoryPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:22.977" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:22.977" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:22.977" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:22.977" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminLoginPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:22.992" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminDataDrivenLoginTest.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:22.992" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Resources\Setup.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:22.992" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminLoginPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:22.992" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminMenuTest.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.008" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Resources\Setup.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.008" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminLoginPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.008" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminMenuPage.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190517 15:16:23.008" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminMenuPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.008" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminMenuPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.008" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.008" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.008" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.008" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminUpdateProfileTest.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.023" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Resources\Setup.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.023" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminLoginPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.023" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminProfilePage.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190517 15:16:23.023" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminProfilePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.023" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.023" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.023" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.023" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminUserTest.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.023" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Resources\Setup.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.023" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.023" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.023" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.023" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminLoginPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.039" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminUserPage.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190517 15:16:23.039" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminUserPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.039" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminUserPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.039" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Client\ClientHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.046" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\ExampleKeywordTest.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.046" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Resources\Setup.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.046" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Resources\SetupBuild2.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190517 15:16:23.061" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Resources\SetupBuild2.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.061" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.061" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.061" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190517 15:16:23.061" level="ERROR">Error in file 'C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminLoginPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+</errors>
+</robot>
