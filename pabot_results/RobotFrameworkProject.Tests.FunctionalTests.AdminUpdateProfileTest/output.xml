@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190521 14:53:04.329" rpa="false">
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190521 16:39:52.547" rpa="false">
 <suite id="s1" name="RobotFrameworkProject" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject">
 <suite id="s1-s1" name="Tests" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests">
 <suite id="s1-s1-s1" name="FunctionalTests" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests">
@@ -14,15 +14,15 @@
 <assign>
 <var>${PATH}</var>
 </assign>
-<msg timestamp="20190521 14:53:04.764" level="INFO">${PATH} = path</msg>
-<status status="PASS" starttime="20190521 14:53:04.763" endtime="20190521 14:53:04.764"></status>
+<msg timestamp="20190521 16:39:53.056" level="INFO">${PATH} = path</msg>
+<status status="PASS" starttime="20190521 16:39:53.055" endtime="20190521 16:39:53.056"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${PATH}</arg>
 </arguments>
-<status status="PASS" starttime="20190521 14:53:04.765" endtime="20190521 14:53:04.766"></status>
+<status status="PASS" starttime="20190521 16:39:53.058" endtime="20190521 16:39:53.059"></status>
 </kw>
 <kw name="Append To Environment Variable" library="OperatingSystem">
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
@@ -30,8 +30,8 @@
 <arg>${PATH}</arg>
 <arg>${PATH}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:04.767" level="INFO">Environment variable 'path' set to value 'C:\Users\InternDN19.01.07\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\InternDN19.01.07\bin;C:\Python37;C:\Python37\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;C:\Python27\Lib\site-packages;C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\SeleniumWebdriver;C:\xampp\php;C:\composer;C:\Program Files\nodejs;C:\Program Files\maven\apache-maven-3.6.1\bin;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Users\InternDN19.01.07\Downloads\allure-2.10.0\bin;C:\Users\InternDN19.01.07\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\InternDN19.01.07\AppData\Local\Programs\Python\Python37;C:\Users\InternDN19.01.07\AppData\Local\Microsoft\WindowsApps;C:\Users\InternDN19.01.07\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.07\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.07\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;C:\users\interndn19.01.07\appdata\local\programs\python\python37\lib\site-packages\pywin32_system32;c:\users\interndn19.01.07\appdata\local\programs\python\python37\lib\site-packages\pywin32_system32;path'.</msg>
-<status status="PASS" starttime="20190521 14:53:04.766" endtime="20190521 14:53:04.767"></status>
+<msg timestamp="20190521 16:39:53.059" level="INFO">Environment variable 'path' set to value 'C:\Users\InternDN19.01.07\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\InternDN19.01.07\bin;C:\Python37;C:\Python37\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;C:\Python27\Lib\site-packages;C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\SeleniumWebdriver;C:\xampp\php;C:\composer;C:\Program Files\nodejs;C:\Program Files\maven\apache-maven-3.6.1\bin;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Users\InternDN19.01.07\Downloads\allure-2.10.0\bin;C:\Users\InternDN19.01.07\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\InternDN19.01.07\AppData\Local\Programs\Python\Python37;C:\Users\InternDN19.01.07\AppData\Local\Microsoft\WindowsApps;C:\Users\InternDN19.01.07\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.07\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.07\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;C:\users\interndn19.01.07\appdata\local\programs\python\python37\lib\site-packages\pywin32_system32;c:\users\interndn19.01.07\appdata\local\programs\python\python37\lib\site-packages\pywin32_system32;path'.</msg>
+<status status="PASS" starttime="20190521 16:39:53.059" endtime="20190521 16:39:53.059"></status>
 </kw>
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -39,20 +39,20 @@
 <arg>${ROOT}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:04.769" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla/administrator/'.</msg>
-<status status="PASS" starttime="20190521 14:53:04.768" endtime="20190521 14:53:09.895"></status>
+<msg timestamp="20190521 16:39:53.061" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla/administrator/'.</msg>
+<status status="PASS" starttime="20190521 16:39:53.061" endtime="20190521 16:39:57.474"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20190521 14:53:10.116" endtime="20190521 14:53:11.241"></status>
+<status status="PASS" starttime="20190521 16:39:57.476" endtime="20190521 16:39:58.608"></status>
 </kw>
 <kw name="Percy Initialize Build" library="PercySetup">
 <arguments>
 <arg>${PERCY_TOKEN}</arg>
 </arguments>
-<status status="PASS" starttime="20190521 14:53:11.241" endtime="20190521 14:53:12.013"></status>
+<status status="PASS" starttime="20190521 16:39:58.609" endtime="20190521 16:39:59.354"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:04.763" endtime="20190521 14:53:12.013"></status>
+<status status="PASS" starttime="20190521 16:39:53.055" endtime="20190521 16:39:59.355"></status>
 </kw>
 <test id="s1-s1-s1-s1-t1" name="TC13 - Update Admin Profile Successfully">
 <kw name="Login Admin Site" library="AdminLoginPage">
@@ -65,7 +65,7 @@
 <arguments>
 <arg>Login to Joomla</arg>
 </arguments>
-<status status="PASS" starttime="20190521 14:53:12.014" endtime="20190521 14:53:12.015"></status>
+<status status="PASS" starttime="20190521 16:39:59.356" endtime="20190521 16:39:59.356"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -73,8 +73,8 @@
 <arg>${txt_username}</arg>
 <arg>${arg_username}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:12.015" level="INFO">Typing text 'hihi' into text field 'id=mod-login-username'.</msg>
-<status status="PASS" starttime="20190521 14:53:12.015" endtime="20190521 14:53:12.116"></status>
+<msg timestamp="20190521 16:39:59.357" level="INFO">Typing text 'hihi' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190521 16:39:59.357" endtime="20190521 16:39:59.437"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -82,18 +82,18 @@
 <arg>${txt_password}</arg>
 <arg>${arg_password}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:12.120" level="INFO">Typing text '1234567890' into text field 'id=mod-login-password'.</msg>
-<status status="PASS" starttime="20190521 14:53:12.119" endtime="20190521 14:53:12.305"></status>
+<msg timestamp="20190521 16:39:59.439" level="INFO">Typing text '1234567890' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190521 16:39:59.439" endtime="20190521 16:39:59.542"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_login}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:12.307" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:12.307" endtime="20190521 14:53:14.045"></status>
+<msg timestamp="20190521 16:39:59.543" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190521 16:39:59.543" endtime="20190521 16:40:02.454"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:12.014" endtime="20190521 14:53:14.046"></status>
+<status status="PASS" starttime="20190521 16:39:59.355" endtime="20190521 16:40:02.456"></status>
 </kw>
 <kw name="Go To Admin Profile Page" library="AdminProfilePage">
 <kw name="Click Element" library="Selenium2Library">
@@ -101,25 +101,25 @@
 <arguments>
 <arg>${icn_user}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:14.047" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:14.047" endtime="20190521 14:53:14.165"></status>
+<msg timestamp="20190521 16:40:02.457" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:02.456" endtime="20190521 16:40:02.527"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>${lbl_edit_profile}</arg>
 </arguments>
-<status status="PASS" starttime="20190521 14:53:14.167" endtime="20190521 14:53:14.213"></status>
+<status status="PASS" starttime="20190521 16:40:02.529" endtime="20190521 16:40:02.564"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${lbl_edit_profile}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:14.214" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Edit Account"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:14.214" endtime="20190521 14:53:16.226"></status>
+<msg timestamp="20190521 16:40:02.565" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Edit Account"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:02.565" endtime="20190521 16:40:04.239"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:14.046" endtime="20190521 14:53:16.227"></status>
+<status status="PASS" starttime="20190521 16:40:02.456" endtime="20190521 16:40:04.241"></status>
 </kw>
 <kw name="Generate Random String" library="String">
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
@@ -130,8 +130,8 @@
 <assign>
 <var>${RANEMIAL}</var>
 </assign>
-<msg timestamp="20190521 14:53:16.228" level="INFO">${RANEMIAL} = EdKL</msg>
-<status status="PASS" starttime="20190521 14:53:16.228" endtime="20190521 14:53:16.228"></status>
+<msg timestamp="20190521 16:40:04.242" level="INFO">${RANEMIAL} = fmoG</msg>
+<status status="PASS" starttime="20190521 16:40:04.241" endtime="20190521 16:40:04.242"></status>
 </kw>
 <kw name="Fill Out And Submit Update Information" library="AdminProfilePage">
 <arguments>
@@ -146,8 +146,8 @@
 <arg>${txt_update_name}</arg>
 <arg>${arg_update_name}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:16.230" level="INFO">Typing text 'dao nguyen' into text field 'xpath=//form[@id="profile-form"]/div/div/div[@class="control-group"]/div[@class="controls"]/input[@id="jform_name"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:16.230" endtime="20190521 14:53:16.474"></status>
+<msg timestamp="20190521 16:40:04.246" level="INFO">Typing text 'dao nguyen' into text field 'xpath=//form[@id="profile-form"]/div/div/div[@class="control-group"]/div[@class="controls"]/input[@id="jform_name"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:04.245" endtime="20190521 16:40:04.373"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -155,8 +155,8 @@
 <arg>${txt_update_password}</arg>
 <arg>${arg_update_password}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:16.475" level="INFO">Typing text '123456789' into text field 'xpath=//form[@id="profile-form"]/div/div/div[@class="control-group"]/div[@class="controls"]/input[@id="jform_password2"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:16.475" endtime="20190521 14:53:16.625"></status>
+<msg timestamp="20190521 16:40:04.374" level="INFO">Typing text '123456789' into text field 'xpath=//form[@id="profile-form"]/div/div/div[@class="control-group"]/div[@class="controls"]/input[@id="jform_password2"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:04.374" endtime="20190521 16:40:04.478"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -164,8 +164,8 @@
 <arg>${txt_update_confirm_password}</arg>
 <arg>${arg_update_confirm_password}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:16.627" level="INFO">Typing text '123456789' into text field 'xpath=//form[@id="profile-form"]/div/div/div[@class="control-group"]/div[@class="controls"]/input[@id="jform_password"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:16.627" endtime="20190521 14:53:16.848"></status>
+<msg timestamp="20190521 16:40:04.482" level="INFO">Typing text '123456789' into text field 'xpath=//form[@id="profile-form"]/div/div/div[@class="control-group"]/div[@class="controls"]/input[@id="jform_password"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:04.481" endtime="20190521 16:40:04.585"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -173,18 +173,18 @@
 <arg>${txt_update_email}</arg>
 <arg>${arg_update_email}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:16.850" level="INFO">Typing text 'EdKL@sharklasers.com' into text field 'xpath=//form[@id="profile-form"]/div/div/div[@class="control-group"]/div[@class="controls"]/input[@id="jform_email"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:16.850" endtime="20190521 14:53:17.325"></status>
+<msg timestamp="20190521 16:40:04.586" level="INFO">Typing text 'fmoG@sharklasers.com' into text field 'xpath=//form[@id="profile-form"]/div/div/div[@class="control-group"]/div[@class="controls"]/input[@id="jform_email"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:04.586" endtime="20190521 16:40:04.999"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_update_save}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:17.326" level="INFO">Clicking button 'xpath=//div[@id="toolbar-save"]/button'.</msg>
-<status status="PASS" starttime="20190521 14:53:17.326" endtime="20190521 14:53:18.957"></status>
+<msg timestamp="20190521 16:40:05.000" level="INFO">Clicking button 'xpath=//div[@id="toolbar-save"]/button'.</msg>
+<status status="PASS" starttime="20190521 16:40:05.000" endtime="20190521 16:40:06.537"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:16.229" endtime="20190521 14:53:18.959"></status>
+<status status="PASS" starttime="20190521 16:40:04.244" endtime="20190521 16:40:06.538"></status>
 </kw>
 <kw name="Check Message" library="AdminHomePage">
 <arguments>
@@ -196,8 +196,8 @@
 <arg>${hed_header_message}</arg>
 <arg>Message</arg>
 </arguments>
-<msg timestamp="20190521 14:53:18.960" level="INFO">Verifying element 'xpath=//div[@class="alert alert-success"]/h4[@class="alert-heading"]' contains exact text 'Message'.</msg>
-<status status="PASS" starttime="20190521 14:53:18.960" endtime="20190521 14:53:19.005"></status>
+<msg timestamp="20190521 16:40:06.540" level="INFO">Verifying element 'xpath=//div[@class="alert alert-success"]/h4[@class="alert-heading"]' contains exact text 'Message'.</msg>
+<status status="PASS" starttime="20190521 16:40:06.539" endtime="20190521 16:40:06.590"></status>
 </kw>
 <kw name="Element Text Should Be" library="Selenium2Library">
 <doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
@@ -205,10 +205,10 @@
 <arg>${lbl_message}</arg>
 <arg>${arg_expected_message}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:19.006" level="INFO">Verifying element 'xpath=//div[@class="alert alert-success"]/div[@class="alert-message"]' contains exact text 'Item saved.'.</msg>
-<status status="PASS" starttime="20190521 14:53:19.006" endtime="20190521 14:53:19.031"></status>
+<msg timestamp="20190521 16:40:06.592" level="INFO">Verifying element 'xpath=//div[@class="alert alert-success"]/div[@class="alert-message"]' contains exact text 'Item saved.'.</msg>
+<status status="PASS" starttime="20190521 16:40:06.591" endtime="20190521 16:40:06.638"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:18.959" endtime="20190521 14:53:19.034"></status>
+<status status="PASS" starttime="20190521 16:40:06.538" endtime="20190521 16:40:06.639"></status>
 </kw>
 <kw name="Logout Admin Site" library="AdminHomePage">
 <kw name="Click Element" library="Selenium2Library">
@@ -216,25 +216,25 @@
 <arguments>
 <arg>${icn_user}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:19.035" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:19.035" endtime="20190521 14:53:19.082"></status>
+<msg timestamp="20190521 16:40:06.640" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:06.639" endtime="20190521 16:40:06.706"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>${lbl_logout}</arg>
 </arguments>
-<status status="PASS" starttime="20190521 14:53:19.085" endtime="20190521 14:53:19.112"></status>
+<status status="PASS" starttime="20190521 16:40:06.708" endtime="20190521 16:40:06.744"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${lbl_logout}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:19.113" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:19.113" endtime="20190521 14:53:21.111"></status>
+<msg timestamp="20190521 16:40:06.745" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:06.744" endtime="20190521 16:40:07.868"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:19.034" endtime="20190521 14:53:21.113"></status>
+<status status="PASS" starttime="20190521 16:40:06.639" endtime="20190521 16:40:07.870"></status>
 </kw>
 <kw name="Login Admin Site" library="AdminLoginPage">
 <arguments>
@@ -246,7 +246,7 @@
 <arguments>
 <arg>Login to Joomla</arg>
 </arguments>
-<status status="PASS" starttime="20190521 14:53:21.115" endtime="20190521 14:53:21.116"></status>
+<status status="PASS" starttime="20190521 16:40:07.871" endtime="20190521 16:40:07.871"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -254,8 +254,8 @@
 <arg>${txt_username}</arg>
 <arg>${arg_username}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:21.116" level="INFO">Typing text 'hihi' into text field 'id=mod-login-username'.</msg>
-<status status="PASS" starttime="20190521 14:53:21.116" endtime="20190521 14:53:21.214"></status>
+<msg timestamp="20190521 16:40:07.872" level="INFO">Typing text 'hihi' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190521 16:40:07.872" endtime="20190521 16:40:07.985"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -263,18 +263,18 @@
 <arg>${txt_password}</arg>
 <arg>${arg_password}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:21.217" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
-<status status="PASS" starttime="20190521 14:53:21.217" endtime="20190521 14:53:21.285"></status>
+<msg timestamp="20190521 16:40:07.987" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190521 16:40:07.987" endtime="20190521 16:40:08.157"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_login}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:21.286" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:21.286" endtime="20190521 14:53:23.156"></status>
+<msg timestamp="20190521 16:40:08.234" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:08.234" endtime="20190521 16:40:15.823"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:21.114" endtime="20190521 14:53:23.157"></status>
+<status status="PASS" starttime="20190521 16:40:07.870" endtime="20190521 16:40:15.825"></status>
 </kw>
 <kw name="Go To Admin Profile Page" library="AdminProfilePage">
 <kw name="Click Element" library="Selenium2Library">
@@ -282,25 +282,25 @@
 <arguments>
 <arg>${icn_user}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:23.159" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:23.158" endtime="20190521 14:53:23.218"></status>
+<msg timestamp="20190521 16:40:15.826" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:15.826" endtime="20190521 16:40:15.879"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>${lbl_edit_profile}</arg>
 </arguments>
-<status status="PASS" starttime="20190521 14:53:23.220" endtime="20190521 14:53:23.238"></status>
+<status status="PASS" starttime="20190521 16:40:15.881" endtime="20190521 16:40:15.905"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${lbl_edit_profile}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:23.239" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Edit Account"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:23.238" endtime="20190521 14:53:24.018"></status>
+<msg timestamp="20190521 16:40:15.905" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Edit Account"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:15.905" endtime="20190521 16:40:19.263"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:23.158" endtime="20190521 14:53:24.020"></status>
+<status status="PASS" starttime="20190521 16:40:15.825" endtime="20190521 16:40:19.264"></status>
 </kw>
 <kw name="Fill Out And Submit Update Information" library="AdminProfilePage">
 <arguments>
@@ -315,8 +315,8 @@
 <arg>${txt_update_name}</arg>
 <arg>${arg_update_name}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:24.023" level="INFO">Typing text 'dao nguyen' into text field 'xpath=//form[@id="profile-form"]/div/div/div[@class="control-group"]/div[@class="controls"]/input[@id="jform_name"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:24.022" endtime="20190521 14:53:24.205"></status>
+<msg timestamp="20190521 16:40:19.265" level="INFO">Typing text 'dao nguyen' into text field 'xpath=//form[@id="profile-form"]/div/div/div[@class="control-group"]/div[@class="controls"]/input[@id="jform_name"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:19.265" endtime="20190521 16:40:19.564"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -324,8 +324,8 @@
 <arg>${txt_update_password}</arg>
 <arg>${arg_update_password}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:24.207" level="INFO">Typing text '1234567890' into text field 'xpath=//form[@id="profile-form"]/div/div/div[@class="control-group"]/div[@class="controls"]/input[@id="jform_password2"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:24.207" endtime="20190521 14:53:24.328"></status>
+<msg timestamp="20190521 16:40:19.566" level="INFO">Typing text '1234567890' into text field 'xpath=//form[@id="profile-form"]/div/div/div[@class="control-group"]/div[@class="controls"]/input[@id="jform_password2"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:19.565" endtime="20190521 16:40:19.673"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -333,8 +333,8 @@
 <arg>${txt_update_confirm_password}</arg>
 <arg>${arg_update_confirm_password}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:24.332" level="INFO">Typing text '1234567890' into text field 'xpath=//form[@id="profile-form"]/div/div/div[@class="control-group"]/div[@class="controls"]/input[@id="jform_password"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:24.332" endtime="20190521 14:53:24.479"></status>
+<msg timestamp="20190521 16:40:19.676" level="INFO">Typing text '1234567890' into text field 'xpath=//form[@id="profile-form"]/div/div/div[@class="control-group"]/div[@class="controls"]/input[@id="jform_password"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:19.676" endtime="20190521 16:40:19.802"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -342,38 +342,38 @@
 <arg>${txt_update_email}</arg>
 <arg>${arg_update_email}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:24.482" level="INFO">Typing text 'EdKL@gmail.com' into text field 'xpath=//form[@id="profile-form"]/div/div/div[@class="control-group"]/div[@class="controls"]/input[@id="jform_email"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:24.480" endtime="20190521 14:53:24.637"></status>
+<msg timestamp="20190521 16:40:19.803" level="INFO">Typing text 'fmoG@gmail.com' into text field 'xpath=//form[@id="profile-form"]/div/div/div[@class="control-group"]/div[@class="controls"]/input[@id="jform_email"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:19.803" endtime="20190521 16:40:19.975"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_update_save}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:24.638" level="INFO">Clicking button 'xpath=//div[@id="toolbar-save"]/button'.</msg>
-<status status="PASS" starttime="20190521 14:53:24.638" endtime="20190521 14:53:27.921"></status>
+<msg timestamp="20190521 16:40:19.977" level="INFO">Clicking button 'xpath=//div[@id="toolbar-save"]/button'.</msg>
+<status status="PASS" starttime="20190521 16:40:19.976" endtime="20190521 16:40:27.958"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:24.020" endtime="20190521 14:53:27.923"></status>
+<status status="PASS" starttime="20190521 16:40:19.264" endtime="20190521 16:40:27.960"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:12.013" endtime="20190521 14:53:27.923" critical="yes"></status>
+<status status="PASS" starttime="20190521 16:39:59.355" endtime="20190521 16:40:27.961" critical="yes"></status>
 </test>
 <kw name="Teardown" library="Setup" type="teardown">
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20190521 14:53:27.931" endtime="20190521 14:53:30.201"></status>
+<status status="PASS" starttime="20190521 16:40:27.965" endtime="20190521 16:40:30.076"></status>
 </kw>
 <kw name="Percy Finalize Build" library="PercySetup">
-<status status="PASS" starttime="20190521 14:53:30.201" endtime="20190521 14:53:30.658"></status>
+<status status="PASS" starttime="20190521 16:40:30.076" endtime="20190521 16:40:30.722"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:27.931" endtime="20190521 14:53:30.658"></status>
+<status status="PASS" starttime="20190521 16:40:27.965" endtime="20190521 16:40:30.722"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:04.453" endtime="20190521 14:53:30.658"></status>
+<status status="PASS" starttime="20190521 16:39:52.723" endtime="20190521 16:40:30.722"></status>
 </suite>
-<status status="PASS" starttime="20190521 14:53:04.450" endtime="20190521 14:53:30.665"></status>
+<status status="PASS" starttime="20190521 16:39:52.720" endtime="20190521 16:40:30.726"></status>
 </suite>
-<status status="PASS" starttime="20190521 14:53:04.448" endtime="20190521 14:53:30.669"></status>
+<status status="PASS" starttime="20190521 16:39:52.717" endtime="20190521 16:40:30.728"></status>
 </suite>
-<status status="PASS" starttime="20190521 14:53:04.425" endtime="20190521 14:53:30.673"></status>
+<status status="PASS" starttime="20190521 16:39:52.688" endtime="20190521 16:40:30.730"></status>
 </suite>
 <statistics>
 <total>

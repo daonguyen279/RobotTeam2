@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190521 14:52:45.517" rpa="false">
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190521 16:39:32.695" rpa="false">
 <suite id="s1" name="RobotFrameworkProject" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject">
 <suite id="s1-s1" name="Tests" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests">
 <suite id="s1-s1-s1" name="FunctionalTests" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests">
@@ -14,15 +14,15 @@
 <assign>
 <var>${PATH}</var>
 </assign>
-<msg timestamp="20190521 14:52:45.801" level="INFO">${PATH} = path</msg>
-<status status="PASS" starttime="20190521 14:52:45.801" endtime="20190521 14:52:45.801"></status>
+<msg timestamp="20190521 16:39:32.966" level="INFO">${PATH} = path</msg>
+<status status="PASS" starttime="20190521 16:39:32.966" endtime="20190521 16:39:32.966"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${PATH}</arg>
 </arguments>
-<status status="PASS" starttime="20190521 14:52:45.802" endtime="20190521 14:52:45.803"></status>
+<status status="PASS" starttime="20190521 16:39:32.967" endtime="20190521 16:39:32.968"></status>
 </kw>
 <kw name="Append To Environment Variable" library="OperatingSystem">
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
@@ -30,8 +30,8 @@
 <arg>${PATH}</arg>
 <arg>${PATH}</arg>
 </arguments>
-<msg timestamp="20190521 14:52:45.803" level="INFO">Environment variable 'path' set to value 'C:\Users\InternDN19.01.07\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\InternDN19.01.07\bin;C:\Python37;C:\Python37\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;C:\Python27\Lib\site-packages;C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\SeleniumWebdriver;C:\xampp\php;C:\composer;C:\Program Files\nodejs;C:\Program Files\maven\apache-maven-3.6.1\bin;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Users\InternDN19.01.07\Downloads\allure-2.10.0\bin;C:\Users\InternDN19.01.07\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\InternDN19.01.07\AppData\Local\Programs\Python\Python37;C:\Users\InternDN19.01.07\AppData\Local\Microsoft\WindowsApps;C:\Users\InternDN19.01.07\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.07\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.07\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;C:\users\interndn19.01.07\appdata\local\programs\python\python37\lib\site-packages\pywin32_system32;c:\users\interndn19.01.07\appdata\local\programs\python\python37\lib\site-packages\pywin32_system32;path'.</msg>
-<status status="PASS" starttime="20190521 14:52:45.803" endtime="20190521 14:52:45.803"></status>
+<msg timestamp="20190521 16:39:32.968" level="INFO">Environment variable 'path' set to value 'C:\Users\InternDN19.01.07\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\InternDN19.01.07\bin;C:\Python37;C:\Python37\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;C:\Python27\Lib\site-packages;C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\SeleniumWebdriver;C:\xampp\php;C:\composer;C:\Program Files\nodejs;C:\Program Files\maven\apache-maven-3.6.1\bin;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Users\InternDN19.01.07\Downloads\allure-2.10.0\bin;C:\Users\InternDN19.01.07\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\InternDN19.01.07\AppData\Local\Programs\Python\Python37;C:\Users\InternDN19.01.07\AppData\Local\Microsoft\WindowsApps;C:\Users\InternDN19.01.07\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.07\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.07\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;C:\users\interndn19.01.07\appdata\local\programs\python\python37\lib\site-packages\pywin32_system32;c:\users\interndn19.01.07\appdata\local\programs\python\python37\lib\site-packages\pywin32_system32;path'.</msg>
+<status status="PASS" starttime="20190521 16:39:32.968" endtime="20190521 16:39:32.968"></status>
 </kw>
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -39,20 +39,20 @@
 <arg>${ROOT}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20190521 14:52:45.805" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla/administrator/'.</msg>
-<status status="PASS" starttime="20190521 14:52:45.805" endtime="20190521 14:52:51.181"></status>
+<msg timestamp="20190521 16:39:32.970" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla/administrator/'.</msg>
+<status status="PASS" starttime="20190521 16:39:32.969" endtime="20190521 16:39:38.612"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20190521 14:52:51.183" endtime="20190521 14:52:52.337"></status>
+<status status="PASS" starttime="20190521 16:39:38.613" endtime="20190521 16:39:39.735"></status>
 </kw>
 <kw name="Percy Initialize Build" library="PercySetup">
 <arguments>
 <arg>${PERCY_TOKEN}</arg>
 </arguments>
-<status status="PASS" starttime="20190521 14:52:52.338" endtime="20190521 14:52:53.046"></status>
+<status status="PASS" starttime="20190521 16:39:39.735" endtime="20190521 16:39:40.650"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:52:45.800" endtime="20190521 14:52:53.046"></status>
+<status status="PASS" starttime="20190521 16:39:32.965" endtime="20190521 16:39:40.650"></status>
 </kw>
 <test id="s1-s1-s1-s1-t1" name="TC01 - Add A New Aticle">
 <kw name="Generate Random String" library="String">
@@ -64,8 +64,8 @@
 <assign>
 <var>${ARTICLE_ALIAS}</var>
 </assign>
-<msg timestamp="20190521 14:52:53.047" level="INFO">${ARTICLE_ALIAS} = FRRdzKOiaozx</msg>
-<status status="PASS" starttime="20190521 14:52:53.047" endtime="20190521 14:52:53.047"></status>
+<msg timestamp="20190521 16:39:40.652" level="INFO">${ARTICLE_ALIAS} = GzhVpoWqrgyW</msg>
+<status status="PASS" starttime="20190521 16:39:40.651" endtime="20190521 16:39:40.652"></status>
 </kw>
 <kw name="Generate Random String" library="String">
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
@@ -76,8 +76,8 @@
 <assign>
 <var>${ARTICLE_TITLE}</var>
 </assign>
-<msg timestamp="20190521 14:52:53.049" level="INFO">${ARTICLE_TITLE} = VsUvMCSBBADeaESJTghKUcjiHzDCUR</msg>
-<status status="PASS" starttime="20190521 14:52:53.048" endtime="20190521 14:52:53.049"></status>
+<msg timestamp="20190521 16:39:40.655" level="INFO">${ARTICLE_TITLE} = nsGkirlzQmrmbIcebyGPwsNTllKZki</msg>
+<status status="PASS" starttime="20190521 16:39:40.655" endtime="20190521 16:39:40.655"></status>
 </kw>
 <kw name="Login Admin Site" library="AdminLoginPage">
 <arguments>
@@ -89,7 +89,7 @@
 <arguments>
 <arg>Login to Joomla</arg>
 </arguments>
-<status status="PASS" starttime="20190521 14:52:53.050" endtime="20190521 14:52:53.050"></status>
+<status status="PASS" starttime="20190521 16:39:40.657" endtime="20190521 16:39:40.657"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -97,8 +97,8 @@
 <arg>${txt_username}</arg>
 <arg>${arg_username}</arg>
 </arguments>
-<msg timestamp="20190521 14:52:53.051" level="INFO">Typing text 'article' into text field 'id=mod-login-username'.</msg>
-<status status="PASS" starttime="20190521 14:52:53.050" endtime="20190521 14:52:53.126"></status>
+<msg timestamp="20190521 16:39:40.658" level="INFO">Typing text 'article' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190521 16:39:40.657" endtime="20190521 16:39:40.791"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -106,18 +106,18 @@
 <arg>${txt_password}</arg>
 <arg>${arg_password}</arg>
 </arguments>
-<msg timestamp="20190521 14:52:53.127" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
-<status status="PASS" starttime="20190521 14:52:53.127" endtime="20190521 14:52:53.198"></status>
+<msg timestamp="20190521 16:39:40.794" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190521 16:39:40.793" endtime="20190521 16:39:40.936"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_login}</arg>
 </arguments>
-<msg timestamp="20190521 14:52:53.200" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
-<status status="PASS" starttime="20190521 14:52:53.199" endtime="20190521 14:52:54.872"></status>
+<msg timestamp="20190521 16:39:40.939" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190521 16:39:40.938" endtime="20190521 16:39:43.058"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:52:53.050" endtime="20190521 14:52:54.873"></status>
+<status status="PASS" starttime="20190521 16:39:40.656" endtime="20190521 16:39:43.059"></status>
 </kw>
 <kw name="Go To Add New Article Page" library="AdminArticlePage">
 <kw name="Select Sidebar Menu" library="AdminHomePage">
@@ -129,12 +129,12 @@
 <arguments>
 <arg>${arg_page}</arg>
 </arguments>
-<msg timestamp="20190521 14:52:54.875" level="INFO">Clicking element 'xpath=//div[@class="span3"]//a[span[contains(text(), "New Article")]]'.</msg>
-<status status="PASS" starttime="20190521 14:52:54.874" endtime="20190521 14:53:01.532"></status>
+<msg timestamp="20190521 16:39:43.061" level="INFO">Clicking element 'xpath=//div[@class="span3"]//a[span[contains(text(), "New Article")]]'.</msg>
+<status status="PASS" starttime="20190521 16:39:43.060" endtime="20190521 16:39:50.307"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:52:54.874" endtime="20190521 14:53:01.533"></status>
+<status status="PASS" starttime="20190521 16:39:43.060" endtime="20190521 16:39:50.441"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:52:54.873" endtime="20190521 14:53:01.534"></status>
+<status status="PASS" starttime="20190521 16:39:43.060" endtime="20190521 16:39:50.442"></status>
 </kw>
 <kw name="Add New Article" library="AdminArticlePage">
 <arguments>
@@ -148,8 +148,8 @@
 <arg>${txt_articles_title}</arg>
 <arg>${arg_article_title}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:01.535" level="INFO">Typing text 'VsUvMCSBBADeaESJTghKUcjiHzDCUR' into text field 'id=jform_title'.</msg>
-<status status="PASS" starttime="20190521 14:53:01.535" endtime="20190521 14:53:02.374"></status>
+<msg timestamp="20190521 16:39:50.444" level="INFO">Typing text 'nsGkirlzQmrmbIcebyGPwsNTllKZki' into text field 'id=jform_title'.</msg>
+<status status="PASS" starttime="20190521 16:39:50.443" endtime="20190521 16:39:51.110"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -157,16 +157,16 @@
 <arg>${txt_articles_alias}</arg>
 <arg>${arg_article_alias}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:02.376" level="INFO">Typing text 'FRRdzKOiaozx' into text field 'id=jform_alias'.</msg>
-<status status="PASS" starttime="20190521 14:53:02.376" endtime="20190521 14:53:02.663"></status>
+<msg timestamp="20190521 16:39:51.113" level="INFO">Typing text 'GzhVpoWqrgyW' into text field 'id=jform_alias'.</msg>
+<status status="PASS" starttime="20190521 16:39:51.112" endtime="20190521 16:39:51.408"></status>
 </kw>
 <kw name="Select Frame" library="Selenium2Library">
 <doc>Sets frame identified by ``locator`` as the current frame.</doc>
 <arguments>
 <arg>${ifr_articles_frame}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:02.665" level="INFO">Selecting frame 'xpath=//iframe[contains(@id,'jform_articletext_ifr')]'.</msg>
-<status status="PASS" starttime="20190521 14:53:02.664" endtime="20190521 14:53:02.698"></status>
+<msg timestamp="20190521 16:39:51.410" level="INFO">Selecting frame 'xpath=//iframe[contains(@id,'jform_articletext_ifr')]'.</msg>
+<status status="PASS" starttime="20190521 16:39:51.409" endtime="20190521 16:39:51.439"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -174,22 +174,22 @@
 <arg>${txt_articles_add_content}</arg>
 <arg>${arg_article_content}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:02.699" level="INFO">Typing text 'IT BEGAN WITH A TRICKLE — curious developments that mostly raised more questions. There was evidence of election hacking — but could it really have been directed by the Kremlin? Certain Americans on Facebook, pitching for Donald J.' into text field 'id=tinymce'.</msg>
-<status status="PASS" starttime="20190521 14:53:02.699" endtime="20190521 14:53:03.333"></status>
+<msg timestamp="20190521 16:39:51.440" level="INFO">Typing text 'IT BEGAN WITH A TRICKLE — curious developments that mostly raised more questions. There was evidence of election hacking — but could it really have been directed by the Kremlin? Certain Americans on Facebook, pitching for Donald J.' into text field 'id=tinymce'.</msg>
+<status status="PASS" starttime="20190521 16:39:51.440" endtime="20190521 16:39:52.289"></status>
 </kw>
 <kw name="Unselect Frame" library="Selenium2Library">
 <doc>Sets the main frame as the current frame.</doc>
-<status status="PASS" starttime="20190521 14:53:03.364" endtime="20190521 14:53:03.367"></status>
+<status status="PASS" starttime="20190521 16:39:52.291" endtime="20190521 16:39:52.295"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_articles_save_and_close}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:03.367" level="INFO">Clicking button 'xpath=//button[@class="btn btn-small button-save"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:03.367" endtime="20190521 14:53:06.364"></status>
+<msg timestamp="20190521 16:39:52.296" level="INFO">Clicking button 'xpath=//button[@class="btn btn-small button-save"]'.</msg>
+<status status="PASS" starttime="20190521 16:39:52.296" endtime="20190521 16:39:54.453"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:01.534" endtime="20190521 14:53:06.365"></status>
+<status status="PASS" starttime="20190521 16:39:50.442" endtime="20190521 16:39:54.569"></status>
 </kw>
 <kw name="Check Add New Article Sucessfully" library="AdminArticlePage">
 <arguments>
@@ -204,18 +204,18 @@
 <assign>
 <var>${check_title}</var>
 </assign>
-<msg timestamp="20190521 14:53:06.367" level="INFO">${check_title} = xpath=//table[@id="articleList"]//a[contains(text(),'VsUvMCSBBADeaESJTghKUcjiHzDCUR')]</msg>
-<status status="PASS" starttime="20190521 14:53:06.366" endtime="20190521 14:53:06.367"></status>
+<msg timestamp="20190521 16:39:54.570" level="INFO">${check_title} = xpath=//table[@id="articleList"]//a[contains(text(),'nsGkirlzQmrmbIcebyGPwsNTllKZki')]</msg>
+<status status="PASS" starttime="20190521 16:39:54.570" endtime="20190521 16:39:54.571"></status>
 </kw>
 <kw name="Element Should Be Visible" library="Selenium2Library">
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
 <arguments>
 <arg>${check_title}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:06.481" level="INFO">Element 'xpath=//table[@id="articleList"]//a[contains(text(),'VsUvMCSBBADeaESJTghKUcjiHzDCUR')]' is displayed.</msg>
-<status status="PASS" starttime="20190521 14:53:06.451" endtime="20190521 14:53:06.481"></status>
+<msg timestamp="20190521 16:39:54.601" level="INFO">Element 'xpath=//table[@id="articleList"]//a[contains(text(),'nsGkirlzQmrmbIcebyGPwsNTllKZki')]' is displayed.</msg>
+<status status="PASS" starttime="20190521 16:39:54.571" endtime="20190521 16:39:54.601"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:06.366" endtime="20190521 14:53:06.498"></status>
+<status status="PASS" starttime="20190521 16:39:54.570" endtime="20190521 16:39:54.603"></status>
 </kw>
 <kw name="Check Message" library="AdminHomePage">
 <arguments>
@@ -227,8 +227,8 @@
 <arg>${hed_header_message}</arg>
 <arg>Message</arg>
 </arguments>
-<msg timestamp="20190521 14:53:06.500" level="INFO">Verifying element 'xpath=//div[@class="alert alert-success"]/h4[@class="alert-heading"]' contains exact text 'Message'.</msg>
-<status status="PASS" starttime="20190521 14:53:06.500" endtime="20190521 14:53:06.549"></status>
+<msg timestamp="20190521 16:39:54.604" level="INFO">Verifying element 'xpath=//div[@class="alert alert-success"]/h4[@class="alert-heading"]' contains exact text 'Message'.</msg>
+<status status="PASS" starttime="20190521 16:39:54.604" endtime="20190521 16:39:54.640"></status>
 </kw>
 <kw name="Element Text Should Be" library="Selenium2Library">
 <doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
@@ -236,10 +236,10 @@
 <arg>${lbl_message}</arg>
 <arg>${arg_expected_message}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:06.553" level="INFO">Verifying element 'xpath=//div[@class="alert alert-success"]/div[@class="alert-message"]' contains exact text 'Article saved.'.</msg>
-<status status="PASS" starttime="20190521 14:53:06.552" endtime="20190521 14:53:06.584"></status>
+<msg timestamp="20190521 16:39:54.643" level="INFO">Verifying element 'xpath=//div[@class="alert alert-success"]/div[@class="alert-message"]' contains exact text 'Article saved.'.</msg>
+<status status="PASS" starttime="20190521 16:39:54.642" endtime="20190521 16:39:54.671"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:06.499" endtime="20190521 14:53:06.586"></status>
+<status status="PASS" starttime="20190521 16:39:54.603" endtime="20190521 16:39:54.673"></status>
 </kw>
 <kw name="Delete Article" library="AdminArticlePage">
 <arguments>
@@ -254,26 +254,26 @@
 <assign>
 <var>${delete_article}</var>
 </assign>
-<msg timestamp="20190521 14:53:06.587" level="INFO">${delete_article} = xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'VsUvMCSBBADeaESJTghKUcjiHzDCUR')]]/td/input</msg>
-<status status="PASS" starttime="20190521 14:53:06.587" endtime="20190521 14:53:06.587"></status>
+<msg timestamp="20190521 16:39:54.674" level="INFO">${delete_article} = xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'nsGkirlzQmrmbIcebyGPwsNTllKZki')]]/td/input</msg>
+<status status="PASS" starttime="20190521 16:39:54.673" endtime="20190521 16:39:54.674"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${delete_article}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:06.590" level="INFO">Clicking element 'xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'VsUvMCSBBADeaESJTghKUcjiHzDCUR')]]/td/input'.</msg>
-<status status="PASS" starttime="20190521 14:53:06.589" endtime="20190521 14:53:06.647"></status>
+<msg timestamp="20190521 16:39:54.676" level="INFO">Clicking element 'xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'nsGkirlzQmrmbIcebyGPwsNTllKZki')]]/td/input'.</msg>
+<status status="PASS" starttime="20190521 16:39:54.675" endtime="20190521 16:39:54.725"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_articles_trash}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:06.648" level="INFO">Clicking button 'xpath=//div[@id="toolbar-trash"]/button'.</msg>
-<status status="PASS" starttime="20190521 14:53:06.648" endtime="20190521 14:53:10.615"></status>
+<msg timestamp="20190521 16:39:54.841" level="INFO">Clicking button 'xpath=//div[@id="toolbar-trash"]/button'.</msg>
+<status status="PASS" starttime="20190521 16:39:54.840" endtime="20190521 16:39:59.104"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:06.586" endtime="20190521 14:53:11.063"></status>
+<status status="PASS" starttime="20190521 16:39:54.673" endtime="20190521 16:39:59.105"></status>
 </kw>
 <kw name="Logout Admin Site" library="AdminHomePage">
 <kw name="Click Element" library="Selenium2Library">
@@ -281,30 +281,30 @@
 <arguments>
 <arg>${icn_user}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:11.064" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:11.064" endtime="20190521 14:53:11.174"></status>
+<msg timestamp="20190521 16:39:59.106" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
+<status status="PASS" starttime="20190521 16:39:59.106" endtime="20190521 16:39:59.177"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>${lbl_logout}</arg>
 </arguments>
-<status status="PASS" starttime="20190521 14:53:11.189" endtime="20190521 14:53:11.242"></status>
+<status status="PASS" starttime="20190521 16:39:59.179" endtime="20190521 16:39:59.221"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${lbl_logout}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:11.243" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:11.242" endtime="20190521 14:53:12.276"></status>
+<msg timestamp="20190521 16:39:59.221" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]'.</msg>
+<status status="PASS" starttime="20190521 16:39:59.221" endtime="20190521 16:40:00.345"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:11.063" endtime="20190521 14:53:12.277"></status>
+<status status="PASS" starttime="20190521 16:39:59.105" endtime="20190521 16:40:00.347"></status>
 </kw>
 <tags>
 <tag>aticle</tag>
 </tags>
-<status status="PASS" starttime="20190521 14:52:53.046" endtime="20190521 14:53:12.277" critical="yes"></status>
+<status status="PASS" starttime="20190521 16:39:40.650" endtime="20190521 16:40:00.347" critical="yes"></status>
 </test>
 <test id="s1-s1-s1-s1-t2" name="TC02 - Edit Article Information">
 <kw name="Generate Random String" library="String">
@@ -316,8 +316,8 @@
 <assign>
 <var>${ARTICLE_ALIAS}</var>
 </assign>
-<msg timestamp="20190521 14:53:12.286" level="INFO">${ARTICLE_ALIAS} = QISLXKQuXPdO</msg>
-<status status="PASS" starttime="20190521 14:53:12.284" endtime="20190521 14:53:12.286"></status>
+<msg timestamp="20190521 16:40:00.353" level="INFO">${ARTICLE_ALIAS} = hyvIjDNTbdXi</msg>
+<status status="PASS" starttime="20190521 16:40:00.352" endtime="20190521 16:40:00.353"></status>
 </kw>
 <kw name="Generate Random String" library="String">
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
@@ -328,8 +328,8 @@
 <assign>
 <var>${ARTICLE_TITLE}</var>
 </assign>
-<msg timestamp="20190521 14:53:12.288" level="INFO">${ARTICLE_TITLE} = chQznPifiGvYxmnWvuylAWuJMqziqs</msg>
-<status status="PASS" starttime="20190521 14:53:12.288" endtime="20190521 14:53:12.288"></status>
+<msg timestamp="20190521 16:40:00.354" level="INFO">${ARTICLE_TITLE} = TxCezbiREXOyTXUNHTuOhZWkScgUVS</msg>
+<status status="PASS" starttime="20190521 16:40:00.354" endtime="20190521 16:40:00.355"></status>
 </kw>
 <kw name="Login Admin Site" library="AdminLoginPage">
 <arguments>
@@ -341,7 +341,7 @@
 <arguments>
 <arg>Login to Joomla</arg>
 </arguments>
-<status status="PASS" starttime="20190521 14:53:12.291" endtime="20190521 14:53:12.292"></status>
+<status status="PASS" starttime="20190521 16:40:00.357" endtime="20190521 16:40:00.358"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -349,8 +349,8 @@
 <arg>${txt_username}</arg>
 <arg>${arg_username}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:12.292" level="INFO">Typing text 'article' into text field 'id=mod-login-username'.</msg>
-<status status="PASS" starttime="20190521 14:53:12.292" endtime="20190521 14:53:12.481"></status>
+<msg timestamp="20190521 16:40:00.359" level="INFO">Typing text 'article' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190521 16:40:00.358" endtime="20190521 16:40:00.463"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -358,18 +358,18 @@
 <arg>${txt_password}</arg>
 <arg>${arg_password}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:12.482" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
-<status status="PASS" starttime="20190521 14:53:12.482" endtime="20190521 14:53:12.660"></status>
+<msg timestamp="20190521 16:40:00.466" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190521 16:40:00.465" endtime="20190521 16:40:00.532"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_login}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:12.661" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:12.661" endtime="20190521 14:53:13.965"></status>
+<msg timestamp="20190521 16:40:00.533" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:00.533" endtime="20190521 16:40:03.841"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:12.290" endtime="20190521 14:53:13.968"></status>
+<status status="PASS" starttime="20190521 16:40:00.357" endtime="20190521 16:40:03.842"></status>
 </kw>
 <kw name="Go To Add New Article Page" library="AdminArticlePage">
 <kw name="Select Sidebar Menu" library="AdminHomePage">
@@ -381,12 +381,12 @@
 <arguments>
 <arg>${arg_page}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:13.970" level="INFO">Clicking element 'xpath=//div[@class="span3"]//a[span[contains(text(), "New Article")]]'.</msg>
-<status status="PASS" starttime="20190521 14:53:13.969" endtime="20190521 14:53:17.409"></status>
+<msg timestamp="20190521 16:40:03.843" level="INFO">Clicking element 'xpath=//div[@class="span3"]//a[span[contains(text(), "New Article")]]'.</msg>
+<status status="PASS" starttime="20190521 16:40:03.843" endtime="20190521 16:40:06.340"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:13.969" endtime="20190521 14:53:17.410"></status>
+<status status="PASS" starttime="20190521 16:40:03.843" endtime="20190521 16:40:06.341"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:13.969" endtime="20190521 14:53:17.411"></status>
+<status status="PASS" starttime="20190521 16:40:03.842" endtime="20190521 16:40:06.342"></status>
 </kw>
 <kw name="Add New Article" library="AdminArticlePage">
 <arguments>
@@ -400,8 +400,8 @@
 <arg>${txt_articles_title}</arg>
 <arg>${arg_article_title}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:17.412" level="INFO">Typing text 'chQznPifiGvYxmnWvuylAWuJMqziqs' into text field 'id=jform_title'.</msg>
-<status status="PASS" starttime="20190521 14:53:17.411" endtime="20190521 14:53:18.211"></status>
+<msg timestamp="20190521 16:40:06.343" level="INFO">Typing text 'TxCezbiREXOyTXUNHTuOhZWkScgUVS' into text field 'id=jform_title'.</msg>
+<status status="PASS" starttime="20190521 16:40:06.342" endtime="20190521 16:40:07.284"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -409,16 +409,16 @@
 <arg>${txt_articles_alias}</arg>
 <arg>${arg_article_alias}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:18.212" level="INFO">Typing text 'QISLXKQuXPdO' into text field 'id=jform_alias'.</msg>
-<status status="PASS" starttime="20190521 14:53:18.212" endtime="20190521 14:53:18.622"></status>
+<msg timestamp="20190521 16:40:07.286" level="INFO">Typing text 'hyvIjDNTbdXi' into text field 'id=jform_alias'.</msg>
+<status status="PASS" starttime="20190521 16:40:07.286" endtime="20190521 16:40:07.620"></status>
 </kw>
 <kw name="Select Frame" library="Selenium2Library">
 <doc>Sets frame identified by ``locator`` as the current frame.</doc>
 <arguments>
 <arg>${ifr_articles_frame}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:18.624" level="INFO">Selecting frame 'xpath=//iframe[contains(@id,'jform_articletext_ifr')]'.</msg>
-<status status="PASS" starttime="20190521 14:53:18.624" endtime="20190521 14:53:18.652"></status>
+<msg timestamp="20190521 16:40:07.622" level="INFO">Selecting frame 'xpath=//iframe[contains(@id,'jform_articletext_ifr')]'.</msg>
+<status status="PASS" starttime="20190521 16:40:07.621" endtime="20190521 16:40:07.702"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -426,22 +426,22 @@
 <arg>${txt_articles_add_content}</arg>
 <arg>${arg_article_content}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:18.653" level="INFO">Typing text 'IT BEGAN WITH A TRICKLE — curious developments that mostly raised more questions. There was evidence of election hacking — but could it really have been directed by the Kremlin? Certain Americans on Facebook, pitching for Donald J.' into text field 'id=tinymce'.</msg>
-<status status="PASS" starttime="20190521 14:53:18.653" endtime="20190521 14:53:19.462"></status>
+<msg timestamp="20190521 16:40:07.704" level="INFO">Typing text 'IT BEGAN WITH A TRICKLE — curious developments that mostly raised more questions. There was evidence of election hacking — but could it really have been directed by the Kremlin? Certain Americans on Facebook, pitching for Donald J.' into text field 'id=tinymce'.</msg>
+<status status="PASS" starttime="20190521 16:40:07.703" endtime="20190521 16:40:08.999"></status>
 </kw>
 <kw name="Unselect Frame" library="Selenium2Library">
 <doc>Sets the main frame as the current frame.</doc>
-<status status="PASS" starttime="20190521 14:53:19.463" endtime="20190521 14:53:19.465"></status>
+<status status="PASS" starttime="20190521 16:40:09.000" endtime="20190521 16:40:09.002"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_articles_save_and_close}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:19.466" level="INFO">Clicking button 'xpath=//button[@class="btn btn-small button-save"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:19.465" endtime="20190521 14:53:22.505"></status>
+<msg timestamp="20190521 16:40:09.002" level="INFO">Clicking button 'xpath=//button[@class="btn btn-small button-save"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:09.002" endtime="20190521 16:40:19.179"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:17.411" endtime="20190521 14:53:22.506"></status>
+<status status="PASS" starttime="20190521 16:40:06.342" endtime="20190521 16:40:19.181"></status>
 </kw>
 <kw name="Go To Edit Article Page" library="AdminArticlePage">
 <arguments>
@@ -456,18 +456,18 @@
 <assign>
 <var>${select_title}</var>
 </assign>
-<msg timestamp="20190521 14:53:22.508" level="INFO">${select_title} = xpath=//table[@id="articleList"]//a[contains(text(),'chQznPifiGvYxmnWvuylAWuJMqziqs')]</msg>
-<status status="PASS" starttime="20190521 14:53:22.507" endtime="20190521 14:53:22.508"></status>
+<msg timestamp="20190521 16:40:19.183" level="INFO">${select_title} = xpath=//table[@id="articleList"]//a[contains(text(),'TxCezbiREXOyTXUNHTuOhZWkScgUVS')]</msg>
+<status status="PASS" starttime="20190521 16:40:19.182" endtime="20190521 16:40:19.183"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${select_title}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:22.511" level="INFO">Clicking element 'xpath=//table[@id="articleList"]//a[contains(text(),'chQznPifiGvYxmnWvuylAWuJMqziqs')]'.</msg>
-<status status="PASS" starttime="20190521 14:53:22.510" endtime="20190521 14:53:24.640"></status>
+<msg timestamp="20190521 16:40:19.184" level="INFO">Clicking element 'xpath=//table[@id="articleList"]//a[contains(text(),'TxCezbiREXOyTXUNHTuOhZWkScgUVS')]'.</msg>
+<status status="PASS" starttime="20190521 16:40:19.184" endtime="20190521 16:40:23.235"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:22.507" endtime="20190521 14:53:24.642"></status>
+<status status="PASS" starttime="20190521 16:40:19.182" endtime="20190521 16:40:23.236"></status>
 </kw>
 <kw name="Edit Article" library="AdminArticlePage">
 <arguments>
@@ -479,18 +479,18 @@
 <arg>${txt_articles_title}</arg>
 <arg>${arg_article_edit_title}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:24.646" level="INFO">Typing text 'Glimpses of the Mystery' into text field 'id=jform_title'.</msg>
-<status status="PASS" starttime="20190521 14:53:24.645" endtime="20190521 14:53:25.240"></status>
+<msg timestamp="20190521 16:40:23.238" level="INFO">Typing text 'Glimpses of the Mystery' into text field 'id=jform_title'.</msg>
+<status status="PASS" starttime="20190521 16:40:23.238" endtime="20190521 16:40:23.765"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_articles_save_and_close}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:25.242" level="INFO">Clicking button 'xpath=//button[@class="btn btn-small button-save"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:25.242" endtime="20190521 14:53:30.046"></status>
+<msg timestamp="20190521 16:40:23.766" level="INFO">Clicking button 'xpath=//button[@class="btn btn-small button-save"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:23.766" endtime="20190521 16:40:30.621"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:24.644" endtime="20190521 14:53:30.048"></status>
+<status status="PASS" starttime="20190521 16:40:23.237" endtime="20190521 16:40:30.623"></status>
 </kw>
 <kw name="Check Edit Article Sucessfully" library="AdminArticlePage">
 <arguments>
@@ -505,25 +505,25 @@
 <assign>
 <var>${check_edit_title}</var>
 </assign>
-<msg timestamp="20190521 14:53:30.049" level="INFO">${check_edit_title} = xpath=//table[@id="articleList"]//a[contains(text(),'Glimpses of the Mystery')]</msg>
-<status status="PASS" starttime="20190521 14:53:30.049" endtime="20190521 14:53:30.049"></status>
+<msg timestamp="20190521 16:40:30.624" level="INFO">${check_edit_title} = xpath=//table[@id="articleList"]//a[contains(text(),'Glimpses of the Mystery')]</msg>
+<status status="PASS" starttime="20190521 16:40:30.624" endtime="20190521 16:40:30.624"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>${check_edit_title}</arg>
 </arguments>
-<status status="PASS" starttime="20190521 14:53:30.051" endtime="20190521 14:53:30.075"></status>
+<status status="PASS" starttime="20190521 16:40:30.626" endtime="20190521 16:40:30.652"></status>
 </kw>
 <kw name="Element Should Be Visible" library="Selenium2Library">
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
 <arguments>
 <arg>${check_edit_title}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:30.089" level="INFO">Element 'xpath=//table[@id="articleList"]//a[contains(text(),'Glimpses of the Mystery')]' is displayed.</msg>
-<status status="PASS" starttime="20190521 14:53:30.075" endtime="20190521 14:53:30.089"></status>
+<msg timestamp="20190521 16:40:30.669" level="INFO">Element 'xpath=//table[@id="articleList"]//a[contains(text(),'Glimpses of the Mystery')]' is displayed.</msg>
+<status status="PASS" starttime="20190521 16:40:30.653" endtime="20190521 16:40:30.669"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:30.048" endtime="20190521 14:53:30.090"></status>
+<status status="PASS" starttime="20190521 16:40:30.623" endtime="20190521 16:40:30.671"></status>
 </kw>
 <kw name="Delete Article" library="AdminArticlePage">
 <arguments>
@@ -538,26 +538,26 @@
 <assign>
 <var>${delete_article}</var>
 </assign>
-<msg timestamp="20190521 14:53:30.091" level="INFO">${delete_article} = xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'Glimpses of the Mystery')]]/td/input</msg>
-<status status="PASS" starttime="20190521 14:53:30.091" endtime="20190521 14:53:30.091"></status>
+<msg timestamp="20190521 16:40:30.672" level="INFO">${delete_article} = xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'Glimpses of the Mystery')]]/td/input</msg>
+<status status="PASS" starttime="20190521 16:40:30.672" endtime="20190521 16:40:30.672"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${delete_article}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:30.093" level="INFO">Clicking element 'xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'Glimpses of the Mystery')]]/td/input'.</msg>
-<status status="PASS" starttime="20190521 14:53:30.092" endtime="20190521 14:53:30.141"></status>
+<msg timestamp="20190521 16:40:30.674" level="INFO">Clicking element 'xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'Glimpses of the Mystery')]]/td/input'.</msg>
+<status status="PASS" starttime="20190521 16:40:30.674" endtime="20190521 16:40:30.718"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_articles_trash}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:30.143" level="INFO">Clicking button 'xpath=//div[@id="toolbar-trash"]/button'.</msg>
-<status status="PASS" starttime="20190521 14:53:30.143" endtime="20190521 14:53:31.875"></status>
+<msg timestamp="20190521 16:40:30.720" level="INFO">Clicking button 'xpath=//div[@id="toolbar-trash"]/button'.</msg>
+<status status="PASS" starttime="20190521 16:40:30.720" endtime="20190521 16:40:32.615"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:30.091" endtime="20190521 14:53:31.876"></status>
+<status status="PASS" starttime="20190521 16:40:30.671" endtime="20190521 16:40:32.617"></status>
 </kw>
 <kw name="Logout Admin Site" library="AdminHomePage">
 <kw name="Click Element" library="Selenium2Library">
@@ -565,30 +565,30 @@
 <arguments>
 <arg>${icn_user}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:31.877" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:31.877" endtime="20190521 14:53:31.949"></status>
+<msg timestamp="20190521 16:40:32.619" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:32.617" endtime="20190521 16:40:32.917"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>${lbl_logout}</arg>
 </arguments>
-<status status="PASS" starttime="20190521 14:53:31.951" endtime="20190521 14:53:31.981"></status>
+<status status="PASS" starttime="20190521 16:40:32.921" endtime="20190521 16:40:32.984"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${lbl_logout}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:31.982" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:31.982" endtime="20190521 14:53:35.166"></status>
+<msg timestamp="20190521 16:40:32.985" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:32.985" endtime="20190521 16:40:34.574"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:31.876" endtime="20190521 14:53:35.168"></status>
+<status status="PASS" starttime="20190521 16:40:32.617" endtime="20190521 16:40:34.609"></status>
 </kw>
 <tags>
 <tag>aticle</tag>
 </tags>
-<status status="PASS" starttime="20190521 14:53:12.283" endtime="20190521 14:53:35.168" critical="yes"></status>
+<status status="PASS" starttime="20190521 16:40:00.352" endtime="20190521 16:40:34.609" critical="yes"></status>
 </test>
 <test id="s1-s1-s1-s1-t3" name="TC03 - Unpublish An Article">
 <kw name="Generate Random String" library="String">
@@ -600,8 +600,8 @@
 <assign>
 <var>${ARTICLE_ALIAS}</var>
 </assign>
-<msg timestamp="20190521 14:53:35.179" level="INFO">${ARTICLE_ALIAS} = FvGhyfHEDRCA</msg>
-<status status="PASS" starttime="20190521 14:53:35.178" endtime="20190521 14:53:35.179"></status>
+<msg timestamp="20190521 16:40:34.615" level="INFO">${ARTICLE_ALIAS} = nwUjMTFnvVcj</msg>
+<status status="PASS" starttime="20190521 16:40:34.615" endtime="20190521 16:40:34.616"></status>
 </kw>
 <kw name="Generate Random String" library="String">
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
@@ -612,8 +612,8 @@
 <assign>
 <var>${ARTICLE_TITLE}</var>
 </assign>
-<msg timestamp="20190521 14:53:35.180" level="INFO">${ARTICLE_TITLE} = hLKpLHrXUoVVjWYwCAhopBHKojKOWP</msg>
-<status status="PASS" starttime="20190521 14:53:35.180" endtime="20190521 14:53:35.180"></status>
+<msg timestamp="20190521 16:40:34.618" level="INFO">${ARTICLE_TITLE} = MKTbskPpyHvdpxGOqUOVTrsUPMHGrk</msg>
+<status status="PASS" starttime="20190521 16:40:34.616" endtime="20190521 16:40:34.618"></status>
 </kw>
 <kw name="Login Admin Site" library="AdminLoginPage">
 <arguments>
@@ -625,7 +625,7 @@
 <arguments>
 <arg>Login to Joomla</arg>
 </arguments>
-<status status="PASS" starttime="20190521 14:53:35.183" endtime="20190521 14:53:35.183"></status>
+<status status="PASS" starttime="20190521 16:40:34.623" endtime="20190521 16:40:34.624"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -633,8 +633,8 @@
 <arg>${txt_username}</arg>
 <arg>${arg_username}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:35.184" level="INFO">Typing text 'article' into text field 'id=mod-login-username'.</msg>
-<status status="PASS" starttime="20190521 14:53:35.184" endtime="20190521 14:53:35.269"></status>
+<msg timestamp="20190521 16:40:34.624" level="INFO">Typing text 'article' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190521 16:40:34.624" endtime="20190521 16:40:34.714"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -642,18 +642,18 @@
 <arg>${txt_password}</arg>
 <arg>${arg_password}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:35.271" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
-<status status="PASS" starttime="20190521 14:53:35.270" endtime="20190521 14:53:35.341"></status>
+<msg timestamp="20190521 16:40:34.716" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190521 16:40:34.716" endtime="20190521 16:40:34.831"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_login}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:35.342" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:35.342" endtime="20190521 14:53:38.967"></status>
+<msg timestamp="20190521 16:40:34.832" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:34.832" endtime="20190521 16:40:37.406"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:35.182" endtime="20190521 14:53:38.968"></status>
+<status status="PASS" starttime="20190521 16:40:34.622" endtime="20190521 16:40:37.407"></status>
 </kw>
 <kw name="Go To Add New Article Page" library="AdminArticlePage">
 <kw name="Select Sidebar Menu" library="AdminHomePage">
@@ -665,12 +665,12 @@
 <arguments>
 <arg>${arg_page}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:38.969" level="INFO">Clicking element 'xpath=//div[@class="span3"]//a[span[contains(text(), "New Article")]]'.</msg>
-<status status="PASS" starttime="20190521 14:53:38.969" endtime="20190521 14:53:41.622"></status>
+<msg timestamp="20190521 16:40:37.408" level="INFO">Clicking element 'xpath=//div[@class="span3"]//a[span[contains(text(), "New Article")]]'.</msg>
+<status status="PASS" starttime="20190521 16:40:37.408" endtime="20190521 16:40:39.529"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:38.968" endtime="20190521 14:53:41.624"></status>
+<status status="PASS" starttime="20190521 16:40:37.408" endtime="20190521 16:40:39.705"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:38.968" endtime="20190521 14:53:41.624"></status>
+<status status="PASS" starttime="20190521 16:40:37.407" endtime="20190521 16:40:39.705"></status>
 </kw>
 <kw name="Add New Article" library="AdminArticlePage">
 <arguments>
@@ -684,8 +684,8 @@
 <arg>${txt_articles_title}</arg>
 <arg>${arg_article_title}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:41.626" level="INFO">Typing text 'hLKpLHrXUoVVjWYwCAhopBHKojKOWP' into text field 'id=jform_title'.</msg>
-<status status="PASS" starttime="20190521 14:53:41.626" endtime="20190521 14:53:42.316"></status>
+<msg timestamp="20190521 16:40:39.706" level="INFO">Typing text 'MKTbskPpyHvdpxGOqUOVTrsUPMHGrk' into text field 'id=jform_title'.</msg>
+<status status="PASS" starttime="20190521 16:40:39.706" endtime="20190521 16:40:40.486"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -693,16 +693,16 @@
 <arg>${txt_articles_alias}</arg>
 <arg>${arg_article_alias}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:42.318" level="INFO">Typing text 'FvGhyfHEDRCA' into text field 'id=jform_alias'.</msg>
-<status status="PASS" starttime="20190521 14:53:42.318" endtime="20190521 14:53:42.673"></status>
+<msg timestamp="20190521 16:40:40.488" level="INFO">Typing text 'nwUjMTFnvVcj' into text field 'id=jform_alias'.</msg>
+<status status="PASS" starttime="20190521 16:40:40.487" endtime="20190521 16:40:40.813"></status>
 </kw>
 <kw name="Select Frame" library="Selenium2Library">
 <doc>Sets frame identified by ``locator`` as the current frame.</doc>
 <arguments>
 <arg>${ifr_articles_frame}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:42.678" level="INFO">Selecting frame 'xpath=//iframe[contains(@id,'jform_articletext_ifr')]'.</msg>
-<status status="PASS" starttime="20190521 14:53:42.677" endtime="20190521 14:53:42.727"></status>
+<msg timestamp="20190521 16:40:40.816" level="INFO">Selecting frame 'xpath=//iframe[contains(@id,'jform_articletext_ifr')]'.</msg>
+<status status="PASS" starttime="20190521 16:40:40.815" endtime="20190521 16:40:40.869"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -710,22 +710,22 @@
 <arg>${txt_articles_add_content}</arg>
 <arg>${arg_article_content}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:42.729" level="INFO">Typing text 'IT BEGAN WITH A TRICKLE — curious developments that mostly raised more questions. There was evidence of election hacking — but could it really have been directed by the Kremlin? Certain Americans on Facebook, pitching for Donald J.' into text field 'id=tinymce'.</msg>
-<status status="PASS" starttime="20190521 14:53:42.729" endtime="20190521 14:53:43.799"></status>
+<msg timestamp="20190521 16:40:40.871" level="INFO">Typing text 'IT BEGAN WITH A TRICKLE — curious developments that mostly raised more questions. There was evidence of election hacking — but could it really have been directed by the Kremlin? Certain Americans on Facebook, pitching for Donald J.' into text field 'id=tinymce'.</msg>
+<status status="PASS" starttime="20190521 16:40:40.870" endtime="20190521 16:40:42.276"></status>
 </kw>
 <kw name="Unselect Frame" library="Selenium2Library">
 <doc>Sets the main frame as the current frame.</doc>
-<status status="PASS" starttime="20190521 14:53:43.800" endtime="20190521 14:53:43.803"></status>
+<status status="PASS" starttime="20190521 16:40:42.278" endtime="20190521 16:40:42.287"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_articles_save_and_close}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:43.803" level="INFO">Clicking button 'xpath=//button[@class="btn btn-small button-save"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:43.803" endtime="20190521 14:53:48.276"></status>
+<msg timestamp="20190521 16:40:42.288" level="INFO">Clicking button 'xpath=//button[@class="btn btn-small button-save"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:42.287" endtime="20190521 16:40:52.691"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:41.624" endtime="20190521 14:53:48.277"></status>
+<status status="PASS" starttime="20190521 16:40:39.705" endtime="20190521 16:40:52.692"></status>
 </kw>
 <kw name="Unpublish Article" library="AdminArticlePage">
 <arguments>
@@ -740,26 +740,26 @@
 <assign>
 <var>${select_unpublish}</var>
 </assign>
-<msg timestamp="20190521 14:53:48.279" level="INFO">${select_unpublish} = xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'hLKpLHrXUoVVjWYwCAhopBHKojKOWP')]]/td/input</msg>
-<status status="PASS" starttime="20190521 14:53:48.278" endtime="20190521 14:53:48.279"></status>
+<msg timestamp="20190521 16:40:52.693" level="INFO">${select_unpublish} = xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'MKTbskPpyHvdpxGOqUOVTrsUPMHGrk')]]/td/input</msg>
+<status status="PASS" starttime="20190521 16:40:52.693" endtime="20190521 16:40:52.693"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${select_unpublish}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:48.281" level="INFO">Clicking element 'xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'hLKpLHrXUoVVjWYwCAhopBHKojKOWP')]]/td/input'.</msg>
-<status status="PASS" starttime="20190521 14:53:48.280" endtime="20190521 14:53:48.395"></status>
+<msg timestamp="20190521 16:40:52.695" level="INFO">Clicking element 'xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'MKTbskPpyHvdpxGOqUOVTrsUPMHGrk')]]/td/input'.</msg>
+<status status="PASS" starttime="20190521 16:40:52.695" endtime="20190521 16:40:52.745"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_articles_unpublish}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:48.397" level="INFO">Clicking button 'xpath=//div[@id="toolbar-unpublish"]/button'.</msg>
-<status status="PASS" starttime="20190521 14:53:48.396" endtime="20190521 14:53:50.632"></status>
+<msg timestamp="20190521 16:40:52.762" level="INFO">Clicking button 'xpath=//div[@id="toolbar-unpublish"]/button'.</msg>
+<status status="PASS" starttime="20190521 16:40:52.762" endtime="20190521 16:40:54.640"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:48.278" endtime="20190521 14:53:50.634"></status>
+<status status="PASS" starttime="20190521 16:40:52.692" endtime="20190521 16:40:54.641"></status>
 </kw>
 <kw name="Check Unpublish Article Successfully" library="AdminArticlePage">
 <arguments>
@@ -774,18 +774,18 @@
 <assign>
 <var>${check_unpublish}</var>
 </assign>
-<msg timestamp="20190521 14:53:50.635" level="INFO">${check_unpublish} = xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'hLKpLHrXUoVVjWYwCAhopBHKojKOWP')]]/td/div[@class="btn-group"]/a/span[@class="icon-unpublish"]</msg>
-<status status="PASS" starttime="20190521 14:53:50.635" endtime="20190521 14:53:50.636"></status>
+<msg timestamp="20190521 16:40:54.643" level="INFO">${check_unpublish} = xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'MKTbskPpyHvdpxGOqUOVTrsUPMHGrk')]]/td/div[@class="btn-group"]/a/span[@class="icon-unpublish"]</msg>
+<status status="PASS" starttime="20190521 16:40:54.642" endtime="20190521 16:40:54.643"></status>
 </kw>
 <kw name="Element Should Be Visible" library="Selenium2Library">
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
 <arguments>
 <arg>${check_unpublish}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:50.669" level="INFO">Element 'xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'hLKpLHrXUoVVjWYwCAhopBHKojKOWP')]]/td/div[@class="btn-group"]/a/span[@class="icon-unpublish"]' is displayed.</msg>
-<status status="PASS" starttime="20190521 14:53:50.637" endtime="20190521 14:53:50.670"></status>
+<msg timestamp="20190521 16:40:54.703" level="INFO">Element 'xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'MKTbskPpyHvdpxGOqUOVTrsUPMHGrk')]]/td/div[@class="btn-group"]/a/span[@class="icon-unpublish"]' is displayed.</msg>
+<status status="PASS" starttime="20190521 16:40:54.644" endtime="20190521 16:40:54.703"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:50.634" endtime="20190521 14:53:50.671"></status>
+<status status="PASS" starttime="20190521 16:40:54.642" endtime="20190521 16:40:54.704"></status>
 </kw>
 <kw name="Delete Article" library="AdminArticlePage">
 <arguments>
@@ -800,26 +800,26 @@
 <assign>
 <var>${delete_article}</var>
 </assign>
-<msg timestamp="20190521 14:53:50.673" level="INFO">${delete_article} = xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'hLKpLHrXUoVVjWYwCAhopBHKojKOWP')]]/td/input</msg>
-<status status="PASS" starttime="20190521 14:53:50.672" endtime="20190521 14:53:50.673"></status>
+<msg timestamp="20190521 16:40:54.705" level="INFO">${delete_article} = xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'MKTbskPpyHvdpxGOqUOVTrsUPMHGrk')]]/td/input</msg>
+<status status="PASS" starttime="20190521 16:40:54.705" endtime="20190521 16:40:54.705"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${delete_article}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:50.675" level="INFO">Clicking element 'xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'hLKpLHrXUoVVjWYwCAhopBHKojKOWP')]]/td/input'.</msg>
-<status status="PASS" starttime="20190521 14:53:50.675" endtime="20190521 14:53:50.741"></status>
+<msg timestamp="20190521 16:40:54.707" level="INFO">Clicking element 'xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'MKTbskPpyHvdpxGOqUOVTrsUPMHGrk')]]/td/input'.</msg>
+<status status="PASS" starttime="20190521 16:40:54.706" endtime="20190521 16:40:54.777"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_articles_trash}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:50.743" level="INFO">Clicking button 'xpath=//div[@id="toolbar-trash"]/button'.</msg>
-<status status="PASS" starttime="20190521 14:53:50.743" endtime="20190521 14:53:51.986"></status>
+<msg timestamp="20190521 16:40:54.780" level="INFO">Clicking button 'xpath=//div[@id="toolbar-trash"]/button'.</msg>
+<status status="PASS" starttime="20190521 16:40:54.779" endtime="20190521 16:40:56.371"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:50.671" endtime="20190521 14:53:51.989"></status>
+<status status="PASS" starttime="20190521 16:40:54.704" endtime="20190521 16:40:56.372"></status>
 </kw>
 <kw name="Logout Admin Site" library="AdminHomePage">
 <kw name="Click Element" library="Selenium2Library">
@@ -827,30 +827,30 @@
 <arguments>
 <arg>${icn_user}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:51.990" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:51.990" endtime="20190521 14:53:52.063"></status>
+<msg timestamp="20190521 16:40:56.373" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:56.373" endtime="20190521 16:40:56.459"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>${lbl_logout}</arg>
 </arguments>
-<status status="PASS" starttime="20190521 14:53:52.065" endtime="20190521 14:53:52.096"></status>
+<status status="PASS" starttime="20190521 16:40:56.461" endtime="20190521 16:40:56.488"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${lbl_logout}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:52.097" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:52.097" endtime="20190521 14:53:54.213"></status>
+<msg timestamp="20190521 16:40:56.489" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:56.488" endtime="20190521 16:40:57.246"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:51.989" endtime="20190521 14:53:54.215"></status>
+<status status="PASS" starttime="20190521 16:40:56.372" endtime="20190521 16:40:57.249"></status>
 </kw>
 <tags>
 <tag>aticle</tag>
 </tags>
-<status status="PASS" starttime="20190521 14:53:35.177" endtime="20190521 14:53:54.216" critical="yes"></status>
+<status status="PASS" starttime="20190521 16:40:34.615" endtime="20190521 16:40:57.249" critical="yes"></status>
 </test>
 <test id="s1-s1-s1-s1-t4" name="TC04 - Delete An Article">
 <kw name="Generate Random String" library="String">
@@ -862,8 +862,8 @@
 <assign>
 <var>${ARTICLE_ALIAS}</var>
 </assign>
-<msg timestamp="20190521 14:53:54.223" level="INFO">${ARTICLE_ALIAS} = mNeIHxefQErQ</msg>
-<status status="PASS" starttime="20190521 14:53:54.223" endtime="20190521 14:53:54.223"></status>
+<msg timestamp="20190521 16:40:57.256" level="INFO">${ARTICLE_ALIAS} = AwBqYRCdOhjn</msg>
+<status status="PASS" starttime="20190521 16:40:57.255" endtime="20190521 16:40:57.256"></status>
 </kw>
 <kw name="Generate Random String" library="String">
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
@@ -874,8 +874,8 @@
 <assign>
 <var>${ARTICLE_TITLE}</var>
 </assign>
-<msg timestamp="20190521 14:53:54.226" level="INFO">${ARTICLE_TITLE} = tkkqXgTMbbnzeoeajToSZFfcGNALGb</msg>
-<status status="PASS" starttime="20190521 14:53:54.226" endtime="20190521 14:53:54.227"></status>
+<msg timestamp="20190521 16:40:57.258" level="INFO">${ARTICLE_TITLE} = pRVSBHVSHJTMTbJRvTWGVtUhjeASOy</msg>
+<status status="PASS" starttime="20190521 16:40:57.257" endtime="20190521 16:40:57.258"></status>
 </kw>
 <kw name="Login Admin Site" library="AdminLoginPage">
 <arguments>
@@ -887,7 +887,7 @@
 <arguments>
 <arg>Login to Joomla</arg>
 </arguments>
-<status status="PASS" starttime="20190521 14:53:54.228" endtime="20190521 14:53:54.228"></status>
+<status status="PASS" starttime="20190521 16:40:57.261" endtime="20190521 16:40:57.261"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -895,8 +895,8 @@
 <arg>${txt_username}</arg>
 <arg>${arg_username}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:54.229" level="INFO">Typing text 'article' into text field 'id=mod-login-username'.</msg>
-<status status="PASS" starttime="20190521 14:53:54.228" endtime="20190521 14:53:54.314"></status>
+<msg timestamp="20190521 16:40:57.262" level="INFO">Typing text 'article' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190521 16:40:57.262" endtime="20190521 16:40:57.419"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -904,18 +904,18 @@
 <arg>${txt_password}</arg>
 <arg>${arg_password}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:54.316" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
-<status status="PASS" starttime="20190521 14:53:54.316" endtime="20190521 14:53:54.393"></status>
+<msg timestamp="20190521 16:40:57.421" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190521 16:40:57.420" endtime="20190521 16:40:57.523"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_login}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:54.395" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
-<status status="PASS" starttime="20190521 14:53:54.394" endtime="20190521 14:53:58.034"></status>
+<msg timestamp="20190521 16:40:57.525" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:57.524" endtime="20190521 16:41:01.891"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:54.227" endtime="20190521 14:53:58.036"></status>
+<status status="PASS" starttime="20190521 16:40:57.259" endtime="20190521 16:41:01.893"></status>
 </kw>
 <kw name="Go To Add New Article Page" library="AdminArticlePage">
 <kw name="Select Sidebar Menu" library="AdminHomePage">
@@ -927,12 +927,12 @@
 <arguments>
 <arg>${arg_page}</arg>
 </arguments>
-<msg timestamp="20190521 14:53:58.037" level="INFO">Clicking element 'xpath=//div[@class="span3"]//a[span[contains(text(), "New Article")]]'.</msg>
-<status status="PASS" starttime="20190521 14:53:58.037" endtime="20190521 14:54:01.809"></status>
+<msg timestamp="20190521 16:41:01.894" level="INFO">Clicking element 'xpath=//div[@class="span3"]//a[span[contains(text(), "New Article")]]'.</msg>
+<status status="PASS" starttime="20190521 16:41:01.894" endtime="20190521 16:41:04.624"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:58.037" endtime="20190521 14:54:01.860"></status>
+<status status="PASS" starttime="20190521 16:41:01.893" endtime="20190521 16:41:04.640"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:58.036" endtime="20190521 14:54:01.860"></status>
+<status status="PASS" starttime="20190521 16:41:01.893" endtime="20190521 16:41:04.641"></status>
 </kw>
 <kw name="Add New Article" library="AdminArticlePage">
 <arguments>
@@ -946,8 +946,8 @@
 <arg>${txt_articles_title}</arg>
 <arg>${arg_article_title}</arg>
 </arguments>
-<msg timestamp="20190521 14:54:01.861" level="INFO">Typing text 'tkkqXgTMbbnzeoeajToSZFfcGNALGb' into text field 'id=jform_title'.</msg>
-<status status="PASS" starttime="20190521 14:54:01.861" endtime="20190521 14:54:02.679"></status>
+<msg timestamp="20190521 16:41:04.642" level="INFO">Typing text 'pRVSBHVSHJTMTbJRvTWGVtUhjeASOy' into text field 'id=jform_title'.</msg>
+<status status="PASS" starttime="20190521 16:41:04.641" endtime="20190521 16:41:05.313"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -955,16 +955,16 @@
 <arg>${txt_articles_alias}</arg>
 <arg>${arg_article_alias}</arg>
 </arguments>
-<msg timestamp="20190521 14:54:02.681" level="INFO">Typing text 'mNeIHxefQErQ' into text field 'id=jform_alias'.</msg>
-<status status="PASS" starttime="20190521 14:54:02.681" endtime="20190521 14:54:03.139"></status>
+<msg timestamp="20190521 16:41:05.315" level="INFO">Typing text 'AwBqYRCdOhjn' into text field 'id=jform_alias'.</msg>
+<status status="PASS" starttime="20190521 16:41:05.315" endtime="20190521 16:41:05.715"></status>
 </kw>
 <kw name="Select Frame" library="Selenium2Library">
 <doc>Sets frame identified by ``locator`` as the current frame.</doc>
 <arguments>
 <arg>${ifr_articles_frame}</arg>
 </arguments>
-<msg timestamp="20190521 14:54:03.141" level="INFO">Selecting frame 'xpath=//iframe[contains(@id,'jform_articletext_ifr')]'.</msg>
-<status status="PASS" starttime="20190521 14:54:03.140" endtime="20190521 14:54:03.192"></status>
+<msg timestamp="20190521 16:41:05.717" level="INFO">Selecting frame 'xpath=//iframe[contains(@id,'jform_articletext_ifr')]'.</msg>
+<status status="PASS" starttime="20190521 16:41:05.717" endtime="20190521 16:41:05.743"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -972,22 +972,22 @@
 <arg>${txt_articles_add_content}</arg>
 <arg>${arg_article_content}</arg>
 </arguments>
-<msg timestamp="20190521 14:54:03.194" level="INFO">Typing text 'IT BEGAN WITH A TRICKLE — curious developments that mostly raised more questions. There was evidence of election hacking — but could it really have been directed by the Kremlin? Certain Americans on Facebook, pitching for Donald J.' into text field 'id=tinymce'.</msg>
-<status status="PASS" starttime="20190521 14:54:03.194" endtime="20190521 14:54:03.940"></status>
+<msg timestamp="20190521 16:41:05.744" level="INFO">Typing text 'IT BEGAN WITH A TRICKLE — curious developments that mostly raised more questions. There was evidence of election hacking — but could it really have been directed by the Kremlin? Certain Americans on Facebook, pitching for Donald J.' into text field 'id=tinymce'.</msg>
+<status status="PASS" starttime="20190521 16:41:05.744" endtime="20190521 16:41:07.279"></status>
 </kw>
 <kw name="Unselect Frame" library="Selenium2Library">
 <doc>Sets the main frame as the current frame.</doc>
-<status status="PASS" starttime="20190521 14:54:03.960" endtime="20190521 14:54:03.965"></status>
+<status status="PASS" starttime="20190521 16:41:07.281" endtime="20190521 16:41:07.287"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_articles_save_and_close}</arg>
 </arguments>
-<msg timestamp="20190521 14:54:03.966" level="INFO">Clicking button 'xpath=//button[@class="btn btn-small button-save"]'.</msg>
-<status status="PASS" starttime="20190521 14:54:03.966" endtime="20190521 14:54:06.895"></status>
+<msg timestamp="20190521 16:41:07.287" level="INFO">Clicking button 'xpath=//button[@class="btn btn-small button-save"]'.</msg>
+<status status="PASS" starttime="20190521 16:41:07.287" endtime="20190521 16:41:12.396"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:54:01.860" endtime="20190521 14:54:06.897"></status>
+<status status="PASS" starttime="20190521 16:41:04.641" endtime="20190521 16:41:12.397"></status>
 </kw>
 <kw name="Delete Article" library="AdminArticlePage">
 <arguments>
@@ -1002,26 +1002,26 @@
 <assign>
 <var>${delete_article}</var>
 </assign>
-<msg timestamp="20190521 14:54:06.899" level="INFO">${delete_article} = xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'tkkqXgTMbbnzeoeajToSZFfcGNALGb')]]/td/input</msg>
-<status status="PASS" starttime="20190521 14:54:06.898" endtime="20190521 14:54:06.899"></status>
+<msg timestamp="20190521 16:41:12.399" level="INFO">${delete_article} = xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'pRVSBHVSHJTMTbJRvTWGVtUhjeASOy')]]/td/input</msg>
+<status status="PASS" starttime="20190521 16:41:12.398" endtime="20190521 16:41:12.399"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${delete_article}</arg>
 </arguments>
-<msg timestamp="20190521 14:54:06.902" level="INFO">Clicking element 'xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'tkkqXgTMbbnzeoeajToSZFfcGNALGb')]]/td/input'.</msg>
-<status status="PASS" starttime="20190521 14:54:06.901" endtime="20190521 14:54:06.998"></status>
+<msg timestamp="20190521 16:41:12.400" level="INFO">Clicking element 'xpath=//table[@id="articleList"]//tr[td//a[contains(text(),'pRVSBHVSHJTMTbJRvTWGVtUhjeASOy')]]/td/input'.</msg>
+<status status="PASS" starttime="20190521 16:41:12.400" endtime="20190521 16:41:12.465"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_articles_trash}</arg>
 </arguments>
-<msg timestamp="20190521 14:54:07.001" level="INFO">Clicking button 'xpath=//div[@id="toolbar-trash"]/button'.</msg>
-<status status="PASS" starttime="20190521 14:54:07.000" endtime="20190521 14:54:10.992"></status>
+<msg timestamp="20190521 16:41:12.467" level="INFO">Clicking button 'xpath=//div[@id="toolbar-trash"]/button'.</msg>
+<status status="PASS" starttime="20190521 16:41:12.466" endtime="20190521 16:41:15.632"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:54:06.897" endtime="20190521 14:54:10.994"></status>
+<status status="PASS" starttime="20190521 16:41:12.398" endtime="20190521 16:41:15.633"></status>
 </kw>
 <kw name="Check Delete Article Successfully" library="AdminArticlePage">
 <arguments>
@@ -1032,10 +1032,10 @@
 <arguments>
 <arg>${arg_check_alias}</arg>
 </arguments>
-<msg timestamp="20190521 14:54:11.030" level="INFO">Current page does not contain text 'mNeIHxefQErQ'.</msg>
-<status status="PASS" starttime="20190521 14:54:10.995" endtime="20190521 14:54:11.030"></status>
+<msg timestamp="20190521 16:41:15.670" level="INFO">Current page does not contain text 'AwBqYRCdOhjn'.</msg>
+<status status="PASS" starttime="20190521 16:41:15.634" endtime="20190521 16:41:15.670"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:54:10.994" endtime="20190521 14:54:11.031"></status>
+<status status="PASS" starttime="20190521 16:41:15.634" endtime="20190521 16:41:15.673"></status>
 </kw>
 <kw name="Logout Admin Site" library="AdminHomePage">
 <kw name="Click Element" library="Selenium2Library">
@@ -1043,45 +1043,45 @@
 <arguments>
 <arg>${icn_user}</arg>
 </arguments>
-<msg timestamp="20190521 14:54:11.032" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
-<status status="PASS" starttime="20190521 14:54:11.031" endtime="20190521 14:54:11.093"></status>
+<msg timestamp="20190521 16:41:15.674" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
+<status status="PASS" starttime="20190521 16:41:15.673" endtime="20190521 16:41:15.779"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>${lbl_logout}</arg>
 </arguments>
-<status status="PASS" starttime="20190521 14:54:11.094" endtime="20190521 14:54:11.125"></status>
+<status status="PASS" starttime="20190521 16:41:15.781" endtime="20190521 16:41:15.849"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${lbl_logout}</arg>
 </arguments>
-<msg timestamp="20190521 14:54:11.126" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]'.</msg>
-<status status="PASS" starttime="20190521 14:54:11.125" endtime="20190521 14:54:12.577"></status>
+<msg timestamp="20190521 16:41:15.850" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]'.</msg>
+<status status="PASS" starttime="20190521 16:41:15.849" endtime="20190521 16:41:17.383"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:54:11.031" endtime="20190521 14:54:12.578"></status>
+<status status="PASS" starttime="20190521 16:41:15.673" endtime="20190521 16:41:17.385"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:53:54.222" endtime="20190521 14:54:12.579" critical="yes"></status>
+<status status="PASS" starttime="20190521 16:40:57.255" endtime="20190521 16:41:17.385" critical="yes"></status>
 </test>
 <kw name="Teardown" library="Setup" type="teardown">
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20190521 14:54:12.587" endtime="20190521 14:54:16.018"></status>
+<status status="PASS" starttime="20190521 16:41:17.398" endtime="20190521 16:41:19.522"></status>
 </kw>
 <kw name="Percy Finalize Build" library="PercySetup">
-<status status="PASS" starttime="20190521 14:54:16.019" endtime="20190521 14:54:16.476"></status>
+<status status="PASS" starttime="20190521 16:41:19.522" endtime="20190521 16:41:20.000"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:54:12.586" endtime="20190521 14:54:16.476"></status>
+<status status="PASS" starttime="20190521 16:41:17.398" endtime="20190521 16:41:20.000"></status>
 </kw>
-<status status="PASS" starttime="20190521 14:52:45.583" endtime="20190521 14:54:16.476"></status>
+<status status="PASS" starttime="20190521 16:39:32.762" endtime="20190521 16:41:20.000"></status>
 </suite>
-<status status="PASS" starttime="20190521 14:52:45.582" endtime="20190521 14:54:16.482"></status>
+<status status="PASS" starttime="20190521 16:39:32.760" endtime="20190521 16:41:20.006"></status>
 </suite>
-<status status="PASS" starttime="20190521 14:52:45.580" endtime="20190521 14:54:16.486"></status>
+<status status="PASS" starttime="20190521 16:39:32.758" endtime="20190521 16:41:20.010"></status>
 </suite>
-<status status="PASS" starttime="20190521 14:52:45.561" endtime="20190521 14:54:16.490"></status>
+<status status="PASS" starttime="20190521 16:39:32.739" endtime="20190521 16:41:20.014"></status>
 </suite>
 <statistics>
 <total>
