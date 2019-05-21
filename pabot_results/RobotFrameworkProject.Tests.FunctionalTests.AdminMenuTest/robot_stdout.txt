@@ -1,0 +1,39 @@
+==============================================================================
+RobotFrameworkProject                                                         
+==============================================================================
+RobotFrameworkProject.Tests                                                   
+==============================================================================
+RobotFrameworkProject.Tests.FunctionalTests                                   
+==============================================================================
+RobotFrameworkProject.Tests.FunctionalTests.AdminMenuTest                     
+==============================================================================
+path
+TC14 - Add A New Menu Successfully                                    Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC15 - Add A Menu Item Successfully                                   Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC17 - Delete A Menu Item Sucessfully                                 Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC16 - Delete A Menu Successfully                                     Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+RobotFrameworkProject.Tests.FunctionalTests.AdminMenuTest             | PASS |
+4 critical tests, 4 passed, 0 failed
+4 tests total, 4 passed, 0 failed
+==============================================================================
+RobotFrameworkProject.Tests.FunctionalTests                           | PASS |
+4 critical tests, 4 passed, 0 failed
+4 tests total, 4 passed, 0 failed
+==============================================================================
+RobotFrameworkProject.Tests                                           | PASS |
+4 critical tests, 4 passed, 0 failed
+4 tests total, 4 passed, 0 failed
+==============================================================================
+RobotFrameworkProject                                                 | PASS |
+4 critical tests, 4 passed, 0 failed
+4 tests total, 4 passed, 0 failed
+==============================================================================
+Output:  C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\pabot_results\RobotFrameworkProject.Tests.FunctionalTests.AdminMenuTest\output.xml

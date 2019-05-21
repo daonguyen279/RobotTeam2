@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190521 14:54:17.151" rpa="false">
+<suite id="s1" name="RobotFrameworkProject" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject">
+<suite id="s1-s1" name="Tests" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests">
+<suite id="s1-s1-s1" name="FunctionalTests" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests">
+<suite id="s1-s1-s1-s1" name="ExampleKeywordTest" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\ExampleKeywordTest.robot">
+<test id="s1-s1-s1-s1-t1" name="Keyword Slipt Text And Replace Text">
+<kw name="Split Text" library="StringKeyword">
+<arguments>
+<arg>${INPUT_STRING}</arg>
+<arg>${DELIMETER}</arg>
+</arguments>
+<assign>
+<var>${abc}</var>
+</assign>
+<msg timestamp="20190521 14:54:17.434" level="INFO">${abc} = ['my name is', 'dinh', 'thi', 'anh', 'thao']</msg>
+<status status="PASS" starttime="20190521 14:54:17.433" endtime="20190521 14:54:17.434"></status>
+</kw>
+<kw name="Replace Text" library="StringKeyword">
+<arguments>
+<arg>${INPUT_STRING}</arg>
+<arg>${DELIMETER}</arg>
+<arg>${DESTINATION_CHAR}</arg>
+</arguments>
+<assign>
+<var>${xyz}</var>
+</assign>
+<msg timestamp="20190521 14:54:17.436" level="INFO">${xyz} = my name is_dinh_thi_anh_thao</msg>
+<status status="PASS" starttime="20190521 14:54:17.435" endtime="20190521 14:54:17.436"></status>
+</kw>
+<status status="PASS" starttime="20190521 14:54:17.433" endtime="20190521 14:54:17.436" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s1-t2" name="Keyword Greet Method">
+<kw name="Greet" library="StringKeyword">
+<arguments>
+<arg>${NAME}</arg>
+<arg>${MSG}</arg>
+</arguments>
+<assign>
+<var>${xyz}</var>
+</assign>
+<msg timestamp="20190521 14:54:17.439" level="INFO">${xyz} = Hello Dong, Good Afternoon</msg>
+<status status="PASS" starttime="20190521 14:54:17.438" endtime="20190521 14:54:17.439"></status>
+</kw>
+<status status="PASS" starttime="20190521 14:54:17.438" endtime="20190521 14:54:17.440" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s1-t3" name="Keyword Count Method">
+<kw name="Count Number" library="StringKeyword">
+<arguments>
+<arg>${STR1}</arg>
+<arg>${STR2}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20190521 14:54:17.442" level="INFO">${result} = 5</msg>
+<status status="PASS" starttime="20190521 14:54:17.442" endtime="20190521 14:54:17.443"></status>
+</kw>
+<status status="PASS" starttime="20190521 14:54:17.442" endtime="20190521 14:54:17.444" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s1-t4" name="Keyword UpperCase Method">
+<kw name="Uppercase String" library="StringKeyword">
+<arguments>
+<arg>${UPPERCASE_STRING}</arg>
+</arguments>
+<assign>
+<var>${result_string}</var>
+</assign>
+<msg timestamp="20190521 14:54:17.449" level="INFO">${result_string} = TA THI AN</msg>
+<status status="PASS" starttime="20190521 14:54:17.448" endtime="20190521 14:54:17.449"></status>
+</kw>
+<status status="PASS" starttime="20190521 14:54:17.447" endtime="20190521 14:54:17.450" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20190521 14:54:17.225" endtime="20190521 14:54:17.452"></status>
+</suite>
+<status status="PASS" starttime="20190521 14:54:17.222" endtime="20190521 14:54:17.454"></status>
+</suite>
+<status status="PASS" starttime="20190521 14:54:17.221" endtime="20190521 14:54:17.456"></status>
+</suite>
+<status status="PASS" starttime="20190521 14:54:17.202" endtime="20190521 14:54:17.459"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" id="s1" name="RobotFrameworkProject">RobotFrameworkProject</stat>
+<stat pass="4" fail="0" id="s1-s1" name="Tests">RobotFrameworkProject.Tests</stat>
+<stat pass="4" fail="0" id="s1-s1-s1" name="FunctionalTests">RobotFrameworkProject.Tests.FunctionalTests</stat>
+<stat pass="4" fail="0" id="s1-s1-s1-s1" name="ExampleKeywordTest">RobotFrameworkProject.Tests.FunctionalTests.ExampleKeywordTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

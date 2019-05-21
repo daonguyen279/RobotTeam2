@@ -1,0 +1,36 @@
+==============================================================================
+RobotFrameworkProject                                                         
+==============================================================================
+RobotFrameworkProject.Tests                                                   
+==============================================================================
+RobotFrameworkProject.Tests.FunctionalTests                                   
+==============================================================================
+RobotFrameworkProject.Tests.FunctionalTests.AdminUserTest                     
+==============================================================================
+path
+TC09 - Add New Valid User Account                                     Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC10 - Edit User Account Valid Information                            Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC11 - Delete User                                                    Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+RobotFrameworkProject.Tests.FunctionalTests.AdminUserTest             | PASS |
+3 critical tests, 3 passed, 0 failed
+3 tests total, 3 passed, 0 failed
+==============================================================================
+RobotFrameworkProject.Tests.FunctionalTests                           | PASS |
+3 critical tests, 3 passed, 0 failed
+3 tests total, 3 passed, 0 failed
+==============================================================================
+RobotFrameworkProject.Tests                                           | PASS |
+3 critical tests, 3 passed, 0 failed
+3 tests total, 3 passed, 0 failed
+==============================================================================
+RobotFrameworkProject                                                 | PASS |
+3 critical tests, 3 passed, 0 failed
+3 tests total, 3 passed, 0 failed
+==============================================================================
+Output:  C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\pabot_results\RobotFrameworkProject.Tests.FunctionalTests.AdminUserTest\output.xml

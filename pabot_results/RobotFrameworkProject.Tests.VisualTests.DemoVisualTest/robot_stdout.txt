@@ -1,0 +1,29 @@
+==============================================================================
+RobotFrameworkProject                                                         
+==============================================================================
+RobotFrameworkProject.Tests                                                   
+==============================================================================
+RobotFrameworkProject.Tests.VisualTests                                       
+==============================================================================
+RobotFrameworkProject.Tests.VisualTests.DemoVisualTest                        
+==============================================================================
+path
+TC01 - UI Of Login Page Display Correctly                             | PASS |
+------------------------------------------------------------------------------
+RobotFrameworkProject.Tests.VisualTests.DemoVisualTest                | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+RobotFrameworkProject.Tests.VisualTests                               | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+RobotFrameworkProject.Tests                                           | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+RobotFrameworkProject                                                 | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\pabot_results\RobotFrameworkProject.Tests.VisualTests.DemoVisualTest\output.xml

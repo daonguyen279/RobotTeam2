@@ -1,0 +1,34 @@
+==============================================================================
+RobotFrameworkProject                                                         
+==============================================================================
+RobotFrameworkProject.Tests                                                   
+==============================================================================
+RobotFrameworkProject.Tests.FunctionalTests                                   
+==============================================================================
+RobotFrameworkProject.Tests.FunctionalTests.ExampleKeywordTest                
+==============================================================================
+Keyword Slipt Text And Replace Text                                   | PASS |
+------------------------------------------------------------------------------
+Keyword Greet Method                                                  | PASS |
+------------------------------------------------------------------------------
+Keyword Count Method                                                  | PASS |
+------------------------------------------------------------------------------
+Keyword UpperCase Method                                              | PASS |
+------------------------------------------------------------------------------
+RobotFrameworkProject.Tests.FunctionalTests.ExampleKeywordTest        | PASS |
+4 critical tests, 4 passed, 0 failed
+4 tests total, 4 passed, 0 failed
+==============================================================================
+RobotFrameworkProject.Tests.FunctionalTests                           | PASS |
+4 critical tests, 4 passed, 0 failed
+4 tests total, 4 passed, 0 failed
+==============================================================================
+RobotFrameworkProject.Tests                                           | PASS |
+4 critical tests, 4 passed, 0 failed
+4 tests total, 4 passed, 0 failed
+==============================================================================
+RobotFrameworkProject                                                 | PASS |
+4 critical tests, 4 passed, 0 failed
+4 tests total, 4 passed, 0 failed
+==============================================================================
+Output:  C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\pabot_results\RobotFrameworkProject.Tests.FunctionalTests.ExampleKeywordTest\output.xml
