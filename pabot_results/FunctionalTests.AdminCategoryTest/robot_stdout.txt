@@ -1,0 +1,27 @@
+==============================================================================
+FunctionalTests                                                               
+==============================================================================
+FunctionalTests.AdminCategoryTest                                             
+==============================================================================
+path
+TC05 - Verify That Admin Can Add A New Category                       Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC06 - Verify That Admin Can Edit Category Information                Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC07 - Verify That Admin Can Delete A New Category                    Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC08 - Verify That Admin Can Unpublish A Category                     Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+FunctionalTests.AdminCategoryTest                                     | PASS |
+4 critical tests, 4 passed, 0 failed
+4 tests total, 4 passed, 0 failed
+==============================================================================
+FunctionalTests                                                       | PASS |
+4 critical tests, 4 passed, 0 failed
+4 tests total, 4 passed, 0 failed
+==============================================================================
+Output:  C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\pabot_results\FunctionalTests.AdminCategoryTest\output.xml

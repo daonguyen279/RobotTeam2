@@ -1,7 +1,7 @@
 datasources:a27faa04b09725ac3f8ef013d1c9fb66b1d1c0de
-commandlineoptions:9b525f81163ee7c187a08ff662b849deac2319c0
+commandlineoptions:5ea3922db11a42de3fa4c89e9d9f06972f891d9e
 suitesfrom:no-suites-from-option
-file:6691809053048c42559c81bceaa8e10043ee2c0d
+file:f34d21464f634f913877fbff27e4d8c9d8815b41
 --suite FunctionalTests.AdminArticleTest
 --suite FunctionalTests.AdminCategoryTest
 --suite FunctionalTests.AdminDataDrivenLoginTest

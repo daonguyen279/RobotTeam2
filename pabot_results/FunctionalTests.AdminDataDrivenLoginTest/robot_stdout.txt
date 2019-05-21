@@ -1,0 +1,33 @@
+==============================================================================
+FunctionalTests                                                               
+==============================================================================
+FunctionalTests.AdminDataDrivenLoginTest                                      
+==============================================================================
+path
+TC18 - Empty Username                                                 Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC19 - Empty Password                                                 Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC20 - Empty Username And Password                                    Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC21 - Invalid Username                                               Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC22 - Invalid Password                                               Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC23 - Invalid Username And Password                                  Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+FunctionalTests.AdminDataDrivenLoginTest                              | PASS |
+6 critical tests, 6 passed, 0 failed
+6 tests total, 6 passed, 0 failed
+==============================================================================
+FunctionalTests                                                       | PASS |
+6 critical tests, 6 passed, 0 failed
+6 tests total, 6 passed, 0 failed
+==============================================================================
+Output:  C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\pabot_results\FunctionalTests.AdminDataDrivenLoginTest\output.xml

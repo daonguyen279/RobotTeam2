@@ -13,18 +13,15 @@ Library    OperatingSystem
 Library    PageObjectLibrary
 Library    String
 Library    StringKeyword.py
-# Library    src.main.java.Tests.RobotTeam2.Demo
-Library    PercySetup.py
+Library    PercySetupBuild2.py
 
 
 *** Keywords ***
 Setup
-    ${PATH}=                          Normalize Path    path	     /RobotTeam2/RobotFrameworkProject/Resources/chromedriver.exe
-    # ${PATH}=                          Normalize Path    path	     /RobotTeam2/RobotFrameworkProject/Resources/geckodriver.exe
-    # ${PATH}=                          Normalize Path    path	     /RobotTeam2/RobotFrameworkProject/Resources/IEDriverServer.exe
+    ${PATH}=                          Normalize Path    path	      /RobotTeam2/RobotFrameworkProject/Resources/chromedriver.exe
     Log To Console                    ${PATH}   
     Append To Environment Variable    ${PATH}           ${PATH}
-    Open browser                      ${ROOT}           ${BROWSER}
+    Open browser                      ${ROOT}           ${BROWSER}    
     Maximize Browser Window
     Percy Initialize Build            ${PERCY_TOKEN}
     

@@ -1,0 +1,27 @@
+==============================================================================
+FunctionalTests                                                               
+==============================================================================
+FunctionalTests.AdminArticleTest                                              
+==============================================================================
+path
+TC01 - Add A New Aticle                                               Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC02 - Edit Article Information                                       Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC03 - Unpublish An Article                                           Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC04 - Delete An Article                                              Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+FunctionalTests.AdminArticleTest                                      | PASS |
+4 critical tests, 4 passed, 0 failed
+4 tests total, 4 passed, 0 failed
+==============================================================================
+FunctionalTests                                                       | PASS |
+4 critical tests, 4 passed, 0 failed
+4 tests total, 4 passed, 0 failed
+==============================================================================
+Output:  C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\pabot_results\FunctionalTests.AdminArticleTest\output.xml
