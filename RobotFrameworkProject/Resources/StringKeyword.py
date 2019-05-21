@@ -4,22 +4,22 @@ class StringKeyword:
     
     ROBOT_LIBRARY_SCOPE = 'GLOBAL'
 
-    def split_text(self, inputString, delimeter):
+    def Split_Text(self, inputString, delimeter):
         outputString=inputString.split(delimeter)
         return outputString
     
-    def replace_text(self, inputString, originalChar, destinationChar):
+    def Replace_Text(self, inputString, originalChar, destinationChar):
         outputString=inputString.replace(originalChar, destinationChar)
         return outputString
     
-    def greet(self,name,msg):
+    def Greet(self,name,msg):
         result= "Hello " + name + ', ' + msg
         return result
 
-    def count_number(self, str1,str2):
+    def Count_Number(self, str1,str2):
         str3=str1.count(str2)
         return str3
 
-    def uppercase_string(self, a):      
+    def Uppercase_String(self, a):      
         output = a.upper()
         return output;

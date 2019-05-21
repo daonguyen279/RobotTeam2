@@ -7,6 +7,8 @@ Suite teardown    Teardown
 
 
 *** Variables ***
+${USERNAME}                          category
+${PASSWORD}                          123456789
 ${CATEGORY_CONTENT}                  Many years ago Seth Green decided to take his love of action figures and combine it with one of his major passions: stop-motion animation. The idea for Cartoon Network's late-night animated series "Robot Chicken" was born and the animation world suddenly changed.
 ${CATEGORY_EDIT_TITLE}               Robot Framework is operating system and application independent
 ${CATEGORY_EDIT_CONTENT}             Long time ago Seth Green decided to take his love of action figures and combine it with one of his major passions: stop-motion animation. The idea for Cartoon Network's late-night animated series "Robot Chicken" was born and the animation world suddenly changed.
