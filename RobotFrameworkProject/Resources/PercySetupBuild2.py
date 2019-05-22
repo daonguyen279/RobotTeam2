@@ -2,7 +2,7 @@ from robot.libraries.BuiltIn import BuiltIn
 import os
 import percy
 
-class PercySetup():
+class PercySetupBuild2():
 
     ROBOT_LIBRARY_SCOPE = 'TEST SUITE'
 
@@ -11,10 +11,10 @@ class PercySetup():
 
     def Percy_Initialize_Build(self, access_token):
         driver = BuiltIn().get_library_instance('Selenium2Library')._current_browser()
-        root_static_dir = os.path.join(os.path.dirname(__file__), '/Users/InternDN19.01.07/Desktop/Intern19_DinhThiAnhThao/AUT/joomla')
+        root_static_dir = os.path.join(os.path.dirname(__file__), '/Users/InternDN19.01.07/Desktop/Intern19_DinhThiAnhThao/AUT/joomla_build2')
         loader = percy.ResourceLoader(
           root_dir=root_static_dir,
-          base_url='/joomla',
+          base_url='/joomla_build2',
           webdriver=driver,
         )
         config = percy.Config(access_token=access_token)
