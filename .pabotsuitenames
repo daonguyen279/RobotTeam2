@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 datasources:a27faa04b09725ac3f8ef013d1c9fb66b1d1c0de
 commandlineoptions:5ea3922db11a42de3fa4c89e9d9f06972f891d9e
 suitesfrom:no-suites-from-option
@@ -9,3 +10,10 @@ file:f34d21464f634f913877fbff27e4d8c9d8815b41
 --suite FunctionalTests.AdminUpdateProfileTest
 --suite FunctionalTests.AdminUserTest
 --suite FunctionalTests.ExampleKeywordTest
+=======
+datasources:82dd376eeacd14f304963d2b41f20c0ae49b689c
+commandlineoptions:5ea3922db11a42de3fa4c89e9d9f06972f891d9e
+suitesfrom:no-suites-from-option
+file:5442d1d7f7774698c823891c94eda24a271aefdc
+--suite VisualTests.LoginVisualTest
+>>>>>>> percy
