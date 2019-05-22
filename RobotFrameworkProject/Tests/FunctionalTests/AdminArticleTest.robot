@@ -16,7 +16,6 @@ ${ARTICLE_EDIT_TITLE}       Glimpses of the Mystery
 
 *** Test Cases *** 
 TC01 - Add A New Aticle
-    [Tags]               aticle
     ${ARTICLE_ALIAS}=    Generate Random String    12                          [LETTERS]
     ${ARTICLE_TITLE}=    Generate Random String    30                          [LETTERS]     
     Login Admin Site                               ${USERNAME}                 ${PASSWORD}
@@ -41,7 +40,6 @@ TC02 - Edit Article Information
     Logout Admin Site
     
 TC03 - Unpublish An Article
-    [Tags]               aticle
     ${ARTICLE_ALIAS}=    Generate Random String    12                  [LETTERS]
     ${ARTICLE_TITLE}=    Generate Random String    30                  [LETTERS] 
     Login Admin Site                               ${USERNAME}         ${PASSWORD}

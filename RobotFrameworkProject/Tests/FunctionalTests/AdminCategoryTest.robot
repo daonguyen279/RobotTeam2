@@ -19,9 +19,16 @@ ${TXT_UNPUBLISH_MESSAGE_EXPECTED}    1 category unpublished.
 
 *** Test Cases ***
 TC05 - Verify That Admin Can Add A New Category
-    [Tags]    Smoke Test
     ${CATEGORY_ALIAS} =  Generate Random String    12                             [LETTERS]
     ${CATEGORY_TITLE} =  Generate Random String    12                             [LETTERS]
+    ${CATEGORY_ALIAS}=    Generate Random String    12                             [LETTERS]
+    Login Admin Site                                ${USERNAME}                    ${PASSWORD}
+    Go To Add New Category Page   
+    Add New Category                                ${CATEGORY_TITLE}              ${CATEGORY_CONTENT}    ${CATEGORY_ALIAS}    
+    Check Message                                   ${TXT_ADD_MESSAGE_EXPECTED}     
+    ${CATEGORY_ALIAS}=   Generate Random String    12                             [LETTERS]
+    ${CATEGORY_TITLE}=   Generate Random String    12                             [LETTERS]
+>>>>>>> percy:RobotFrameworkProject/Tests/FunctionalTests/AdminCategoryTest.robot
     Login Admin Site                               ${USERNAME}                    ${PASSWORD}
     Go To Add New Category Page
     Add New Category                               ${CATEGORY_TITLE}              ${CATEGORY_CONTENT}    ${CATEGORY_ALIAS} 
@@ -31,7 +38,6 @@ TC05 - Verify That Admin Can Add A New Category
     Logout Admin Site
     
 TC06 - Verify That Admin Can Edit Category Information
-    [Tags]    Smoke Test
     ${CATEGORY_EDIT_CONTENT} =  Generate Random String    12                             [LETTERS]
     ${CATEGORY_EDIT_TITLE} =    Generate Random String    12                             [LETTERS]
     ${CATEGORY_ALIAS} =         Generate Random String    12                             [LETTERS]
@@ -47,7 +53,6 @@ TC06 - Verify That Admin Can Edit Category Information
     Logout Admin Site
 
 TC07 - Verify That Admin Can Delete A New Category
-    [Tags]    Integration
     ${CATEGORY_ALIAS} =  Generate Random String    12                              [LETTERS]
     ${CATEGORY_TITLE} =  Generate Random String    12                              [LETTERS]
     Login Admin Site                               ${USERNAME}                     ${PASSWORD}
@@ -59,7 +64,6 @@ TC07 - Verify That Admin Can Delete A New Category
     Logout Admin Site
 
 TC08 - Verify That Admin Can Unpublish A Category
-    [Tags]    Integration
     ${CATEGORY_ALIAS} =   Generate Random String    12                                   [LETTERS]
     ${CATEGORY_TITLE} =   Generate Random String    12                                   [LETTERS]
     Login Admin Site                                ${USERNAME}                          ${PASSWORD}

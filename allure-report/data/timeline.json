@@ -1,0 +1,24 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "LGDN18-1209-W10",
+    "children" : [ {
+      "children" : [ {
+        "name" : "TC01 - UI Of Login",
+        "uid" : "577d65df5ec8956c",
+        "parentUid" : "953eaba2b65c25575d4d6522ed60368d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1558062625651,
+          "stop" : 1558062627361,
+          "duration" : 1710
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "953eaba2b65c25575d4d6522ed60368d"
+    } ],
+    "uid" : "b90fb46a9631e66e17adf27d0d55c190"
+  } ]
+}
