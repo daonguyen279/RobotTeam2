@@ -1,0 +1,16 @@
+==============================================================================
+VisualTests                                                                   
+==============================================================================
+VisualTests.LoginVisualTest                                                   
+==============================================================================
+TC01 - UI Of Login                                                    | PASS |
+------------------------------------------------------------------------------
+VisualTests.LoginVisualTest                                           | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+VisualTests                                                           | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Output:  C:\robot\RobotTeam2\pabot_results\VisualTests.LoginVisualTest\output.xml

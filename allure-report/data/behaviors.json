@@ -1,0 +1,17 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "TC01 - UI Of Login",
+    "uid" : "577d65df5ec8956c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1558062625651,
+      "stop" : 1558062627361,
+      "duration" : 1710
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  } ]
+}
