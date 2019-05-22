@@ -1,0 +1,244 @@
+{
+  "uid" : "577d65df5ec8956c",
+  "name" : "TC01 - UI Of Login",
+  "fullName" : "VisualTests.LoginVisualTest.TC01 - UI Of Login",
+  "historyId" : "943f61911439eda958dd95a593a60d5b",
+  "time" : {
+    "start" : 1558062625651,
+    "stop" : 1558062627361,
+    "duration" : 1710
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ {
+    "name" : "Setup.Setup",
+    "time" : {
+      "start" : 1558062621368,
+      "stop" : 1558062625651,
+      "duration" : 4283
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "OperatingSystem.Append To Environment Variable",
+      "time" : {
+        "start" : 1558062621368,
+        "stop" : 1558062621369,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c8e38354dd3a7b52",
+        "name" : "Keyword Log",
+        "source" : "c8e38354dd3a7b52.html",
+        "type" : "text/html",
+        "size" : 1883
+      } ],
+      "parameters" : [ {
+        "name" : "arg1",
+        "value" : "PATH"
+      }, {
+        "name" : "arg2",
+        "value" : "C:\\\\robot\\\\RobotTeam2\\\\RobotFrameworkProject\\\\Resources/Drivers"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "Selenium2Library.Open Browser",
+      "time" : {
+        "start" : 1558062621369,
+        "stop" : 1558062623955,
+        "duration" : 2586
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "912b2927655d3767",
+        "name" : "Keyword Log",
+        "source" : "912b2927655d3767.html",
+        "type" : "text/html",
+        "size" : 104
+      } ],
+      "parameters" : [ {
+        "name" : "arg1",
+        "value" : "${ROOT}"
+      }, {
+        "name" : "arg2",
+        "value" : "${BROWSER}"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "Selenium2Library.Maximize Browser Window",
+      "time" : {
+        "start" : 1558062623955,
+        "stop" : 1558062625071,
+        "duration" : 1116
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "PercyClient.Percy Initialize Build",
+      "time" : {
+        "start" : 1558062625071,
+        "stop" : 1558062625651,
+        "duration" : 580
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "arg1",
+        "value" : "${PERCY_TOKEN}"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "statusDetails" : {
+      "flaky" : false
+    },
+    "steps" : [ {
+      "name" : "PercyClient.Percy Snapshot",
+      "time" : {
+        "start" : 1558062625652,
+        "stop" : 1558062627360,
+        "duration" : 1708
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "arg1",
+        "value" : "Login"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "Setup.Teardown",
+    "time" : {
+      "start" : 1558062627363,
+      "stop" : 1558062629916,
+      "duration" : 2553
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Selenium2Library.Close All Browsers",
+      "time" : {
+        "start" : 1558062627363,
+        "stop" : 1558062629441,
+        "duration" : 2078
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "PercyClient.Percy Finalize Build",
+      "time" : {
+        "start" : 1558062629442,
+        "stop" : 1558062629916,
+        "duration" : 474
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "VisualTests"
+  }, {
+    "name" : "subSuite",
+    "value" : "LoginVisualTest"
+  }, {
+    "name" : "thread"
+  }, {
+    "name" : "host",
+    "value" : "LGDN18-1209-W10"
+  }, {
+    "name" : "framework",
+    "value" : "robotframework"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "e24c80fba9017713",
+      "status" : "passed",
+      "time" : {
+        "start" : 1558061934017,
+        "stop" : 1558061935816,
+        "duration" : 1799
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "577d65df5ec8956c.json",
+  "statusDetailsSafe" : {
+    "flaky" : false
+  },
+  "statusMessage" : {
+    "present" : false
+  },
+  "parameterValues" : [ ]
+}

@@ -17,6 +17,7 @@ Library    String
 Library    PercyClient.py
 Library    Process
 
+
 *** Keywords ***
 Setup
     Append To Environment Variable    PATH                ${CURDIR}/Drivers
@@ -25,7 +26,6 @@ Setup
     Percy Initialize Build            ${PERCY_TOKEN}
 
 Teardown
-    Run process      robot --listener allure_robotframework C:/robot/RobotTeam2/RobotFrameworkProject/Tests/VisualTests
-    Run process      allure serve C:/robot/RobotTeam2/output/allure
+    # Run process      allure serve C:/robot/RobotTeam2/output/allure
     Close all browsers
     Percy Finalize Build

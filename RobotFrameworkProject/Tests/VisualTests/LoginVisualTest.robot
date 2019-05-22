@@ -6,5 +6,5 @@ Suite teardown    Teardown
 
 
 *** Test Cases ***
-TC01 - UI Of Login 
+TC01 - UI Of Login
     Percy Snapshot      Login

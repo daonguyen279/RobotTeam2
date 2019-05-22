@@ -11,15 +11,17 @@ class PercyClient():
 
     def Percy_Initialize_Build(self, access_token):
         driver = BuiltIn().get_library_instance('Selenium2Library')._current_browser()
-        root_static_dir = os.path.join(os.path.dirname(__file__), 'static')
+        root_static_dir = os.path.join(os.path.dirname(__file__), '/Users/InternDN19.01.03/Downloads/joomla/joomla')
+#         root_static_dir ='/Users/InternDN19.01.03/Downloads/joomla')
         loader = percy.ResourceLoader(
           root_dir=root_static_dir,
-          base_url='/assets',
+          base_url='/joomla',
           webdriver=driver,
         )
         config = percy.Config(access_token=access_token)
         self.percy_runner = percy.Runner(loader=loader, config=config)
         self.percy_runner.initialize_build()
+        
 
     def Percy_Snapshot(self, name, widths=None):
         self.percy_runner.snapshot(name=name, widths=widths)
