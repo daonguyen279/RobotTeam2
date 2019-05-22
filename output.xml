@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190522 14:14:17.727" rpa="false">
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190522 14:51:50.056" rpa="false">
 <suite id="s1" name="RobotTeam2" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2">
 <suite id="s1-s1" name="RobotFrameworkProject" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject">
 <suite id="s1-s1-s1" name="Tests" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests">
 <suite id="s1-s1-s1-s1" name="VisualTests" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\VisualTests">
-<suite id="s1-s1-s1-s1-s1" name="JommlaHelpVisualTest" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\VisualTests\JommlaHelpVisualTest.robot">
-<kw name="Setup" library="SetupBuild2" type="setup">
+<suite id="s1-s1-s1-s1-s1" name="JoomlaPluginsExtentionsVisualTest" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\VisualTests\JoomlaPluginsExtentionsVisualTest.robot">
+<kw name="Setup" library="SetupBUild2" type="setup">
 <kw name="Normalize Path" library="OperatingSystem">
 <doc>Normalizes the given path.</doc>
 <arguments>
@@ -15,15 +15,15 @@
 <assign>
 <var>${PATH}</var>
 </assign>
-<msg timestamp="20190522 14:14:18.150" level="INFO">${PATH} = path</msg>
-<status status="PASS" starttime="20190522 14:14:18.150" endtime="20190522 14:14:18.151"></status>
+<msg timestamp="20190522 14:51:50.451" level="INFO">${PATH} = path</msg>
+<status status="PASS" starttime="20190522 14:51:50.451" endtime="20190522 14:51:50.451"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${PATH}</arg>
 </arguments>
-<status status="PASS" starttime="20190522 14:14:18.151" endtime="20190522 14:14:18.152"></status>
+<status status="PASS" starttime="20190522 14:51:50.452" endtime="20190522 14:51:50.452"></status>
 </kw>
 <kw name="Append To Environment Variable" library="OperatingSystem">
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
@@ -31,8 +31,8 @@
 <arg>${PATH}</arg>
 <arg>${PATH}</arg>
 </arguments>
-<msg timestamp="20190522 14:14:18.152" level="INFO">Environment variable 'path' set to value 'C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\System32\cmd.exe;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Git\cmd;C:\Program Files\webdrivers;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs;C:\Program Files\Java\jdk-12\bin;C:\apache-maven-3.6.1\bin;%PYTHONPATH%\python-3.7.3.exe;C:\Windows\system32;%M2_HOME%\bin;C:\Users\InternDN19.01.02\Documents\allure-2.10.0\bin;C:\Users\InternDN19.01.02\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\InternDN19.01.02\AppData\Local\Programs\Python\Python37\;C:\Users\InternDN19.01.02\AppData\Local\Microsoft\WindowsApps;C:\Users\InternDN19.01.02\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.02\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.02\AppData\Roaming\npm;C:\Program Files\Maven;C:\Program Files\nodejs;;C:\Users\InternDN19.01.02\Desktop\eclipse-java-oxygen-1a-win32-x86_64\eclipse;;C:\Users\InternDN19.01.02\AppData\Local\Programs\Python\Python37\lib\site-packages\pywin32_system32;path'.</msg>
-<status status="PASS" starttime="20190522 14:14:18.152" endtime="20190522 14:14:18.153"></status>
+<msg timestamp="20190522 14:51:50.453" level="INFO">Environment variable 'path' set to value 'C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\System32\cmd.exe;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Git\cmd;C:\Program Files\webdrivers;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs;C:\Program Files\Java\jdk-12\bin;C:\apache-maven-3.6.1\bin;%PYTHONPATH%\python-3.7.3.exe;C:\Windows\system32;%M2_HOME%\bin;C:\Users\InternDN19.01.02\Documents\allure-2.10.0\bin;C:\Users\InternDN19.01.02\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\InternDN19.01.02\AppData\Local\Programs\Python\Python37\;C:\Users\InternDN19.01.02\AppData\Local\Microsoft\WindowsApps;C:\Users\InternDN19.01.02\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.02\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.02\AppData\Roaming\npm;C:\Program Files\Maven;C:\Program Files\nodejs;;C:\Users\InternDN19.01.02\Desktop\eclipse-java-oxygen-1a-win32-x86_64\eclipse;;C:\Users\InternDN19.01.02\AppData\Local\Programs\Python\Python37\lib\site-packages\pywin32_system32;path'.</msg>
+<status status="PASS" starttime="20190522 14:51:50.452" endtime="20190522 14:51:50.453"></status>
 </kw>
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -40,28 +40,22 @@
 <arg>${ROOT}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20190522 14:14:18.153" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla_build2/administrator'.</msg>
-<status status="PASS" starttime="20190522 14:14:18.153" endtime="20190522 14:14:21.365"></status>
+<msg timestamp="20190522 14:51:50.454" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla_build2/administrator'.</msg>
+<status status="PASS" starttime="20190522 14:51:50.454" endtime="20190522 14:51:53.421"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20190522 14:14:21.366" endtime="20190522 14:14:22.495"></status>
+<status status="PASS" starttime="20190522 14:51:53.422" endtime="20190522 14:51:54.546"></status>
 </kw>
 <kw name="Percy Initialize Build" library="PercySetupBuild2">
 <arguments>
 <arg>${PERCY_TOKEN}</arg>
 </arguments>
-<status status="PASS" starttime="20190522 14:14:22.495" endtime="20190522 14:14:26.468"></status>
+<status status="PASS" starttime="20190522 14:51:54.547" endtime="20190522 14:51:58.112"></status>
 </kw>
-<status status="PASS" starttime="20190522 14:14:18.149" endtime="20190522 14:14:26.469"></status>
+<status status="PASS" starttime="20190522 14:51:50.450" endtime="20190522 14:51:58.112"></status>
 </kw>
-<test id="s1-s1-s1-s1-s1-t1" name="TC01 - UI Of Article Page Display Correctly">
-<kw name="Percy Snapshot" library="PercySetupBuild2">
-<arguments>
-<arg>Login</arg>
-</arguments>
-<status status="PASS" starttime="20190522 14:14:26.471" endtime="20190522 14:14:28.477"></status>
-</kw>
+<test id="s1-s1-s1-s1-s1-t1" name="TC01 - UI Of Joomla Plugins Extentions Page Display Correctly">
 <kw name="Login Admin Site" library="AdminLoginPage">
 <arguments>
 <arg>${USERNAME}</arg>
@@ -72,7 +66,7 @@
 <arguments>
 <arg>Login to Joomla</arg>
 </arguments>
-<status status="PASS" starttime="20190522 14:14:28.478" endtime="20190522 14:14:28.479"></status>
+<status status="PASS" starttime="20190522 14:51:58.116" endtime="20190522 14:51:58.116"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -80,8 +74,8 @@
 <arg>${txt_username}</arg>
 <arg>${arg_username}</arg>
 </arguments>
-<msg timestamp="20190522 14:14:28.480" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
-<status status="PASS" starttime="20190522 14:14:28.479" endtime="20190522 14:14:28.604"></status>
+<msg timestamp="20190522 14:51:58.117" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190522 14:51:58.117" endtime="20190522 14:51:58.224"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -89,65 +83,65 @@
 <arg>${txt_password}</arg>
 <arg>${arg_password}</arg>
 </arguments>
-<msg timestamp="20190522 14:14:28.605" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
-<status status="PASS" starttime="20190522 14:14:28.605" endtime="20190522 14:14:28.742"></status>
+<msg timestamp="20190522 14:51:58.226" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190522 14:51:58.225" endtime="20190522 14:51:58.346"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_login}</arg>
 </arguments>
-<msg timestamp="20190522 14:14:28.743" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
-<status status="PASS" starttime="20190522 14:14:28.743" endtime="20190522 14:14:29.981"></status>
+<msg timestamp="20190522 14:51:58.347" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190522 14:51:58.346" endtime="20190522 14:51:59.692"></status>
 </kw>
-<status status="PASS" starttime="20190522 14:14:28.478" endtime="20190522 14:14:29.981"></status>
+<status status="PASS" starttime="20190522 14:51:58.114" endtime="20190522 14:51:59.694"></status>
 </kw>
-<kw name="Go To Joomla Help Page" library="JoomlaHelpPage">
+<kw name="Go To Joomla Plugins Extentions Page" library="JoomlaPluginsExtentionsPage">
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
-<arg>${lnk_menu_help}</arg>
+<arg>${lnk_menu_extentions}</arg>
 </arguments>
-<msg timestamp="20190522 14:14:29.984" level="INFO">Clicking element 'xpath=//div/ul[@id="menu"]/li/a[contains(text(),'Help')]'.</msg>
-<status status="PASS" starttime="20190522 14:14:29.983" endtime="20190522 14:14:30.091"></status>
+<msg timestamp="20190522 14:51:59.697" level="INFO">Clicking element 'xpath=//div/ul[@id="menu"]/li/a[contains(text(),'Extensions ')]'.</msg>
+<status status="PASS" starttime="20190522 14:51:59.696" endtime="20190522 14:51:59.806"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
-<arg>${lnk_joomla_help}</arg>
+<arg>${lnk_joomla_plugins_extentions}</arg>
 </arguments>
-<msg timestamp="20190522 14:14:30.093" level="INFO">Clicking element 'xpath=//div/ul[@id="menu"]/li/ul/li/a[contains(text(),'Joomla! Help')]'.</msg>
-<status status="PASS" starttime="20190522 14:14:30.092" endtime="20190522 14:14:31.683"></status>
+<msg timestamp="20190522 14:51:59.808" level="INFO">Clicking element 'xpath=//div/ul[@id="menu"]/li/ul/li/a[contains(text(),'Plugins')]'.</msg>
+<status status="PASS" starttime="20190522 14:51:59.807" endtime="20190522 14:52:00.366"></status>
 </kw>
-<status status="PASS" starttime="20190522 14:14:29.982" endtime="20190522 14:14:31.684"></status>
+<status status="PASS" starttime="20190522 14:51:59.695" endtime="20190522 14:52:00.367"></status>
 </kw>
 <kw name="Percy Snapshot" library="PercySetupBuild2">
 <arguments>
-<arg>Articles</arg>
+<arg>Categories</arg>
 </arguments>
-<status status="PASS" starttime="20190522 14:14:31.685" endtime="20190522 14:14:34.661"></status>
+<status status="PASS" starttime="20190522 14:52:00.367" endtime="20190522 14:52:02.675"></status>
 </kw>
-<status status="PASS" starttime="20190522 14:14:26.469" endtime="20190522 14:14:34.663" critical="yes"></status>
+<status status="PASS" starttime="20190522 14:51:58.113" endtime="20190522 14:52:02.676" critical="yes"></status>
 </test>
-<kw name="Teardown" library="SetupBuild2" type="teardown">
+<kw name="Teardown" library="SetupBUild2" type="teardown">
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20190522 14:14:34.667" endtime="20190522 14:14:36.921"></status>
+<status status="PASS" starttime="20190522 14:52:02.678" endtime="20190522 14:52:04.827"></status>
 </kw>
 <kw name="Percy Finalize Build" library="PercySetupBuild2">
-<status status="PASS" starttime="20190522 14:14:36.922" endtime="20190522 14:14:37.495"></status>
+<status status="PASS" starttime="20190522 14:52:04.828" endtime="20190522 14:52:05.357"></status>
 </kw>
-<status status="PASS" starttime="20190522 14:14:34.665" endtime="20190522 14:14:37.496"></status>
+<status status="PASS" starttime="20190522 14:52:02.677" endtime="20190522 14:52:05.358"></status>
 </kw>
-<status status="PASS" starttime="20190522 14:14:17.826" endtime="20190522 14:14:37.496"></status>
+<status status="PASS" starttime="20190522 14:51:50.160" endtime="20190522 14:52:05.358"></status>
 </suite>
-<status status="PASS" starttime="20190522 14:14:17.823" endtime="20190522 14:14:37.502"></status>
+<status status="PASS" starttime="20190522 14:51:50.157" endtime="20190522 14:52:05.363"></status>
 </suite>
-<status status="PASS" starttime="20190522 14:14:17.821" endtime="20190522 14:14:37.506"></status>
+<status status="PASS" starttime="20190522 14:51:50.154" endtime="20190522 14:52:05.367"></status>
 </suite>
-<status status="PASS" starttime="20190522 14:14:17.818" endtime="20190522 14:14:37.509"></status>
+<status status="PASS" starttime="20190522 14:51:50.151" endtime="20190522 14:52:05.371"></status>
 </suite>
-<status status="PASS" starttime="20190522 14:14:17.793" endtime="20190522 14:14:37.515"></status>
+<status status="PASS" starttime="20190522 14:51:50.122" endtime="20190522 14:52:05.375"></status>
 </suite>
 <statistics>
 <total>
@@ -161,7 +155,7 @@
 <stat pass="1" fail="0" id="s1-s1" name="RobotFrameworkProject">RobotTeam2.RobotFrameworkProject</stat>
 <stat pass="1" fail="0" id="s1-s1-s1" name="Tests">RobotTeam2.RobotFrameworkProject.Tests</stat>
 <stat pass="1" fail="0" id="s1-s1-s1-s1" name="VisualTests">RobotTeam2.RobotFrameworkProject.Tests.VisualTests</stat>
-<stat pass="1" fail="0" id="s1-s1-s1-s1-s1" name="JommlaHelpVisualTest">RobotTeam2.RobotFrameworkProject.Tests.VisualTests.JommlaHelpVisualTest</stat>
+<stat pass="1" fail="0" id="s1-s1-s1-s1-s1" name="JoomlaPluginsExtentionsVisualTest">RobotTeam2.RobotFrameworkProject.Tests.VisualTests.JoomlaPluginsExtentionsVisualTest</stat>
 </suite>
 </statistics>
 <errors>

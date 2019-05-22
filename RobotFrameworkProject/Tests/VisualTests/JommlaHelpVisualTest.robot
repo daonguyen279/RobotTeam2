@@ -7,7 +7,7 @@ Suite teardown    Teardown
 
 
 *** Test Cases ***
-TC01 - UI Of Article Page Display Correctly   
+TC01 - UI Of Joomla Help Page Display Correctly   
     Percy Snapshot                Login
     Login Admin Site              ${USERNAME}    ${PASSWORD}
     Go To Joomla Help Page
