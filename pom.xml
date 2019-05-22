@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
@@ -11,9 +12,8 @@
 	<url>http://maven.apache.org</url>
 
 	<properties>
+		<aspectj.version>1.8.10</aspectj.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.6</maven.compiler.source>
-		<maven.compiler.target>1.6</maven.compiler.target>
 	</properties>
 
 	<dependencies>
@@ -22,11 +22,6 @@
 			<artifactId>junit</artifactId>
 			<version>3.8.1</version>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>io.percy</groupId>
-			<artifactId>percy-java-selenium</artifactId>
-			<version>0.0.3</version>
 		</dependency>
 		<dependency>
 			<groupId>org.robotframework</groupId>
@@ -49,9 +44,50 @@
 			<artifactId>selenium-server</artifactId>
 			<version>3.4.0</version>
 		</dependency>
+		<dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-commandline</artifactId>
+			<version>2.11.0</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjweaver</artifactId>
+        <version>${aspectj.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>ru.yandex.qatools.allure</groupId>
+        <artifactId>allure-testng-adaptor</artifactId>
+        <version>1.5.4</version>
+    </dependency>
 	</dependencies>
 	<build>
 		<plugins>
+		<plugin>
+        <groupId> org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.20</version>
+        <configuration>
+            <argLine>-javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar
+            </argLine>
+            <properties>
+                <property>
+                    <name>listener</name>
+                    <value>ru.yandex.qatools.allure.testng.AllureTestListener</value>
+                </property>
+            </properties>
+            <suiteXmlFiles>testng.xml</suiteXmlFiles>
+            <testFailureIgnore>false</testFailureIgnore>
+        </configuration>
+    </plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.robotframework</groupId>
 				<artifactId>robotframework-maven-plugin</artifactId>
@@ -63,28 +99,15 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3.1</version>
 				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
+					<listener> listener="allure_robotframework./report"</listener>
 				</configuration>
 			</plugin>
 			<plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>2.20</version>
-            <configuration>
-                <systemPropertyVariables>
-                    <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
-                    <allure.link.issue.pattern>https://example.org/browse/{}</allure.link.issue.pattern>
-                    <allure.link.tms.pattern>https://example.org/browse/{}</allure.link.tms.pattern>
-                </systemPropertyVariables>
-            </configuration>
-        </plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>${allure-maven.version}</version>
+            </plugin>
 		</plugins>
 	</build>
 

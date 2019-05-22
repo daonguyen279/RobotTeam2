@@ -2,7 +2,7 @@ from robot.libraries.BuiltIn import BuiltIn
 import os
 import percy
 
-class PercySetup():
+class PercyClient():
 
     ROBOT_LIBRARY_SCOPE = 'TEST SUITE'
 
@@ -20,6 +20,7 @@ class PercySetup():
         config = percy.Config(access_token=access_token)
         self.percy_runner = percy.Runner(loader=loader, config=config)
         self.percy_runner.initialize_build()
+        
 
     def Percy_Snapshot(self, name, widths=None):
         self.percy_runner.snapshot(name=name, widths=widths)
