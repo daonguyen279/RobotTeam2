@@ -8,15 +8,20 @@ ${lbl_menus}                    xpath=//div[@class="span3"]//a[span[contains(tex
 ${lbl_users}                    xpath=//div[@class="span3"]//a[span[contains(text(), "Users")]]
 
 # ---------- main menu ----------
-${menu_system}                  xpath=//ul[@id="menu"]//a[text()="System "]
-${submenu_control_panel}        xpath=//ul[@id="menu"]//a[@href="index.php"]
-${menu_users}                   xpath=//ul[@id="menu"]//a[contains(text(), "Users ")]
-${submenu_manage_users}         xpath=//ul[@id="menu"]//a[@class="dropdown-toggle menu-user"]
-${menu_menus}                   xpath=//ul[@id="menu"]//a[contains(text(), "Menus ")]
-${menu_extensiton}              xpath=//ul[@id="menu"]//a[contains(text(), "Extensions ")]
-${submenu_manage_extensions}    xpath=//ul[@id="menu"]//a[@class="dropdown-toggle menu-install"]
-${submenu_manage_menus}         xpath=//ul[@id="menu"]//a[@class="dropdown-toggle menu-menumgr"]
-${submenu_menu_item}            xpath=//ul[@id="menu"]//a[@class="no-dropdown menu-allmenu"]
+${menu_system}                        xpath=//ul[@id="menu"]//a[text()="System "]
+${submenu_control_panel}              xpath=//ul[@id="menu"]//a[@href="index.php"]
+${menu_users}                         xpath=//ul[@id="menu"]//a[contains(text(), "Users ")]
+${submenu_manage_users}               xpath=//ul[@id="menu"]//a[@class="dropdown-toggle menu-user"]
+${menu_menus}                         xpath=//ul[@id="menu"]//a[contains(text(), "Menus ")]
+${menu_extension}                     xpath=//ul[@id="menu"]//a[contains(text(), "Extensions ")]
+${submenu_manage_extensions}          xpath=//ul[@id="menu"]//a[@class="dropdown-toggle menu-install"]
+${submenu_templates}                  xpath=//ul[@id="menu"]//a[@class="dropdown-toggle menu-themes"]
+${menu_components}                    xpath=//ul[@id="menu"]//a[contains(text(), "Components ")]
+${submenu_banners}                    xpath=//ul[@id="menu"]//a[@class="dropdown-toggle menu-banners"]
+${menu_content}                       xpath=//ul[@id="menu"]/li/a[contains(text(),"Content")]
+${submenu_feature_artical_content}    xpath=//ul[@id="menu"]//a[@class="no-dropdown menu-featured"]
+${submenu_manage_menus}               xpath=//ul[@id="menu"]//a[@class="dropdown-toggle menu-menumgr"]
+${submenu_menu_item}                  xpath=//ul[@id="menu"]//a[@class="no-dropdown menu-allmenu"]
 
 # ---------- top right menu ----------
 ${icn_user}                     xpath=//a/span[@class="icon-user"]
@@ -47,4 +52,3 @@ Check Message
     [Arguments]               ${arg_expected_message}
     Element Text Should Be    ${hed_header_message}      Message
     Element Text Should Be    ${lbl_message}             ${arg_expected_message}
-    

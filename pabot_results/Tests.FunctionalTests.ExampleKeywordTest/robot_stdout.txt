@@ -1,0 +1,28 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.FunctionalTests                                                         
+==============================================================================
+Tests.FunctionalTests.ExampleKeywordTest                                      
+==============================================================================
+Keyword Slipt Text And Replace Text                                   | PASS |
+------------------------------------------------------------------------------
+Keyword Greet Method                                                  | PASS |
+------------------------------------------------------------------------------
+Keyword Count Method                                                  | PASS |
+------------------------------------------------------------------------------
+Keyword UpperCase Method                                              | PASS |
+------------------------------------------------------------------------------
+Tests.FunctionalTests.ExampleKeywordTest                              | PASS |
+4 critical tests, 4 passed, 0 failed
+4 tests total, 4 passed, 0 failed
+==============================================================================
+Tests.FunctionalTests                                                 | PASS |
+4 critical tests, 4 passed, 0 failed
+4 tests total, 4 passed, 0 failed
+==============================================================================
+Tests                                                                 | PASS |
+4 critical tests, 4 passed, 0 failed
+4 tests total, 4 passed, 0 failed
+==============================================================================
+Output:  C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\pabot_results\Tests.FunctionalTests.ExampleKeywordTest\output.xml
