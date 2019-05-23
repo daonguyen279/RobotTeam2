@@ -18,6 +18,9 @@ ${xph_articles_icon_unpublish}    xpath=//table[@id="articleList"]//tr[td//a[con
 
 
 *** Keywords ***
+Go To Articles Page           
+    Select Sidebar Menu    ${lbl_articles} 
+    
 Go To Add New Article Page
     Select Sidebar Menu    ${lbl_new_article}
      

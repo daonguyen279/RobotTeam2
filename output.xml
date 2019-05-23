@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190522 15:01:39.381" rpa="false">
+<suite id="s1" name="RobotTeam2" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2">
+<suite id="s1-s1" name="RobotFrameworkProject" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject">
+<suite id="s1-s1-s1" name="Tests" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests">
+<suite id="s1-s1-s1-s1" name="VisualTests" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\VisualTests">
+<suite id="s1-s1-s1-s1-s1" name="AdminModulesTest" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\VisualTests\AdminModulesTest.robot">
+<kw name="Setup" library="SetupBuild2" type="setup">
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<arguments>
+<arg>PATH</arg>
+<arg>C:\\Users\\InternDN19.01.07\\Desktop\\Intern19_DinhThiAnhThao\\Project_Phase1_Researching\\project\\RobotTeam2\\RobotFrameworkProject\\Resources/Drivers</arg>
+</arguments>
+<msg timestamp="20190522 15:01:39.630" level="INFO">Environment variable 'PATH' set to value 'C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Python37\;C:\Python37\Scripts\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;C:\Python27\Lib\site-packages;C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\SeleniumWebdriver;C:\xampp\php;C:\composer;C:\Program Files\nodejs\;C:\Program Files\maven\apache-maven-3.6.1\bin;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Users\InternDN19.01.07\Downloads\allure-2.10.0\bin;C:\Users\InternDN19.01.07\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\InternDN19.01.07\AppData\Local\Programs\Python\Python37\;C:\Users\InternDN19.01.07\AppData\Local\Microsoft\WindowsApps;C:\Users\InternDN19.01.07\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.07\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.07\AppData\Roaming\npm;;C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\eclipse;;C:\Users\InternDN19.01.07\AppData\Local\Programs\Python\Python37\lib\site-packages\pywin32_system32;C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Resources/Drivers'.</msg>
+<status status="PASS" starttime="20190522 15:01:39.630" endtime="20190522 15:01:39.630"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${ROOT}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190522 15:01:39.631" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla_build2/administrator/'.</msg>
+<status status="PASS" starttime="20190522 15:01:39.631" endtime="20190522 15:01:42.519"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190522 15:01:42.520" endtime="20190522 15:01:43.638"></status>
+</kw>
+<kw name="Percy Initialize Build" library="PercySetupBuild2">
+<arguments>
+<arg>${PERCY_TOKEN}</arg>
+</arguments>
+<status status="PASS" starttime="20190522 15:01:43.639" endtime="20190522 15:01:46.539"></status>
+</kw>
+<status status="PASS" starttime="20190522 15:01:39.629" endtime="20190522 15:01:46.539"></status>
+</kw>
+<test id="s1-s1-s1-s1-s1-t1" name="TC30 - UI Of Modules Page Display Correctly">
+<kw name="Login Admin Site" library="AdminLoginPage">
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Login to Joomla</arg>
+</arguments>
+<status status="PASS" starttime="20190522 15:01:46.541" endtime="20190522 15:01:46.541"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_username}</arg>
+<arg>${arg_username}</arg>
+</arguments>
+<msg timestamp="20190522 15:01:46.542" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190522 15:01:46.541" endtime="20190522 15:01:46.603"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_password}</arg>
+<arg>${arg_password}</arg>
+</arguments>
+<msg timestamp="20190522 15:01:46.604" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190522 15:01:46.603" endtime="20190522 15:01:46.672"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_login}</arg>
+</arguments>
+<msg timestamp="20190522 15:01:46.672" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190522 15:01:46.672" endtime="20190522 15:01:48.006"></status>
+</kw>
+<status status="PASS" starttime="20190522 15:01:46.540" endtime="20190522 15:01:48.006"></status>
+</kw>
+<kw name="Go To Extensions Modules Page" library="AdminExtensionsModulesPage">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${menu_extensions}</arg>
+</arguments>
+<msg timestamp="20190522 15:01:48.007" level="INFO">Clicking element 'xpath=//ul[@id="menu"]//a[text()="Extensions "]'.</msg>
+<status status="PASS" starttime="20190522 15:01:48.007" endtime="20190522 15:01:48.084"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${submenu_modules}</arg>
+</arguments>
+<msg timestamp="20190522 15:01:48.085" level="INFO">Clicking element 'xpath=//ul[@id="menu"]//a[text()="Modules"]'.</msg>
+<status status="PASS" starttime="20190522 15:01:48.085" endtime="20190522 15:01:48.561"></status>
+</kw>
+<status status="PASS" starttime="20190522 15:01:48.007" endtime="20190522 15:01:48.562"></status>
+</kw>
+<kw name="Percy Snapshot" library="PercySetupBuild2">
+<arguments>
+<arg>Modules Page</arg>
+</arguments>
+<status status="PASS" starttime="20190522 15:01:48.562" endtime="20190522 15:01:50.681"></status>
+</kw>
+<kw name="Logout Admin Site" library="AdminHomePage">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${icn_user}</arg>
+</arguments>
+<msg timestamp="20190522 15:01:50.684" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
+<status status="PASS" starttime="20190522 15:01:50.683" endtime="20190522 15:01:50.754"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${lbl_logout}</arg>
+</arguments>
+<status status="PASS" starttime="20190522 15:01:50.754" endtime="20190522 15:01:50.779"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${lbl_logout}</arg>
+</arguments>
+<msg timestamp="20190522 15:01:50.780" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]'.</msg>
+<status status="PASS" starttime="20190522 15:01:50.779" endtime="20190522 15:01:51.321"></status>
+</kw>
+<status status="PASS" starttime="20190522 15:01:50.682" endtime="20190522 15:01:51.322"></status>
+</kw>
+<status status="PASS" starttime="20190522 15:01:46.539" endtime="20190522 15:01:51.322" critical="yes"></status>
+</test>
+<kw name="Teardown" library="SetupBuild2" type="teardown">
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20190522 15:01:51.323" endtime="20190522 15:01:53.422"></status>
+</kw>
+<kw name="Percy Finalize Build" library="PercySetupBuild2">
+<status status="PASS" starttime="20190522 15:01:53.423" endtime="20190522 15:01:53.955"></status>
+</kw>
+<status status="PASS" starttime="20190522 15:01:51.323" endtime="20190522 15:01:53.955"></status>
+</kw>
+<status status="PASS" starttime="20190522 15:01:39.432" endtime="20190522 15:01:53.955"></status>
+</suite>
+<status status="PASS" starttime="20190522 15:01:39.431" endtime="20190522 15:01:53.957"></status>
+</suite>
+<status status="PASS" starttime="20190522 15:01:39.429" endtime="20190522 15:01:53.958"></status>
+</suite>
+<status status="PASS" starttime="20190522 15:01:39.427" endtime="20190522 15:01:53.959"></status>
+</suite>
+<status status="PASS" starttime="20190522 15:01:39.410" endtime="20190522 15:01:53.960"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="RobotTeam2">RobotTeam2</stat>
+<stat pass="1" fail="0" id="s1-s1" name="RobotFrameworkProject">RobotTeam2.RobotFrameworkProject</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="Tests">RobotTeam2.RobotFrameworkProject.Tests</stat>
+<stat pass="1" fail="0" id="s1-s1-s1-s1" name="VisualTests">RobotTeam2.RobotFrameworkProject.Tests.VisualTests</stat>
+<stat pass="1" fail="0" id="s1-s1-s1-s1-s1" name="AdminModulesTest">RobotTeam2.RobotFrameworkProject.Tests.VisualTests.AdminModulesTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

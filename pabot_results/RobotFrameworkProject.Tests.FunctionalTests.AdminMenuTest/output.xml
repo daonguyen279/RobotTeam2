@@ -1,0 +1,1567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190521 16:39:32.676" rpa="false">
+<suite id="s1" name="RobotFrameworkProject" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject">
+<suite id="s1-s1" name="Tests" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests">
+<suite id="s1-s1-s1" name="FunctionalTests" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests">
+<suite id="s1-s1-s1-s1" name="AdminMenuTest" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminMenuTest.robot">
+<kw name="Setup" library="Setup" type="setup">
+<kw name="Normalize Path" library="OperatingSystem">
+<doc>Normalizes the given path.</doc>
+<arguments>
+<arg>path</arg>
+<arg>/RobotTeam2/RobotFrameworkProject/Resources/chromedriver.exe</arg>
+</arguments>
+<assign>
+<var>${PATH}</var>
+</assign>
+<msg timestamp="20190521 16:39:32.946" level="INFO">${PATH} = path</msg>
+<status status="PASS" starttime="20190521 16:39:32.945" endtime="20190521 16:39:32.946"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${PATH}</arg>
+</arguments>
+<status status="PASS" starttime="20190521 16:39:32.948" endtime="20190521 16:39:32.948"></status>
+</kw>
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<arguments>
+<arg>${PATH}</arg>
+<arg>${PATH}</arg>
+</arguments>
+<msg timestamp="20190521 16:39:32.948" level="INFO">Environment variable 'path' set to value 'C:\Users\InternDN19.01.07\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\InternDN19.01.07\bin;C:\Python37;C:\Python37\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;C:\Python27\Lib\site-packages;C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\SeleniumWebdriver;C:\xampp\php;C:\composer;C:\Program Files\nodejs;C:\Program Files\maven\apache-maven-3.6.1\bin;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Users\InternDN19.01.07\Downloads\allure-2.10.0\bin;C:\Users\InternDN19.01.07\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\InternDN19.01.07\AppData\Local\Programs\Python\Python37;C:\Users\InternDN19.01.07\AppData\Local\Microsoft\WindowsApps;C:\Users\InternDN19.01.07\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.07\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.07\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;C:\users\interndn19.01.07\appdata\local\programs\python\python37\lib\site-packages\pywin32_system32;c:\users\interndn19.01.07\appdata\local\programs\python\python37\lib\site-packages\pywin32_system32;path'.</msg>
+<status status="PASS" starttime="20190521 16:39:32.948" endtime="20190521 16:39:32.949"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${ROOT}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190521 16:39:32.950" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla/administrator/'.</msg>
+<status status="PASS" starttime="20190521 16:39:32.949" endtime="20190521 16:39:37.927"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190521 16:39:37.929" endtime="20190521 16:39:39.041"></status>
+</kw>
+<kw name="Percy Initialize Build" library="PercySetup">
+<arguments>
+<arg>${PERCY_TOKEN}</arg>
+</arguments>
+<status status="PASS" starttime="20190521 16:39:39.042" endtime="20190521 16:39:39.743"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:39:32.945" endtime="20190521 16:39:39.744"></status>
+</kw>
+<test id="s1-s1-s1-s1-t1" name="TC14 - Add A New Menu Successfully">
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>4</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${MENU_TITLE}</var>
+</assign>
+<msg timestamp="20190521 16:39:39.745" level="INFO">${MENU_TITLE} = jsuC</msg>
+<status status="PASS" starttime="20190521 16:39:39.745" endtime="20190521 16:39:39.745"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>4</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${MENUTYPE}</var>
+</assign>
+<msg timestamp="20190521 16:39:39.747" level="INFO">${MENUTYPE} = PtqV</msg>
+<status status="PASS" starttime="20190521 16:39:39.746" endtime="20190521 16:39:39.747"></status>
+</kw>
+<kw name="Login Admin Site" library="AdminLoginPage">
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Login to Joomla</arg>
+</arguments>
+<status status="PASS" starttime="20190521 16:39:39.748" endtime="20190521 16:39:39.749"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_username}</arg>
+<arg>${arg_username}</arg>
+</arguments>
+<msg timestamp="20190521 16:39:39.749" level="INFO">Typing text 'menu' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190521 16:39:39.749" endtime="20190521 16:39:39.949"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_password}</arg>
+<arg>${arg_password}</arg>
+</arguments>
+<msg timestamp="20190521 16:39:39.950" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190521 16:39:39.950" endtime="20190521 16:39:40.067"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_login}</arg>
+</arguments>
+<msg timestamp="20190521 16:39:40.070" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190521 16:39:40.069" endtime="20190521 16:39:41.531"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:39:39.748" endtime="20190521 16:39:41.532"></status>
+</kw>
+<kw name="Go To Add New Menu Page" library="AdminMenuPage">
+<kw name="Select Sidebar Menu" library="AdminHomePage">
+<arguments>
+<arg>${lbl_menus}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${arg_page}</arg>
+</arguments>
+<msg timestamp="20190521 16:39:41.534" level="INFO">Clicking element 'xpath=//div[@class="span3"]//a[span[contains(text(), "Menu(s)")]]'.</msg>
+<status status="PASS" starttime="20190521 16:39:41.533" endtime="20190521 16:39:42.713"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:39:41.533" endtime="20190521 16:39:42.714"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menus_list}</arg>
+</arguments>
+<msg timestamp="20190521 16:39:42.715" level="INFO">Clicking element 'xpath=//ul[@id="submenu"]/li/a[contains(text(),"Menus")]'.</msg>
+<status status="PASS" starttime="20190521 16:39:42.715" endtime="20190521 16:39:43.328"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menus_add}</arg>
+</arguments>
+<msg timestamp="20190521 16:39:43.330" level="INFO">Clicking element 'xpath=//div[@id="toolbar-new"]/button'.</msg>
+<status status="PASS" starttime="20190521 16:39:43.329" endtime="20190521 16:39:45.692"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:39:41.533" endtime="20190521 16:39:45.693"></status>
+</kw>
+<kw name="Fill Out And Submit Menu Information" library="AdminMenuPage">
+<arguments>
+<arg>${MENU_TITLE}</arg>
+<arg>${MENUTYPE}</arg>
+<arg>${MENU_DESCRIPTION}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_menus_title}</arg>
+<arg>${arg_menu_title}</arg>
+</arguments>
+<msg timestamp="20190521 16:39:45.694" level="INFO">Typing text 'jsuC' into text field 'xpath=//form[@id="item-form"]//input[@id="jform_title"]'.</msg>
+<status status="PASS" starttime="20190521 16:39:45.694" endtime="20190521 16:39:45.821"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_menus_type}</arg>
+<arg>${arg_menu_type}</arg>
+</arguments>
+<msg timestamp="20190521 16:39:45.823" level="INFO">Typing text 'PtqV' into text field 'xpath=//div[@class="form-horizontal"]//input[@id="jform_menutype"]'.</msg>
+<status status="PASS" starttime="20190521 16:39:45.822" endtime="20190521 16:39:45.957"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_menus_description}</arg>
+<arg>${arg_menu_description}</arg>
+</arguments>
+<msg timestamp="20190521 16:39:45.959" level="INFO">Typing text 'tesst menu in joomla' into text field 'xpath=//div[@class="form-horizontal"]//input[@id="jform_menudescription"]'.</msg>
+<status status="PASS" starttime="20190521 16:39:45.958" endtime="20190521 16:39:46.262"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menus_save_close}</arg>
+</arguments>
+<msg timestamp="20190521 16:39:46.566" level="INFO">Clicking element 'xpath=//div[@id="toolbar-save"]/button'.</msg>
+<status status="PASS" starttime="20190521 16:39:46.565" endtime="20190521 16:39:50.938"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:39:45.693" endtime="20190521 16:39:50.940"></status>
+</kw>
+<kw name="Check Message" library="AdminHomePage">
+<arguments>
+<arg>${MESSAGE_NEW_MENU}</arg>
+</arguments>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${hed_header_message}</arg>
+<arg>Message</arg>
+</arguments>
+<msg timestamp="20190521 16:39:50.941" level="INFO">Verifying element 'xpath=//div[@class="alert alert-success"]/h4[@class="alert-heading"]' contains exact text 'Message'.</msg>
+<status status="PASS" starttime="20190521 16:39:50.941" endtime="20190521 16:39:50.973"></status>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${lbl_message}</arg>
+<arg>${arg_expected_message}</arg>
+</arguments>
+<msg timestamp="20190521 16:39:50.975" level="INFO">Verifying element 'xpath=//div[@class="alert alert-success"]/div[@class="alert-message"]' contains exact text 'Menu saved'.</msg>
+<status status="PASS" starttime="20190521 16:39:50.975" endtime="20190521 16:39:50.997"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:39:50.940" endtime="20190521 16:39:50.998"></status>
+</kw>
+<kw name="Check Add New Menu Successfully" library="AdminMenuPage">
+<arguments>
+<arg>${MENU_TITLE}</arg>
+</arguments>
+<kw name="Format String" library="String">
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<arguments>
+<arg>${xph_menus_title}</arg>
+<arg>${arg_menu_title}</arg>
+</arguments>
+<assign>
+<var>${menus_title}</var>
+</assign>
+<msg timestamp="20190521 16:39:50.999" level="INFO">${menus_title} = xpath= //table[@id="menuList"]//a[contains(text(),"jsuC")]</msg>
+<status status="PASS" starttime="20190521 16:39:50.999" endtime="20190521 16:39:50.999"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${menus_title}</arg>
+</arguments>
+<msg timestamp="20190521 16:39:51.022" level="INFO">Element 'xpath= //table[@id="menuList"]//a[contains(text(),"jsuC")]' is displayed.</msg>
+<status status="PASS" starttime="20190521 16:39:51.000" endtime="20190521 16:39:51.022"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:39:50.998" endtime="20190521 16:39:51.023"></status>
+</kw>
+<kw name="Delete Menu" library="AdminMenuPage">
+<arguments>
+<arg>${MENU_TITLE}</arg>
+</arguments>
+<kw name="Format String" library="String">
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<arguments>
+<arg>${xph_menus_checkbox}</arg>
+<arg>${arg_menu_to_delete}</arg>
+</arguments>
+<assign>
+<var>${menus_checkbox}</var>
+</assign>
+<msg timestamp="20190521 16:39:51.024" level="INFO">${menus_checkbox} = xpath=//table[@id="menuList"]//tr[td/a[contains(text(),"jsuC")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input</msg>
+<status status="PASS" starttime="20190521 16:39:51.024" endtime="20190521 16:39:51.024"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${menus_checkbox}</arg>
+</arguments>
+<status status="PASS" starttime="20190521 16:39:51.025" endtime="20190521 16:39:51.048"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${menus_checkbox}</arg>
+</arguments>
+<msg timestamp="20190521 16:39:51.049" level="INFO">Clicking element 'xpath=//table[@id="menuList"]//tr[td/a[contains(text(),"jsuC")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input'.</msg>
+<status status="PASS" starttime="20190521 16:39:51.049" endtime="20190521 16:39:51.095"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menus_delete}</arg>
+</arguments>
+<msg timestamp="20190521 16:39:51.097" level="INFO">Clicking element 'xpath=//div[@id="toolbar-delete"]/button'.</msg>
+<status status="PASS" starttime="20190521 16:39:51.096" endtime="20190521 16:39:51.142"></status>
+</kw>
+<kw name="Handle Alert" library="Selenium2Library">
+<doc>Handles the current alert and returns its message.</doc>
+<arguments>
+<arg>ACCEPT</arg>
+</arguments>
+<status status="PASS" starttime="20190521 16:39:51.144" endtime="20190521 16:39:51.149"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:39:51.024" endtime="20190521 16:39:51.149"></status>
+</kw>
+<kw name="Logout Admin Site" library="AdminHomePage">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${icn_user}</arg>
+</arguments>
+<msg timestamp="20190521 16:39:51.150" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
+<status status="PASS" starttime="20190521 16:39:51.150" endtime="20190521 16:39:52.344"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${lbl_logout}</arg>
+</arguments>
+<status status="PASS" starttime="20190521 16:39:52.372" endtime="20190521 16:39:52.401"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${lbl_logout}</arg>
+</arguments>
+<msg timestamp="20190521 16:39:52.402" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]'.</msg>
+<status status="PASS" starttime="20190521 16:39:52.402" endtime="20190521 16:39:53.486"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:39:51.150" endtime="20190521 16:39:53.488"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:39:39.744" endtime="20190521 16:39:53.489" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s1-t2" name="TC15 - Add A Menu Item Successfully">
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>4</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${MENU_TITLE}</var>
+</assign>
+<msg timestamp="20190521 16:39:53.496" level="INFO">${MENU_TITLE} = HVMD</msg>
+<status status="PASS" starttime="20190521 16:39:53.496" endtime="20190521 16:39:53.496"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>4</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${MENUTYPE}</var>
+</assign>
+<msg timestamp="20190521 16:39:53.498" level="INFO">${MENUTYPE} = sDFN</msg>
+<status status="PASS" starttime="20190521 16:39:53.497" endtime="20190521 16:39:53.498"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>4</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${MENUITEM_TITLE}</var>
+</assign>
+<msg timestamp="20190521 16:39:53.513" level="INFO">${MENUITEM_TITLE} = zBlY</msg>
+<status status="PASS" starttime="20190521 16:39:53.512" endtime="20190521 16:39:53.513"></status>
+</kw>
+<kw name="Login Admin Site" library="AdminLoginPage">
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Login to Joomla</arg>
+</arguments>
+<status status="PASS" starttime="20190521 16:39:53.514" endtime="20190521 16:39:53.514"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_username}</arg>
+<arg>${arg_username}</arg>
+</arguments>
+<msg timestamp="20190521 16:39:53.516" level="INFO">Typing text 'menu' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190521 16:39:53.515" endtime="20190521 16:39:53.578"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_password}</arg>
+<arg>${arg_password}</arg>
+</arguments>
+<msg timestamp="20190521 16:39:53.580" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190521 16:39:53.580" endtime="20190521 16:39:53.661"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_login}</arg>
+</arguments>
+<msg timestamp="20190521 16:39:53.663" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190521 16:39:53.662" endtime="20190521 16:39:58.643"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:39:53.513" endtime="20190521 16:39:58.645"></status>
+</kw>
+<kw name="Go To Add New Menu Page" library="AdminMenuPage">
+<kw name="Select Sidebar Menu" library="AdminHomePage">
+<arguments>
+<arg>${lbl_menus}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${arg_page}</arg>
+</arguments>
+<msg timestamp="20190521 16:39:58.648" level="INFO">Clicking element 'xpath=//div[@class="span3"]//a[span[contains(text(), "Menu(s)")]]'.</msg>
+<status status="PASS" starttime="20190521 16:39:58.646" endtime="20190521 16:39:59.186"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:39:58.645" endtime="20190521 16:39:59.187"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menus_list}</arg>
+</arguments>
+<msg timestamp="20190521 16:39:59.188" level="INFO">Clicking element 'xpath=//ul[@id="submenu"]/li/a[contains(text(),"Menus")]'.</msg>
+<status status="PASS" starttime="20190521 16:39:59.188" endtime="20190521 16:39:59.833"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menus_add}</arg>
+</arguments>
+<msg timestamp="20190521 16:39:59.835" level="INFO">Clicking element 'xpath=//div[@id="toolbar-new"]/button'.</msg>
+<status status="PASS" starttime="20190521 16:39:59.834" endtime="20190521 16:40:01.864"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:39:58.645" endtime="20190521 16:40:02.011"></status>
+</kw>
+<kw name="Fill Out And Submit Menu Information" library="AdminMenuPage">
+<arguments>
+<arg>${MENU_TITLE}</arg>
+<arg>${MENUTYPE}</arg>
+<arg>${MENU_DESCRIPTION}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_menus_title}</arg>
+<arg>${arg_menu_title}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:02.013" level="INFO">Typing text 'HVMD' into text field 'xpath=//form[@id="item-form"]//input[@id="jform_title"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:02.012" endtime="20190521 16:40:02.101"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_menus_type}</arg>
+<arg>${arg_menu_type}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:02.102" level="INFO">Typing text 'sDFN' into text field 'xpath=//div[@class="form-horizontal"]//input[@id="jform_menutype"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:02.102" endtime="20190521 16:40:02.217"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_menus_description}</arg>
+<arg>${arg_menu_description}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:02.219" level="INFO">Typing text 'tesst menu in joomla' into text field 'xpath=//div[@class="form-horizontal"]//input[@id="jform_menudescription"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:02.219" endtime="20190521 16:40:02.534"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menus_save_close}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:02.536" level="INFO">Clicking element 'xpath=//div[@id="toolbar-save"]/button'.</msg>
+<status status="PASS" starttime="20190521 16:40:02.536" endtime="20190521 16:40:04.957"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:40:02.011" endtime="20190521 16:40:04.958"></status>
+</kw>
+<kw name="Go To Add New Menu Item Page" library="AdminMenuPage">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menuitems_list}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:04.960" level="INFO">Clicking element 'xpath=//ul[@id="submenu"]//a[contains(text(),"Menu Items")]'.</msg>
+<status status="PASS" starttime="20190521 16:40:04.959" endtime="20190521 16:40:05.907"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menus_add}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:05.909" level="INFO">Clicking element 'xpath=//div[@id="toolbar-new"]/button'.</msg>
+<status status="PASS" starttime="20190521 16:40:05.908" endtime="20190521 16:40:08.395"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:40:04.959" endtime="20190521 16:40:08.397"></status>
+</kw>
+<kw name="Fill Out And Submit Menu Item Information" library="AdminMenuPage">
+<arguments>
+<arg>${MENUITEM_TITLE}</arg>
+<arg>${MENUITEM_TYPE}</arg>
+<arg>${SUB_MENUITEM_TYPE}</arg>
+<arg>${MENU_TITLE}</arg>
+</arguments>
+<kw name="Format String" library="String">
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<arguments>
+<arg>${xph_menuitems_type}</arg>
+<arg>${arg_menuitem_type}</arg>
+</arguments>
+<assign>
+<var>${menuitems_type}</var>
+</assign>
+<msg timestamp="20190521 16:40:08.398" level="INFO">${menuitems_type} = xpath=//div[@id="collapseTypes"]//div[@class="accordion-heading"]//a[contains(text(),"Articles")]</msg>
+<status status="PASS" starttime="20190521 16:40:08.398" endtime="20190521 16:40:08.398"></status>
+</kw>
+<kw name="Format String" library="String">
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<arguments>
+<arg>${xph_submenuitems_type}</arg>
+<arg>${arg_submenuitem_type}</arg>
+</arguments>
+<assign>
+<var>${submenuitems_type}</var>
+</assign>
+<msg timestamp="20190521 16:40:08.400" level="INFO">${submenuitems_type} = xpath=//div[@id="collapseTypes"]//div[@class="accordion-body in collapse"]//a[contains(text(),"Archived Articles")]</msg>
+<status status="PASS" starttime="20190521 16:40:08.400" endtime="20190521 16:40:08.400"></status>
+</kw>
+<kw name="Format String" library="String">
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<arguments>
+<arg>${xph_menus_parent}</arg>
+<arg>${arg_menu_parent}</arg>
+</arguments>
+<assign>
+<var>${menus_parent}</var>
+</assign>
+<msg timestamp="20190521 16:40:08.402" level="INFO">${menus_parent} = xpath=//div[@id="jform_menutype_chzn"]/div/ul/li[contains(text(),"HVMD")]</msg>
+<status status="PASS" starttime="20190521 16:40:08.401" endtime="20190521 16:40:08.402"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_menuitems_title}</arg>
+<arg>${arg_menuitem_title}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:08.404" level="INFO">Typing text 'zBlY' into text field 'xpath=//form[@id="item-form"]//input[@id="jform_title"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:08.403" endtime="20190521 16:40:08.551"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menuitems_type}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:08.553" level="INFO">Clicking element 'xpath=//div[@class="controls"]//button[@class="btn btn-primary"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:08.553" endtime="20190521 16:40:09.496"></status>
+</kw>
+<kw name="Select Frame" library="Selenium2Library">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>${ifr_menus}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:09.615" level="INFO">Selecting frame 'xpath=//div[@id="menuTypeModal"]//iframe'.</msg>
+<status status="PASS" starttime="20190521 16:40:09.614" endtime="20190521 16:40:09.685"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${menuitems_type}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:09.687" level="INFO">Clicking element 'xpath=//div[@id="collapseTypes"]//div[@class="accordion-heading"]//a[contains(text(),"Articles")]'.</msg>
+<status status="PASS" starttime="20190521 16:40:09.687" endtime="20190521 16:40:09.773"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${submenuitems_type}</arg>
+</arguments>
+<status status="PASS" starttime="20190521 16:40:09.775" endtime="20190521 16:40:10.237"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${submenuitems_type}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:10.238" level="INFO">Clicking element 'xpath=//div[@id="collapseTypes"]//div[@class="accordion-body in collapse"]//a[contains(text(),"Archived Articles")]'.</msg>
+<status status="PASS" starttime="20190521 16:40:10.237" endtime="20190521 16:40:16.033"></status>
+</kw>
+<kw name="Unselect Frame" library="Selenium2Library">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20190521 16:40:16.034" endtime="20190521 16:40:16.036"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${cbx_menus_parent}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:16.037" level="INFO">Clicking element 'xpath=//div[@id="jform_menutype_chzn"]/a/div/b'.</msg>
+<status status="PASS" starttime="20190521 16:40:16.036" endtime="20190521 16:40:16.088"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${menus_parent}</arg>
+</arguments>
+<status status="PASS" starttime="20190521 16:40:16.089" endtime="20190521 16:40:16.110"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${menus_parent}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:16.111" level="INFO">Clicking element 'xpath=//div[@id="jform_menutype_chzn"]/div/ul/li[contains(text(),"HVMD")]'.</msg>
+<status status="PASS" starttime="20190521 16:40:16.111" endtime="20190521 16:40:16.161"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menus_save_close}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:16.162" level="INFO">Clicking element 'xpath=//div[@id="toolbar-save"]/button'.</msg>
+<status status="PASS" starttime="20190521 16:40:16.162" endtime="20190521 16:40:21.628"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:40:08.397" endtime="20190521 16:40:21.629"></status>
+</kw>
+<kw name="Check Message" library="AdminHomePage">
+<arguments>
+<arg>${MESSAGE_NEW_MENUITEM}</arg>
+</arguments>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${hed_header_message}</arg>
+<arg>Message</arg>
+</arguments>
+<msg timestamp="20190521 16:40:21.630" level="INFO">Verifying element 'xpath=//div[@class="alert alert-success"]/h4[@class="alert-heading"]' contains exact text 'Message'.</msg>
+<status status="PASS" starttime="20190521 16:40:21.630" endtime="20190521 16:40:21.657"></status>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${lbl_message}</arg>
+<arg>${arg_expected_message}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:21.659" level="INFO">Verifying element 'xpath=//div[@class="alert alert-success"]/div[@class="alert-message"]' contains exact text 'Menu item saved.'.</msg>
+<status status="PASS" starttime="20190521 16:40:21.658" endtime="20190521 16:40:21.677"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:40:21.629" endtime="20190521 16:40:21.678"></status>
+</kw>
+<kw name="Check Add Menu Item Successfully" library="AdminMenuPage">
+<arguments>
+<arg>${MENUITEM_TITLE}</arg>
+</arguments>
+<kw name="Format String" library="String">
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<arguments>
+<arg>${xph_menuitems_title}</arg>
+<arg>${arg_menuitem_title}</arg>
+</arguments>
+<assign>
+<var>${xpath_menuitems_title}</var>
+</assign>
+<msg timestamp="20190521 16:40:21.679" level="INFO">${xpath_menuitems_title} = xpath=//table[@id="itemList"]//a[contains(text(),"zBlY")]</msg>
+<status status="PASS" starttime="20190521 16:40:21.679" endtime="20190521 16:40:21.679"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${xpath_menuitems_title}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:21.701" level="INFO">Element 'xpath=//table[@id="itemList"]//a[contains(text(),"zBlY")]' is displayed.</msg>
+<status status="PASS" starttime="20190521 16:40:21.680" endtime="20190521 16:40:21.701"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:40:21.678" endtime="20190521 16:40:21.809"></status>
+</kw>
+<kw name="Delete Menu Item" library="AdminMenuPage">
+<arguments>
+<arg>${MENUITEM_TITLE}</arg>
+</arguments>
+<kw name="Format String" library="String">
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<arguments>
+<arg>${xph_menuitems_checkbox}</arg>
+<arg>${arg_menuitem_title}</arg>
+</arguments>
+<assign>
+<var>${menuitems_checkbox}</var>
+</assign>
+<msg timestamp="20190521 16:40:21.810" level="INFO">${menuitems_checkbox} = xpath=//table[@id="itemList"]//tr[td/a[contains(text(),"zBlY")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+2]/input</msg>
+<status status="PASS" starttime="20190521 16:40:21.810" endtime="20190521 16:40:21.810"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${menuitems_checkbox}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:21.812" level="INFO">Clicking element 'xpath=//table[@id="itemList"]//tr[td/a[contains(text(),"zBlY")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+2]/input'.</msg>
+<status status="PASS" starttime="20190521 16:40:21.812" endtime="20190521 16:40:21.878"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menuitems_trash}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:21.880" level="INFO">Clicking element 'xpath=//div[@id="toolbar-trash"]/button'.</msg>
+<status status="PASS" starttime="20190521 16:40:21.880" endtime="20190521 16:40:27.835"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:40:21.809" endtime="20190521 16:40:27.837"></status>
+</kw>
+<kw name="Go To Menu Page" library="AdminMenuPage">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menus_list}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:27.839" level="INFO">Clicking element 'xpath=//ul[@id="submenu"]/li/a[contains(text(),"Menus")]'.</msg>
+<status status="PASS" starttime="20190521 16:40:27.838" endtime="20190521 16:40:29.191"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:40:27.837" endtime="20190521 16:40:29.193"></status>
+</kw>
+<kw name="Delete Menu" library="AdminMenuPage">
+<arguments>
+<arg>${MENU_TITLE}</arg>
+</arguments>
+<kw name="Format String" library="String">
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<arguments>
+<arg>${xph_menus_checkbox}</arg>
+<arg>${arg_menu_to_delete}</arg>
+</arguments>
+<assign>
+<var>${menus_checkbox}</var>
+</assign>
+<msg timestamp="20190521 16:40:29.194" level="INFO">${menus_checkbox} = xpath=//table[@id="menuList"]//tr[td/a[contains(text(),"HVMD")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input</msg>
+<status status="PASS" starttime="20190521 16:40:29.194" endtime="20190521 16:40:29.195"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${menus_checkbox}</arg>
+</arguments>
+<status status="PASS" starttime="20190521 16:40:29.196" endtime="20190521 16:40:29.224"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${menus_checkbox}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:29.224" level="INFO">Clicking element 'xpath=//table[@id="menuList"]//tr[td/a[contains(text(),"HVMD")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input'.</msg>
+<status status="PASS" starttime="20190521 16:40:29.224" endtime="20190521 16:40:29.284"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menus_delete}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:29.287" level="INFO">Clicking element 'xpath=//div[@id="toolbar-delete"]/button'.</msg>
+<status status="PASS" starttime="20190521 16:40:29.286" endtime="20190521 16:40:29.326"></status>
+</kw>
+<kw name="Handle Alert" library="Selenium2Library">
+<doc>Handles the current alert and returns its message.</doc>
+<arguments>
+<arg>ACCEPT</arg>
+</arguments>
+<status status="PASS" starttime="20190521 16:40:29.327" endtime="20190521 16:40:29.331"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:40:29.193" endtime="20190521 16:40:29.332"></status>
+</kw>
+<kw name="Logout Admin Site" library="AdminHomePage">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${icn_user}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:29.332" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:29.332" endtime="20190521 16:40:31.485"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${lbl_logout}</arg>
+</arguments>
+<status status="PASS" starttime="20190521 16:40:31.487" endtime="20190521 16:40:31.507"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${lbl_logout}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:31.507" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:31.507" endtime="20190521 16:40:32.659"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:40:29.332" endtime="20190521 16:40:32.660"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:39:53.495" endtime="20190521 16:40:32.660" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s1-t3" name="TC17 - Delete A Menu Item Sucessfully">
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>4</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${MENU_TITLE}</var>
+</assign>
+<msg timestamp="20190521 16:40:32.672" level="INFO">${MENU_TITLE} = Tcgf</msg>
+<status status="PASS" starttime="20190521 16:40:32.671" endtime="20190521 16:40:32.672"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>4</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${MENUTYPE}</var>
+</assign>
+<msg timestamp="20190521 16:40:32.674" level="INFO">${MENUTYPE} = Ygie</msg>
+<status status="PASS" starttime="20190521 16:40:32.673" endtime="20190521 16:40:32.674"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>4</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${MENUITEM_TITLE}</var>
+</assign>
+<msg timestamp="20190521 16:40:32.676" level="INFO">${MENUITEM_TITLE} = ogbI</msg>
+<status status="PASS" starttime="20190521 16:40:32.675" endtime="20190521 16:40:32.676"></status>
+</kw>
+<kw name="Login Admin Site" library="AdminLoginPage">
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Login to Joomla</arg>
+</arguments>
+<status status="PASS" starttime="20190521 16:40:32.677" endtime="20190521 16:40:32.678"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_username}</arg>
+<arg>${arg_username}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:32.678" level="INFO">Typing text 'menu' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190521 16:40:32.678" endtime="20190521 16:40:33.001"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_password}</arg>
+<arg>${arg_password}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:33.117" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190521 16:40:33.117" endtime="20190521 16:40:33.298"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_login}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:33.343" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:33.341" endtime="20190521 16:40:37.528"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:40:32.677" endtime="20190521 16:40:37.529"></status>
+</kw>
+<kw name="Go To Add New Menu Page" library="AdminMenuPage">
+<kw name="Select Sidebar Menu" library="AdminHomePage">
+<arguments>
+<arg>${lbl_menus}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${arg_page}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:37.530" level="INFO">Clicking element 'xpath=//div[@class="span3"]//a[span[contains(text(), "Menu(s)")]]'.</msg>
+<status status="PASS" starttime="20190521 16:40:37.530" endtime="20190521 16:40:38.548"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:40:37.530" endtime="20190521 16:40:38.549"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menus_list}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:38.550" level="INFO">Clicking element 'xpath=//ul[@id="submenu"]/li/a[contains(text(),"Menus")]'.</msg>
+<status status="PASS" starttime="20190521 16:40:38.550" endtime="20190521 16:40:39.308"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menus_add}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:39.310" level="INFO">Clicking element 'xpath=//div[@id="toolbar-new"]/button'.</msg>
+<status status="PASS" starttime="20190521 16:40:39.309" endtime="20190521 16:40:41.575"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:40:37.529" endtime="20190521 16:40:41.576"></status>
+</kw>
+<kw name="Fill Out And Submit Menu Information" library="AdminMenuPage">
+<arguments>
+<arg>${MENU_TITLE}</arg>
+<arg>${MENUTYPE}</arg>
+<arg>${MENU_DESCRIPTION}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_menus_title}</arg>
+<arg>${arg_menu_title}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:41.577" level="INFO">Typing text 'Tcgf' into text field 'xpath=//form[@id="item-form"]//input[@id="jform_title"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:41.577" endtime="20190521 16:40:41.756"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_menus_type}</arg>
+<arg>${arg_menu_type}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:42.007" level="INFO">Typing text 'Ygie' into text field 'xpath=//div[@class="form-horizontal"]//input[@id="jform_menutype"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:42.006" endtime="20190521 16:40:42.122"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_menus_description}</arg>
+<arg>${arg_menu_description}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:42.124" level="INFO">Typing text 'tesst menu in joomla' into text field 'xpath=//div[@class="form-horizontal"]//input[@id="jform_menudescription"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:42.124" endtime="20190521 16:40:42.427"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menus_save_close}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:42.430" level="INFO">Clicking element 'xpath=//div[@id="toolbar-save"]/button'.</msg>
+<status status="PASS" starttime="20190521 16:40:42.429" endtime="20190521 16:40:50.953"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:40:41.576" endtime="20190521 16:40:50.955"></status>
+</kw>
+<kw name="Go To Add New Menu Item Page" library="AdminMenuPage">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menuitems_list}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:50.956" level="INFO">Clicking element 'xpath=//ul[@id="submenu"]//a[contains(text(),"Menu Items")]'.</msg>
+<status status="PASS" starttime="20190521 16:40:50.955" endtime="20190521 16:40:51.888"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menus_add}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:51.890" level="INFO">Clicking element 'xpath=//div[@id="toolbar-new"]/button'.</msg>
+<status status="PASS" starttime="20190521 16:40:51.890" endtime="20190521 16:40:54.138"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:40:50.955" endtime="20190521 16:40:54.217"></status>
+</kw>
+<kw name="Fill Out And Submit Menu Item Information" library="AdminMenuPage">
+<arguments>
+<arg>${MENUITEM_TITLE}</arg>
+<arg>${MENUITEM_TYPE}</arg>
+<arg>${SUB_MENUITEM_TYPE}</arg>
+<arg>${MENU_TITLE}</arg>
+</arguments>
+<kw name="Format String" library="String">
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<arguments>
+<arg>${xph_menuitems_type}</arg>
+<arg>${arg_menuitem_type}</arg>
+</arguments>
+<assign>
+<var>${menuitems_type}</var>
+</assign>
+<msg timestamp="20190521 16:40:54.218" level="INFO">${menuitems_type} = xpath=//div[@id="collapseTypes"]//div[@class="accordion-heading"]//a[contains(text(),"Articles")]</msg>
+<status status="PASS" starttime="20190521 16:40:54.218" endtime="20190521 16:40:54.218"></status>
+</kw>
+<kw name="Format String" library="String">
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<arguments>
+<arg>${xph_submenuitems_type}</arg>
+<arg>${arg_submenuitem_type}</arg>
+</arguments>
+<assign>
+<var>${submenuitems_type}</var>
+</assign>
+<msg timestamp="20190521 16:40:54.219" level="INFO">${submenuitems_type} = xpath=//div[@id="collapseTypes"]//div[@class="accordion-body in collapse"]//a[contains(text(),"Archived Articles")]</msg>
+<status status="PASS" starttime="20190521 16:40:54.219" endtime="20190521 16:40:54.220"></status>
+</kw>
+<kw name="Format String" library="String">
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<arguments>
+<arg>${xph_menus_parent}</arg>
+<arg>${arg_menu_parent}</arg>
+</arguments>
+<assign>
+<var>${menus_parent}</var>
+</assign>
+<msg timestamp="20190521 16:40:54.221" level="INFO">${menus_parent} = xpath=//div[@id="jform_menutype_chzn"]/div/ul/li[contains(text(),"Tcgf")]</msg>
+<status status="PASS" starttime="20190521 16:40:54.220" endtime="20190521 16:40:54.221"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_menuitems_title}</arg>
+<arg>${arg_menuitem_title}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:54.222" level="INFO">Typing text 'ogbI' into text field 'xpath=//form[@id="item-form"]//input[@id="jform_title"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:54.222" endtime="20190521 16:40:54.366"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menuitems_type}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:54.367" level="INFO">Clicking element 'xpath=//div[@class="controls"]//button[@class="btn btn-primary"]'.</msg>
+<status status="PASS" starttime="20190521 16:40:54.367" endtime="20190521 16:40:54.986"></status>
+</kw>
+<kw name="Select Frame" library="Selenium2Library">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>${ifr_menus}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:54.987" level="INFO">Selecting frame 'xpath=//div[@id="menuTypeModal"]//iframe'.</msg>
+<status status="PASS" starttime="20190521 16:40:54.987" endtime="20190521 16:40:55.034"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${menuitems_type}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:55.035" level="INFO">Clicking element 'xpath=//div[@id="collapseTypes"]//div[@class="accordion-heading"]//a[contains(text(),"Articles")]'.</msg>
+<status status="PASS" starttime="20190521 16:40:55.035" endtime="20190521 16:40:55.131"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${submenuitems_type}</arg>
+</arguments>
+<status status="PASS" starttime="20190521 16:40:55.132" endtime="20190521 16:40:55.587"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${submenuitems_type}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:55.587" level="INFO">Clicking element 'xpath=//div[@id="collapseTypes"]//div[@class="accordion-body in collapse"]//a[contains(text(),"Archived Articles")]'.</msg>
+<status status="PASS" starttime="20190521 16:40:55.587" endtime="20190521 16:40:57.050"></status>
+</kw>
+<kw name="Unselect Frame" library="Selenium2Library">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20190521 16:40:57.051" endtime="20190521 16:40:57.054"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${cbx_menus_parent}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:57.054" level="INFO">Clicking element 'xpath=//div[@id="jform_menutype_chzn"]/a/div/b'.</msg>
+<status status="PASS" starttime="20190521 16:40:57.054" endtime="20190521 16:40:57.171"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${menus_parent}</arg>
+</arguments>
+<status status="PASS" starttime="20190521 16:40:57.172" endtime="20190521 16:40:57.198"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${menus_parent}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:57.198" level="INFO">Clicking element 'xpath=//div[@id="jform_menutype_chzn"]/div/ul/li[contains(text(),"Tcgf")]'.</msg>
+<status status="PASS" starttime="20190521 16:40:57.198" endtime="20190521 16:40:57.291"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menus_save_close}</arg>
+</arguments>
+<msg timestamp="20190521 16:40:57.293" level="INFO">Clicking element 'xpath=//div[@id="toolbar-save"]/button'.</msg>
+<status status="PASS" starttime="20190521 16:40:57.292" endtime="20190521 16:41:02.092"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:40:54.217" endtime="20190521 16:41:02.153"></status>
+</kw>
+<kw name="Delete Menu Item" library="AdminMenuPage">
+<arguments>
+<arg>${MENUITEM_TITLE}</arg>
+</arguments>
+<kw name="Format String" library="String">
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<arguments>
+<arg>${xph_menuitems_checkbox}</arg>
+<arg>${arg_menuitem_title}</arg>
+</arguments>
+<assign>
+<var>${menuitems_checkbox}</var>
+</assign>
+<msg timestamp="20190521 16:41:02.154" level="INFO">${menuitems_checkbox} = xpath=//table[@id="itemList"]//tr[td/a[contains(text(),"ogbI")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+2]/input</msg>
+<status status="PASS" starttime="20190521 16:41:02.154" endtime="20190521 16:41:02.155"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${menuitems_checkbox}</arg>
+</arguments>
+<msg timestamp="20190521 16:41:02.156" level="INFO">Clicking element 'xpath=//table[@id="itemList"]//tr[td/a[contains(text(),"ogbI")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+2]/input'.</msg>
+<status status="PASS" starttime="20190521 16:41:02.156" endtime="20190521 16:41:02.203"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menuitems_trash}</arg>
+</arguments>
+<msg timestamp="20190521 16:41:02.228" level="INFO">Clicking element 'xpath=//div[@id="toolbar-trash"]/button'.</msg>
+<status status="PASS" starttime="20190521 16:41:02.227" endtime="20190521 16:41:04.947"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:41:02.154" endtime="20190521 16:41:05.040"></status>
+</kw>
+<kw name="Check Message" library="AdminHomePage">
+<arguments>
+<arg>${MESSAGE_DELETE_MENUITEM}</arg>
+</arguments>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${hed_header_message}</arg>
+<arg>Message</arg>
+</arguments>
+<msg timestamp="20190521 16:41:05.041" level="INFO">Verifying element 'xpath=//div[@class="alert alert-success"]/h4[@class="alert-heading"]' contains exact text 'Message'.</msg>
+<status status="PASS" starttime="20190521 16:41:05.041" endtime="20190521 16:41:05.066"></status>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${lbl_message}</arg>
+<arg>${arg_expected_message}</arg>
+</arguments>
+<msg timestamp="20190521 16:41:05.067" level="INFO">Verifying element 'xpath=//div[@class="alert alert-success"]/div[@class="alert-message"]' contains exact text '1 menu item trashed.'.</msg>
+<status status="PASS" starttime="20190521 16:41:05.067" endtime="20190521 16:41:05.089"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:41:05.040" endtime="20190521 16:41:05.090"></status>
+</kw>
+<kw name="Check Delete Menu Item Successfully" library="AdminMenuPage">
+<arguments>
+<arg>${MENUITEM_TITLE}</arg>
+</arguments>
+<kw name="Format String" library="String">
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<arguments>
+<arg>${xph_menuitems_title}</arg>
+<arg>${arg_menuitem_title}</arg>
+</arguments>
+<assign>
+<var>${xpath_menuitems_title}</var>
+</assign>
+<msg timestamp="20190521 16:41:05.092" level="INFO">${xpath_menuitems_title} = xpath=//table[@id="itemList"]//a[contains(text(),"ogbI")]</msg>
+<status status="PASS" starttime="20190521 16:41:05.091" endtime="20190521 16:41:05.092"></status>
+</kw>
+<kw name="Page Should Not Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${xpath_menuitems_title}</arg>
+</arguments>
+<msg timestamp="20190521 16:41:05.103" level="INFO">Current page does not contain element 'xpath=//table[@id="itemList"]//a[contains(text(),"ogbI")]'.</msg>
+<status status="PASS" starttime="20190521 16:41:05.093" endtime="20190521 16:41:05.103"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:41:05.090" endtime="20190521 16:41:05.104"></status>
+</kw>
+<kw name="Go To Menu Page" library="AdminMenuPage">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menus_list}</arg>
+</arguments>
+<msg timestamp="20190521 16:41:05.105" level="INFO">Clicking element 'xpath=//ul[@id="submenu"]/li/a[contains(text(),"Menus")]'.</msg>
+<status status="PASS" starttime="20190521 16:41:05.105" endtime="20190521 16:41:06.002"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:41:05.105" endtime="20190521 16:41:06.004"></status>
+</kw>
+<kw name="Delete Menu" library="AdminMenuPage">
+<arguments>
+<arg>${MENU_TITLE}</arg>
+</arguments>
+<kw name="Format String" library="String">
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<arguments>
+<arg>${xph_menus_checkbox}</arg>
+<arg>${arg_menu_to_delete}</arg>
+</arguments>
+<assign>
+<var>${menus_checkbox}</var>
+</assign>
+<msg timestamp="20190521 16:41:06.006" level="INFO">${menus_checkbox} = xpath=//table[@id="menuList"]//tr[td/a[contains(text(),"Tcgf")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input</msg>
+<status status="PASS" starttime="20190521 16:41:06.006" endtime="20190521 16:41:06.006"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${menus_checkbox}</arg>
+</arguments>
+<status status="PASS" starttime="20190521 16:41:06.009" endtime="20190521 16:41:06.034"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${menus_checkbox}</arg>
+</arguments>
+<msg timestamp="20190521 16:41:06.035" level="INFO">Clicking element 'xpath=//table[@id="menuList"]//tr[td/a[contains(text(),"Tcgf")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input'.</msg>
+<status status="PASS" starttime="20190521 16:41:06.034" endtime="20190521 16:41:06.138"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menus_delete}</arg>
+</arguments>
+<msg timestamp="20190521 16:41:06.140" level="INFO">Clicking element 'xpath=//div[@id="toolbar-delete"]/button'.</msg>
+<status status="PASS" starttime="20190521 16:41:06.140" endtime="20190521 16:41:06.235"></status>
+</kw>
+<kw name="Handle Alert" library="Selenium2Library">
+<doc>Handles the current alert and returns its message.</doc>
+<arguments>
+<arg>ACCEPT</arg>
+</arguments>
+<status status="PASS" starttime="20190521 16:41:06.237" endtime="20190521 16:41:06.246"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:41:06.004" endtime="20190521 16:41:06.246"></status>
+</kw>
+<kw name="Logout Admin Site" library="AdminHomePage">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${icn_user}</arg>
+</arguments>
+<msg timestamp="20190521 16:41:06.247" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
+<status status="PASS" starttime="20190521 16:41:06.247" endtime="20190521 16:41:08.136"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${lbl_logout}</arg>
+</arguments>
+<status status="PASS" starttime="20190521 16:41:08.138" endtime="20190521 16:41:08.183"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${lbl_logout}</arg>
+</arguments>
+<msg timestamp="20190521 16:41:08.183" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]'.</msg>
+<status status="PASS" starttime="20190521 16:41:08.183" endtime="20190521 16:41:10.081"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:41:06.246" endtime="20190521 16:41:10.082"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:40:32.670" endtime="20190521 16:41:10.082" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s1-t4" name="TC16 - Delete A Menu Successfully">
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>4</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${MENU_TITLE}</var>
+</assign>
+<msg timestamp="20190521 16:41:10.096" level="INFO">${MENU_TITLE} = Iarx</msg>
+<status status="PASS" starttime="20190521 16:41:10.095" endtime="20190521 16:41:10.096"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>4</arg>
+<arg>[LETTERS]</arg>
+</arguments>
+<assign>
+<var>${MENUTYPE}</var>
+</assign>
+<msg timestamp="20190521 16:41:10.097" level="INFO">${MENUTYPE} = pZiQ</msg>
+<status status="PASS" starttime="20190521 16:41:10.097" endtime="20190521 16:41:10.097"></status>
+</kw>
+<kw name="Login Admin Site" library="AdminLoginPage">
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Login to Joomla</arg>
+</arguments>
+<status status="PASS" starttime="20190521 16:41:10.099" endtime="20190521 16:41:10.100"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_username}</arg>
+<arg>${arg_username}</arg>
+</arguments>
+<msg timestamp="20190521 16:41:10.100" level="INFO">Typing text 'menu' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190521 16:41:10.100" endtime="20190521 16:41:10.169"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_password}</arg>
+<arg>${arg_password}</arg>
+</arguments>
+<msg timestamp="20190521 16:41:10.171" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190521 16:41:10.170" endtime="20190521 16:41:10.264"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_login}</arg>
+</arguments>
+<msg timestamp="20190521 16:41:10.265" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190521 16:41:10.265" endtime="20190521 16:41:15.321"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:41:10.099" endtime="20190521 16:41:15.322"></status>
+</kw>
+<kw name="Go To Add New Menu Page" library="AdminMenuPage">
+<kw name="Select Sidebar Menu" library="AdminHomePage">
+<arguments>
+<arg>${lbl_menus}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${arg_page}</arg>
+</arguments>
+<msg timestamp="20190521 16:41:15.324" level="INFO">Clicking element 'xpath=//div[@class="span3"]//a[span[contains(text(), "Menu(s)")]]'.</msg>
+<status status="PASS" starttime="20190521 16:41:15.324" endtime="20190521 16:41:16.115"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:41:15.323" endtime="20190521 16:41:16.116"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menus_list}</arg>
+</arguments>
+<msg timestamp="20190521 16:41:16.117" level="INFO">Clicking element 'xpath=//ul[@id="submenu"]/li/a[contains(text(),"Menus")]'.</msg>
+<status status="PASS" starttime="20190521 16:41:16.117" endtime="20190521 16:41:17.243"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menus_add}</arg>
+</arguments>
+<msg timestamp="20190521 16:41:17.244" level="INFO">Clicking element 'xpath=//div[@id="toolbar-new"]/button'.</msg>
+<status status="PASS" starttime="20190521 16:41:17.244" endtime="20190521 16:41:18.249"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:41:15.322" endtime="20190521 16:41:18.250"></status>
+</kw>
+<kw name="Fill Out And Submit Menu Information" library="AdminMenuPage">
+<arguments>
+<arg>${MENU_TITLE}</arg>
+<arg>${MENUTYPE}</arg>
+<arg>${MENU_DESCRIPTION}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_menus_title}</arg>
+<arg>${arg_menu_title}</arg>
+</arguments>
+<msg timestamp="20190521 16:41:18.252" level="INFO">Typing text 'Iarx' into text field 'xpath=//form[@id="item-form"]//input[@id="jform_title"]'.</msg>
+<status status="PASS" starttime="20190521 16:41:18.251" endtime="20190521 16:41:18.353"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_menus_type}</arg>
+<arg>${arg_menu_type}</arg>
+</arguments>
+<msg timestamp="20190521 16:41:18.355" level="INFO">Typing text 'pZiQ' into text field 'xpath=//div[@class="form-horizontal"]//input[@id="jform_menutype"]'.</msg>
+<status status="PASS" starttime="20190521 16:41:18.355" endtime="20190521 16:41:18.449"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_menus_description}</arg>
+<arg>${arg_menu_description}</arg>
+</arguments>
+<msg timestamp="20190521 16:41:18.451" level="INFO">Typing text 'tesst menu in joomla' into text field 'xpath=//div[@class="form-horizontal"]//input[@id="jform_menudescription"]'.</msg>
+<status status="PASS" starttime="20190521 16:41:18.450" endtime="20190521 16:41:18.649"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menus_save_close}</arg>
+</arguments>
+<msg timestamp="20190521 16:41:18.651" level="INFO">Clicking element 'xpath=//div[@id="toolbar-save"]/button'.</msg>
+<status status="PASS" starttime="20190521 16:41:18.650" endtime="20190521 16:41:24.204"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:41:18.251" endtime="20190521 16:41:24.206"></status>
+</kw>
+<kw name="Delete Menu" library="AdminMenuPage">
+<arguments>
+<arg>${MENU_TITLE}</arg>
+</arguments>
+<kw name="Format String" library="String">
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<arguments>
+<arg>${xph_menus_checkbox}</arg>
+<arg>${arg_menu_to_delete}</arg>
+</arguments>
+<assign>
+<var>${menus_checkbox}</var>
+</assign>
+<msg timestamp="20190521 16:41:24.218" level="INFO">${menus_checkbox} = xpath=//table[@id="menuList"]//tr[td/a[contains(text(),"Iarx")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input</msg>
+<status status="PASS" starttime="20190521 16:41:24.207" endtime="20190521 16:41:24.218"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${menus_checkbox}</arg>
+</arguments>
+<status status="PASS" starttime="20190521 16:41:24.220" endtime="20190521 16:41:24.298"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${menus_checkbox}</arg>
+</arguments>
+<msg timestamp="20190521 16:41:24.299" level="INFO">Clicking element 'xpath=//table[@id="menuList"]//tr[td/a[contains(text(),"Iarx")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+1]/input'.</msg>
+<status status="PASS" starttime="20190521 16:41:24.298" endtime="20190521 16:41:24.379"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_menus_delete}</arg>
+</arguments>
+<msg timestamp="20190521 16:41:24.381" level="INFO">Clicking element 'xpath=//div[@id="toolbar-delete"]/button'.</msg>
+<status status="PASS" starttime="20190521 16:41:24.380" endtime="20190521 16:41:24.432"></status>
+</kw>
+<kw name="Handle Alert" library="Selenium2Library">
+<doc>Handles the current alert and returns its message.</doc>
+<arguments>
+<arg>ACCEPT</arg>
+</arguments>
+<status status="PASS" starttime="20190521 16:41:24.433" endtime="20190521 16:41:24.443"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:41:24.206" endtime="20190521 16:41:24.443"></status>
+</kw>
+<kw name="Check Message" library="AdminHomePage">
+<arguments>
+<arg>${MESSAGE_DELETE_MENU}</arg>
+</arguments>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${hed_header_message}</arg>
+<arg>Message</arg>
+</arguments>
+<msg timestamp="20190521 16:41:24.444" level="INFO">Verifying element 'xpath=//div[@class="alert alert-success"]/h4[@class="alert-heading"]' contains exact text 'Message'.</msg>
+<status status="PASS" starttime="20190521 16:41:24.444" endtime="20190521 16:41:27.708"></status>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${lbl_message}</arg>
+<arg>${arg_expected_message}</arg>
+</arguments>
+<msg timestamp="20190521 16:41:27.710" level="INFO">Verifying element 'xpath=//div[@class="alert alert-success"]/div[@class="alert-message"]' contains exact text 'Menu type deleted.'.</msg>
+<status status="PASS" starttime="20190521 16:41:27.709" endtime="20190521 16:41:27.728"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:41:24.443" endtime="20190521 16:41:27.730"></status>
+</kw>
+<kw name="Check Delete Menu Successfully" library="AdminMenuPage">
+<arguments>
+<arg>${MENU_TITLE}</arg>
+</arguments>
+<kw name="Format String" library="String">
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<arguments>
+<arg>${xph_menus_title}</arg>
+<arg>${arg_menu_title}</arg>
+</arguments>
+<assign>
+<var>${menus_title}</var>
+</assign>
+<msg timestamp="20190521 16:41:27.731" level="INFO">${menus_title} = xpath= //table[@id="menuList"]//a[contains(text(),"Iarx")]</msg>
+<status status="PASS" starttime="20190521 16:41:27.731" endtime="20190521 16:41:27.731"></status>
+</kw>
+<kw name="Page Should Not Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${menus_title}</arg>
+</arguments>
+<msg timestamp="20190521 16:41:27.764" level="INFO">Current page does not contain element 'xpath= //table[@id="menuList"]//a[contains(text(),"Iarx")]'.</msg>
+<status status="PASS" starttime="20190521 16:41:27.732" endtime="20190521 16:41:27.764"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:41:27.730" endtime="20190521 16:41:27.766"></status>
+</kw>
+<kw name="Logout Admin Site" library="AdminHomePage">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${icn_user}</arg>
+</arguments>
+<msg timestamp="20190521 16:41:27.767" level="INFO">Clicking element 'xpath=//a/span[@class="icon-user"]'.</msg>
+<status status="PASS" starttime="20190521 16:41:27.767" endtime="20190521 16:41:27.824"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${lbl_logout}</arg>
+</arguments>
+<status status="PASS" starttime="20190521 16:41:27.826" endtime="20190521 16:41:27.852"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${lbl_logout}</arg>
+</arguments>
+<msg timestamp="20190521 16:41:27.853" level="INFO">Clicking element 'xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]'.</msg>
+<status status="PASS" starttime="20190521 16:41:27.853" endtime="20190521 16:41:28.774"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:41:27.766" endtime="20190521 16:41:28.776"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:41:10.093" endtime="20190521 16:41:28.776" critical="yes"></status>
+</test>
+<kw name="Teardown" library="Setup" type="teardown">
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20190521 16:41:28.781" endtime="20190521 16:41:30.892"></status>
+</kw>
+<kw name="Percy Finalize Build" library="PercySetup">
+<status status="PASS" starttime="20190521 16:41:30.892" endtime="20190521 16:41:31.350"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:41:28.781" endtime="20190521 16:41:31.350"></status>
+</kw>
+<status status="PASS" starttime="20190521 16:39:32.741" endtime="20190521 16:41:31.350"></status>
+</suite>
+<status status="PASS" starttime="20190521 16:39:32.739" endtime="20190521 16:41:31.355"></status>
+</suite>
+<status status="PASS" starttime="20190521 16:39:32.737" endtime="20190521 16:41:31.359"></status>
+</suite>
+<status status="PASS" starttime="20190521 16:39:32.718" endtime="20190521 16:41:31.362"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" id="s1" name="RobotFrameworkProject">RobotFrameworkProject</stat>
+<stat pass="4" fail="0" id="s1-s1" name="Tests">RobotFrameworkProject.Tests</stat>
+<stat pass="4" fail="0" id="s1-s1-s1" name="FunctionalTests">RobotFrameworkProject.Tests.FunctionalTests</stat>
+<stat pass="4" fail="0" id="s1-s1-s1-s1" name="AdminMenuTest">RobotFrameworkProject.Tests.FunctionalTests.AdminMenuTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

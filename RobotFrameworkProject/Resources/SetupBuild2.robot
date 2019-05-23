@@ -7,7 +7,7 @@ ${ROOT}              http://192.168.189.72/joomla_build2/administrator/
 ${CLIENT_ROOT}       http://192.168.189.72/joomla_build2/
 ${USERNAME}          admin
 ${PASSWORD}          123456789
-${PERCY_TOKEN}       fc038fae1c1cb91c7c84c11dcc823d1fe8bbcdbb03fe6252fc1e48f64c7c7f4e
+${PERCY_TOKEN}       2a81bae2315d300f4d8e7879ec69bc6f1b350f7b1b55e138ee430e3ba52f5be9
 
 
 *** Settings ***
@@ -17,6 +17,7 @@ Library    PageObjectLibrary
 Library    String
 Library    PercyClient.py
 Library    StringKeyword.py
+Library    PercySetupBuild2.py
 Library    Process
 
 
