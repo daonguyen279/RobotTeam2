@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190523 11:34:17.808" rpa="false">
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190523 11:54:49.071" rpa="false">
 <suite id="s1" name="Tests" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests">
 <suite id="s1-s1" name="FunctionalTests" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests">
 <suite id="s1-s1-s1" name="ExampleKeywordTest" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\ExampleKeywordTest.robot">
@@ -12,8 +12,8 @@
 <assign>
 <var>${abc}</var>
 </assign>
-<msg timestamp="20190523 11:34:18.953" level="INFO">${abc} = ['my name is', 'dinh', 'thi', 'anh', 'thao']</msg>
-<status status="PASS" starttime="20190523 11:34:18.952" endtime="20190523 11:34:18.953"></status>
+<msg timestamp="20190523 11:54:50.230" level="INFO">${abc} = ['my name is', 'dinh', 'thi', 'anh', 'thao']</msg>
+<status status="PASS" starttime="20190523 11:54:50.229" endtime="20190523 11:54:50.230"></status>
 </kw>
 <kw name="Replace Text" library="StringKeyword">
 <arguments>
@@ -24,10 +24,10 @@
 <assign>
 <var>${xyz}</var>
 </assign>
-<msg timestamp="20190523 11:34:18.960" level="INFO">${xyz} = my name is_dinh_thi_anh_thao</msg>
-<status status="PASS" starttime="20190523 11:34:18.959" endtime="20190523 11:34:18.960"></status>
+<msg timestamp="20190523 11:54:50.238" level="INFO">${xyz} = my name is_dinh_thi_anh_thao</msg>
+<status status="PASS" starttime="20190523 11:54:50.237" endtime="20190523 11:54:50.238"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:34:18.950" endtime="20190523 11:34:18.965" critical="yes"></status>
+<status status="PASS" starttime="20190523 11:54:50.227" endtime="20190523 11:54:50.267" critical="yes"></status>
 </test>
 <test id="s1-s1-s1-t2" name="Keyword Greet Method">
 <kw name="Greet" library="StringKeyword">
@@ -38,10 +38,10 @@
 <assign>
 <var>${xyz}</var>
 </assign>
-<msg timestamp="20190523 11:34:18.985" level="INFO">${xyz} = Hello Dong, Good Afternoon</msg>
-<status status="PASS" starttime="20190523 11:34:18.985" endtime="20190523 11:34:18.986"></status>
+<msg timestamp="20190523 11:54:50.298" level="INFO">${xyz} = Hello Dong, Good Afternoon</msg>
+<status status="PASS" starttime="20190523 11:54:50.292" endtime="20190523 11:54:50.298"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:34:18.984" endtime="20190523 11:34:18.996" critical="yes"></status>
+<status status="PASS" starttime="20190523 11:54:50.289" endtime="20190523 11:54:50.323" critical="yes"></status>
 </test>
 <test id="s1-s1-s1-t3" name="Keyword Count Method">
 <kw name="Count Number" library="StringKeyword">
@@ -52,10 +52,10 @@
 <assign>
 <var>${result}</var>
 </assign>
-<msg timestamp="20190523 11:34:19.032" level="INFO">${result} = 5</msg>
-<status status="PASS" starttime="20190523 11:34:19.031" endtime="20190523 11:34:19.032"></status>
+<msg timestamp="20190523 11:54:50.400" level="INFO">${result} = 5</msg>
+<status status="PASS" starttime="20190523 11:54:50.399" endtime="20190523 11:54:50.400"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:34:19.029" endtime="20190523 11:34:19.041" critical="yes"></status>
+<status status="PASS" starttime="20190523 11:54:50.372" endtime="20190523 11:54:50.404" critical="yes"></status>
 </test>
 <test id="s1-s1-s1-t4" name="Keyword UpperCase Method">
 <kw name="Uppercase String" library="StringKeyword">
@@ -65,16 +65,16 @@
 <assign>
 <var>${result_string}</var>
 </assign>
-<msg timestamp="20190523 11:34:19.066" level="INFO">${result_string} = TA THI AN</msg>
-<status status="PASS" starttime="20190523 11:34:19.065" endtime="20190523 11:34:19.066"></status>
+<msg timestamp="20190523 11:54:50.446" level="INFO">${result_string} = TA THI AN</msg>
+<status status="PASS" starttime="20190523 11:54:50.445" endtime="20190523 11:54:50.447"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:34:19.063" endtime="20190523 11:34:19.076" critical="yes"></status>
+<status status="PASS" starttime="20190523 11:54:50.443" endtime="20190523 11:54:50.451" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20190523 11:34:18.036" endtime="20190523 11:34:19.093"></status>
+<status status="PASS" starttime="20190523 11:54:49.308" endtime="20190523 11:54:50.475"></status>
 </suite>
-<status status="PASS" starttime="20190523 11:34:18.026" endtime="20190523 11:34:19.107"></status>
+<status status="PASS" starttime="20190523 11:54:49.304" endtime="20190523 11:54:50.482"></status>
 </suite>
-<status status="PASS" starttime="20190523 11:34:17.946" endtime="20190523 11:34:19.118"></status>
+<status status="PASS" starttime="20190523 11:54:49.232" endtime="20190523 11:54:50.487"></status>
 </suite>
 <statistics>
 <total>

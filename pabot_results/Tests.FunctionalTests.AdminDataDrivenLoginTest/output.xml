@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190523 11:32:19.220" rpa="false">
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190523 11:52:56.115" rpa="false">
 <suite id="s1" name="Tests" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests">
 <suite id="s1-s1" name="FunctionalTests" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests">
 <suite id="s1-s1-s1" name="AdminDataDrivenLoginTest" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminDataDrivenLoginTest.robot">
@@ -10,8 +10,8 @@
 <arg>PATH</arg>
 <arg>C:\\Users\\InternDN19.01.02\\eclipse-workspace\\RobotTeam2\\RobotFrameworkProject\\Resources/Drivers</arg>
 </arguments>
-<msg timestamp="20190523 11:32:20.282" level="INFO">Environment variable 'PATH' set to value 'C:\Users\InternDN19.01.02\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\InternDN19.01.02\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\System32\cmd.exe;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Git\cmd;C:\Program Files\webdrivers;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs;C:\Program Files\Java\jdk-12\bin;C:\apache-maven-3.6.1\bin;%PYTHONPATH%\python-3.7.3.exe;C:\Windows\system32;%M2_HOME%\bin;C:\Users\InternDN19.01.02\Documents\allure-2.10.0\bin;C:\Users\InternDN19.01.02\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\InternDN19.01.02\AppData\Local\Programs\Python\Python37;C:\Users\InternDN19.01.02\AppData\Local\Microsoft\WindowsApps;C:\Users\InternDN19.01.02\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.02\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.02\AppData\Roaming\npm;C:\Program Files\Maven;C:\Program Files\nodejs;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;C:\users\interndn19.01.02\appdata\local\programs\python\python37\lib\site-packages\pywin32_system32;c:\users\interndn19.01.02\appdata\local\programs\python\python37\lib\site-packages\pywin32_system32;C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Resources/Drivers'.</msg>
-<status status="PASS" starttime="20190523 11:32:20.281" endtime="20190523 11:32:20.282"></status>
+<msg timestamp="20190523 11:52:57.513" level="INFO">Environment variable 'PATH' set to value 'C:\Users\InternDN19.01.02\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\InternDN19.01.02\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\System32\cmd.exe;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Git\cmd;C:\Program Files\webdrivers;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs;C:\Program Files\Java\jdk-12\bin;C:\apache-maven-3.6.1\bin;%PYTHONPATH%\python-3.7.3.exe;C:\Windows\system32;%M2_HOME%\bin;C:\Users\InternDN19.01.02\Documents\allure-2.10.0\bin;C:\Users\InternDN19.01.02\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\InternDN19.01.02\AppData\Local\Programs\Python\Python37;C:\Users\InternDN19.01.02\AppData\Local\Microsoft\WindowsApps;C:\Users\InternDN19.01.02\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.02\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.02\AppData\Roaming\npm;C:\Program Files\Maven;C:\Program Files\nodejs;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;C:\users\interndn19.01.02\appdata\local\programs\python\python37\lib\site-packages\pywin32_system32;c:\users\interndn19.01.02\appdata\local\programs\python\python37\lib\site-packages\pywin32_system32;C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Resources/Drivers'.</msg>
+<status status="PASS" starttime="20190523 11:52:57.510" endtime="20190523 11:52:57.513"></status>
 </kw>
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -19,20 +19,20 @@
 <arg>${ROOT}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:20.311" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla/administrator/'.</msg>
-<status status="PASS" starttime="20190523 11:32:20.310" endtime="20190523 11:32:27.329"></status>
+<msg timestamp="20190523 11:52:57.535" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla/administrator/'.</msg>
+<status status="PASS" starttime="20190523 11:52:57.534" endtime="20190523 11:53:04.486"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20190523 11:32:27.332" endtime="20190523 11:32:28.759"></status>
+<status status="PASS" starttime="20190523 11:53:04.490" endtime="20190523 11:53:05.632"></status>
 </kw>
 <kw name="Percy Initialize Build" library="PercyClient">
 <arguments>
 <arg>${PERCY_TOKEN}</arg>
 </arguments>
-<status status="PASS" starttime="20190523 11:32:28.760" endtime="20190523 11:32:32.016"></status>
+<status status="PASS" starttime="20190523 11:53:05.632" endtime="20190523 11:53:08.554"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:20.280" endtime="20190523 11:32:32.017"></status>
+<status status="PASS" starttime="20190523 11:52:57.509" endtime="20190523 11:53:08.554"></status>
 </kw>
 <test id="s1-s1-s1-t1" name="TC18 - Empty Username">
 <kw name="Login With Invalid Credentials Should Fail" library="AdminLoginPage">
@@ -51,7 +51,7 @@
 <arguments>
 <arg>Login to Joomla</arg>
 </arguments>
-<status status="PASS" starttime="20190523 11:32:32.018" endtime="20190523 11:32:32.018"></status>
+<status status="PASS" starttime="20190523 11:53:08.598" endtime="20190523 11:53:08.599"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -59,8 +59,8 @@
 <arg>${txt_username}</arg>
 <arg>${arg_username}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:32.022" level="INFO">Typing text '' into text field 'id=mod-login-username'.</msg>
-<status status="PASS" starttime="20190523 11:32:32.018" endtime="20190523 11:32:32.244"></status>
+<msg timestamp="20190523 11:53:08.600" level="INFO">Typing text '' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190523 11:53:08.599" endtime="20190523 11:53:09.032"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -68,18 +68,18 @@
 <arg>${txt_password}</arg>
 <arg>${arg_password}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:32.250" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
-<status status="PASS" starttime="20190523 11:32:32.249" endtime="20190523 11:32:32.679"></status>
+<msg timestamp="20190523 11:53:09.036" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190523 11:53:09.035" endtime="20190523 11:53:09.553"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_login}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:32.692" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
-<status status="PASS" starttime="20190523 11:32:32.692" endtime="20190523 11:32:33.942"></status>
+<msg timestamp="20190523 11:53:09.557" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190523 11:53:09.556" endtime="20190523 11:53:10.352"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:32.018" endtime="20190523 11:32:33.945"></status>
+<status status="PASS" starttime="20190523 11:53:08.597" endtime="20190523 11:53:10.414"></status>
 </kw>
 <kw name="Login Should Have Failed" library="AdminLoginPage">
 <arguments>
@@ -91,8 +91,8 @@
 <arg>${lbl_warning_header}</arg>
 <arg>${HEADER_TEXT}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:33.948" level="INFO">Verifying element 'xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/h4[@class="alert-heading"]' contains exact text 'Warning'.</msg>
-<status status="PASS" starttime="20190523 11:32:33.947" endtime="20190523 11:32:34.013"></status>
+<msg timestamp="20190523 11:53:10.417" level="INFO">Verifying element 'xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/h4[@class="alert-heading"]' contains exact text 'Warning'.</msg>
+<status status="PASS" starttime="20190523 11:53:10.416" endtime="20190523 11:53:10.769"></status>
 </kw>
 <kw name="Element Text Should Be" library="Selenium2Library">
 <doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
@@ -100,14 +100,14 @@
 <arg>${lbl_warning_message}</arg>
 <arg>${arg_message}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:34.019" level="INFO">Verifying element 'xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/div[@class="alert-message"]' contains exact text 'Username and password do not match or you do not have an account yet.'.</msg>
-<status status="PASS" starttime="20190523 11:32:34.018" endtime="20190523 11:32:34.163"></status>
+<msg timestamp="20190523 11:53:10.773" level="INFO">Verifying element 'xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/div[@class="alert-message"]' contains exact text 'Username and password do not match or you do not have an account yet.'.</msg>
+<status status="PASS" starttime="20190523 11:53:10.772" endtime="20190523 11:53:10.856"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:33.946" endtime="20190523 11:32:34.167"></status>
+<status status="PASS" starttime="20190523 11:53:10.415" endtime="20190523 11:53:10.866"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:32.018" endtime="20190523 11:32:34.168"></status>
+<status status="PASS" starttime="20190523 11:53:08.595" endtime="20190523 11:53:10.867"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:32.017" endtime="20190523 11:32:34.168" critical="yes"></status>
+<status status="PASS" starttime="20190523 11:53:08.554" endtime="20190523 11:53:10.867" critical="yes"></status>
 </test>
 <test id="s1-s1-s1-t2" name="TC19 - Empty Password">
 <kw name="Login With Invalid Credentials Should Fail" library="AdminLoginPage">
@@ -126,7 +126,7 @@
 <arguments>
 <arg>Login to Joomla</arg>
 </arguments>
-<status status="PASS" starttime="20190523 11:32:34.182" endtime="20190523 11:32:34.183"></status>
+<status status="PASS" starttime="20190523 11:53:10.936" endtime="20190523 11:53:10.937"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -134,8 +134,8 @@
 <arg>${txt_username}</arg>
 <arg>${arg_username}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:34.185" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
-<status status="PASS" starttime="20190523 11:32:34.184" endtime="20190523 11:32:34.589"></status>
+<msg timestamp="20190523 11:53:10.946" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190523 11:53:10.939" endtime="20190523 11:53:11.147"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -143,18 +143,18 @@
 <arg>${txt_password}</arg>
 <arg>${arg_password}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:34.593" level="INFO">Typing text '' into text field 'id=mod-login-password'.</msg>
-<status status="PASS" starttime="20190523 11:32:34.593" endtime="20190523 11:32:35.370"></status>
+<msg timestamp="20190523 11:53:11.151" level="INFO">Typing text '' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190523 11:53:11.150" endtime="20190523 11:53:11.943"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_login}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:35.374" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
-<status status="PASS" starttime="20190523 11:32:35.373" endtime="20190523 11:32:37.256"></status>
+<msg timestamp="20190523 11:53:11.968" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190523 11:53:11.967" endtime="20190523 11:53:13.232"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:34.180" endtime="20190523 11:32:37.260"></status>
+<status status="PASS" starttime="20190523 11:53:10.889" endtime="20190523 11:53:13.249"></status>
 </kw>
 <kw name="Login Should Have Failed" library="AdminLoginPage">
 <arguments>
@@ -166,8 +166,8 @@
 <arg>${lbl_warning_header}</arg>
 <arg>${HEADER_TEXT}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:37.262" level="INFO">Verifying element 'xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/h4[@class="alert-heading"]' contains exact text 'Warning'.</msg>
-<status status="PASS" starttime="20190523 11:32:37.261" endtime="20190523 11:32:37.659"></status>
+<msg timestamp="20190523 11:53:13.251" level="INFO">Verifying element 'xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/h4[@class="alert-heading"]' contains exact text 'Warning'.</msg>
+<status status="PASS" starttime="20190523 11:53:13.250" endtime="20190523 11:53:13.547"></status>
 </kw>
 <kw name="Element Text Should Be" library="Selenium2Library">
 <doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
@@ -175,14 +175,14 @@
 <arg>${lbl_warning_message}</arg>
 <arg>${arg_message}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:37.684" level="INFO">Verifying element 'xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/div[@class="alert-message"]' contains exact text 'Empty password not allowed.'.</msg>
-<status status="PASS" starttime="20190523 11:32:37.677" endtime="20190523 11:32:37.765"></status>
+<msg timestamp="20190523 11:53:13.609" level="INFO">Verifying element 'xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/div[@class="alert-message"]' contains exact text 'Empty password not allowed.'.</msg>
+<status status="PASS" starttime="20190523 11:53:13.602" endtime="20190523 11:53:14.205"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:37.260" endtime="20190523 11:32:37.770"></status>
+<status status="PASS" starttime="20190523 11:53:13.249" endtime="20190523 11:53:14.209"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:34.179" endtime="20190523 11:32:37.770"></status>
+<status status="PASS" starttime="20190523 11:53:10.888" endtime="20190523 11:53:14.209"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:34.178" endtime="20190523 11:32:37.770" critical="yes"></status>
+<status status="PASS" starttime="20190523 11:53:10.885" endtime="20190523 11:53:14.210" critical="yes"></status>
 </test>
 <test id="s1-s1-s1-t3" name="TC20 - Empty Username And Password">
 <kw name="Login With Invalid Credentials Should Fail" library="AdminLoginPage">
@@ -201,7 +201,7 @@
 <arguments>
 <arg>Login to Joomla</arg>
 </arguments>
-<status status="PASS" starttime="20190523 11:32:37.785" endtime="20190523 11:32:37.786"></status>
+<status status="PASS" starttime="20190523 11:53:14.223" endtime="20190523 11:53:14.224"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -209,8 +209,8 @@
 <arg>${txt_username}</arg>
 <arg>${arg_username}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:37.787" level="INFO">Typing text '' into text field 'id=mod-login-username'.</msg>
-<status status="PASS" starttime="20190523 11:32:37.786" endtime="20190523 11:32:38.306"></status>
+<msg timestamp="20190523 11:53:14.225" level="INFO">Typing text '' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190523 11:53:14.224" endtime="20190523 11:53:15.296"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -218,18 +218,18 @@
 <arg>${txt_password}</arg>
 <arg>${arg_password}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:38.310" level="INFO">Typing text '' into text field 'id=mod-login-password'.</msg>
-<status status="PASS" starttime="20190523 11:32:38.309" endtime="20190523 11:32:38.593"></status>
+<msg timestamp="20190523 11:53:15.301" level="INFO">Typing text '' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190523 11:53:15.300" endtime="20190523 11:53:15.865"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_login}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:38.799" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
-<status status="PASS" starttime="20190523 11:32:38.796" endtime="20190523 11:32:39.419"></status>
+<msg timestamp="20190523 11:53:15.882" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190523 11:53:15.882" endtime="20190523 11:53:16.987"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:37.784" endtime="20190523 11:32:39.443"></status>
+<status status="PASS" starttime="20190523 11:53:14.222" endtime="20190523 11:53:16.990"></status>
 </kw>
 <kw name="Login Should Have Failed" library="AdminLoginPage">
 <arguments>
@@ -241,8 +241,8 @@
 <arg>${lbl_warning_header}</arg>
 <arg>${HEADER_TEXT}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:39.460" level="INFO">Verifying element 'xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/h4[@class="alert-heading"]' contains exact text 'Warning'.</msg>
-<status status="PASS" starttime="20190523 11:32:39.459" endtime="20190523 11:32:39.622"></status>
+<msg timestamp="20190523 11:53:16.992" level="INFO">Verifying element 'xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/h4[@class="alert-heading"]' contains exact text 'Warning'.</msg>
+<status status="PASS" starttime="20190523 11:53:16.991" endtime="20190523 11:53:17.403"></status>
 </kw>
 <kw name="Element Text Should Be" library="Selenium2Library">
 <doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
@@ -250,14 +250,14 @@
 <arg>${lbl_warning_message}</arg>
 <arg>${arg_message}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:39.627" level="INFO">Verifying element 'xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/div[@class="alert-message"]' contains exact text 'Empty password not allowed.'.</msg>
-<status status="PASS" starttime="20190523 11:32:39.626" endtime="20190523 11:32:39.671"></status>
+<msg timestamp="20190523 11:53:17.407" level="INFO">Verifying element 'xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/div[@class="alert-message"]' contains exact text 'Empty password not allowed.'.</msg>
+<status status="PASS" starttime="20190523 11:53:17.406" endtime="20190523 11:53:17.598"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:39.457" endtime="20190523 11:32:39.676"></status>
+<status status="PASS" starttime="20190523 11:53:16.991" endtime="20190523 11:53:17.602"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:37.783" endtime="20190523 11:32:39.676"></status>
+<status status="PASS" starttime="20190523 11:53:14.221" endtime="20190523 11:53:17.606"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:37.781" endtime="20190523 11:32:39.676" critical="yes"></status>
+<status status="PASS" starttime="20190523 11:53:14.220" endtime="20190523 11:53:17.614" critical="yes"></status>
 </test>
 <test id="s1-s1-s1-t4" name="TC21 - Invalid Username">
 <kw name="Login With Invalid Credentials Should Fail" library="AdminLoginPage">
@@ -276,7 +276,7 @@
 <arguments>
 <arg>Login to Joomla</arg>
 </arguments>
-<status status="PASS" starttime="20190523 11:32:39.690" endtime="20190523 11:32:39.691"></status>
+<status status="PASS" starttime="20190523 11:53:17.632" endtime="20190523 11:53:17.633"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -284,8 +284,8 @@
 <arg>${txt_username}</arg>
 <arg>${arg_username}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:39.719" level="INFO">Typing text 'abcd123' into text field 'id=mod-login-username'.</msg>
-<status status="PASS" starttime="20190523 11:32:39.718" endtime="20190523 11:32:39.986"></status>
+<msg timestamp="20190523 11:53:17.671" level="INFO">Typing text 'abcd123' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190523 11:53:17.670" endtime="20190523 11:53:18.300"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -293,18 +293,18 @@
 <arg>${txt_password}</arg>
 <arg>${arg_password}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:39.998" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
-<status status="PASS" starttime="20190523 11:32:39.993" endtime="20190523 11:32:40.212"></status>
+<msg timestamp="20190523 11:53:18.309" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190523 11:53:18.308" endtime="20190523 11:53:19.001"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_login}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:40.216" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
-<status status="PASS" starttime="20190523 11:32:40.216" endtime="20190523 11:32:41.105"></status>
+<msg timestamp="20190523 11:53:19.063" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190523 11:53:19.053" endtime="20190523 11:53:19.732"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:39.689" endtime="20190523 11:32:41.109"></status>
+<status status="PASS" starttime="20190523 11:53:17.631" endtime="20190523 11:53:20.484"></status>
 </kw>
 <kw name="Login Should Have Failed" library="AdminLoginPage">
 <arguments>
@@ -316,8 +316,8 @@
 <arg>${lbl_warning_header}</arg>
 <arg>${HEADER_TEXT}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:41.112" level="INFO">Verifying element 'xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/h4[@class="alert-heading"]' contains exact text 'Warning'.</msg>
-<status status="PASS" starttime="20190523 11:32:41.111" endtime="20190523 11:32:41.415"></status>
+<msg timestamp="20190523 11:53:20.487" level="INFO">Verifying element 'xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/h4[@class="alert-heading"]' contains exact text 'Warning'.</msg>
+<status status="PASS" starttime="20190523 11:53:20.486" endtime="20190523 11:53:20.638"></status>
 </kw>
 <kw name="Element Text Should Be" library="Selenium2Library">
 <doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
@@ -325,14 +325,14 @@
 <arg>${lbl_warning_message}</arg>
 <arg>${arg_message}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:41.420" level="INFO">Verifying element 'xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/div[@class="alert-message"]' contains exact text 'Username and password do not match or you do not have an account yet.'.</msg>
-<status status="PASS" starttime="20190523 11:32:41.419" endtime="20190523 11:32:41.909"></status>
+<msg timestamp="20190523 11:53:20.642" level="INFO">Verifying element 'xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/div[@class="alert-message"]' contains exact text 'Username and password do not match or you do not have an account yet.'.</msg>
+<status status="PASS" starttime="20190523 11:53:20.641" endtime="20190523 11:53:20.728"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:41.110" endtime="20190523 11:32:41.912"></status>
+<status status="PASS" starttime="20190523 11:53:20.485" endtime="20190523 11:53:20.739"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:39.688" endtime="20190523 11:32:41.912"></status>
+<status status="PASS" starttime="20190523 11:53:17.630" endtime="20190523 11:53:20.740"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:39.687" endtime="20190523 11:32:41.913" critical="yes"></status>
+<status status="PASS" starttime="20190523 11:53:17.628" endtime="20190523 11:53:20.740" critical="yes"></status>
 </test>
 <test id="s1-s1-s1-t5" name="TC22 - Invalid Password">
 <kw name="Login With Invalid Credentials Should Fail" library="AdminLoginPage">
@@ -351,7 +351,7 @@
 <arguments>
 <arg>Login to Joomla</arg>
 </arguments>
-<status status="PASS" starttime="20190523 11:32:41.938" endtime="20190523 11:32:41.939"></status>
+<status status="PASS" starttime="20190523 11:53:20.755" endtime="20190523 11:53:20.755"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -359,8 +359,8 @@
 <arg>${txt_username}</arg>
 <arg>${arg_username}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:41.985" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
-<status status="PASS" starttime="20190523 11:32:41.939" endtime="20190523 11:32:42.454"></status>
+<msg timestamp="20190523 11:53:20.756" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190523 11:53:20.756" endtime="20190523 11:53:21.284"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -368,18 +368,18 @@
 <arg>${txt_password}</arg>
 <arg>${arg_password}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:42.468" level="INFO">Typing text 'zxcvbnm' into text field 'id=mod-login-password'.</msg>
-<status status="PASS" starttime="20190523 11:32:42.467" endtime="20190523 11:32:43.324"></status>
+<msg timestamp="20190523 11:53:21.288" level="INFO">Typing text 'zxcvbnm' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190523 11:53:21.287" endtime="20190523 11:53:21.763"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_login}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:43.328" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
-<status status="PASS" starttime="20190523 11:32:43.328" endtime="20190523 11:32:44.201"></status>
+<msg timestamp="20190523 11:53:21.767" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190523 11:53:21.766" endtime="20190523 11:53:22.612"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:41.937" endtime="20190523 11:32:44.205"></status>
+<status status="PASS" starttime="20190523 11:53:20.754" endtime="20190523 11:53:22.617"></status>
 </kw>
 <kw name="Login Should Have Failed" library="AdminLoginPage">
 <arguments>
@@ -391,8 +391,8 @@
 <arg>${lbl_warning_header}</arg>
 <arg>${HEADER_TEXT}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:44.208" level="INFO">Verifying element 'xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/h4[@class="alert-heading"]' contains exact text 'Warning'.</msg>
-<status status="PASS" starttime="20190523 11:32:44.207" endtime="20190523 11:32:44.286"></status>
+<msg timestamp="20190523 11:53:22.619" level="INFO">Verifying element 'xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/h4[@class="alert-heading"]' contains exact text 'Warning'.</msg>
+<status status="PASS" starttime="20190523 11:53:22.618" endtime="20190523 11:53:22.758"></status>
 </kw>
 <kw name="Element Text Should Be" library="Selenium2Library">
 <doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
@@ -400,14 +400,14 @@
 <arg>${lbl_warning_message}</arg>
 <arg>${arg_message}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:44.291" level="INFO">Verifying element 'xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/div[@class="alert-message"]' contains exact text 'Username and password do not match or you do not have an account yet.'.</msg>
-<status status="PASS" starttime="20190523 11:32:44.290" endtime="20190523 11:32:44.416"></status>
+<msg timestamp="20190523 11:53:22.770" level="INFO">Verifying element 'xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/div[@class="alert-message"]' contains exact text 'Username and password do not match or you do not have an account yet.'.</msg>
+<status status="PASS" starttime="20190523 11:53:22.766" endtime="20190523 11:53:22.929"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:44.206" endtime="20190523 11:32:44.420"></status>
+<status status="PASS" starttime="20190523 11:53:22.617" endtime="20190523 11:53:22.940"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:41.935" endtime="20190523 11:32:44.420"></status>
+<status status="PASS" starttime="20190523 11:53:20.752" endtime="20190523 11:53:22.941"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:41.934" endtime="20190523 11:32:44.421" critical="yes"></status>
+<status status="PASS" starttime="20190523 11:53:20.751" endtime="20190523 11:53:22.942" critical="yes"></status>
 </test>
 <test id="s1-s1-s1-t6" name="TC23 - Invalid Username And Password">
 <kw name="Login With Invalid Credentials Should Fail" library="AdminLoginPage">
@@ -426,7 +426,7 @@
 <arguments>
 <arg>Login to Joomla</arg>
 </arguments>
-<status status="PASS" starttime="20190523 11:32:44.434" endtime="20190523 11:32:44.435"></status>
+<status status="PASS" starttime="20190523 11:53:22.997" endtime="20190523 11:53:22.998"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -434,8 +434,8 @@
 <arg>${txt_username}</arg>
 <arg>${arg_username}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:44.436" level="INFO">Typing text 'abcd123' into text field 'id=mod-login-username'.</msg>
-<status status="PASS" starttime="20190523 11:32:44.435" endtime="20190523 11:32:45.005"></status>
+<msg timestamp="20190523 11:53:23.000" level="INFO">Typing text 'abcd123' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190523 11:53:22.999" endtime="20190523 11:53:23.798"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -443,18 +443,18 @@
 <arg>${txt_password}</arg>
 <arg>${arg_password}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:45.010" level="INFO">Typing text 'zxcvbnm' into text field 'id=mod-login-password'.</msg>
-<status status="PASS" starttime="20190523 11:32:45.010" endtime="20190523 11:32:45.827"></status>
+<msg timestamp="20190523 11:53:23.803" level="INFO">Typing text 'zxcvbnm' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190523 11:53:23.802" endtime="20190523 11:53:24.262"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_login}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:45.832" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
-<status status="PASS" starttime="20190523 11:32:45.831" endtime="20190523 11:32:46.488"></status>
+<msg timestamp="20190523 11:53:24.266" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190523 11:53:24.266" endtime="20190523 11:53:25.078"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:44.433" endtime="20190523 11:32:46.492"></status>
+<status status="PASS" starttime="20190523 11:53:22.996" endtime="20190523 11:53:25.085"></status>
 </kw>
 <kw name="Login Should Have Failed" library="AdminLoginPage">
 <arguments>
@@ -466,8 +466,8 @@
 <arg>${lbl_warning_header}</arg>
 <arg>${HEADER_TEXT}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:46.494" level="INFO">Verifying element 'xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/h4[@class="alert-heading"]' contains exact text 'Warning'.</msg>
-<status status="PASS" starttime="20190523 11:32:46.493" endtime="20190523 11:32:46.665"></status>
+<msg timestamp="20190523 11:53:25.088" level="INFO">Verifying element 'xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/h4[@class="alert-heading"]' contains exact text 'Warning'.</msg>
+<status status="PASS" starttime="20190523 11:53:25.087" endtime="20190523 11:53:25.247"></status>
 </kw>
 <kw name="Element Text Should Be" library="Selenium2Library">
 <doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
@@ -475,30 +475,30 @@
 <arg>${lbl_warning_message}</arg>
 <arg>${arg_message}</arg>
 </arguments>
-<msg timestamp="20190523 11:32:46.669" level="INFO">Verifying element 'xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/div[@class="alert-message"]' contains exact text 'Username and password do not match or you do not have an account yet.'.</msg>
-<status status="PASS" starttime="20190523 11:32:46.668" endtime="20190523 11:32:46.858"></status>
+<msg timestamp="20190523 11:53:25.264" level="INFO">Verifying element 'xpath=//div[@class="login well"]/div[@id="system-message-container"]/div[@class="alert "]/div[@class="alert-message"]' contains exact text 'Username and password do not match or you do not have an account yet.'.</msg>
+<status status="PASS" starttime="20190523 11:53:25.263" endtime="20190523 11:53:25.485"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:46.492" endtime="20190523 11:32:48.700"></status>
+<status status="PASS" starttime="20190523 11:53:25.086" endtime="20190523 11:53:25.489"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:44.432" endtime="20190523 11:32:48.701"></status>
+<status status="PASS" starttime="20190523 11:53:22.994" endtime="20190523 11:53:25.490"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:44.431" endtime="20190523 11:32:48.701" critical="yes"></status>
+<status status="PASS" starttime="20190523 11:53:22.989" endtime="20190523 11:53:25.490" critical="yes"></status>
 </test>
 <kw name="Teardown" library="Setup" type="teardown">
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20190523 11:32:49.368" endtime="20190523 11:32:55.914"></status>
+<status status="PASS" starttime="20190523 11:53:25.527" endtime="20190523 11:53:34.241"></status>
 </kw>
 <kw name="Percy Finalize Build" library="PercyClient">
-<status status="PASS" starttime="20190523 11:32:55.915" endtime="20190523 11:32:56.433"></status>
+<status status="PASS" starttime="20190523 11:53:34.242" endtime="20190523 11:53:34.758"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:49.367" endtime="20190523 11:32:56.433"></status>
+<status status="PASS" starttime="20190523 11:53:25.526" endtime="20190523 11:53:34.759"></status>
 </kw>
-<status status="PASS" starttime="20190523 11:32:19.448" endtime="20190523 11:32:56.433"></status>
+<status status="PASS" starttime="20190523 11:52:56.305" endtime="20190523 11:53:34.759"></status>
 </suite>
-<status status="PASS" starttime="20190523 11:32:19.445" endtime="20190523 11:32:56.451"></status>
+<status status="PASS" starttime="20190523 11:52:56.298" endtime="20190523 11:53:34.775"></status>
 </suite>
-<status status="PASS" starttime="20190523 11:32:19.363" endtime="20190523 11:32:56.466"></status>
+<status status="PASS" starttime="20190523 11:52:56.205" endtime="20190523 11:53:34.785"></status>
 </suite>
 <statistics>
 <total>

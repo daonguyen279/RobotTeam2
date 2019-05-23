@@ -1,11 +1,11 @@
 *** Variables ***
 # ---------- sidebar ----------
-${title_homepage}               Control Panel - RobotFramework - Administration
-${lbl_new_article}              xpath=//div[@class="span3"]//a[span[contains(text(), "New Article")]]
-${lbl_articles}                 xpath=//div[@class="span3"]//a[span[contains(text(), "Articles")]]
-${lbl_categories}               xpath=//div[@class="span3"]//a[span[contains(text(), "Categories")]]
-${lbl_menus}                    xpath=//div[@class="span3"]//a[span[contains(text(), "Menu(s)")]]
-${lbl_users}                    xpath=//div[@class="span3"]//a[span[contains(text(), "Users")]]
+${title_homepage}                     Control Panel - RobotFramework - Administration
+${lbl_new_article}                    xpath=//div[@class="span3"]//a[span[contains(text(), "New Article")]]
+${lbl_articles}                       xpath=//div[@class="span3"]//a[span[contains(text(), "Articles")]]
+${lbl_categories}                     xpath=//div[@class="span3"]//a[span[contains(text(), "Categories")]]
+${lbl_menus}                          xpath=//div[@class="span3"]//a[span[contains(text(), "Menu(s)")]]
+${lbl_users}                          xpath=//div[@class="span3"]//a[span[contains(text(), "Users")]]
 
 # ---------- main menu ----------
 ${menu_system}                        xpath=//ul[@id="menu"]//a[text()="System "]
@@ -24,13 +24,13 @@ ${submenu_manage_menus}               xpath=//ul[@id="menu"]//a[@class="dropdown
 ${submenu_menu_item}                  xpath=//ul[@id="menu"]//a[@class="no-dropdown menu-allmenu"]
 
 # ---------- top right menu ----------
-${icn_user}                     xpath=//a/span[@class="icon-user"]
-${lbl_user_information}         xpath=//ul[@class="nav nav-user pull-right nav-hover"]//strong
-${lbl_edit_profile}             xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Edit Account"]
-${lbl_logout}                   xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]
-${lbl_visit_site}               xpath=//a[@class="brand visible-desktop visible-tablet"]
-${hed_header_message}           xpath=//div[@class="alert alert-success"]/h4[@class="alert-heading"]
-${lbl_message}                  xpath=//div[@class="alert alert-success"]/div[@class="alert-message"]
+${icn_user}                           xpath=//a/span[@class="icon-user"]
+${lbl_user_information}               xpath=//ul[@class="nav nav-user pull-right nav-hover"]//strong
+${lbl_edit_profile}                   xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Edit Account"]
+${lbl_logout}                         xpath=//ul[@class="nav nav-user pull-right nav-hover"]//a[text()="Logout"]
+${lbl_visit_site}                     xpath=//a[@class="brand visible-desktop visible-tablet"]
+${hed_header_message}                 xpath=//div[@class="alert alert-success"]/h4[@class="alert-heading"]
+${lbl_message}                        xpath=//div[@class="alert alert-success"]/div[@class="alert-message"]
 
 
 *** Keywords ***
