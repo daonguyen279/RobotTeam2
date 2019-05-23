@@ -8,7 +8,7 @@ ${xph_extensions_page}    xpath=//ul[@id="submenu"]/li/a[contains(text(),"{}")]
 
 *** Keywords ***
 Go To Manage Extensions Install page 
-    Click Element     ${menu_extensiton} 
+    Click Element     ${menu_extension}  
     Click Element     ${submenu_manage_extensions} 
 
 Go to Manage Etensions 

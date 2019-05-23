@@ -1,6 +1,7 @@
 *** Settings ***
 Resource          ../../Resources/Setup.robot
 
+
 *** Variables ***
 ${INPUT_STRING}        my name is*dinh*thi*anh*thao
 ${DELIMETER}           *
@@ -11,6 +12,7 @@ ${STR1}                a b c a b h d d h s d a j a i a
 ${STR2}                a
 ${UPPERCASE_STRING}    Ta Thi An 
 
+
 *** Test Cases ***
 Keyword Slipt Text And Replace Text
     ${abc}=    Split Text      ${INPUT_STRING}    ${DELIMETER}
@@ -18,7 +20,6 @@ Keyword Slipt Text And Replace Text
 
 Keyword Greet Method
     ${xyz}=    GREET    ${NAME}    ${MSG}
-
 
 Keyword Count Method
     ${result}=    Count Number    ${STR1}    ${STR2}

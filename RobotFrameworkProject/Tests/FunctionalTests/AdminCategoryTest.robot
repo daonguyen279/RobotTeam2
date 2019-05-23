@@ -21,14 +21,6 @@ ${TXT_UNPUBLISH_MESSAGE_EXPECTED}    1 category unpublished.
 TC05 - Verify That Admin Can Add A New Category
     ${CATEGORY_ALIAS} =  Generate Random String    12                             [LETTERS]
     ${CATEGORY_TITLE} =  Generate Random String    12                             [LETTERS]
-    ${CATEGORY_ALIAS}=    Generate Random String    12                             [LETTERS]
-    Login Admin Site                                ${USERNAME}                    ${PASSWORD}
-    Go To Add New Category Page   
-    Add New Category                                ${CATEGORY_TITLE}              ${CATEGORY_CONTENT}    ${CATEGORY_ALIAS}    
-    Check Message                                   ${TXT_ADD_MESSAGE_EXPECTED}     
-    ${CATEGORY_ALIAS}=   Generate Random String    12                             [LETTERS]
-    ${CATEGORY_TITLE}=   Generate Random String    12                             [LETTERS]
->>>>>>> percy:RobotFrameworkProject/Tests/FunctionalTests/AdminCategoryTest.robot
     Login Admin Site                               ${USERNAME}                    ${PASSWORD}
     Go To Add New Category Page
     Add New Category                               ${CATEGORY_TITLE}              ${CATEGORY_CONTENT}    ${CATEGORY_ALIAS} 
@@ -70,7 +62,7 @@ TC08 - Verify That Admin Can Unpublish A Category
     Go To Add New Category Page
     Add New Category                                ${CATEGORY_TITLE}                    ${CATEGORY_CONTENT}    ${CATEGORY_ALIAS}
     Unpublish A Category
-    Check Message                                   ${TXT_UNPUBLISH_MESSAGE_EXPECTED}     
+    Check Message                                   ${TXT_UNPUBLISH_MESSAGE_EXPECTED}         
     Check Unpublish Article Successfully            ${CATEGORY_TITLE}
     Delete A Category
     Logout Admin Site

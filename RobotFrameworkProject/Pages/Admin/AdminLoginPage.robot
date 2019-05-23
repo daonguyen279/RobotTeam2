@@ -13,7 +13,7 @@ Login Admin Site
     Input Text        ${txt_username}    ${arg_username}
     Input Text        ${txt_password}    ${arg_password}
     Click Button      ${btn_login}
-    
+
 Login With Invalid Credentials Should Fail
     [Arguments]                 ${arg_invalid_username}    ${arg_invalid_password}    ${arg_error_message}
     Login Admin Site            ${arg_invalid_username}    ${arg_invalid_password}

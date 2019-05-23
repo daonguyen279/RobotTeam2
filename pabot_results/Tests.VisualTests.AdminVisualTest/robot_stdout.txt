@@ -1,0 +1,43 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.VisualTests                                                             
+==============================================================================
+Tests.VisualTests.AdminVisualTest                                             
+==============================================================================
+TC01 - UI Of Joomla Login Page Display Correctly                      | PASS |
+------------------------------------------------------------------------------
+TC02 - UI Of Joomla Help Page Display Correctly                       Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC03 - UI Of Manage Extensions Pages Display Correctly                Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC04 - UI Of Modules Page Display Correctly                           Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC05 - UI Of Joomla Plugins Extentions Page Display Correctly         Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC06 - UI Of Joomla Templates Page Display Correctly                  Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC07 - UI Of Banners Page Display Correctly                           Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+TC08 - Check UI Of Content Pages                                      Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+Tests.VisualTests.AdminVisualTest                                     | PASS |
+8 critical tests, 8 passed, 0 failed
+8 tests total, 8 passed, 0 failed
+==============================================================================
+Tests.VisualTests                                                     | PASS |
+8 critical tests, 8 passed, 0 failed
+8 tests total, 8 passed, 0 failed
+==============================================================================
+Tests                                                                 | PASS |
+8 critical tests, 8 passed, 0 failed
+8 tests total, 8 passed, 0 failed
+==============================================================================
+Output:  C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\pabot_results\Tests.VisualTests.AdminVisualTest\output.xml

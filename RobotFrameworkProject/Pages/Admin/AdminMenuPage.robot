@@ -30,6 +30,7 @@ ${xph_menus_parent}             xpath=//div[@id="jform_menutype_chzn"]/div/ul/li
 ${xph_menuitems_checkbox}       xpath=//table[@id="itemList"]//tr[td/a[contains(text(),"{}")]]/td[count(//table[@id="userList"]//tr/th[a[contains(text(), "Title")]]/preceding-sibling::th)+2]/input
 ${xph_menuitems_title}          xpath=//table[@id="itemList"]//a[contains(text(),"{}")] 
 
+
 *** Keywords ***
 Go To Menu Page
     Click Element    ${btn_menus_list}

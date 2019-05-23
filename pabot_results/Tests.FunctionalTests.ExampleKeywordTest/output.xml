@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190523 11:23:08.278" rpa="false">
+<suite id="s1" name="Tests" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests">
+<suite id="s1-s1" name="FunctionalTests" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests">
+<suite id="s1-s1-s1" name="ExampleKeywordTest" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\ExampleKeywordTest.robot">
+<test id="s1-s1-s1-t1" name="Keyword Slipt Text And Replace Text">
+<kw name="Split Text" library="StringKeyword">
+<arguments>
+<arg>${INPUT_STRING}</arg>
+<arg>${DELIMETER}</arg>
+</arguments>
+<assign>
+<var>${abc}</var>
+</assign>
+<msg timestamp="20190523 11:23:09.648" level="INFO">${abc} = ['my name is', 'dinh', 'thi', 'anh', 'thao']</msg>
+<status status="PASS" starttime="20190523 11:23:09.647" endtime="20190523 11:23:09.648"></status>
+</kw>
+<kw name="Replace Text" library="StringKeyword">
+<arguments>
+<arg>${INPUT_STRING}</arg>
+<arg>${DELIMETER}</arg>
+<arg>${DESTINATION_CHAR}</arg>
+</arguments>
+<assign>
+<var>${xyz}</var>
+</assign>
+<msg timestamp="20190523 11:23:09.655" level="INFO">${xyz} = my name is_dinh_thi_anh_thao</msg>
+<status status="PASS" starttime="20190523 11:23:09.654" endtime="20190523 11:23:09.655"></status>
+</kw>
+<status status="PASS" starttime="20190523 11:23:09.645" endtime="20190523 11:23:09.659" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t2" name="Keyword Greet Method">
+<kw name="Greet" library="StringKeyword">
+<arguments>
+<arg>${NAME}</arg>
+<arg>${MSG}</arg>
+</arguments>
+<assign>
+<var>${xyz}</var>
+</assign>
+<msg timestamp="20190523 11:23:09.675" level="INFO">${xyz} = Hello Dong, Good Afternoon</msg>
+<status status="PASS" starttime="20190523 11:23:09.674" endtime="20190523 11:23:09.675"></status>
+</kw>
+<status status="PASS" starttime="20190523 11:23:09.672" endtime="20190523 11:23:09.680" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t3" name="Keyword Count Method">
+<kw name="Count Number" library="StringKeyword">
+<arguments>
+<arg>${STR1}</arg>
+<arg>${STR2}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20190523 11:23:09.694" level="INFO">${result} = 5</msg>
+<status status="PASS" starttime="20190523 11:23:09.693" endtime="20190523 11:23:09.694"></status>
+</kw>
+<status status="PASS" starttime="20190523 11:23:09.689" endtime="20190523 11:23:09.700" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t4" name="Keyword UpperCase Method">
+<kw name="Uppercase String" library="StringKeyword">
+<arguments>
+<arg>${UPPERCASE_STRING}</arg>
+</arguments>
+<assign>
+<var>${result_string}</var>
+</assign>
+<msg timestamp="20190523 11:23:09.713" level="INFO">${result_string} = TA THI AN</msg>
+<status status="PASS" starttime="20190523 11:23:09.712" endtime="20190523 11:23:09.713"></status>
+</kw>
+<status status="PASS" starttime="20190523 11:23:09.711" endtime="20190523 11:23:09.719" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20190523 11:23:08.567" endtime="20190523 11:23:09.777"></status>
+</suite>
+<status status="PASS" starttime="20190523 11:23:08.562" endtime="20190523 11:23:09.799"></status>
+</suite>
+<status status="PASS" starttime="20190523 11:23:08.461" endtime="20190523 11:23:09.811"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" id="s1" name="Tests">Tests</stat>
+<stat pass="4" fail="0" id="s1-s1" name="FunctionalTests">Tests.FunctionalTests</stat>
+<stat pass="4" fail="0" id="s1-s1-s1" name="ExampleKeywordTest">Tests.FunctionalTests.ExampleKeywordTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

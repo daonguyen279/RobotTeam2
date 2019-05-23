@@ -16,6 +16,7 @@ ${ARTICLE_EDIT_TITLE}       Glimpses of the Mystery
 
 *** Test Cases *** 
 TC01 - Add A New Aticle
+    [Tags]               aticle
     ${ARTICLE_ALIAS}=    Generate Random String    12                          [LETTERS]
     ${ARTICLE_TITLE}=    Generate Random String    30                          [LETTERS]     
     Login Admin Site                               ${USERNAME}                 ${PASSWORD}
