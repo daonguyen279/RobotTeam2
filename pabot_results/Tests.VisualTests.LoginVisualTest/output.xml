@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190523 10:03:32.046" rpa="false">
+<suite id="s1" name="Tests" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests">
+<suite id="s1-s1" name="VisualTests" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\VisualTests">
+<suite id="s1-s1-s1" name="LoginVisualTest" source="C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Tests\VisualTests\LoginVisualTest.robot">
+<kw name="Setup" library="Setup" type="setup">
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<arguments>
+<arg>PATH</arg>
+<arg>C:\\Users\\InternDN19.01.07\\Desktop\\Intern19_DinhThiAnhThao\\Project_Phase1_Researching\\project\\RobotTeam2\\RobotFrameworkProject\\Resources/Drivers</arg>
+</arguments>
+<msg timestamp="20190523 10:03:32.267" level="INFO">Environment variable 'PATH' set to value 'C:\Users\InternDN19.01.07\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\InternDN19.01.07\bin;C:\Python37;C:\Python37\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;C:\Python27\Lib\site-packages;C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\SeleniumWebdriver;C:\xampp\php;C:\composer;C:\Program Files\nodejs;C:\Program Files\maven\apache-maven-3.6.1\bin;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Users\InternDN19.01.07\Downloads\allure-2.10.0\bin;C:\Users\InternDN19.01.07\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\InternDN19.01.07\AppData\Local\Programs\Python\Python37;C:\Users\InternDN19.01.07\AppData\Local\Microsoft\WindowsApps;C:\Users\InternDN19.01.07\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.07\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.07\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;C:\users\interndn19.01.07\appdata\local\programs\python\python37\lib\site-packages\pywin32_system32;c:\users\interndn19.01.07\appdata\local\programs\python\python37\lib\site-packages\pywin32_system32;C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\RobotFrameworkProject\Resources/Drivers'.</msg>
+<status status="PASS" starttime="20190523 10:03:32.266" endtime="20190523 10:03:32.267"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${ROOT}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190523 10:03:32.267" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla/administrator/'.</msg>
+<status status="PASS" starttime="20190523 10:03:32.267" endtime="20190523 10:03:36.651"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190523 10:03:36.651" endtime="20190523 10:03:37.779"></status>
+</kw>
+<kw name="Percy Initialize Build" library="PercyClient">
+<arguments>
+<arg>${PERCY_TOKEN}</arg>
+</arguments>
+<status status="PASS" starttime="20190523 10:03:37.779" endtime="20190523 10:03:40.827"></status>
+</kw>
+<status status="PASS" starttime="20190523 10:03:32.266" endtime="20190523 10:03:40.827"></status>
+</kw>
+<test id="s1-s1-s1-t1" name="TC01 - UI Of Login">
+<kw name="Percy Snapshot" library="PercyClient">
+<arguments>
+<arg>Login</arg>
+</arguments>
+<status status="PASS" starttime="20190523 10:03:40.827" endtime="20190523 10:03:43.077"></status>
+</kw>
+<status status="PASS" starttime="20190523 10:03:40.827" endtime="20190523 10:03:43.077" critical="yes"></status>
+</test>
+<kw name="Teardown" library="Setup" type="teardown">
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20190523 10:03:43.077" endtime="20190523 10:03:45.339"></status>
+</kw>
+<kw name="Percy Finalize Build" library="PercyClient">
+<status status="PASS" starttime="20190523 10:03:45.339" endtime="20190523 10:03:45.989"></status>
+</kw>
+<status status="PASS" starttime="20190523 10:03:43.077" endtime="20190523 10:03:45.989"></status>
+</kw>
+<status status="PASS" starttime="20190523 10:03:32.071" endtime="20190523 10:03:45.989"></status>
+</suite>
+<status status="PASS" starttime="20190523 10:03:32.070" endtime="20190523 10:03:45.990"></status>
+</suite>
+<status status="PASS" starttime="20190523 10:03:32.049" endtime="20190523 10:03:45.991"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" id="s1-s1" name="VisualTests">Tests.VisualTests</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="LoginVisualTest">Tests.VisualTests.LoginVisualTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190523 10:03:32.048" level="ERROR">Taking listener 'allure-robotframework' into use failed: Importing listener 'allure-robotframework' failed: ModuleNotFoundError: No module named 'allure-robotframework'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\InternDN19.01.07\AppData\Local\Programs\Python\Python37\Scripts\robot.exe
+  c:\users\interndn19.01.07\appdata\local\programs\python\python37\python37.zip
+  c:\users\interndn19.01.07\appdata\local\programs\python\python37\DLLs
+  c:\users\interndn19.01.07\appdata\local\programs\python\python37\lib
+  c:\users\interndn19.01.07\appdata\local\programs\python\python37
+  c:\users\interndn19.01.07\appdata\local\programs\python\python37\lib\site-packages
+  c:\users\interndn19.01.07\appdata\local\programs\python\python37\lib\site-packages\win32
+  c:\users\interndn19.01.07\appdata\local\programs\python\python37\lib\site-packages\win32\lib
+  c:\users\interndn19.01.07\appdata\local\programs\python\python37\lib\site-packages\Pythonwin</msg>
+</errors>
+</robot>

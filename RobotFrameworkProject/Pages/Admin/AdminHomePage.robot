@@ -17,6 +17,8 @@ ${menu_extensiton}              xpath=//ul[@id="menu"]//a[contains(text(), "Exte
 ${submenu_manage_extensions}    xpath=//ul[@id="menu"]//a[@class="dropdown-toggle menu-install"]
 ${submenu_manage_menus}         xpath=//ul[@id="menu"]//a[@class="dropdown-toggle menu-menumgr"]
 ${submenu_menu_item}            xpath=//ul[@id="menu"]//a[@class="no-dropdown menu-allmenu"]
+${menu_components}              xpath=//ul[@id="menu"]//a[contains(text(), "Components ")]
+${submenu_banners}              xpath=//ul[@id="menu"]//a[@class="dropdown-toggle menu-banners"]
 
 # ---------- top right menu ----------
 ${icn_user}                     xpath=//a/span[@class="icon-user"]

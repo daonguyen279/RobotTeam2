@@ -1,0 +1,13 @@
+[ ERROR ] Taking listener 'allure-robotframework' into use failed: Importing listener 'allure-robotframework' failed: ModuleNotFoundError: No module named 'allure-robotframework'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\InternDN19.01.07\AppData\Local\Programs\Python\Python37\Scripts\robot.exe
+  c:\users\interndn19.01.07\appdata\local\programs\python\python37\python37.zip
+  c:\users\interndn19.01.07\appdata\local\programs\python\python37\DLLs
+  c:\users\interndn19.01.07\appdata\local\programs\python\python37\lib
+  c:\users\interndn19.01.07\appdata\local\programs\python\python37
+  c:\users\interndn19.01.07\appdata\local\programs\python\python37\lib\site-packages
+  c:\users\interndn19.01.07\appdata\local\programs\python\python37\lib\site-packages\win32
+  c:\users\interndn19.01.07\appdata\local\programs\python\python37\lib\site-packages\win32\lib
+  c:\users\interndn19.01.07\appdata\local\programs\python\python37\lib\site-packages\Pythonwin

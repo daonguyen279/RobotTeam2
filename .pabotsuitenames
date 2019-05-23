@@ -1,0 +1,16 @@
+datasources:bf2635d4fd450596204d18da58879d57645bb567
+commandlineoptions:937a607c77843e0298174d6983553cf3accd36dd
+suitesfrom:no-suites-from-option
+file:ad1f2b0c6013a84e14c6ac03fb5077d24f2646fc
+--suite Tests.FunctionalTests.AdminArticleTest
+--suite Tests.FunctionalTests.AdminCategoryTest
+--suite Tests.FunctionalTests.AdminDataDrivenLoginTest
+--suite Tests.FunctionalTests.AdminMenuTest
+--suite Tests.FunctionalTests.AdminUpdateProfileTest
+--suite Tests.FunctionalTests.AdminUserTest
+--suite Tests.FunctionalTests.ExampleKeywordTest
+--suite Tests.VisualTests.AdminManageExtensionsVisualTest
+--suite Tests.VisualTests.AdminModulesTest
+--suite Tests.VisualTests.HelpVisualTest
+--suite Tests.VisualTests.LoginVisualTest
+--suite Tests.VisualTests.PluginsExtentionsVisualTest

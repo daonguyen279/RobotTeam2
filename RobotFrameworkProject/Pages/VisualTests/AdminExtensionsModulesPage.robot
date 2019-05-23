@@ -1,9 +1,22 @@
+*** Settings ***
+Resource    ../Admin/AdminHomePage.robot
+
+
 *** Variables ***
-${menu_extensions}    xpath=//ul[@id="menu"]//a[text()="Extensions "]
-${submenu_modules}    xpath=//ul[@id="menu"]//a[text()="Modules"]
+${lnk_components_categories}    xpath=//ul[@id="submenu"]//a[contains(text(), "Categories")]
+${lnk_components_clients}       xpath=//ul[@id="submenu"]//a[contains(text(), "Clients")]
+${lnk_components_tracks}        xpath=//ul[@id="submenu"]//a[contains(text(), "Tracks")]
+
+# xpath template
+${xph_banners}       xpath=//ul[@id="submenu"]//a[contains(text(), "{}")]
 
 
 *** Keywords ***
-Go To Extensions Modules Page
-    Click Element     ${menu_extensions}
-    Click Element     ${submenu_modules}
+Go To Banners Page
+    Click Element    ${menu_components}
+    Click Element    ${submenu_banners}
+    
+Go To Banners Content Pages
+    [Arguments]        ${arg_banners}
+    ${banners_page}    Format String           ${xph_banners}    ${arg_banners} 
+    Click Element      ${banners_page}

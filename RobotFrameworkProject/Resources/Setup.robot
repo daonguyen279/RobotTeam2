@@ -16,7 +16,6 @@ Library    OperatingSystem
 Library    PageObjectLibrary
 Library    String
 Library    PercyClient.py
-Library    PercySetup.py
 Library    StringKeyword.py
 Library    Process
 

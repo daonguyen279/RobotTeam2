@@ -1,0 +1,24 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.FunctionalTests                                                         
+==============================================================================
+Tests.FunctionalTests.AdminUpdateProfileTest                                  
+==============================================================================
+TC13 - Update Admin Profile Successfully                              Login to Joomla
+Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+Tests.FunctionalTests.AdminUpdateProfileTest                          | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Tests.FunctionalTests                                                 | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Tests                                                                 | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\pabot_results\Tests.FunctionalTests.AdminUpdateProfileTest\output.xml

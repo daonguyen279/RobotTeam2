@@ -1,0 +1,23 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.VisualTests                                                             
+==============================================================================
+Tests.VisualTests.HelpVisualTest                                              
+==============================================================================
+TC01 - UI Of Joomla Help Page Display Correctly                       Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+Tests.VisualTests.HelpVisualTest                                      | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Tests.VisualTests                                                     | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Tests                                                                 | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\pabot_results\Tests.VisualTests.HelpVisualTest\output.xml

@@ -1,0 +1,39 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.FunctionalTests                                                         
+==============================================================================
+Tests.FunctionalTests.AdminCategoryTest                                       
+==============================================================================
+TC05 - Verify That Admin Can Add A New Category                       Login to Joomla
+| PASS |
+------------------------------------------------------------------------------
+>>>>>>> percy:RobotFrameworkProject/Tests/FunctionalTests/AdminCat... Login to Joomla
+| FAIL |
+Element with locator 'id=mod-login-username' not found.
+------------------------------------------------------------------------------
+TC06 - Verify That Admin Can Edit Category Information                Login to Joomla
+| FAIL |
+Element with locator 'id=mod-login-username' not found.
+------------------------------------------------------------------------------
+TC07 - Verify That Admin Can Delete A New Category                    Login to Joomla
+| FAIL |
+Element with locator 'id=mod-login-username' not found.
+------------------------------------------------------------------------------
+TC08 - Verify That Admin Can Unpublish A Category                     Login to Joomla
+| FAIL |
+Element with locator 'id=mod-login-username' not found.
+------------------------------------------------------------------------------
+Tests.FunctionalTests.AdminCategoryTest                               | FAIL |
+5 critical tests, 1 passed, 4 failed
+5 tests total, 1 passed, 4 failed
+==============================================================================
+Tests.FunctionalTests                                                 | FAIL |
+5 critical tests, 1 passed, 4 failed
+5 tests total, 1 passed, 4 failed
+==============================================================================
+Tests                                                                 | FAIL |
+5 critical tests, 1 passed, 4 failed
+5 tests total, 1 passed, 4 failed
+==============================================================================
+Output:  C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\pabot_results\Tests.FunctionalTests.AdminCategoryTest\output.xml

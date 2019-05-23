@@ -1,0 +1,24 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.VisualTests                                                             
+==============================================================================
+Tests.VisualTests.PluginsExtentionsVisualTest                                 
+==============================================================================
+TC01 - UI Of Joomla Plugins Extentions Page Display Correctly         Login to Joomla
+| FAIL |
+Element with locator 'xpath=//div/ul[@id="menu"]/li/a[contains(text(),'Extensions ')]' not found.
+------------------------------------------------------------------------------
+Tests.VisualTests.PluginsExtentionsVisualTest                         | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
+==============================================================================
+Tests.VisualTests                                                     | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\InternDN19.01.07\Desktop\Intern19_DinhThiAnhThao\Project_Phase1_Researching\project\RobotTeam2\pabot_results\Tests.VisualTests.PluginsExtentionsVisualTest\output.xml
