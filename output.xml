@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190522 14:38:33.710" rpa="false">
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190523 09:36:06.654" rpa="false">
 <suite id="s1" name="RobotTeam2" source="C:\robot\RobotTeam2">
 <suite id="s1-s1" name="RobotFrameworkProject" source="C:\robot\RobotTeam2\RobotFrameworkProject">
 <suite id="s1-s1-s1" name="Tests" source="C:\robot\RobotTeam2\RobotFrameworkProject\Tests">
 <suite id="s1-s1-s1-s1" name="VisualTests" source="C:\robot\RobotTeam2\RobotFrameworkProject\Tests\VisualTests">
-<suite id="s1-s1-s1-s1-s1" name="AdminManageExtensionsVisualTest" source="C:\robot\RobotTeam2\RobotFrameworkProject\Tests\VisualTests\AdminManageExtensionsVisualTest.robot">
-<kw name="Setup" library="SetupBuild2" type="setup">
+<suite id="s1-s1-s1-s1-s1" name="AdminContentVisualTest" source="C:\robot\RobotTeam2\RobotFrameworkProject\Tests\VisualTests\AdminContentVisualTest.robot">
+<kw name="Setup" library="Setup" type="setup">
 <kw name="Append To Environment Variable" library="OperatingSystem">
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
 <arguments>
 <arg>PATH</arg>
 <arg>C:\\robot\\RobotTeam2\\RobotFrameworkProject\\Resources/Drivers</arg>
 </arguments>
-<msg timestamp="20190522 14:38:33.949" level="INFO">Environment variable 'PATH' set to value 'C:/Program Files/Java/jre1.8.0_211/bin/server;C:/Program Files/Java/jre1.8.0_211/bin;C:/Program Files/Java/jre1.8.0_211/lib/amd64;C:\Python37\;C:\Python37\Scripts\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs\;C:\Users\InternDN19.01.03\Downloads\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin;C:\Users\InternDN19.01.03\Downloads\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin;C:\Users\InternDN19.01.03\Downloads\allure-2.10.0\bin;C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\;C:\Users\InternDN19.01.03\AppData\Local\Microsoft\WindowsApps;C:\webdrivers;C:\Users\InternDN19.01.03\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.03\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.03\AppData\Roaming\npm;;C:\eclipse-java-oxygen-1a-win32-x86_64\eclipse;;C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\lib\site-packages\pywin32_system32;C:\robot\RobotTeam2\RobotFrameworkProject\Resources/Drivers'.</msg>
-<status status="PASS" starttime="20190522 14:38:33.949" endtime="20190522 14:38:33.949"></status>
+<msg timestamp="20190523 09:36:06.891" level="INFO">Environment variable 'PATH' set to value 'C:/Program Files/Java/jre1.8.0_211/bin/server;C:/Program Files/Java/jre1.8.0_211/bin;C:/Program Files/Java/jre1.8.0_211/lib/amd64;C:\Python37\;C:\Python37\Scripts\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs\;C:\Users\InternDN19.01.03\Downloads\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin;C:\Users\InternDN19.01.03\Downloads\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin;C:\Users\InternDN19.01.03\Downloads\allure-2.10.0\bin;C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\;C:\Users\InternDN19.01.03\AppData\Local\Microsoft\WindowsApps;C:\webdrivers;C:\Users\InternDN19.01.03\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\InternDN19.01.03\AppData\Roaming\Composer\vendor\bin;C:\Users\InternDN19.01.03\AppData\Roaming\npm;;C:\eclipse-java-oxygen-1a-win32-x86_64\eclipse;;C:\Users\InternDN19.01.03\AppData\Local\Programs\Python\Python37\lib\site-packages\pywin32_system32;C:\robot\RobotTeam2\RobotFrameworkProject\Resources/Drivers'.</msg>
+<status status="PASS" starttime="20190523 09:36:06.891" endtime="20190523 09:36:06.891"></status>
 </kw>
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -21,22 +21,22 @@
 <arg>${ROOT}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20190522 14:38:33.949" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla_build2/administrator/'.</msg>
-<status status="PASS" starttime="20190522 14:38:33.949" endtime="20190522 14:38:36.697"></status>
+<msg timestamp="20190523 09:36:06.892" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.189.72/joomla/administrator/'.</msg>
+<status status="PASS" starttime="20190523 09:36:06.891" endtime="20190523 09:36:09.461"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20190522 14:38:36.698" endtime="20190522 14:38:37.827"></status>
+<status status="PASS" starttime="20190523 09:36:09.462" endtime="20190523 09:36:10.585"></status>
 </kw>
 <kw name="Percy Initialize Build" library="PercyClient">
 <arguments>
 <arg>${PERCY_TOKEN}</arg>
 </arguments>
-<status status="PASS" starttime="20190522 14:38:37.827" endtime="20190522 14:38:39.527"></status>
+<status status="PASS" starttime="20190523 09:36:10.586" endtime="20190523 09:36:12.750"></status>
 </kw>
-<status status="PASS" starttime="20190522 14:38:33.949" endtime="20190522 14:38:39.527"></status>
+<status status="PASS" starttime="20190523 09:36:06.890" endtime="20190523 09:36:12.751"></status>
 </kw>
-<test id="s1-s1-s1-s1-s1-t1" name="TC01 - Check UI Of Manage Extensions Pages">
+<test id="s1-s1-s1-s1-s1-t1" name="TC01 - Check UI Of Content Pages">
 <kw name="Login Admin Site" library="AdminLoginPage">
 <arguments>
 <arg>${USERNAME}</arg>
@@ -47,7 +47,7 @@
 <arguments>
 <arg>Login to Joomla</arg>
 </arguments>
-<status status="PASS" starttime="20190522 14:38:39.539" endtime="20190522 14:38:39.539"></status>
+<status status="PASS" starttime="20190523 09:36:12.752" endtime="20190523 09:36:12.753"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -55,8 +55,8 @@
 <arg>${txt_username}</arg>
 <arg>${arg_username}</arg>
 </arguments>
-<msg timestamp="20190522 14:38:39.539" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
-<status status="PASS" starttime="20190522 14:38:39.539" endtime="20190522 14:38:39.605"></status>
+<msg timestamp="20190523 09:36:12.753" level="INFO">Typing text 'admin' into text field 'id=mod-login-username'.</msg>
+<status status="PASS" starttime="20190523 09:36:12.753" endtime="20190523 09:36:12.819"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -64,225 +64,129 @@
 <arg>${txt_password}</arg>
 <arg>${arg_password}</arg>
 </arguments>
-<msg timestamp="20190522 14:38:39.606" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
-<status status="PASS" starttime="20190522 14:38:39.605" endtime="20190522 14:38:39.685"></status>
+<msg timestamp="20190523 09:36:12.820" level="INFO">Typing text '123456789' into text field 'id=mod-login-password'.</msg>
+<status status="PASS" starttime="20190523 09:36:12.820" endtime="20190523 09:36:12.887"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_login}</arg>
 </arguments>
-<msg timestamp="20190522 14:38:39.686" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
-<status status="PASS" starttime="20190522 14:38:39.685" endtime="20190522 14:38:40.690"></status>
+<msg timestamp="20190523 09:36:12.887" level="INFO">Clicking button 'xpath=//div[@class="btn-group"]/button[@class="btn btn-primary btn-block btn-large login-button"]'.</msg>
+<status status="PASS" starttime="20190523 09:36:12.887" endtime="20190523 09:36:13.835"></status>
 </kw>
-<status status="PASS" starttime="20190522 14:38:39.538" endtime="20190522 14:38:40.690"></status>
+<status status="PASS" starttime="20190523 09:36:12.752" endtime="20190523 09:36:13.835"></status>
 </kw>
-<kw name="Go To Manage Extensions Install page" library="AdminManageExtensionsPage">
+<kw name="Go To Content Feature Artical Page" library="AdminContentPage">
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
-<arg>${menu_extensiton}</arg>
+<arg>${menu_content}</arg>
 </arguments>
-<msg timestamp="20190522 14:38:40.691" level="INFO">Clicking element 'xpath=//ul[@id="menu"]//a[contains(text(), "Extensions ")]'.</msg>
-<status status="PASS" starttime="20190522 14:38:40.691" endtime="20190522 14:38:40.753"></status>
+<msg timestamp="20190523 09:36:13.836" level="INFO">Clicking element 'xpath=//ul[@id="menu"]/li/a[contains(text(),"Content")]'.</msg>
+<status status="PASS" starttime="20190523 09:36:13.836" endtime="20190523 09:36:13.905"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
-<arg>${submenu_manage_extensions}</arg>
+<arg>${submenu_feature_artical_content}</arg>
 </arguments>
-<msg timestamp="20190522 14:38:40.754" level="INFO">Clicking element 'xpath=//ul[@id="menu"]//a[@class="dropdown-toggle menu-install"]'.</msg>
-<status status="PASS" starttime="20190522 14:38:40.754" endtime="20190522 14:38:41.396"></status>
+<msg timestamp="20190523 09:36:13.906" level="INFO">Clicking element 'xpath=//ul[@id="menu"]//a[@class="no-dropdown menu-featured"]'.</msg>
+<status status="PASS" starttime="20190523 09:36:13.905" endtime="20190523 09:36:14.895"></status>
 </kw>
-<status status="PASS" starttime="20190522 14:38:40.690" endtime="20190522 14:38:41.396"></status>
+<status status="PASS" starttime="20190523 09:36:13.836" endtime="20190523 09:36:14.895"></status>
 </kw>
 <kw name="Percy Snapshot" library="PercyClient">
 <arguments>
-<arg>Manage Extensions Install Page</arg>
+<arg>Content Feature Artical Page</arg>
 </arguments>
-<status status="PASS" starttime="20190522 14:38:41.397" endtime="20190522 14:38:44.065"></status>
+<status status="PASS" starttime="20190523 09:36:14.895" endtime="20190523 09:36:17.550"></status>
 </kw>
-<kw name="Go to Manage Etensions" library="AdminManageExtensionsPage">
+<kw name="Go to Content Pages" library="AdminContentPage">
 <arguments>
-<arg>${MANAGE_EXTENSION_MANAGE_PAGE}</arg>
+<arg>${CONTENT_FIELDS_PAGE}</arg>
 </arguments>
 <kw name="Format String" library="String">
 <doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
 <arguments>
-<arg>${xph_extensions_page}</arg>
-<arg>${arg_extension_page}</arg>
+<arg>${xph_content_page}</arg>
+<arg>${arg_content_page}</arg>
 </arguments>
 <assign>
-<var>${extensions_page}</var>
+<var>${content_page}</var>
 </assign>
-<msg timestamp="20190522 14:38:44.065" level="INFO">${extensions_page} = xpath=//ul[@id="submenu"]/li/a[contains(text(),"Manage")]</msg>
-<status status="PASS" starttime="20190522 14:38:44.065" endtime="20190522 14:38:44.065"></status>
+<msg timestamp="20190523 09:36:17.552" level="INFO">${content_page} = xpath=//ul[@id="submenu"]/li/a[contains(text(),"Fields")]</msg>
+<status status="PASS" starttime="20190523 09:36:17.552" endtime="20190523 09:36:17.552"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
-<arg>${extensions_page}</arg>
+<arg>${content_page}</arg>
 </arguments>
-<msg timestamp="20190522 14:38:44.065" level="INFO">Clicking element 'xpath=//ul[@id="submenu"]/li/a[contains(text(),"Manage")]'.</msg>
-<status status="PASS" starttime="20190522 14:38:44.065" endtime="20190522 14:38:44.866"></status>
+<msg timestamp="20190523 09:36:17.553" level="INFO">Clicking element 'xpath=//ul[@id="submenu"]/li/a[contains(text(),"Fields")]'.</msg>
+<status status="PASS" starttime="20190523 09:36:17.553" endtime="20190523 09:36:18.851"></status>
 </kw>
-<status status="PASS" starttime="20190522 14:38:44.065" endtime="20190522 14:38:44.867"></status>
+<status status="PASS" starttime="20190523 09:36:17.551" endtime="20190523 09:36:18.852"></status>
 </kw>
 <kw name="Percy Snapshot" library="PercyClient">
 <arguments>
-<arg>Manage Extensions Manage Page</arg>
+<arg>Content Fields Page</arg>
 </arguments>
-<status status="PASS" starttime="20190522 14:38:44.867" endtime="20190522 14:38:47.503"></status>
+<status status="PASS" starttime="20190523 09:36:18.852" endtime="20190523 09:36:21.172"></status>
 </kw>
-<kw name="Go to Manage Etensions" library="AdminManageExtensionsPage">
+<kw name="Go to Content Pages" library="AdminContentPage">
 <arguments>
-<arg>${MANAGE_EXTENSION_DISCOVER_PAGE}</arg>
+<arg>${CONTENT_FIELDGROUPS_PAGE}</arg>
 </arguments>
 <kw name="Format String" library="String">
 <doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
 <arguments>
-<arg>${xph_extensions_page}</arg>
-<arg>${arg_extension_page}</arg>
+<arg>${xph_content_page}</arg>
+<arg>${arg_content_page}</arg>
 </arguments>
 <assign>
-<var>${extensions_page}</var>
+<var>${content_page}</var>
 </assign>
-<msg timestamp="20190522 14:38:47.518" level="INFO">${extensions_page} = xpath=//ul[@id="submenu"]/li/a[contains(text(),"Discover")]</msg>
-<status status="PASS" starttime="20190522 14:38:47.518" endtime="20190522 14:38:47.518"></status>
+<msg timestamp="20190523 09:36:21.173" level="INFO">${content_page} = xpath=//ul[@id="submenu"]/li/a[contains(text(),"Field Groups")]</msg>
+<status status="PASS" starttime="20190523 09:36:21.173" endtime="20190523 09:36:21.174"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
-<arg>${extensions_page}</arg>
+<arg>${content_page}</arg>
 </arguments>
-<msg timestamp="20190522 14:38:47.518" level="INFO">Clicking element 'xpath=//ul[@id="submenu"]/li/a[contains(text(),"Discover")]'.</msg>
-<status status="PASS" starttime="20190522 14:38:47.518" endtime="20190522 14:38:48.652"></status>
+<msg timestamp="20190523 09:36:21.174" level="INFO">Clicking element 'xpath=//ul[@id="submenu"]/li/a[contains(text(),"Field Groups")]'.</msg>
+<status status="PASS" starttime="20190523 09:36:21.174" endtime="20190523 09:36:21.531"></status>
 </kw>
-<status status="PASS" starttime="20190522 14:38:47.503" endtime="20190522 14:38:48.654"></status>
+<status status="PASS" starttime="20190523 09:36:21.172" endtime="20190523 09:36:21.532"></status>
 </kw>
 <kw name="Percy Snapshot" library="PercyClient">
 <arguments>
-<arg>Manage Extensions Discover Page</arg>
+<arg>Content Field Groups Page</arg>
 </arguments>
-<status status="PASS" starttime="20190522 14:38:48.654" endtime="20190522 14:38:50.811"></status>
+<status status="PASS" starttime="20190523 09:36:21.532" endtime="20190523 09:36:23.461"></status>
 </kw>
-<kw name="Go to Manage Etensions" library="AdminManageExtensionsPage">
-<arguments>
-<arg>${MANAGE_EXTENSION_WARNING_PAGE}</arg>
-</arguments>
-<kw name="Format String" library="String">
-<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
-<arguments>
-<arg>${xph_extensions_page}</arg>
-<arg>${arg_extension_page}</arg>
-</arguments>
-<assign>
-<var>${extensions_page}</var>
-</assign>
-<msg timestamp="20190522 14:38:50.811" level="INFO">${extensions_page} = xpath=//ul[@id="submenu"]/li/a[contains(text(),"Warnings")]</msg>
-<status status="PASS" starttime="20190522 14:38:50.811" endtime="20190522 14:38:50.811"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${extensions_page}</arg>
-</arguments>
-<msg timestamp="20190522 14:38:50.811" level="INFO">Clicking element 'xpath=//ul[@id="submenu"]/li/a[contains(text(),"Warnings")]'.</msg>
-<status status="PASS" starttime="20190522 14:38:50.811" endtime="20190522 14:38:51.141"></status>
-</kw>
-<status status="PASS" starttime="20190522 14:38:50.811" endtime="20190522 14:38:51.142"></status>
-</kw>
-<kw name="Percy Snapshot" library="PercyClient">
-<arguments>
-<arg>Manage Extensions Warnings Page</arg>
-</arguments>
-<status status="PASS" starttime="20190522 14:38:51.142" endtime="20190522 14:38:53.049"></status>
-</kw>
-<kw name="Go to Manage Etensions" library="AdminManageExtensionsPage">
-<arguments>
-<arg>${MANAGE_EXTENSION_LANGUAGE_PAGE}</arg>
-</arguments>
-<kw name="Format String" library="String">
-<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
-<arguments>
-<arg>${xph_extensions_page}</arg>
-<arg>${arg_extension_page}</arg>
-</arguments>
-<assign>
-<var>${extensions_page}</var>
-</assign>
-<msg timestamp="20190522 14:38:53.049" level="INFO">${extensions_page} = xpath=//ul[@id="submenu"]/li/a[contains(text(),"Install Languages")]</msg>
-<status status="PASS" starttime="20190522 14:38:53.049" endtime="20190522 14:38:53.049"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${extensions_page}</arg>
-</arguments>
-<msg timestamp="20190522 14:38:53.049" level="INFO">Clicking element 'xpath=//ul[@id="submenu"]/li/a[contains(text(),"Install Languages")]'.</msg>
-<status status="PASS" starttime="20190522 14:38:53.049" endtime="20190522 14:38:53.774"></status>
-</kw>
-<status status="PASS" starttime="20190522 14:38:53.049" endtime="20190522 14:38:53.774"></status>
-</kw>
-<kw name="Percy Snapshot" library="PercyClient">
-<arguments>
-<arg>Manage Extensions Language Page</arg>
-</arguments>
-<status status="PASS" starttime="20190522 14:38:53.775" endtime="20190522 14:38:56.077"></status>
-</kw>
-<kw name="Go to Manage Etensions" library="AdminManageExtensionsPage">
-<arguments>
-<arg>${MANAGE_EXTENSION_UPDATESITE_PAGE}</arg>
-</arguments>
-<kw name="Format String" library="String">
-<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
-<arguments>
-<arg>${xph_extensions_page}</arg>
-<arg>${arg_extension_page}</arg>
-</arguments>
-<assign>
-<var>${extensions_page}</var>
-</assign>
-<msg timestamp="20190522 14:38:56.077" level="INFO">${extensions_page} = xpath=//ul[@id="submenu"]/li/a[contains(text(),"Update Sites")]</msg>
-<status status="PASS" starttime="20190522 14:38:56.077" endtime="20190522 14:38:56.077"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>${extensions_page}</arg>
-</arguments>
-<msg timestamp="20190522 14:38:56.077" level="INFO">Clicking element 'xpath=//ul[@id="submenu"]/li/a[contains(text(),"Update Sites")]'.</msg>
-<status status="PASS" starttime="20190522 14:38:56.077" endtime="20190522 14:38:56.462"></status>
-</kw>
-<status status="PASS" starttime="20190522 14:38:56.077" endtime="20190522 14:38:56.462"></status>
-</kw>
-<kw name="Percy Snapshot" library="PercyClient">
-<arguments>
-<arg>Manage Extensions Update Site Page</arg>
-</arguments>
-<status status="PASS" starttime="20190522 14:38:56.463" endtime="20190522 14:38:58.667"></status>
-</kw>
-<status status="PASS" starttime="20190522 14:38:39.527" endtime="20190522 14:38:58.667" critical="yes"></status>
+<status status="PASS" starttime="20190523 09:36:12.751" endtime="20190523 09:36:23.461" critical="yes"></status>
 </test>
-<kw name="Teardown" library="SetupBuild2" type="teardown">
+<kw name="Teardown" library="Setup" type="teardown">
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20190522 14:38:58.681" endtime="20190522 14:39:00.801"></status>
+<status status="PASS" starttime="20190523 09:36:23.463" endtime="20190523 09:36:25.550"></status>
 </kw>
 <kw name="Percy Finalize Build" library="PercyClient">
-<status status="PASS" starttime="20190522 14:39:00.801" endtime="20190522 14:39:01.354"></status>
+<status status="PASS" starttime="20190523 09:36:25.551" endtime="20190523 09:36:26.130"></status>
 </kw>
-<status status="PASS" starttime="20190522 14:38:58.681" endtime="20190522 14:39:01.354"></status>
+<status status="PASS" starttime="20190523 09:36:23.462" endtime="20190523 09:36:26.131"></status>
 </kw>
-<status status="PASS" starttime="20190522 14:38:33.764" endtime="20190522 14:39:01.354"></status>
+<status status="PASS" starttime="20190523 09:36:06.702" endtime="20190523 09:36:26.131"></status>
 </suite>
-<status status="PASS" starttime="20190522 14:38:33.764" endtime="20190522 14:39:01.367"></status>
+<status status="PASS" starttime="20190523 09:36:06.701" endtime="20190523 09:36:26.133"></status>
 </suite>
-<status status="PASS" starttime="20190522 14:38:33.748" endtime="20190522 14:39:01.368"></status>
+<status status="PASS" starttime="20190523 09:36:06.699" endtime="20190523 09:36:26.134"></status>
 </suite>
-<status status="PASS" starttime="20190522 14:38:33.748" endtime="20190522 14:39:01.368"></status>
+<status status="PASS" starttime="20190523 09:36:06.697" endtime="20190523 09:36:26.135"></status>
 </suite>
-<status status="PASS" starttime="20190522 14:38:33.732" endtime="20190522 14:39:01.368"></status>
+<status status="PASS" starttime="20190523 09:36:06.679" endtime="20190523 09:36:26.136"></status>
 </suite>
 <statistics>
 <total>
@@ -296,7 +200,7 @@
 <stat pass="1" fail="0" id="s1-s1" name="RobotFrameworkProject">RobotTeam2.RobotFrameworkProject</stat>
 <stat pass="1" fail="0" id="s1-s1-s1" name="Tests">RobotTeam2.RobotFrameworkProject.Tests</stat>
 <stat pass="1" fail="0" id="s1-s1-s1-s1" name="VisualTests">RobotTeam2.RobotFrameworkProject.Tests.VisualTests</stat>
-<stat pass="1" fail="0" id="s1-s1-s1-s1-s1" name="AdminManageExtensionsVisualTest">RobotTeam2.RobotFrameworkProject.Tests.VisualTests.AdminManageExtensionsVisualTest</stat>
+<stat pass="1" fail="0" id="s1-s1-s1-s1-s1" name="AdminContentVisualTest">RobotTeam2.RobotFrameworkProject.Tests.VisualTests.AdminContentVisualTest</stat>
 </suite>
 </statistics>
 <errors>
