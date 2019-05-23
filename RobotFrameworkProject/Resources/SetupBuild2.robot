@@ -15,9 +15,8 @@ Library    Selenium2Library
 Library    OperatingSystem
 Library    PageObjectLibrary
 Library    String
-Library    PercyClient.py
 Library    StringKeyword.py
-Library    PercySetupBuild2.py
+Library    PercyClientBuild2.py
 Library    Process
 
 
