@@ -25,4 +25,4 @@ TC13 - Update Admin Profile Successfully
     Logout Admin Site   
     Login Admin Site                          ${USERNAME1}                 ${UPDATE_PASSWORD}              
     Go To Admin Profile Page 
-    Fill Out And Submit Update Information    ${UPDATE_NAME}               ${PASSWORD1}          ${PASSWORD1}          ${RANEMIAL}@gmail.com            
+    Fill Out And Submit Update Information    ${UPDATE_NAME}               ${PASSWORD1}          ${PASSWORD1}          ${RANEMIAL}@gmail.com          

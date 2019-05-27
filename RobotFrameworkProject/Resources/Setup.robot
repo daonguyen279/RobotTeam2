@@ -1,7 +1,7 @@
 *** Variables ***
 ${CHROME_BROWSER}    Chrome
-${IE_BROWSER}        ie
-${FF_BROWSER}        ff
+${IE_BROWSER}        IE
+${FF_BROWSER}        Fire Fox
 ${BROWSER}           ${CHROME_BROWSER}
 ${ROOT}              http://192.168.189.72/joomla/administrator/
 ${CLIENT_ROOT}       http://192.168.189.72/joomla/

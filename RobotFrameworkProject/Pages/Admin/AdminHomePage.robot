@@ -49,6 +49,7 @@ Logout Admin Site
     Click Element                    ${lbl_logout}
 
 Check Message 
-    [Arguments]               ${arg_expected_message}
-    Element Text Should Be    ${hed_header_message}      Message
-    Element Text Should Be    ${lbl_message}             ${arg_expected_message}
+    [Arguments]                      ${arg_expected_message}
+    Wait Until Element Is Visible    ${hed_header_message}
+    Element Text Should Be           ${hed_header_message}      Message
+    Element Text Should Be           ${lbl_message}             ${arg_expected_message}
