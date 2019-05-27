@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190527 17:11:40.579" rpa="false">
+<suite id="s1" name="Tests" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests">
+<suite id="s1-s1" name="FunctionalTests" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests">
+<suite id="s1-s1-s1" name="AdminArticleTest" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminArticleTest.robot">
+<kw name="Setup" library="Setup" type="setup">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.877" endtime="20190527 17:11:40.877"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.877" endtime="20190527 17:11:40.877"></status>
+</kw>
+<test id="s1-s1-s1-t1" name="TC01 - Add A New Aticle">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.878" endtime="20190527 17:11:40.878"></status>
+</kw>
+<tags>
+<tag>aticle</tag>
+</tags>
+<status status="PASS" starttime="20190527 17:11:40.877" endtime="20190527 17:11:40.878" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t2" name="TC02 - Edit Article Information">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.879" endtime="20190527 17:11:40.879"></status>
+</kw>
+<tags>
+<tag>aticle</tag>
+</tags>
+<status status="PASS" starttime="20190527 17:11:40.878" endtime="20190527 17:11:40.879" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t3" name="TC03 - Unpublish An Article">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.880" endtime="20190527 17:11:40.880"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.879" endtime="20190527 17:11:40.880" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t4" name="TC04 - Delete An Article">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.881" endtime="20190527 17:11:40.881"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.880" endtime="20190527 17:11:40.881" critical="yes"></status>
+</test>
+<kw name="Teardown" library="Setup" type="teardown">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.893" endtime="20190527 17:11:40.894"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.881" endtime="20190527 17:11:40.894"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.603" endtime="20190527 17:11:40.894"></status>
+</suite>
+<suite id="s1-s1-s2" name="AdminCategoryTest" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminCategoryTest.robot">
+<kw name="Setup" library="Setup" type="setup">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.910" endtime="20190527 17:11:40.911"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.910" endtime="20190527 17:11:40.911"></status>
+</kw>
+<test id="s1-s1-s2-t1" name="TC05 - Verify That Admin Can Add A New Category">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.911" endtime="20190527 17:11:40.911"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.911" endtime="20190527 17:11:40.911" critical="yes"></status>
+</test>
+<test id="s1-s1-s2-t2" name="TC06 - Verify That Admin Can Edit Category Information">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.912" endtime="20190527 17:11:40.912"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.912" endtime="20190527 17:11:40.912" critical="yes"></status>
+</test>
+<test id="s1-s1-s2-t3" name="TC07 - Verify That Admin Can Delete A New Category">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.913" endtime="20190527 17:11:40.913"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.913" endtime="20190527 17:11:40.913" critical="yes"></status>
+</test>
+<test id="s1-s1-s2-t4" name="TC08 - Verify That Admin Can Unpublish A Category">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.914" endtime="20190527 17:11:40.914"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.914" endtime="20190527 17:11:40.914" critical="yes"></status>
+</test>
+<kw name="Teardown" library="Setup" type="teardown">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.915" endtime="20190527 17:11:40.915"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.915" endtime="20190527 17:11:40.915"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.895" endtime="20190527 17:11:40.915"></status>
+</suite>
+<suite id="s1-s1-s3" name="AdminDataDrivenLoginTest" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminDataDrivenLoginTest.robot">
+<kw name="Setup" library="Setup" type="setup">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.925" endtime="20190527 17:11:40.925"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.925" endtime="20190527 17:11:40.925"></status>
+</kw>
+<test id="s1-s1-s3-t1" name="TC18 - Empty Username">
+<kw name="Login With Invalid Credentials Should Fail" library="AdminLoginPage">
+<arguments>
+<arg>${EMPTY}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${ERROR_MESSAGE}</arg>
+</arguments>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.926" endtime="20190527 17:11:40.926"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.926" endtime="20190527 17:11:40.926"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.925" endtime="20190527 17:11:40.926" critical="yes"></status>
+</test>
+<test id="s1-s1-s3-t2" name="TC19 - Empty Password">
+<kw name="Login With Invalid Credentials Should Fail" library="AdminLoginPage">
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${EMPTY}</arg>
+<arg>${ERROR_EMPTY_PASSWORD_MESSAGE}</arg>
+</arguments>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.927" endtime="20190527 17:11:40.928"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.927" endtime="20190527 17:11:40.928"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.927" endtime="20190527 17:11:40.928" critical="yes"></status>
+</test>
+<test id="s1-s1-s3-t3" name="TC20 - Empty Username And Password">
+<kw name="Login With Invalid Credentials Should Fail" library="AdminLoginPage">
+<arguments>
+<arg>${EMPTY}</arg>
+<arg>${EMPTY}</arg>
+<arg>${ERROR_EMPTY_PASSWORD_MESSAGE}</arg>
+</arguments>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.929" endtime="20190527 17:11:40.929"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.928" endtime="20190527 17:11:40.929"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.928" endtime="20190527 17:11:40.929" critical="yes"></status>
+</test>
+<test id="s1-s1-s3-t4" name="TC21 - Invalid Username">
+<kw name="Login With Invalid Credentials Should Fail" library="AdminLoginPage">
+<arguments>
+<arg>${INVALID_USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${ERROR_MESSAGE}</arg>
+</arguments>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.930" endtime="20190527 17:11:40.930"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.930" endtime="20190527 17:11:40.930"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.929" endtime="20190527 17:11:40.930" critical="yes"></status>
+</test>
+<test id="s1-s1-s3-t5" name="TC22 - Invalid Password">
+<kw name="Login With Invalid Credentials Should Fail" library="AdminLoginPage">
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${INVALID_PASSWORD}</arg>
+<arg>${ERROR_MESSAGE}</arg>
+</arguments>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.931" endtime="20190527 17:11:40.931"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.931" endtime="20190527 17:11:40.932"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.931" endtime="20190527 17:11:40.932" critical="yes"></status>
+</test>
+<test id="s1-s1-s3-t6" name="TC23 - Invalid Username And Password">
+<kw name="Login With Invalid Credentials Should Fail" library="AdminLoginPage">
+<arguments>
+<arg>${INVALID_USERNAME}</arg>
+<arg>${INVALID_PASSWORD}</arg>
+<arg>${ERROR_MESSAGE}</arg>
+</arguments>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.933" endtime="20190527 17:11:40.933"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.932" endtime="20190527 17:11:40.933"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.932" endtime="20190527 17:11:40.933" critical="yes"></status>
+</test>
+<kw name="Teardown" library="Setup" type="teardown">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.934" endtime="20190527 17:11:40.934"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.933" endtime="20190527 17:11:40.934"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.916" endtime="20190527 17:11:40.934"></status>
+</suite>
+<suite id="s1-s1-s4" name="AdminMenuTest" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminMenuTest.robot">
+<kw name="Setup" library="Setup" type="setup">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.952" endtime="20190527 17:11:40.952"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.952" endtime="20190527 17:11:40.953"></status>
+</kw>
+<test id="s1-s1-s4-t1" name="TC14 - Add A New Menu Successfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.953" endtime="20190527 17:11:40.953"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.953" endtime="20190527 17:11:40.953" critical="yes"></status>
+</test>
+<test id="s1-s1-s4-t2" name="TC15 - Add A Menu Item Successfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.954" endtime="20190527 17:11:40.954"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.954" endtime="20190527 17:11:40.954" critical="yes"></status>
+</test>
+<test id="s1-s1-s4-t3" name="TC17 - Delete A Menu Item Sucessfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.955" endtime="20190527 17:11:40.955"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.954" endtime="20190527 17:11:40.955" critical="yes"></status>
+</test>
+<test id="s1-s1-s4-t4" name="TC16 - Delete A Menu Successfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.956" endtime="20190527 17:11:40.956"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.955" endtime="20190527 17:11:40.956" critical="yes"></status>
+</test>
+<kw name="Teardown" library="Setup" type="teardown">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.957" endtime="20190527 17:11:40.957"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.956" endtime="20190527 17:11:40.957"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.935" endtime="20190527 17:11:40.957"></status>
+</suite>
+<suite id="s1-s1-s5" name="AdminUpdateProfileTest" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminUpdateProfileTest.robot">
+<kw name="Setup" library="Setup" type="setup">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.972" endtime="20190527 17:11:40.972"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.972" endtime="20190527 17:11:40.972"></status>
+</kw>
+<test id="s1-s1-s5-t1" name="TC13 - Update Admin Profile Successfully">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.973" endtime="20190527 17:11:40.973"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.972" endtime="20190527 17:11:40.973" critical="yes"></status>
+</test>
+<kw name="Teardown" library="Setup" type="teardown">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.973" endtime="20190527 17:11:40.974"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.973" endtime="20190527 17:11:40.974"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.958" endtime="20190527 17:11:40.974"></status>
+</suite>
+<suite id="s1-s1-s6" name="AdminUserTest" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminUserTest.robot">
+<kw name="Setup" library="Setup" type="setup">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.993" endtime="20190527 17:11:40.993"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.993" endtime="20190527 17:11:40.993"></status>
+</kw>
+<test id="s1-s1-s6-t1" name="TC09 - Add New Valid User Account">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.994" endtime="20190527 17:11:40.994"></status>
+</kw>
+<tags>
+<tag>user</tag>
+</tags>
+<status status="PASS" starttime="20190527 17:11:40.994" endtime="20190527 17:11:40.994" critical="yes"></status>
+</test>
+<test id="s1-s1-s6-t2" name="TC10 - Edit User Account Valid Information">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.995" endtime="20190527 17:11:40.995"></status>
+</kw>
+<tags>
+<tag>user</tag>
+</tags>
+<status status="PASS" starttime="20190527 17:11:40.994" endtime="20190527 17:11:40.995" critical="yes"></status>
+</test>
+<test id="s1-s1-s6-t3" name="TC11 - Delete User">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.996" endtime="20190527 17:11:40.996"></status>
+</kw>
+<tags>
+<tag>user</tag>
+</tags>
+<status status="PASS" starttime="20190527 17:11:40.995" endtime="20190527 17:11:40.996" critical="yes"></status>
+</test>
+<kw name="Teardown" library="Setup" type="teardown">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:40.997" endtime="20190527 17:11:40.997"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.997" endtime="20190527 17:11:40.997"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:40.975" endtime="20190527 17:11:40.997"></status>
+</suite>
+<suite id="s1-s1-s7" name="ExampleKeywordTest" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\ExampleKeywordTest.robot">
+<test id="s1-s1-s7-t1" name="Keyword Slipt Text And Replace Text">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:41.006" endtime="20190527 17:11:41.006"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:41.006" endtime="20190527 17:11:41.007" critical="yes"></status>
+</test>
+<test id="s1-s1-s7-t2" name="Keyword Greet Method">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:41.007" endtime="20190527 17:11:41.008"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:41.007" endtime="20190527 17:11:41.008" critical="yes"></status>
+</test>
+<test id="s1-s1-s7-t3" name="Keyword Count Method">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:41.009" endtime="20190527 17:11:41.009"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:41.008" endtime="20190527 17:11:41.009" critical="yes"></status>
+</test>
+<test id="s1-s1-s7-t4" name="Keyword UpperCase Method">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:41.010" endtime="20190527 17:11:41.010"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:41.009" endtime="20190527 17:11:41.010" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20190527 17:11:40.998" endtime="20190527 17:11:41.010"></status>
+</suite>
+<status status="PASS" starttime="20190527 17:11:40.602" endtime="20190527 17:11:41.012"></status>
+</suite>
+<suite id="s1-s2" name="VisualTests" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\VisualTests">
+<suite id="s1-s2-s1" name="AdminVisualTest" source="C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\VisualTests\AdminVisualTest.robot">
+<kw name="Setup" library="SetupBUild2" type="setup">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:41.047" endtime="20190527 17:11:41.047"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:41.047" endtime="20190527 17:11:41.048"></status>
+</kw>
+<test id="s1-s2-s1-t1" name="TC01 - UI Of Joomla Login Page Display Correctly">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:41.048" endtime="20190527 17:11:41.048"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:41.048" endtime="20190527 17:11:41.048" critical="yes"></status>
+</test>
+<test id="s1-s2-s1-t2" name="TC02 - UI Of Joomla Help Page Display Correctly">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:41.049" endtime="20190527 17:11:41.049"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:41.049" endtime="20190527 17:11:41.049" critical="yes"></status>
+</test>
+<test id="s1-s2-s1-t3" name="TC03 - UI Of Manage Extensions Pages Display Correctly">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:41.050" endtime="20190527 17:11:41.050"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:41.050" endtime="20190527 17:11:41.050" critical="yes"></status>
+</test>
+<test id="s1-s2-s1-t4" name="TC04 - UI Of Modules Page Display Correctly">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:41.051" endtime="20190527 17:11:41.051"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:41.050" endtime="20190527 17:11:41.051" critical="yes"></status>
+</test>
+<test id="s1-s2-s1-t5" name="TC05 - UI Of Joomla Plugins Extentions Page Display Correctly">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:41.052" endtime="20190527 17:11:41.052"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:41.051" endtime="20190527 17:11:41.052" critical="yes"></status>
+</test>
+<test id="s1-s2-s1-t6" name="TC06 - UI Of Joomla Templates Page Display Correctly">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:41.053" endtime="20190527 17:11:41.053"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:41.052" endtime="20190527 17:11:41.053" critical="yes"></status>
+</test>
+<test id="s1-s2-s1-t7" name="TC07 - UI Of Banners Page Display Correctly">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:41.054" endtime="20190527 17:11:41.054"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:41.053" endtime="20190527 17:11:41.054" critical="yes"></status>
+</test>
+<test id="s1-s2-s1-t8" name="TC08 - Check UI Of Content Pages">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:41.055" endtime="20190527 17:11:41.055"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:41.054" endtime="20190527 17:11:41.055" critical="yes"></status>
+</test>
+<kw name="Teardown" library="SetupBUild2" type="teardown">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20190527 17:11:41.056" endtime="20190527 17:11:41.056"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:41.056" endtime="20190527 17:11:41.056"></status>
+</kw>
+<status status="PASS" starttime="20190527 17:11:41.015" endtime="20190527 17:11:41.056"></status>
+</suite>
+<status status="PASS" starttime="20190527 17:11:41.014" endtime="20190527 17:11:41.058"></status>
+</suite>
+<status status="PASS" starttime="20190527 17:11:40.580" endtime="20190527 17:11:41.060"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="34" fail="0">Critical Tests</stat>
+<stat pass="34" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0">aticle</stat>
+<stat pass="3" fail="0">user</stat>
+</tag>
+<suite>
+<stat pass="34" fail="0" id="s1" name="Tests">Tests</stat>
+<stat pass="26" fail="0" id="s1-s1" name="FunctionalTests">Tests.FunctionalTests</stat>
+<stat pass="4" fail="0" id="s1-s1-s1" name="AdminArticleTest">Tests.FunctionalTests.AdminArticleTest</stat>
+<stat pass="4" fail="0" id="s1-s1-s2" name="AdminCategoryTest">Tests.FunctionalTests.AdminCategoryTest</stat>
+<stat pass="6" fail="0" id="s1-s1-s3" name="AdminDataDrivenLoginTest">Tests.FunctionalTests.AdminDataDrivenLoginTest</stat>
+<stat pass="4" fail="0" id="s1-s1-s4" name="AdminMenuTest">Tests.FunctionalTests.AdminMenuTest</stat>
+<stat pass="1" fail="0" id="s1-s1-s5" name="AdminUpdateProfileTest">Tests.FunctionalTests.AdminUpdateProfileTest</stat>
+<stat pass="3" fail="0" id="s1-s1-s6" name="AdminUserTest">Tests.FunctionalTests.AdminUserTest</stat>
+<stat pass="4" fail="0" id="s1-s1-s7" name="ExampleKeywordTest">Tests.FunctionalTests.ExampleKeywordTest</stat>
+<stat pass="8" fail="0" id="s1-s2" name="VisualTests">Tests.VisualTests</stat>
+<stat pass="8" fail="0" id="s1-s2-s1" name="AdminVisualTest">Tests.VisualTests.AdminVisualTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190527 17:11:40.558" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminArticleTest.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190527 17:11:40.561" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminCategoryTest.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190527 17:11:40.562" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminDataDrivenLoginTest.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190527 17:11:40.564" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminMenuTest.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190527 17:11:40.565" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminUpdateProfileTest.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190527 17:11:40.566" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminUserTest.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190527 17:11:40.568" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\ExampleKeywordTest.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190527 17:11:40.569" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\VisualTests\AdminVisualTest.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190527 17:11:40.604" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminArticleTest.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.606" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Resources\Setup.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190527 17:11:40.607" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Resources\Setup.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.865" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminArticlePage.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190527 17:11:40.868" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminArticlePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.868" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminArticlePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.871" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.871" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.871" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.874" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminLoginPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.895" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminCategoryTest.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.897" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Resources\Setup.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.903" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminCategoryPage.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190527 17:11:40.905" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminCategoryPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.905" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminCategoryPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.906" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.907" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.907" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.908" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminLoginPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.916" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminDataDrivenLoginTest.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.918" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Resources\Setup.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.924" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminLoginPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.935" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminMenuTest.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.937" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Resources\Setup.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.943" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminLoginPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.944" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminMenuPage.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190527 17:11:40.947" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminMenuPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.948" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminMenuPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.949" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.949" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.949" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.958" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminUpdateProfileTest.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.960" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Resources\Setup.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.966" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminLoginPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.967" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminProfilePage.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190527 17:11:40.968" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminProfilePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.969" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.969" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.969" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.975" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminUserTest.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.977" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Resources\Setup.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.982" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.983" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.983" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.984" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminLoginPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.985" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminUserPage.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190527 17:11:40.988" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminUserPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.988" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminUserPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.990" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Client\ClientHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:40.998" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\ExampleKeywordTest.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:41.001" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Resources\Setup.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:41.016" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\VisualTests\AdminVisualTest.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:41.018" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Resources\SetupBUild2.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190527 17:11:41.019" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Resources\SetupBUild2.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:41.027" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminLoginPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:41.028" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:41.028" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:41.028" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHomePage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:41.030" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminHelpPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:41.031" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminManageExtensionsPage.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190527 17:11:41.033" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminManageExtensionsPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:41.034" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminModulesExtensionsPage.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190527 17:11:41.035" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminModulesExtensionsPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:41.036" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminPluginsExtensionsPage.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190527 17:11:41.037" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminPluginsExtensionsPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:41.038" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminBannersComponentsPage.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190527 17:11:41.039" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminBannersComponentsPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:41.039" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminBannersComponentsPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:41.041" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminTemplatesPage.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190527 17:11:41.042" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminTemplatesPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190527 17:11:41.044" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminContentPage.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190527 17:11:41.045" level="ERROR">Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Pages\Admin\AdminContentPage.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+</errors>
+</robot>

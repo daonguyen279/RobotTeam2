@@ -9,9 +9,9 @@ Suite teardown    Teardown
 
 *** Variables ***
 ${USERNAME1}	             hihi
-${PASSWORD1}                 1234567890
+${PASSWORD1}                 123456789
 ${UPDATE_NAME}               dao nguyen
-${UPDATE_PASSWORD}           123456789
+${UPDATE_PASSWORD}           1234567890
 ${MESSAGE_UPDATE_PROFILE}    Item saved.
 
 
