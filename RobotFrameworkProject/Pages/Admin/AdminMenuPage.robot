@@ -83,15 +83,17 @@ Fill Out And Submit Menu Item Information
     ${menus_parent}         Format String    ${xph_menus_parent}         ${arg_menu_parent}    
     Input Text                               ${txt_menuitems_title}      ${arg_menuitem_title}    
     Click Element 	                         ${btn_menuitems_type}
-    Select Frame                             ${frm_menus}               
+    Select Frame                             ${frm_menus} 
+    Wait Until Element Is Visible            ${menuitems_type}  
     Click Element                            ${menuitems_type}
     Wait Until Element Is Visible            ${submenuitems_type}       
     Click Element                            ${submenuitems_type}  
-    Unselect Frame  
+    Unselect Frame
+    Wait Until Element Is Visible            ${cbx_menus_parent}
     Click Element                            ${cbx_menus_parent}
     Wait Until Element Is Visible            ${menus_parent}
-    Click Element                            ${menus_parent}                                  
-    Click Element                            ${btn_menus_save_close}        
+    Click Element                            ${menus_parent}
+    Click Element                            ${btn_menus_save_close}
 	
 Delete Menu Item
     [Arguments]                               ${arg_menuitem_title}

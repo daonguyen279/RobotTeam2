@@ -6,24 +6,27 @@ Tests.FunctionalTests
 Tests.FunctionalTests.AdminUserTest                                           
 ==============================================================================
 TC09 - Add New Valid User Account                                     Login to Joomla
-| PASS |
+| FAIL |
+No keyword with name 'Go To Add User Page' found.
 ------------------------------------------------------------------------------
 TC10 - Edit User Account Valid Information                            Login to Joomla
-| PASS |
+| FAIL |
+Element with locator 'id=mod-login-username' not found.
 ------------------------------------------------------------------------------
 TC11 - Delete User                                                    Login to Joomla
-| PASS |
+| FAIL |
+Element with locator 'id=mod-login-username' not found.
 ------------------------------------------------------------------------------
-Tests.FunctionalTests.AdminUserTest                                   | PASS |
-3 critical tests, 3 passed, 0 failed
-3 tests total, 3 passed, 0 failed
+Tests.FunctionalTests.AdminUserTest                                   | FAIL |
+3 critical tests, 0 passed, 3 failed
+3 tests total, 0 passed, 3 failed
 ==============================================================================
-Tests.FunctionalTests                                                 | PASS |
-3 critical tests, 3 passed, 0 failed
-3 tests total, 3 passed, 0 failed
+Tests.FunctionalTests                                                 | FAIL |
+3 critical tests, 0 passed, 3 failed
+3 tests total, 0 passed, 3 failed
 ==============================================================================
-Tests                                                                 | PASS |
-3 critical tests, 3 passed, 0 failed
-3 tests total, 3 passed, 0 failed
+Tests                                                                 | FAIL |
+3 critical tests, 0 passed, 3 failed
+3 tests total, 0 passed, 3 failed
 ==============================================================================
 Output:  C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\pabot_results\Tests.FunctionalTests.AdminUserTest\output.xml

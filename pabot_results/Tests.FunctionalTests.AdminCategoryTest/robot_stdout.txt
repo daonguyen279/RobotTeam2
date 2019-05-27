@@ -6,27 +6,31 @@ Tests.FunctionalTests
 Tests.FunctionalTests.AdminCategoryTest                                       
 ==============================================================================
 TC05 - Verify That Admin Can Add A New Category                       Login to Joomla
-| PASS |
+| FAIL |
+No keyword with name 'Go To Add New Category Page' found.
 ------------------------------------------------------------------------------
 TC06 - Verify That Admin Can Edit Category Information                Login to Joomla
-| PASS |
+| FAIL |
+Element with locator 'id=mod-login-username' not found.
 ------------------------------------------------------------------------------
 TC07 - Verify That Admin Can Delete A New Category                    Login to Joomla
-| PASS |
+| FAIL |
+Element with locator 'id=mod-login-username' not found.
 ------------------------------------------------------------------------------
 TC08 - Verify That Admin Can Unpublish A Category                     Login to Joomla
-| PASS |
+| FAIL |
+Element with locator 'id=mod-login-username' not found.
 ------------------------------------------------------------------------------
-Tests.FunctionalTests.AdminCategoryTest                               | PASS |
-4 critical tests, 4 passed, 0 failed
-4 tests total, 4 passed, 0 failed
+Tests.FunctionalTests.AdminCategoryTest                               | FAIL |
+4 critical tests, 0 passed, 4 failed
+4 tests total, 0 passed, 4 failed
 ==============================================================================
-Tests.FunctionalTests                                                 | PASS |
-4 critical tests, 4 passed, 0 failed
-4 tests total, 4 passed, 0 failed
+Tests.FunctionalTests                                                 | FAIL |
+4 critical tests, 0 passed, 4 failed
+4 tests total, 0 passed, 4 failed
 ==============================================================================
-Tests                                                                 | PASS |
-4 critical tests, 4 passed, 0 failed
-4 tests total, 4 passed, 0 failed
+Tests                                                                 | FAIL |
+4 critical tests, 0 passed, 4 failed
+4 tests total, 0 passed, 4 failed
 ==============================================================================
 Output:  C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\pabot_results\Tests.FunctionalTests.AdminCategoryTest\output.xml

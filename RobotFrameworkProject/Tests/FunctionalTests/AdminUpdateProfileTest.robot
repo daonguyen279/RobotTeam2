@@ -9,9 +9,9 @@ Suite teardown    Teardown
 
 *** Variables ***
 ${USERNAME1}	             hihi
-${PASSWORD1}                 1234567890
+${PASSWORD1}                 123456789
 ${UPDATE_NAME}               dao nguyen
-${UPDATE_PASSWORD}           123456789
+${UPDATE_PASSWORD}           1234567890
 ${MESSAGE_UPDATE_PROFILE}    Item saved.
 
 
@@ -25,4 +25,4 @@ TC13 - Update Admin Profile Successfully
     Logout Admin Site   
     Login Admin Site                          ${USERNAME1}                 ${UPDATE_PASSWORD}              
     Go To Admin Profile Page 
-    Fill Out And Submit Update Information    ${UPDATE_NAME}               ${PASSWORD1}          ${PASSWORD1}          ${RANEMIAL}@gmail.com            
+    Fill Out And Submit Update Information    ${UPDATE_NAME}               ${PASSWORD1}          ${PASSWORD1}          ${RANEMIAL}@gmail.com          

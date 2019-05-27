@@ -1,7 +1,7 @@
-datasources:3b4555b18544e2d7224bc6cfac8f1f7859a54cc6
+datasources:b21c3fc1fadb6dfd661a356d41cf7e32a767e8cb
 commandlineoptions:5ea3922db11a42de3fa4c89e9d9f06972f891d9e
 suitesfrom:no-suites-from-option
-file:2822ae59365f45a64e35e25fa3342d480e7cf820
+file:25adfc9361745b738edbb240afa70a8a9683ba7e
 --suite Tests.FunctionalTests.AdminArticleTest
 --suite Tests.FunctionalTests.AdminCategoryTest
 --suite Tests.FunctionalTests.AdminDataDrivenLoginTest
