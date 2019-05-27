@@ -1,1 +1,0 @@
-[ ERROR ] Error in file 'C:\Users\InternDN19.01.02\eclipse-workspace\RobotTeam2\RobotFrameworkProject\Tests\FunctionalTests\AdminUserTest.robot': Resource file '..\..\Pages\Admin\AdminUserPage.robot' does not exist.
